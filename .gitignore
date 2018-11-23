@@ -21,6 +21,10 @@
 # idea
 .idea/
 
+# cache
+styles/.sass-cache
+styles/.sass-cache/*
+
 npm-debug.log*
 yarn-debug.log*
 yarn-error.log*

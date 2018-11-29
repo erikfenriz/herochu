@@ -28,11 +28,35 @@
   font-weight: 400;
 }
 
-@keyframes fadeIn {
-  from {
+@keyframes fadeInHeader {
+  0% {
     opacity: 0;
   }
-  to{
+  100% {
+    opacity: 1;
+  }
+}
+@keyframes fadeInSecondary {
+  0% {
+    opacity: 0;
+  }
+  30% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+
+@keyframes fadeInListSummary {
+  0% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 0;
+  }
+  100% {
     opacity: 1;
   }
 }
@@ -65,6 +89,7 @@
     color: black;
     text-transform: uppercase;
     margin-top: 30px;
+
     .experience__link--title {
       font: {
         family: 'Neutra display', sans-serif;
@@ -107,23 +132,17 @@ main.main-page {
   background: -ms-linear-gradient(-45deg, #00451a 0%, #add444 100%);
   background: linear-gradient(135deg, #00451a 0%, #add444 100%);
   filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#00451a', endColorstr='#add444', GradientType=1);
-
+  .main-page__nesting{
+    display: flex;
+    width: 100%;
+    padding: 110px 0 0 81px;
   .experience {
     &__title {
       color: white;
 
-      &--list {
-        list-style: none;
-        padding-left: 0;
-        line-height: 20px;
-        -webkit-animation: fadeIn 3s; /* Safari, Chrome and Opera > 12.1 */
-        -moz-animation: fadeIn 3s; /* Firefox < 16 */
-        -ms-animation: fadeIn 3s; /* Internet Explorer */
-        -o-animation: fadeIn 3s; /* Opera < 12.1 */
-        animation: fadeIn 3s;
-      }
-
       &--container-headline {
+        animation: fadeInHeader 1.5s 1 forwards;
+        transition: opacity 1500ms ease 0s;
         max-width: 369px;
 
         .experience__title--headline {
@@ -134,11 +153,10 @@ main.main-page {
           }
           line-height: 71px;
           margin-bottom: 0;
-          -webkit-animation: fadeIn 2s; /* Safari, Chrome and Opera > 12.1 */
-          -moz-animation: fadeIn 2s; /* Firefox < 16 */
-          -ms-animation: fadeIn 2s; /* Internet Explorer */
-          -o-animation: fadeIn 2s; /* Opera < 12.1 */
-          animation: fadeIn 2s;
+          //-webkit-animation: fadeIn 2s; /* Safari, Chrome and Opera > 12.1 */
+          //-moz-animation: fadeIn 2s; /* Firefox < 16 */
+          //-ms-animation: fadeIn 2s; /* Internet Explorer */
+          //-o-animation: fadeIn 2s; /* Opera < 12.1 */
         }
       }
 
@@ -149,16 +167,29 @@ main.main-page {
           style: italic;
           size: 31px;
         }
+        animation: fadeInSecondary 1.5s 1 forwards;
+        transition: opacity 1500ms ease 0s;
         margin-top: 20px;
       }
 
       &--list {
+        list-style: none;
+        padding-left: 0;
+        line-height: 20px;
+        //-webkit-animation: fadeIn 3s; /* Safari, Chrome and Opera > 12.1 */
+        //-moz-animation: fadeIn 3s; /* Firefox < 16 */
+        //-ms-animation: fadeIn 3s; /* Internet Explorer */
+        //-o-animation: fadeIn 3s; /* Opera < 12.1 */
+        animation: fadeInListSummary 1.5s 1 forwards;
+        transition: opacity 1500ms ease 0s;
         @include experience-text;
       }
 
       &--summary {
         line-height: 20px;
         max-width: 716px;
+        animation: fadeInListSummary 1.5s 1 forwards;
+        transition: opacity 1500ms ease 0s;
         @include experience-text;
       }
     }
@@ -175,6 +206,7 @@ main.main-page {
     @include main-image;
     @include experience-link-title;
   }
+}
 }
 
 #test {

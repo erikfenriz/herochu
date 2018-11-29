@@ -5,7 +5,7 @@ import {Link} from 'react-router-dom';
 
 export const Main = () => (
     <main className="main-page">
-        <section className="arr">
+        <section className="main-page__nesting">
             <section className="experience">
                 <div className="experience__title">
                     <div className="experience__title--container-headline">
@@ -19,7 +19,8 @@ export const Main = () => (
                         <li>What’s your inspiring rhythm?</li>
                     </ul>
                     <p className="experience__title--summary">EXPERIENCES by MANE help you find the answers to the above
-                        and
+
+
                         to many other questions on the magic world of perfume.
                     </p>
                 </div>
@@ -27,7 +28,7 @@ export const Main = () => (
             </section>
             <div id="asd">
                 <div id="test">
-                    <Link to="#" className="experience__perfume">
+                    <Link to="/LetPerfumeTalk" className="experience__perfume">
                         <div className="experience__link--container">
                             <h3 className="experience__link--title">Let perfume talk</h3>
                             <hr className="experience__link--underline"/>

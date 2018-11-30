@@ -37,6 +37,11 @@
     opacity: 0; }
   100% {
     opacity: 1; } }
+@keyframes openSlideAnimation {
+  0% {
+    transform: translateX(2500px); }
+  100% {
+    transform: translateX(0px); } }
 main.main-page {
   position: fixed;
   display: flex;
@@ -52,128 +57,162 @@ main.main-page {
   background: -ms-linear-gradient(-45deg, #00451a 0%, #add444 100%);
   background: linear-gradient(135deg, #00451a 0%, #add444 100%);
   filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#00451a', endColorstr='#add444', GradientType=1); }
-  main.main-page .main-page__nesting {
+  main.main-page .main-page__content {
     display: flex;
     width: 100%;
     padding: 110px 0 0 81px; }
-    main.main-page .main-page__nesting .experience__title {
+    main.main-page .main-page__content .intro__title {
       color: white; }
-      main.main-page .main-page__nesting .experience__title--container-headline {
+      main.main-page .main-page__content .intro__title--container-headline {
         animation: fadeInHeader 1.5s 1 forwards;
+        -webkit-animation: fadeInHeader 1.5s 1 forwards;
+        /* Safari, Chrome and Opera > 12.1 */
+        -moz-animation: fadeInHeader 1.5s 1 forwards;
+        /* Firefox < 16 */
+        -ms-animation: fadeInHeader 1.5s 1 forwards;
+        /* Internet Explorer */
+        -o-animation: fadeInHeader 1.5s 1 forwards;
+        /* Opera < 12.1 */
         transition: opacity 1500ms ease 0s;
         max-width: 369px; }
-        main.main-page .main-page__nesting .experience__title--container-headline .experience__title--headline {
+        main.main-page .main-page__content .intro__title--container-headline .intro__title--headline {
           font-family: 'Neutra display', sans-serif;
           font-weight: 100;
           font-size: 66px;
           line-height: 71px;
           margin-bottom: 0; }
-      main.main-page .main-page__nesting .experience__title--secondary {
+      main.main-page .main-page__content .intro__title--secondary {
         font-family: 'Neutra display', sans-serif;
         font-weight: 400;
         font-style: italic;
         font-size: 31px;
         animation: fadeInSecondary 1.5s 1 forwards;
+        -webkit-animation: fadeInSecondary 1.5s 1 forwards;
+        /* Safari, Chrome and Opera > 12.1 */
+        -moz-animation: fadeInSecondary 1.5s 1 forwards;
+        /* Firefox < 16 */
+        -ms-animation: fadeInSecondary 1.5s 1 forwards;
+        /* Internet Explorer */
+        -o-animation: fadeInSecondary 1.5s 1 forwards;
+        /* Opera < 12.1 */
         transition: opacity 1500ms ease 0s;
         margin-top: 20px; }
-      main.main-page .main-page__nesting .experience__title--list {
+      main.main-page .main-page__content .intro__title--list {
         list-style: none;
         padding-left: 0;
         line-height: 20px;
         animation: fadeInListSummary 1.5s 1 forwards;
+        -webkit-animation: fadeInListSummary 1.5s 1 forwards;
+        /* Safari, Chrome and Opera > 12.1 */
+        -moz-animation: fadeInListSummary 1.5s 1 forwards;
+        /* Firefox < 16 */
+        -ms-animation: fadeInListSummary 1.5s 1 forwards;
+        /* Internet Explorer */
+        -o-animation: fadeInListSummary 1.5s 1 forwards;
+        /* Opera < 12.1 */
         transition: opacity 1500ms ease 0s;
         font-family: 'Neutra display', sans-serif;
         font-weight: 200;
         font-size: 22px; }
-      main.main-page .main-page__nesting .experience__title--summary {
+      main.main-page .main-page__content .intro__title--summary {
         line-height: 20px;
         max-width: 716px;
         animation: fadeInListSummary 1.5s 1 forwards;
+        -webkit-animation: fadeInListSummary 1.5s 1 forwards;
+        /* Safari, Chrome and Opera > 12.1 */
+        -moz-animation: fadeInListSummary 1.5s 1 forwards;
+        /* Firefox < 16 */
+        -ms-animation: fadeInListSummary 1.5s 1 forwards;
+        /* Internet Explorer */
+        -o-animation: fadeInListSummary 1.5s 1 forwards;
+        /* Opera < 12.1 */
         transition: opacity 1500ms ease 0s;
         font-family: 'Neutra display', sans-serif;
         font-weight: 200;
         font-size: 22px; }
-    main.main-page .main-page__nesting .experience__perfume {
-      background-image: url("../assets/images/main/exp2title.png");
-      width: 80%;
-      height: 620px;
-      background-size: contain;
-      background-repeat: no-repeat;
-      background-position: center;
-      margin-right: 5%;
-      text-decoration: none;
-      display: flex;
-      align-items: center;
-      justify-content: center; }
-      main.main-page .main-page__nesting .experience__perfume .experience__link--container {
-        width: 130px;
-        text-align: center;
-        color: black;
-        text-transform: uppercase;
-        margin-top: 30px; }
-        main.main-page .main-page__nesting .experience__perfume .experience__link--container .experience__link--title {
-          font-family: 'Neutra display', sans-serif;
-          font-weight: 200;
-          font-size: 30px;
-          margin: 0; }
-        main.main-page .main-page__nesting .experience__perfume .experience__link--container .experience__link--underline {
-          border: 0;
-          border-top: 1px solid #8c8b8b;
-          width: 90px;
-          margin-top: 20px;
-          margin-bottom: 20px; }
-        main.main-page .main-page__nesting .experience__perfume .experience__link--container .experience__link--entry {
-          font-family: 'Neutra display', sans-serif;
-          font-weight: 800;
-          font-size: 20px; }
-    main.main-page .main-page__nesting .experience__essence {
-      background-image: url("../assets/images/main/exp1title.png");
-      width: 80%;
-      height: 620px;
-      background-size: contain;
-      background-repeat: no-repeat;
-      background-position: center;
-      margin-right: 5%;
-      text-decoration: none;
-      display: flex;
-      align-items: center;
-      justify-content: center; }
-      main.main-page .main-page__nesting .experience__essence .experience__link--container {
-        width: 130px;
-        text-align: center;
-        color: black;
-        text-transform: uppercase;
-        margin-top: 30px; }
-        main.main-page .main-page__nesting .experience__essence .experience__link--container .experience__link--title {
-          font-family: 'Neutra display', sans-serif;
-          font-weight: 200;
-          font-size: 30px;
-          margin: 0; }
-        main.main-page .main-page__nesting .experience__essence .experience__link--container .experience__link--underline {
-          border: 0;
-          border-top: 1px solid #8c8b8b;
-          width: 90px;
-          margin-top: 20px;
-          margin-bottom: 20px; }
-        main.main-page .main-page__nesting .experience__essence .experience__link--container .experience__link--entry {
-          font-family: 'Neutra display', sans-serif;
-          font-weight: 800;
-          font-size: 20px; }
-
-#test {
-  display: flex;
-  width: 85%; }
-
-#asd {
-  width: 100%; }
-
-#tes {
-  display: flex; }
-
-.arr {
-  display: flex;
-  width: 100%;
-  padding: 110px 0 0 81px; }
+    main.main-page .main-page__content .experience {
+      width: 100%; }
+      main.main-page .main-page__content .experience .experience__choice {
+        display: flex;
+        width: 85%;
+        bottom: 50px;
+        position: relative; }
+        main.main-page .main-page__content .experience .experience__choice .experience__perfume {
+          background-image: url("../assets/images/main/exp2title.png");
+          width: 80%;
+          height: 620px;
+          background-size: contain;
+          background-repeat: no-repeat;
+          background-position: center;
+          margin-right: 5%;
+          text-decoration: none;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          transition: all 0.5s ease 0s;
+          animation: openSlideAnimation 1.5s 1 ease-in-out;
+          will-change: auto; }
+          main.main-page .main-page__content .experience .experience__choice .experience__perfume .experience__link--container {
+            width: 130px;
+            text-align: center;
+            color: black;
+            text-transform: uppercase;
+            margin-top: 30px; }
+            main.main-page .main-page__content .experience .experience__choice .experience__perfume .experience__link--container .experience__link--title {
+              font-family: 'Neutra display', sans-serif;
+              font-weight: 200;
+              font-size: 30px;
+              margin: 0; }
+            main.main-page .main-page__content .experience .experience__choice .experience__perfume .experience__link--container .experience__link--underline {
+              border: 0;
+              border-top: 1px solid #8c8b8b;
+              width: 90px;
+              margin-top: 20px;
+              margin-bottom: 20px; }
+            main.main-page .main-page__content .experience .experience__choice .experience__perfume .experience__link--container .experience__link--entry {
+              font-family: 'Neutra display', sans-serif;
+              font-weight: 800;
+              font-size: 20px; }
+          main.main-page .main-page__content .experience .experience__choice .experience__perfume:hover {
+            transform: scale(1.1); }
+        main.main-page .main-page__content .experience .experience__choice .experience__essence {
+          background-image: url("../assets/images/main/exp1title.png");
+          width: 80%;
+          height: 620px;
+          background-size: contain;
+          background-repeat: no-repeat;
+          background-position: center;
+          margin-right: 5%;
+          text-decoration: none;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          transition: all 0.5s ease 0s;
+          animation: openSlideAnimation 2s 1 ease-in-out;
+          will-change: auto; }
+          main.main-page .main-page__content .experience .experience__choice .experience__essence .experience__link--container {
+            width: 130px;
+            text-align: center;
+            color: black;
+            text-transform: uppercase;
+            margin-top: 30px; }
+            main.main-page .main-page__content .experience .experience__choice .experience__essence .experience__link--container .experience__link--title {
+              font-family: 'Neutra display', sans-serif;
+              font-weight: 200;
+              font-size: 30px;
+              margin: 0; }
+            main.main-page .main-page__content .experience .experience__choice .experience__essence .experience__link--container .experience__link--underline {
+              border: 0;
+              border-top: 1px solid #8c8b8b;
+              width: 90px;
+              margin-top: 20px;
+              margin-bottom: 20px; }
+            main.main-page .main-page__content .experience .experience__choice .experience__essence .experience__link--container .experience__link--entry {
+              font-family: 'Neutra display', sans-serif;
+              font-weight: 800;
+              font-size: 20px; }
+          main.main-page .main-page__content .experience .experience__choice .experience__essence:hover {
+            transform: scale(1.1); }
 
 .intro__video {
   position: fixed;

@@ -22,7 +22,24 @@ export const Main = () => (
                         to many other questions on the magic world of perfume.
                     </p>
                 </div>
-
+                <div className="experience experience__responsive">
+                    <div className="experience__choice ">
+                        <Link to="/LetPerfumeTalk" className="experience__perfume">
+                            <div className="experience__link--container">
+                                <h3 className="experience__link--title">Let perfume talk</h3>
+                                <hr className="experience__link--underline"/>
+                                <h4 className="experience__link--entry">Enter</h4>
+                            </div>
+                        </Link>
+                        <Link to="#" className="experience__essence">
+                            <div className="experience__link--container">
+                                <h3 className="experience__link--title">Let perfume talk</h3>
+                                <hr className="experience__link--underline"/>
+                                <h4 className="experience__link--entry">Enter</h4>
+                            </div>
+                        </Link>
+                    </div>
+                </div>
             </section>
             <div className="experience">
                 <div className="experience__choice">
@@ -43,5 +60,7 @@ export const Main = () => (
                 </div>
             </div>
         </section>
+
     </main>
+
 );

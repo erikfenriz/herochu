@@ -47,7 +47,7 @@ main.main-page {
   display: flex;
   top: 0;
   left: 0;
-  height: 100vh;
+  height: 100%;
   width: 100%;
   background: #00451a;
   background: -moz-linear-gradient(-45deg, #00451a 0%, #add444 100%);
@@ -57,10 +57,17 @@ main.main-page {
   background: -ms-linear-gradient(-45deg, #00451a 0%, #add444 100%);
   background: linear-gradient(135deg, #00451a 0%, #add444 100%);
   filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#00451a', endColorstr='#add444', GradientType=1); }
+  @media (max-width: 1100px) {
+    main.main-page {
+      position: relative; } }
   main.main-page .main-page__content {
     display: flex;
     width: 100%;
-    padding: 110px 0 0 81px; }
+    padding: 110px 0 0 81px;
+    /* Experience desktop Starts here */ }
+    @media (max-width: 1100px) {
+      main.main-page .main-page__content .intro {
+        width: 100%; } }
     main.main-page .main-page__content .intro__title {
       color: white; }
       main.main-page .main-page__content .intro__title--container-headline {
@@ -130,13 +137,24 @@ main.main-page {
         font-family: 'Neutra display', sans-serif;
         font-weight: 200;
         font-size: 22px; }
+    main.main-page .main-page__content .intro .experience__responsive {
+      display: none; }
+      @media (max-width: 1100px) {
+        main.main-page .main-page__content .intro .experience__responsive {
+          display: flex; } }
     main.main-page .main-page__content .experience {
       width: 100%; }
+      @media (max-width: 1100px) {
+        main.main-page .main-page__content .experience {
+          display: none; } }
       main.main-page .main-page__content .experience .experience__choice {
         display: flex;
         width: 85%;
         bottom: 50px;
         position: relative; }
+        @media (max-width: 1100px) {
+          main.main-page .main-page__content .experience .experience__choice {
+            width: 100%; } }
         main.main-page .main-page__content .experience .experience__choice .experience__perfume {
           background-image: url("../assets/images/main/exp2title.png");
           width: 80%;
@@ -163,16 +181,43 @@ main.main-page {
               font-weight: 200;
               font-size: 30px;
               margin: 0; }
+              @media (max-width: 1400px) {
+                main.main-page .main-page__content .experience .experience__choice .experience__perfume .experience__link--container .experience__link--title {
+                  font-size: 25px; } }
+              @media (max-width: 1300px) {
+                main.main-page .main-page__content .experience .experience__choice .experience__perfume .experience__link--container .experience__link--title {
+                  font-size: 22px; } }
+              @media (max-width: 1200px) {
+                main.main-page .main-page__content .experience .experience__choice .experience__perfume .experience__link--container .experience__link--title {
+                  font-size: 20px;
+                  margin: 0 auto;
+                  max-width: 100px; } }
+              @media (max-width: 1100px) {
+                main.main-page .main-page__content .experience .experience__choice .experience__perfume .experience__link--container .experience__link--title {
+                  font-size: 30px;
+                  margin: 0 auto;
+                  max-width: 200px; } }
             main.main-page .main-page__content .experience .experience__choice .experience__perfume .experience__link--container .experience__link--underline {
               border: 0;
               border-top: 1px solid #8c8b8b;
               width: 90px;
-              margin-top: 20px;
-              margin-bottom: 20px; }
+              margin-top: 10px; }
             main.main-page .main-page__content .experience .experience__choice .experience__perfume .experience__link--container .experience__link--entry {
               font-family: 'Neutra display', sans-serif;
               font-weight: 800;
               font-size: 20px; }
+              @media (max-width: 1400px) {
+                main.main-page .main-page__content .experience .experience__choice .experience__perfume .experience__link--container .experience__link--entry {
+                  font-size: 17px; } }
+              @media (max-width: 1300px) {
+                main.main-page .main-page__content .experience .experience__choice .experience__perfume .experience__link--container .experience__link--entry {
+                  font-size: 15px; } }
+              @media (max-width: 1200px) {
+                main.main-page .main-page__content .experience .experience__choice .experience__perfume .experience__link--container .experience__link--entry {
+                  font-size: 13px; } }
+              @media (max-width: 1100px) {
+                main.main-page .main-page__content .experience .experience__choice .experience__perfume .experience__link--container .experience__link--entry {
+                  font-size: 20px; } }
           main.main-page .main-page__content .experience .experience__choice .experience__perfume:hover {
             transform: scale(1.1); }
         main.main-page .main-page__content .experience .experience__choice .experience__essence {
@@ -201,16 +246,43 @@ main.main-page {
               font-weight: 200;
               font-size: 30px;
               margin: 0; }
+              @media (max-width: 1400px) {
+                main.main-page .main-page__content .experience .experience__choice .experience__essence .experience__link--container .experience__link--title {
+                  font-size: 25px; } }
+              @media (max-width: 1300px) {
+                main.main-page .main-page__content .experience .experience__choice .experience__essence .experience__link--container .experience__link--title {
+                  font-size: 22px; } }
+              @media (max-width: 1200px) {
+                main.main-page .main-page__content .experience .experience__choice .experience__essence .experience__link--container .experience__link--title {
+                  font-size: 20px;
+                  margin: 0 auto;
+                  max-width: 100px; } }
+              @media (max-width: 1100px) {
+                main.main-page .main-page__content .experience .experience__choice .experience__essence .experience__link--container .experience__link--title {
+                  font-size: 30px;
+                  margin: 0 auto;
+                  max-width: 200px; } }
             main.main-page .main-page__content .experience .experience__choice .experience__essence .experience__link--container .experience__link--underline {
               border: 0;
               border-top: 1px solid #8c8b8b;
               width: 90px;
-              margin-top: 20px;
-              margin-bottom: 20px; }
+              margin-top: 10px; }
             main.main-page .main-page__content .experience .experience__choice .experience__essence .experience__link--container .experience__link--entry {
               font-family: 'Neutra display', sans-serif;
               font-weight: 800;
               font-size: 20px; }
+              @media (max-width: 1400px) {
+                main.main-page .main-page__content .experience .experience__choice .experience__essence .experience__link--container .experience__link--entry {
+                  font-size: 17px; } }
+              @media (max-width: 1300px) {
+                main.main-page .main-page__content .experience .experience__choice .experience__essence .experience__link--container .experience__link--entry {
+                  font-size: 15px; } }
+              @media (max-width: 1200px) {
+                main.main-page .main-page__content .experience .experience__choice .experience__essence .experience__link--container .experience__link--entry {
+                  font-size: 13px; } }
+              @media (max-width: 1100px) {
+                main.main-page .main-page__content .experience .experience__choice .experience__essence .experience__link--container .experience__link--entry {
+                  font-size: 20px; } }
           main.main-page .main-page__content .experience .experience__choice .experience__essence:hover {
             transform: scale(1.1); }
 

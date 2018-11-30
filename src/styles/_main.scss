@@ -78,7 +78,7 @@
   }
 }
 
-@mixin main-image {
+@mixin main-image-desktop {
   width: 80%;
   height: 620px;
   background-size: contain;
@@ -106,14 +106,29 @@
         size: 30px;
       }
       margin: 0;
+      @media (max-width: 1400px) {
+        font-size: 25px;
+      }
+      @media (max-width: 1300px) {
+        font-size: 22px;
+      }
+      @media (max-width: 1200px) {
+        font-size: 20px;
+        margin: 0 auto;
+        max-width: 100px;
+      }
+      @media (max-width: 1100px) {
+        font-size: 30px;
+        margin: 0 auto;
+        max-width: 200px;
+      }
     }
 
     .experience__link--underline {
       border: 0;
       border-top: 1px solid #8c8b8b;
       width: 90px;
-      margin-top: 20px;
-      margin-bottom: 20px;
+      margin-top: 10px;
     }
 
     .experience__link--entry {
@@ -121,6 +136,18 @@
         family: 'Neutra display', sans-serif;
         weight: 800;
         size: 20px;
+      }
+      @media (max-width: 1400px) {
+        font-size: 17px;
+      }
+      @media (max-width: 1300px) {
+        font-size: 15px;
+      }
+      @media (max-width: 1200px) {
+        font-size: 13px;
+      }
+      @media (max-width: 1100px) {
+        font-size: 20px;
       }
     }
   }
@@ -131,7 +158,7 @@ main.main-page {
   display: flex;
   top: 0;
   left: 0;
-  height: 100vh;
+  height: 100%;
   width: 100%;
   background: #00451a;
   background: -moz-linear-gradient(-45deg, #00451a 0%, #add444 100%);
@@ -141,6 +168,9 @@ main.main-page {
   background: -ms-linear-gradient(-45deg, #00451a 0%, #add444 100%);
   background: linear-gradient(135deg, #00451a 0%, #add444 100%);
   filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#00451a', endColorstr='#add444', GradientType=1);
+  @media (max-width: 1100px) {
+    position: relative;
+  }
 
   .main-page__content {
     display: flex;
@@ -148,6 +178,10 @@ main.main-page {
     padding: 110px 0 0 81px;
 
     .intro {
+      @media (max-width: 1100px) {
+        width: 100%;
+      }
+
       &__title {
         color: white;
 
@@ -198,6 +232,7 @@ main.main-page {
           -o-animation: fadeInListSummary 1.5s 1 forwards; /* Opera < 12.1 */
           transition: opacity 1500ms ease 0s;
           @include experience-text;
+
         }
 
         &--summary {
@@ -212,20 +247,35 @@ main.main-page {
           @include experience-text;
         }
       }
+
+      .experience__responsive {
+        display: none;
+        @media (max-width: 1100px) {
+          display: flex;
+        }
+      }
     }
+
+    /* Experience desktop Starts here */
 
     .experience {
       width: 100%;
+      @media (max-width: 1100px) {
+        display: none;
+      }
 
       .experience__choice {
         display: flex;
         width: 85%;
         bottom: 50px;
         position: relative;
+        @media (max-width: 1100px) {
+          width: 100%;
+        }
 
         .experience__perfume {
           background-image: url("../assets/images/main/exp2title.png");
-          @include main-image;
+          @include main-image-desktop;
           @include experience-link-title;
           transition: all 0.5s ease 0s;
           animation: openSlideAnimation 1.5s 1 ease-in-out;
@@ -238,7 +288,7 @@ main.main-page {
 
         .experience__essence {
           background-image: url("../assets/images/main/exp1title.png");
-          @include main-image;
+          @include main-image-desktop;
           @include experience-link-title;
           transition: all 0.5s ease 0s;
           animation: openSlideAnimation 2s 1 ease-in-out;

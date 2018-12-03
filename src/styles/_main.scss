@@ -122,6 +122,26 @@
         margin: 0 auto;
         max-width: 200px;
       }
+      @media (max-width: 810px) {
+        font-size: 24px;
+        margin: 0 auto;
+        max-width: 200px;
+      }
+      @media (max-width: 720px) {
+        font-size: 30px;
+        margin: 0 auto;
+        max-width: 200px;
+      }
+      @media (max-width: 520px) {
+        font-size: 25px;
+        margin: 0 auto;
+        max-width: 200px;
+      }
+      @media (max-width: 416px) {
+        font-size: 22px;
+        margin: 0 auto;
+        max-width: 200px;
+      }
     }
 
     .experience__link--underline {
@@ -149,6 +169,18 @@
       @media (max-width: 1100px) {
         font-size: 20px;
       }
+      @media (max-width: 520px) {
+        font-size: 18px;
+      }
+      @media (max-width: 420px) {
+        font-size: 16px;
+      }
+      @media (max-width: 360px) {
+        font-size: 14px;
+      }
+      @media (max-width: 340px) {
+        font-size: 12px;
+      }
     }
   }
 }
@@ -156,6 +188,7 @@
 main.main-page {
   position: fixed;
   display: flex;
+  overflow-x: hidden;
   top: 0;
   left: 0;
   height: 100%;
@@ -176,6 +209,9 @@ main.main-page {
     display: flex;
     width: 100%;
     padding: 110px 0 0 81px;
+    @media (max-width: 1100px) {
+      padding: 0 0 0 50px;
+    }
 
     .intro {
       @media (max-width: 1100px) {
@@ -202,6 +238,18 @@ main.main-page {
             }
             line-height: 71px;
             margin-bottom: 0;
+            @media (max-width: 1100px) {
+              font-size: 5.3em;
+              line-height: 1.1em;
+            }
+            @media (max-width: 520px) {
+              font-size: 40px;
+              line-height: 1.1em;
+            }
+            @media (max-width: 520px) {
+              font-size: 40px;
+              line-height: 1.1em;
+            }
           }
         }
 
@@ -232,7 +280,6 @@ main.main-page {
           -o-animation: fadeInListSummary 1.5s 1 forwards; /* Opera < 12.1 */
           transition: opacity 1500ms ease 0s;
           @include experience-text;
-
         }
 
         &--summary {
@@ -257,7 +304,6 @@ main.main-page {
     }
 
     /* Experience desktop Starts here */
-
     .experience {
       width: 100%;
       @media (max-width: 1100px) {
@@ -272,18 +318,36 @@ main.main-page {
         @media (max-width: 1100px) {
           width: 100%;
         }
+        @media (max-width: 720px) {
+          flex-direction: column;
+          left: 25px;
+        }
+        @media (max-width: 520px) {
+          left: 13px;
+        }
 
         .experience__perfume {
           background-image: url("../assets/images/main/exp2title.png");
           @include main-image-desktop;
           @include experience-link-title;
           transition: all 0.5s ease 0s;
-          animation: openSlideAnimation 1.5s 1 ease-in-out;
           will-change: auto;
 
           &:hover {
             transform: scale(1.1);
           }
+          @media(max-width: 500px) {
+            height: 420px;
+          }
+
+        }
+
+        .experience__perfume--animation {
+          animation: openSlideAnimation 1.5s 1 ease-in-out;
+        }
+
+        .experience__perfume--animation-none {
+          animation: none !important;
         }
 
         .experience__essence {
@@ -291,12 +355,23 @@ main.main-page {
           @include main-image-desktop;
           @include experience-link-title;
           transition: all 0.5s ease 0s;
-          animation: openSlideAnimation 2s 1 ease-in-out;
           will-change: auto;
 
           &:hover {
             transform: scale(1.1);
           }
+
+          @media(max-width: 520px) {
+            height: 420px;
+          }
+        }
+
+        .experience__essence--animation {
+          animation: openSlideAnimation 2s 1 ease-in-out;
+        }
+
+        .experience__essence--animation-none {
+          animation: none !important;
         }
       }
     }

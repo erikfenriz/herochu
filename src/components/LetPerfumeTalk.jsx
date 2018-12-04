@@ -46,7 +46,7 @@ export default class LetPerfumeTalk extends Component {
                     <source src={intro} type="video/mp4"/>
                 </video>
                 <div className="perfume-starting__animation">
-                    <img id="animation" className={this.state.rhombusAnimation} src={image} alt="background"/>
+                    <img className={this.state.rhombusAnimation} src={image} alt="background"/>
                     {this.data}
                     <p className="perfume-starting__text">Dedicated to perfume lovers</p>
                 </div>

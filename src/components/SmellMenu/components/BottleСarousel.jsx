@@ -7,6 +7,8 @@ import passion from '../../../assets/images/experience2/passion/passion_00000.jp
 import rebelious from '../../../assets/images/experience2/rebelious/rebelious_00000.jpg';
 import sexy from '../../../assets/images/experience2/sexy/sexy_00000.jpg';
 import zen from '../../../assets/images/experience2/zen/zen_00000.jpg';
+import "slick-carousel/slick/slick.css"; 
+import "slick-carousel/slick/slick-theme.css";
 const data = [
   {
     name: "natural",

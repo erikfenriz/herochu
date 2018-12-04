@@ -11,8 +11,8 @@ export default class Main extends React.Component {
             animationPerfume: "experience__perfume experience__perfume--animation",
         };
         this.animationEnds = this.animationEnds.bind(this);
-        this.animationDesktop = React.createRef();
-        this.animationResponsive = React.createRef();
+        // this.animationDesktop = React.createRef();
+        // this.animationResponsive = React.createRef();
     }
 
     animationEnds() {
@@ -23,9 +23,9 @@ export default class Main extends React.Component {
     };
 
     componentDidMount() {
-        let animationDesktop = document.getElementById("animation-listener-desktop");
+        const animationDesktop = document.getElementById("animation-listener-desktop");
         animationDesktop.addEventListener("animationend", this.animationEnds);
-        let animationResponsive = document.getElementById("animation-listener-responsive");
+        const animationResponsive = document.getElementById("animation-listener-responsive");
         animationResponsive.addEventListener("animationend", this.animationEnds);
         // this.animationDesktop.addEventListener("animationend", this.animationEnds);
     };

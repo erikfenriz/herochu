@@ -1,0 +1,46 @@
+.perfume-starting {
+  width: 50%;
+  height: 50%;
+  margin: auto;
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  display: flex;
+  justify-content: center;
+
+  &__video {
+    position: fixed;
+    right: 0;
+    bottom: 0;
+    min-width: 100%;
+    min-height: 100%;
+    object-fit: fill;
+  }
+
+  &__animation {
+    cursor: pointer;
+
+    &:hover .perfume-starting__background--hover {
+      -webkit-transform: scale(1);
+      transform: scale(1);
+      -webkit-transition: all 500ms ease-out;
+      transition: all 500ms ease-out;
+    }
+
+    .perfume-starting__background--delay {
+      -webkit-transition-delay: 1s;
+      transition-delay: 1s;
+    }
+
+    .perfume-starting__background {
+      position: absolute;
+      margin: -100px;
+      -webkit-transition: all 500ms ease-out;
+      transition: all 500ms ease-out;
+      -webkit-transform: scale(0.4);
+      transform: scale(0);
+    }
+  }
+}

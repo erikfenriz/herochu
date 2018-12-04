@@ -1,32 +1,4 @@
-@font-face {
-  font-family: 'Neutra display';
-  src: url("fonts/NeutraDisplay-Thin.otf") format("opentype");
-  font-weight: 100;
-}
-
-@font-face {
-  font-family: 'Neutra display';
-  src: url("fonts/NeutraDisplay-Light.otf") format("opentype");
-  font-weight: 200;
-}
-
-@font-face {
-  font-family: 'Neutra display';
-  src: url("fonts/NeutraDisplay-Bold.otf") format("opentype");
-  font-weight: 700;
-}
-
-@font-face {
-  font-family: 'Neutra display';
-  src: url("fonts/NeutraDisplay-Light-Italic.otf") format("opentype");
-  font-weight: 300;
-}
-
-@font-face {
-  font-family: 'Neutra display';
-  src: url("fonts/NeutraText-BookItalic.otf") format("opentype");
-  font-weight: 400;
-}
+@import "fonts";
 
 @keyframes fadeInHeader {
   0% {
@@ -303,7 +275,6 @@ main.main-page {
       }
     }
 
-    /* Experience desktop Starts here */
     .experience {
       width: 100%;
       @media (max-width: 1100px) {

@@ -492,4 +492,12 @@ main.main-page {
       -webkit-transform: scale(0.4);
       transform: scale(0); }
 
+.video {
+  position: fixed;
+  right: 0;
+  bottom: 0;
+  min-width: 100%;
+  min-height: 100%;
+  object-fit: fill; }
+
 /*# sourceMappingURL=style.css.map */

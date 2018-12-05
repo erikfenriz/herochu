@@ -1,5 +1,5 @@
 import React, {Component} from 'react';
-// import {Link} from 'react-router-dom';
+import {Link} from 'react-router-dom';
 import Lottie from "react-lottie";
 import animationIntro from '../assets/animation/perfumeIntro/data';
 import intro from '../assets/videos/experience2/lptalk_intro.mp4';
@@ -25,7 +25,9 @@ export default class LetPerfumeTalk extends Component {
                             options={this.animationIntro}
                             height={500}
                             width={500}
+                            isClickToPauseDisabled={true}
         />;
+        console.log(this.data);
     }
 
     animationEnds() {

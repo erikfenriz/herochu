@@ -20,7 +20,7 @@ const Router = () => (
             <Route exact path="/LetPerfumeTalk" component={LetPerfumeTalk}/>
             <Route path="/LetPerfumeTalk/Alive" component={Alive}/>
             <Route path="/LetPerfumeTalk/Happy" component={Happy}/>
-            <Route path="/LetPerfumeTalk/Love" component={Love}/>
+            <Route path="/LetPerfumeTalk/In_love" component={Love}/>
             <Route path="/LetPerfumeTalk/Natural" component={Natural}/>
             <Route path="/LetPerfumeTalk/Rebellious" component={Rebellious}/>
             <Route path="/LetPerfumeTalk/Sexy" component={Sexy}/>

@@ -1,12 +1,25 @@
 import React, {Component} from 'react';
-import zen from '../../assets/videos/experience2/zen.mp4';
+import rebelliousMP4 from '../../assets/videos/experience2/mp4/rebellious.mp4';
+import rebelliousWebM from "../../assets/videos/experience2/webm/rebelious.webm";
 
-export default class Zen extends Component {
+export default class Rebellious extends Component {
+    setTitle = () => {
+        document.title = "Feeling rebellious today? Let Perfume Talk by MANE";
+    };
+
+    componentDidMount() {
+        this.setTitle();
+    }
     render() {
         return (
             <main>
-                <video className="video" autoPlay muted loop>
-                    <source src={zen} type="video/mp4"/>
+                <video className="video"
+                       autoPlay={true}
+                       loop={true}
+                       muted={false}
+                >
+                    <source src={rebelliousMP4} type='video/mp4; codecs="avc1.4D401E, mp4a.40.2"'/>
+                    <source src={rebelliousWebM} type="video/webm"/>
                 </video>
             </main>
         )

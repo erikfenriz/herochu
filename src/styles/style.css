@@ -456,6 +456,33 @@ main.main-page {
     font-size: 14pt;
     padding-left: 40%; }
 
+@font-face {
+  font-family: 'Neutra display';
+  src: url("fonts/NeutraDisplay-Thin.otf") format("opentype");
+  font-weight: 100; }
+@font-face {
+  font-family: 'Neutra display';
+  src: url("fonts/NeutraDisplay-Light.otf") format("opentype");
+  font-weight: 200; }
+@font-face {
+  font-family: 'Neutra display';
+  src: url("fonts/NeutraDisplay-Bold.otf") format("opentype");
+  font-weight: 700; }
+@font-face {
+  font-family: 'Neutra display';
+  src: url("fonts/NeutraDisplay-Light-Italic.otf") format("opentype");
+  font-weight: 300; }
+@font-face {
+  font-family: 'Neutra display';
+  src: url("fonts/NeutraText-BookItalic.otf") format("opentype");
+  font-weight: 400; }
+@keyframes fadeIn {
+  0% {
+    opacity: 0; }
+  40% {
+    opacity: 0; }
+  100% {
+    opacity: 1; } }
 .perfume-starting {
   width: 50%;
   height: 50%;
@@ -475,12 +502,15 @@ main.main-page {
     min-height: 100%;
     object-fit: fill; }
   .perfume-starting__animation {
-    cursor: pointer; }
+    cursor: pointer;
+    text-decoration: none; }
     .perfume-starting__animation:hover .perfume-starting__background--hover {
       -webkit-transform: scale(1);
       transform: scale(1);
       -webkit-transition: all 500ms ease-out;
       transition: all 500ms ease-out; }
+    .perfume-starting__animation:hover .perfume-starting__text.perfume-starting__text--transform {
+      transform: translateY(70px); }
     .perfume-starting__animation .perfume-starting__background--delay {
       -webkit-transition-delay: 1s;
       transition-delay: 1s; }
@@ -491,6 +521,14 @@ main.main-page {
       transition: all 500ms ease-out;
       -webkit-transform: scale(0.4);
       transform: scale(0); }
+    .perfume-starting__animation .perfume-starting__text {
+      font-family: 'Neutra display', sans-serif;
+      font-size: 1.8em;
+      animation: fadeIn 2000ms;
+      position: relative;
+      color: white;
+      text-align: center;
+      transition: transform 500ms; }
 
 .video {
   position: fixed;

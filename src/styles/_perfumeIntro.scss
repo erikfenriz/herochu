@@ -1,3 +1,17 @@
+@import "fonts";
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  40% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
 .perfume-starting {
   width: 50%;
   height: 50%;
@@ -21,12 +35,19 @@
 
   &__animation {
     cursor: pointer;
+    text-decoration: none;
 
-    &:hover .perfume-starting__background--hover {
-      -webkit-transform: scale(1);
-      transform: scale(1);
-      -webkit-transition: all 500ms ease-out;
-      transition: all 500ms ease-out;
+    &:hover {
+      .perfume-starting__background--hover {
+        -webkit-transform: scale(1);
+        transform: scale(1);
+        -webkit-transition: all 500ms ease-out;
+        transition: all 500ms ease-out;
+      }
+
+      .perfume-starting__text.perfume-starting__text--transform {
+        transform: translateY(70px);
+      }
     }
 
     .perfume-starting__background--delay {
@@ -41,6 +62,18 @@
       transition: all 500ms ease-out;
       -webkit-transform: scale(0.4);
       transform: scale(0);
+    }
+
+    .perfume-starting__text {
+      font: {
+        family: 'Neutra display', sans-serif;
+        size: 1.8em;
+      }
+      animation: fadeIn 2000ms;
+      position: relative;
+      color: white;
+      text-align: center;
+      transition: transform 500ms;
     }
   }
 }

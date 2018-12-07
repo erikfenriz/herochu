@@ -48,7 +48,7 @@ export default class LetPerfumeTalk extends Component {
                 <video autoPlay muted loop className="perfume-starting__video">
                     <source src={intro} type="video/mp4"/>
                 </video>
-                <Link to="/LetPerfumeTalk/Alive" className="perfume-starting__animation">
+                <Link to="/LetPerfumeTalk/Happy" className="perfume-starting__animation">
                     <img className={this.state.rhombusAnimation} src={image} alt="background"/>
                     {this.data}
                     <p className={this.state.textAnimation}>Dedicated to perfume lovers</p>

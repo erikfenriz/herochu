@@ -4,31 +4,38 @@ import aliveWebM from '../../assets/videos/experience2/webm/alive.webm';
 import $ from 'jquery';
 
 export default class Alive extends Component {
-    video = React.createRef();
     setTitle = () => {
         document.title = "Feeling alive today? Let Perfume Talk by MANE";
     };
 
-    playVideo = () => {
-        this.video.current.play();
-        $('.video').get(0).play();
+    constructor(props) {
+        super(props);
+        this.state = { x: 0, y: 0 };
+        this.video = React.createRef();
+    };
+
+    onMouseMove(e) {
+        this.setState({ x: e.screenX, y: e.screenY });
     };
 
     videoStarts = () => {
-        console.log(this.video.current.muted);
         this.video.current.muted = false;
     };
 
     componentDidMount() {
         this.setTitle();
-        this.playVideo();
+        // this.playVideo();
         setTimeout(this.videoStarts,300);
-    }
+    };
+
+    clicked = () =>{
+        this.video.current.play();
+    };
 
     render() {
         return (
-            <main>
-                <video className="video"
+            <main onClick={this.clicked} className="letPerfumeTalk" onMouseMove={this.onMouseMove.bind(this)}>
+                <video className="letPerfumeTalk__video"
                        autoPlay={true}
                        loop={true}
                        muted={true}
@@ -37,6 +44,7 @@ export default class Alive extends Component {
                     <source src={aliveMP4} type='video/mp4; codecs="avc1.4D401E, mp4a.40.2"'/>
                     <source src={aliveWebM} type="video/webm"/>
                 </video>
+                <div className="test">Mouse coordinates: { this.state.x } { this.state.y }</div>
             </main>
         )
     }

@@ -530,12 +530,40 @@ main.main-page {
       text-align: center;
       transition: transform 500ms; }
 
-.video {
+@font-face {
+  font-family: 'Neutra display';
+  src: url("fonts/NeutraDisplay-Thin.otf") format("opentype");
+  font-weight: 100; }
+@font-face {
+  font-family: 'Neutra display';
+  src: url("fonts/NeutraDisplay-Light.otf") format("opentype");
+  font-weight: 200; }
+@font-face {
+  font-family: 'Neutra display';
+  src: url("fonts/NeutraDisplay-Bold.otf") format("opentype");
+  font-weight: 700; }
+@font-face {
+  font-family: 'Neutra display';
+  src: url("fonts/NeutraDisplay-Light-Italic.otf") format("opentype");
+  font-weight: 300; }
+@font-face {
+  font-family: 'Neutra display';
+  src: url("fonts/NeutraText-BookItalic.otf") format("opentype");
+  font-weight: 400; }
+.letPerfumeTalk .letPerfumeTalk__video {
+  cursor: url(../assets/images/experience2/cursor/cursor-feather.png), url(../assets/images/experience2/cursor/cursor-feather.cur), default;
   position: fixed;
   right: 0;
   bottom: 0;
   min-width: 100%;
   min-height: 100%;
   object-fit: fill; }
+.letPerfumeTalk .test {
+  position: absolute;
+  color: white;
+  transition: all 400ms;
+  font-family: "Neutra text", sans-serif;
+  font-weight: 300;
+  font-size: 13px; }
 
 /*# sourceMappingURL=style.css.map */

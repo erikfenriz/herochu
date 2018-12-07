@@ -1,9 +1,24 @@
-.video {
-  //cursor: url()
-  position: fixed;
-  right: 0;
-  bottom: 0;
-  min-width: 100%;
-  min-height: 100%;
-  object-fit: fill;
+@import "fonts";
+.letPerfumeTalk {
+  .letPerfumeTalk__video {
+    cursor: url(../assets/images/experience2/cursor/cursor-feather.png),
+    url(../assets/images/experience2/cursor/cursor-feather.cur), default;
+    position: fixed;
+    right: 0;
+    bottom: 0;
+    min-width: 100%;
+    min-height: 100%;
+    object-fit: fill;
+  }
+
+  .test {
+    position: absolute;
+    color: white;
+    transition: all 400ms;
+    font: {
+      family: "Neutra text", sans-serif;
+      weight: 300;
+      size: 13px;
+    }
+  }
 }

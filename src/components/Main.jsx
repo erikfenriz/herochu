@@ -11,8 +11,8 @@ export default class Main extends React.Component {
             animationPerfume: "experience__perfume experience__perfume--animation",
         };
         this.animationEnds = this.animationEnds.bind(this);
-        this.animationDesktop = React.createRef();
-        this.animationResponsive = React.createRef();
+        // this.animationDesktop = React.createRef();
+        // this.animationResponsive = React.createRef();
     }
 
     animationEnds() {
@@ -23,9 +23,9 @@ export default class Main extends React.Component {
     };
 
     componentDidMount() {
-        let animationDesktop = document.getElementById("animation-listener-desktop");
+        const animationDesktop = document.getElementById("animation-listener-desktop");
         animationDesktop.addEventListener("animationend", this.animationEnds);
-        let animationResponsive = document.getElementById("animation-listener-responsive");
+        const animationResponsive = document.getElementById("animation-listener-responsive");
         animationResponsive.addEventListener("animationend", this.animationEnds);
         // this.animationDesktop.addEventListener("animationend", this.animationEnds);
     };
@@ -61,8 +61,7 @@ export default class Main extends React.Component {
                             </Link>
                             <Link to="#"
                                   id="animation-listener-responsive"
-                                  className={this.state.animationEssence}
-                                  ref={this.animationDesktop}>
+                                  className={this.state.animationEssence}>
                                 <div className="experience__link--container">
                                     <h3 className="experience__link--title">Let perfume talk</h3>
                                     <hr className="experience__link--underline"/>
@@ -83,8 +82,7 @@ export default class Main extends React.Component {
                             </div>
                         </Link>
                         <Link to="#" id="animation-listener-desktop"
-                              className={this.state.animationEssence}
-                              ref={this.animationResponsive}>
+                              className={this.state.animationEssence}>
                             <div className="experience__link--container">
                                 <h3 className="experience__link--title">Let perfume talk</h3>
                                 <hr className="experience__link--underline"/>

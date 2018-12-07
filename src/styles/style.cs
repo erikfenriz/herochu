@@ -1,0 +1,779 @@
+@font-face {
+  font-family: "Neutra display";
+  src: url("fonts/NeutraDisplay-Thin.otf") format("opentype");
+  font-weight: 100;
+}
+@font-face {
+  font-family: "Neutra display";
+  src: url("fonts/NeutraDisplay-Light.otf") format("opentype");
+  font-weight: 200;
+}
+@font-face {
+  font-family: "Neutra display";
+  src: url("fonts/NeutraDisplay-Bold.otf") format("opentype");
+  font-weight: 700;
+}
+@font-face {
+  font-family: "Neutra display";
+  src: url("fonts/NeutraDisplay-Light-Italic.otf") format("opentype");
+  font-weight: 300;
+}
+@font-face {
+  font-family: "Neutra display";
+  src: url("fonts/NeutraText-BookItalic.otf") format("opentype");
+  font-weight: 400;
+}
+@keyframes fadeInHeader {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+@keyframes fadeInSecondary {
+  0% {
+    opacity: 0;
+  }
+  30% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+@keyframes fadeInListSummary {
+  0% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+@keyframes openSlideAnimation {
+  0% {
+    transform: translateX(2500px);
+  }
+  100% {
+    transform: translateX(0px);
+  }
+}
+main.main-page {
+  position: fixed;
+  display: flex;
+  overflow-x: hidden;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background: #00451a;
+  background: -moz-linear-gradient(-45deg, #00451a 0%, #add444 100%);
+  background: -webkit-gradient(linear, left top, right bottom, color-stop(0%, #00451a), color-stop(100%, #add444));
+  background: -webkit-linear-gradient(-45deg, #00451a 0%, #add444 100%);
+  background: -o-linear-gradient(-45deg, #00451a 0%, #add444 100%);
+  background: -ms-linear-gradient(-45deg, #00451a 0%, #add444 100%);
+  background: linear-gradient(135deg, #00451a 0%, #add444 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#00451a", endColorstr="#add444", GradientType=1);
+}
+@media (max-width: 1100px) {
+  main.main-page {
+    position: relative;
+  }
+}
+main.main-page .main-page__content {
+  display: flex;
+  width: 100%;
+  padding: 110px 0 0 81px;
+}
+@media (max-width: 1100px) {
+  main.main-page .main-page__content {
+    padding: 0 0 0 50px;
+  }
+}
+@media (max-width: 1100px) {
+  main.main-page .main-page__content .intro {
+    width: 100%;
+  }
+}
+main.main-page .main-page__content .intro__title {
+  color: white;
+}
+main.main-page .main-page__content .intro__title--container-headline {
+  animation: fadeInHeader 1.5s 1 forwards;
+  -webkit-animation: fadeInHeader 1.5s 1 forwards;
+  /* Safari, Chrome and Opera > 12.1 */
+  -moz-animation: fadeInHeader 1.5s 1 forwards;
+  /* Firefox < 16 */
+  -ms-animation: fadeInHeader 1.5s 1 forwards;
+  /* Internet Explorer */
+  -o-animation: fadeInHeader 1.5s 1 forwards;
+  /* Opera < 12.1 */
+  transition: opacity 1500ms ease 0s;
+  max-width: 369px;
+}
+main.main-page .main-page__content .intro__title--container-headline .intro__title--headline {
+  font-family: "Neutra display", sans-serif;
+  font-weight: 100;
+  font-size: 66px;
+  line-height: 71px;
+  margin-bottom: 0;
+}
+@media (max-width: 1100px) {
+  main.main-page .main-page__content .intro__title--container-headline .intro__title--headline {
+    font-size: 5.3em;
+    line-height: 1.1em;
+  }
+}
+@media (max-width: 520px) {
+  main.main-page .main-page__content .intro__title--container-headline .intro__title--headline {
+    font-size: 40px;
+    line-height: 1.1em;
+  }
+}
+@media (max-width: 520px) {
+  main.main-page .main-page__content .intro__title--container-headline .intro__title--headline {
+    font-size: 40px;
+    line-height: 1.1em;
+  }
+}
+main.main-page .main-page__content .intro__title--secondary {
+  font-family: "Neutra display", sans-serif;
+  font-weight: 400;
+  font-style: italic;
+  font-size: 31px;
+  animation: fadeInSecondary 1.5s 1 forwards;
+  -webkit-animation: fadeInSecondary 1.5s 1 forwards;
+  /* Safari, Chrome and Opera > 12.1 */
+  -moz-animation: fadeInSecondary 1.5s 1 forwards;
+  /* Firefox < 16 */
+  -ms-animation: fadeInSecondary 1.5s 1 forwards;
+  /* Internet Explorer */
+  -o-animation: fadeInSecondary 1.5s 1 forwards;
+  /* Opera < 12.1 */
+  transition: opacity 1500ms ease 0s;
+  margin-top: 20px;
+}
+main.main-page .main-page__content .intro__title--list {
+  list-style: none;
+  padding-left: 0;
+  line-height: 20px;
+  animation: fadeInListSummary 1.5s 1 forwards;
+  -webkit-animation: fadeInListSummary 1.5s 1 forwards;
+  /* Safari, Chrome and Opera > 12.1 */
+  -moz-animation: fadeInListSummary 1.5s 1 forwards;
+  /* Firefox < 16 */
+  -ms-animation: fadeInListSummary 1.5s 1 forwards;
+  /* Internet Explorer */
+  -o-animation: fadeInListSummary 1.5s 1 forwards;
+  /* Opera < 12.1 */
+  transition: opacity 1500ms ease 0s;
+  font-family: "Neutra display", sans-serif;
+  font-weight: 200;
+  font-size: 22px;
+}
+main.main-page .main-page__content .intro__title--summary {
+  line-height: 20px;
+  max-width: 716px;
+  animation: fadeInListSummary 1.5s 1 forwards;
+  -webkit-animation: fadeInListSummary 1.5s 1 forwards;
+  /* Safari, Chrome and Opera > 12.1 */
+  -moz-animation: fadeInListSummary 1.5s 1 forwards;
+  /* Firefox < 16 */
+  -ms-animation: fadeInListSummary 1.5s 1 forwards;
+  /* Internet Explorer */
+  -o-animation: fadeInListSummary 1.5s 1 forwards;
+  /* Opera < 12.1 */
+  transition: opacity 1500ms ease 0s;
+  font-family: "Neutra display", sans-serif;
+  font-weight: 200;
+  font-size: 22px;
+}
+main.main-page .main-page__content .intro .experience__responsive {
+  display: none;
+}
+@media (max-width: 1100px) {
+  main.main-page .main-page__content .intro .experience__responsive {
+    display: flex;
+  }
+}
+main.main-page .main-page__content .experience {
+  width: 100%;
+}
+@media (max-width: 1100px) {
+  main.main-page .main-page__content .experience {
+    display: none;
+  }
+}
+main.main-page .main-page__content .experience .experience__choice {
+  display: flex;
+  width: 85%;
+  bottom: 50px;
+  position: relative;
+}
+@media (max-width: 1100px) {
+  main.main-page .main-page__content .experience .experience__choice {
+    width: 100%;
+  }
+}
+@media (max-width: 720px) {
+  main.main-page .main-page__content .experience .experience__choice {
+    flex-direction: column;
+    left: 25px;
+  }
+}
+@media (max-width: 520px) {
+  main.main-page .main-page__content .experience .experience__choice {
+    left: 13px;
+  }
+}
+main.main-page .main-page__content .experience .experience__choice .experience__perfume {
+  background-image: url("../assets/images/main/exp2title.png");
+  width: 80%;
+  height: 620px;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  margin-right: 5%;
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.5s ease 0s;
+  will-change: auto;
+}
+main.main-page .main-page__content .experience .experience__choice .experience__perfume .experience__link--container {
+  width: 130px;
+  text-align: center;
+  color: black;
+  text-transform: uppercase;
+  margin-top: 30px;
+}
+main.main-page .main-page__content .experience .experience__choice .experience__perfume .experience__link--container .experience__link--title {
+  font-family: "Neutra display", sans-serif;
+  font-weight: 200;
+  font-size: 30px;
+  margin: 0;
+}
+@media (max-width: 1400px) {
+  main.main-page .main-page__content .experience .experience__choice .experience__perfume .experience__link--container .experience__link--title {
+    font-size: 25px;
+  }
+}
+@media (max-width: 1300px) {
+  main.main-page .main-page__content .experience .experience__choice .experience__perfume .experience__link--container .experience__link--title {
+    font-size: 22px;
+  }
+}
+@media (max-width: 1200px) {
+  main.main-page .main-page__content .experience .experience__choice .experience__perfume .experience__link--container .experience__link--title {
+    font-size: 20px;
+    margin: 0 auto;
+    max-width: 100px;
+  }
+}
+@media (max-width: 1100px) {
+  main.main-page .main-page__content .experience .experience__choice .experience__perfume .experience__link--container .experience__link--title {
+    font-size: 30px;
+    margin: 0 auto;
+    max-width: 200px;
+  }
+}
+@media (max-width: 810px) {
+  main.main-page .main-page__content .experience .experience__choice .experience__perfume .experience__link--container .experience__link--title {
+    font-size: 24px;
+    margin: 0 auto;
+    max-width: 200px;
+  }
+}
+@media (max-width: 720px) {
+  main.main-page .main-page__content .experience .experience__choice .experience__perfume .experience__link--container .experience__link--title {
+    font-size: 30px;
+    margin: 0 auto;
+    max-width: 200px;
+  }
+}
+@media (max-width: 520px) {
+  main.main-page .main-page__content .experience .experience__choice .experience__perfume .experience__link--container .experience__link--title {
+    font-size: 25px;
+    margin: 0 auto;
+    max-width: 200px;
+  }
+}
+@media (max-width: 416px) {
+  main.main-page .main-page__content .experience .experience__choice .experience__perfume .experience__link--container .experience__link--title {
+    font-size: 22px;
+    margin: 0 auto;
+    max-width: 200px;
+  }
+}
+main.main-page .main-page__content .experience .experience__choice .experience__perfume .experience__link--container .experience__link--underline {
+  border: 0;
+  border-top: 1px solid #8c8b8b;
+  width: 90px;
+  margin-top: 10px;
+}
+main.main-page .main-page__content .experience .experience__choice .experience__perfume .experience__link--container .experience__link--entry {
+  font-family: "Neutra display", sans-serif;
+  font-weight: 800;
+  font-size: 20px;
+}
+@media (max-width: 1400px) {
+  main.main-page .main-page__content .experience .experience__choice .experience__perfume .experience__link--container .experience__link--entry {
+    font-size: 17px;
+  }
+}
+@media (max-width: 1300px) {
+  main.main-page .main-page__content .experience .experience__choice .experience__perfume .experience__link--container .experience__link--entry {
+    font-size: 15px;
+  }
+}
+@media (max-width: 1200px) {
+  main.main-page .main-page__content .experience .experience__choice .experience__perfume .experience__link--container .experience__link--entry {
+    font-size: 13px;
+  }
+}
+@media (max-width: 1100px) {
+  main.main-page .main-page__content .experience .experience__choice .experience__perfume .experience__link--container .experience__link--entry {
+    font-size: 20px;
+  }
+}
+@media (max-width: 520px) {
+  main.main-page .main-page__content .experience .experience__choice .experience__perfume .experience__link--container .experience__link--entry {
+    font-size: 18px;
+  }
+}
+@media (max-width: 420px) {
+  main.main-page .main-page__content .experience .experience__choice .experience__perfume .experience__link--container .experience__link--entry {
+    font-size: 16px;
+  }
+}
+@media (max-width: 360px) {
+  main.main-page .main-page__content .experience .experience__choice .experience__perfume .experience__link--container .experience__link--entry {
+    font-size: 14px;
+  }
+}
+@media (max-width: 340px) {
+  main.main-page .main-page__content .experience .experience__choice .experience__perfume .experience__link--container .experience__link--entry {
+    font-size: 12px;
+  }
+}
+main.main-page .main-page__content .experience .experience__choice .experience__perfume:hover {
+  transform: scale(1.1);
+}
+@media (max-width: 500px) {
+  main.main-page .main-page__content .experience .experience__choice .experience__perfume {
+    height: 420px;
+  }
+}
+main.main-page .main-page__content .experience .experience__choice .experience__perfume--animation {
+  animation: openSlideAnimation 1.5s 1 ease-in-out;
+}
+main.main-page .main-page__content .experience .experience__choice .experience__perfume--animation-none {
+  animation: none !important;
+}
+main.main-page .main-page__content .experience .experience__choice .experience__essence {
+  background-image: url("../assets/images/main/exp1title.png");
+  width: 80%;
+  height: 620px;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  margin-right: 5%;
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.5s ease 0s;
+  will-change: auto;
+}
+main.main-page .main-page__content .experience .experience__choice .experience__essence .experience__link--container {
+  width: 130px;
+  text-align: center;
+  color: black;
+  text-transform: uppercase;
+  margin-top: 30px;
+}
+main.main-page .main-page__content .experience .experience__choice .experience__essence .experience__link--container .experience__link--title {
+  font-family: "Neutra display", sans-serif;
+  font-weight: 200;
+  font-size: 30px;
+  margin: 0;
+}
+@media (max-width: 1400px) {
+  main.main-page .main-page__content .experience .experience__choice .experience__essence .experience__link--container .experience__link--title {
+    font-size: 25px;
+  }
+}
+@media (max-width: 1300px) {
+  main.main-page .main-page__content .experience .experience__choice .experience__essence .experience__link--container .experience__link--title {
+    font-size: 22px;
+  }
+}
+@media (max-width: 1200px) {
+  main.main-page .main-page__content .experience .experience__choice .experience__essence .experience__link--container .experience__link--title {
+    font-size: 20px;
+    margin: 0 auto;
+    max-width: 100px;
+  }
+}
+@media (max-width: 1100px) {
+  main.main-page .main-page__content .experience .experience__choice .experience__essence .experience__link--container .experience__link--title {
+    font-size: 30px;
+    margin: 0 auto;
+    max-width: 200px;
+  }
+}
+@media (max-width: 810px) {
+  main.main-page .main-page__content .experience .experience__choice .experience__essence .experience__link--container .experience__link--title {
+    font-size: 24px;
+    margin: 0 auto;
+    max-width: 200px;
+  }
+}
+@media (max-width: 720px) {
+  main.main-page .main-page__content .experience .experience__choice .experience__essence .experience__link--container .experience__link--title {
+    font-size: 30px;
+    margin: 0 auto;
+    max-width: 200px;
+  }
+}
+@media (max-width: 520px) {
+  main.main-page .main-page__content .experience .experience__choice .experience__essence .experience__link--container .experience__link--title {
+    font-size: 25px;
+    margin: 0 auto;
+    max-width: 200px;
+  }
+}
+@media (max-width: 416px) {
+  main.main-page .main-page__content .experience .experience__choice .experience__essence .experience__link--container .experience__link--title {
+    font-size: 22px;
+    margin: 0 auto;
+    max-width: 200px;
+  }
+}
+main.main-page .main-page__content .experience .experience__choice .experience__essence .experience__link--container .experience__link--underline {
+  border: 0;
+  border-top: 1px solid #8c8b8b;
+  width: 90px;
+  margin-top: 10px;
+}
+main.main-page .main-page__content .experience .experience__choice .experience__essence .experience__link--container .experience__link--entry {
+  font-family: "Neutra display", sans-serif;
+  font-weight: 800;
+  font-size: 20px;
+}
+@media (max-width: 1400px) {
+  main.main-page .main-page__content .experience .experience__choice .experience__essence .experience__link--container .experience__link--entry {
+    font-size: 17px;
+  }
+}
+@media (max-width: 1300px) {
+  main.main-page .main-page__content .experience .experience__choice .experience__essence .experience__link--container .experience__link--entry {
+    font-size: 15px;
+  }
+}
+@media (max-width: 1200px) {
+  main.main-page .main-page__content .experience .experience__choice .experience__essence .experience__link--container .experience__link--entry {
+    font-size: 13px;
+  }
+}
+@media (max-width: 1100px) {
+  main.main-page .main-page__content .experience .experience__choice .experience__essence .experience__link--container .experience__link--entry {
+    font-size: 20px;
+  }
+}
+@media (max-width: 520px) {
+  main.main-page .main-page__content .experience .experience__choice .experience__essence .experience__link--container .experience__link--entry {
+    font-size: 18px;
+  }
+}
+@media (max-width: 420px) {
+  main.main-page .main-page__content .experience .experience__choice .experience__essence .experience__link--container .experience__link--entry {
+    font-size: 16px;
+  }
+}
+@media (max-width: 360px) {
+  main.main-page .main-page__content .experience .experience__choice .experience__essence .experience__link--container .experience__link--entry {
+    font-size: 14px;
+  }
+}
+@media (max-width: 340px) {
+  main.main-page .main-page__content .experience .experience__choice .experience__essence .experience__link--container .experience__link--entry {
+    font-size: 12px;
+  }
+}
+main.main-page .main-page__content .experience .experience__choice .experience__essence:hover {
+  transform: scale(1.1);
+}
+@media (max-width: 520px) {
+  main.main-page .main-page__content .experience .experience__choice .experience__essence {
+    height: 420px;
+  }
+}
+main.main-page .main-page__content .experience .experience__choice .experience__essence--animation {
+  animation: openSlideAnimation 2s 1 ease-in-out;
+}
+main.main-page .main-page__content .experience .experience__choice .experience__essence--animation-none {
+  animation: none !important;
+}
+
+@font-face {
+  font-family: "Neutra display";
+  src: url("fonts/NeutraDisplay-Thin.otf") format("opentype");
+  font-weight: 100;
+}
+@font-face {
+  font-family: "Neutra display";
+  src: url("fonts/NeutraDisplay-Light.otf") format("opentype");
+  font-weight: 200;
+}
+@font-face {
+  font-family: "Neutra display";
+  src: url("fonts/NeutraDisplay-Bold.otf") format("opentype");
+  font-weight: 700;
+}
+@font-face {
+  font-family: "Neutra display";
+  src: url("fonts/NeutraDisplay-Light-Italic.otf") format("opentype");
+  font-weight: 300;
+}
+@font-face {
+  font-family: "Neutra display";
+  src: url("fonts/NeutraText-BookItalic.otf") format("opentype");
+  font-weight: 400;
+}
+.smellMenu-page {
+  top: 0;
+  left: 0;
+}
+.smellMenu-page .smellMenu__title {
+  font-weight: normal;
+  font-family: "Neutra display", sans-serif;
+  font-style: italic;
+  font-size: 30pt;
+  padding-left: 40%;
+  line-height: 71px;
+  margin-bottom: 2%;
+  margin-top: 5%;
+}
+.smellMenu-page .smellMenu__carousel {
+  margin: 50px 50px 10px 0px;
+}
+.smellMenu-page .smellMenu__footer {
+  position: fixed;
+  left: 0;
+  bottom: 0;
+}
+.smellMenu-page .smellMenu__footer .smellMenu__footer__text {
+  text-transform: uppercase;
+  font-weight: 200;
+  font-family: "Neutra display", sans-serif;
+  font-size: 30pt;
+  padding-left: 3%;
+}
+.smellMenu-page .smellMenu__footer .smellMenu__footer__mane {
+  font-weight: 200;
+  font-family: "Neutra display", sans-serif;
+  font-size: 12pt;
+  padding-left: 3%;
+}
+.smellMenu-page .smellMenu__footer .smellMenu__footer__left {
+  position: fixed;
+  left: 0;
+  bottom: 0;
+}
+.smellMenu-page .smellMenu__footer .smellMenu__footer__right {
+  position: fixed;
+  width: 300px;
+  right: 0;
+  bottom: 1%;
+}
+.smellMenu-page .smellMenu__footer .smellMenu__footer__right_item {
+  font-weight: 200;
+  font-family: "Neutra display", sans-serif;
+  font-size: 12pt;
+  padding-right: 5%;
+}
+.smellMenu-page .smellMenu__svg {
+  padding-left: 35%;
+  padding-top: 5%;
+}
+.smellMenu-page .smellMenu__text__perfume {
+  font-weight: bold;
+  font-family: "Neutra display", sans-serif;
+  font-size: 14pt;
+  padding-left: 40%;
+}
+.smellMenu-page .smellMenu__text__name {
+  text-transform: uppercase;
+  font-weight: 200;
+  font-family: "Neutra display", sans-serif;
+  font-size: 70pt;
+  padding-top: 2%;
+}
+.smellMenu-page .bottle_item:hover .play_circle {
+  -moz-transform: scale(4);
+  -ms-transform: scale(4);
+  -webkit-transform: scale(4);
+  -o-transform: scale(4);
+  transform: scale(4);
+}
+.smellMenu-page .play_circle {
+  transition: 0.3s;
+  position: absolute;
+  border-radius: 50%;
+  width: 30px;
+  height: 30px;
+  margin-left: 150px;
+  margin-top: 300px;
+}
+.smellMenu-page .play_circle_text {
+  transition: 5s;
+  text-transform: uppercase;
+  font-weight: bold;
+  font-family: "Neutra display", sans-serif;
+  font-size: 5pt;
+  color: #ffffff;
+  position: absolute;
+  top: 19%;
+  left: 25%;
+}
+
+@font-face {
+  font-family: "Neutra display";
+  src: url("fonts/NeutraDisplay-Thin.otf") format("opentype");
+  font-weight: 100;
+}
+@font-face {
+  font-family: "Neutra display";
+  src: url("fonts/NeutraDisplay-Light.otf") format("opentype");
+  font-weight: 200;
+}
+@font-face {
+  font-family: "Neutra display";
+  src: url("fonts/NeutraDisplay-Bold.otf") format("opentype");
+  font-weight: 700;
+}
+@font-face {
+  font-family: "Neutra display";
+  src: url("fonts/NeutraDisplay-Light-Italic.otf") format("opentype");
+  font-weight: 300;
+}
+@font-face {
+  font-family: "Neutra display";
+  src: url("fonts/NeutraText-BookItalic.otf") format("opentype");
+  font-weight: 400;
+}
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  40% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+.perfume-starting {
+  width: 50%;
+  height: 50%;
+  margin: auto;
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  display: flex;
+  justify-content: center;
+}
+.perfume-starting__video {
+  position: fixed;
+  right: 0;
+  bottom: 0;
+  min-width: 100%;
+  min-height: 100%;
+  object-fit: fill;
+}
+.perfume-starting__animation {
+  cursor: pointer;
+  text-decoration: none;
+}
+.perfume-starting__animation:hover .perfume-starting__background--hover {
+  -webkit-transform: scale(1);
+  transform: scale(1);
+  -webkit-transition: all 500ms ease-out;
+  transition: all 500ms ease-out;
+}
+.perfume-starting__animation:hover .perfume-starting__text.perfume-starting__text--transform {
+  transform: translateY(70px);
+}
+.perfume-starting__animation .perfume-starting__background--delay {
+  -webkit-transition-delay: 1s;
+  transition-delay: 1s;
+}
+.perfume-starting__animation .perfume-starting__background {
+  position: absolute;
+  margin: -100px;
+  -webkit-transition: all 500ms ease-out;
+  transition: all 500ms ease-out;
+  -webkit-transform: scale(0.4);
+  transform: scale(0);
+}
+.perfume-starting__animation .perfume-starting__text {
+  font-family: "Neutra display", sans-serif;
+  font-size: 1.8em;
+  animation: fadeIn 2000ms;
+  position: relative;
+  color: white;
+  text-align: center;
+  transition: transform 500ms;
+}
+
+@font-face {
+  font-family: "Neutra display";
+  src: url("fonts/NeutraDisplay-Thin.otf") format("opentype");
+  font-weight: 100;
+}
+@font-face {
+  font-family: "Neutra display";
+  src: url("fonts/NeutraDisplay-Light.otf") format("opentype");
+  font-weight: 200;
+}
+@font-face {
+  font-family: "Neutra display";
+  src: url("fonts/NeutraDisplay-Bold.otf") format("opentype");
+  font-weight: 700;
+}
+@font-face {
+  font-family: "Neutra display";
+  src: url("fonts/NeutraDisplay-Light-Italic.otf") format("opentype");
+  font-weight: 300;
+}
+@font-face {
+  font-family: "Neutra display";
+  src: url("fonts/NeutraText-BookItalic.otf") format("opentype");
+  font-weight: 400;
+}
+.letPerfumeTalk .letPerfumeTalk__video {
+  cursor: url(../assets/images/experience2/cursor/cursor-feather.png), url(../assets/images/experience2/cursor/cursor-feather.cur), default;
+  position: fixed;
+  right: 0;
+  bottom: 0;
+  min-width: 100%;
+  min-height: 100%;
+  object-fit: fill;
+}
+.letPerfumeTalk .test {
+  position: absolute;
+  color: white;
+  transition: all 400ms;
+  font-family: "Neutra text", sans-serif;
+  font-weight: 300;
+  font-size: 13px;
+}
+
+/*# sourceMappingURL=style.cs.map */

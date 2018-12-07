@@ -608,6 +608,40 @@ main.main-page .main-page__content .experience .experience__choice .experience__
   font-size: 14pt;
   padding-left: 40%;
 }
+.smellMenu-page .smellMenu__text__name {
+  text-transform: uppercase;
+  font-weight: 200;
+  font-family: "Neutra display", sans-serif;
+  font-size: 70pt;
+  padding-top: 2%;
+}
+.smellMenu-page .bottle_item:hover .play_circle {
+  -moz-transform: scale(4);
+  -ms-transform: scale(4);
+  -webkit-transform: scale(4);
+  -o-transform: scale(4);
+  transform: scale(4);
+}
+.smellMenu-page .play_circle {
+  transition: 0.3s;
+  position: absolute;
+  border-radius: 50%;
+  width: 30px;
+  height: 30px;
+  margin-left: 150px;
+  margin-top: 300px;
+}
+.smellMenu-page .play_circle_text {
+  transition: 5s;
+  text-transform: uppercase;
+  font-weight: bold;
+  font-family: "Neutra display", sans-serif;
+  font-size: 5pt;
+  color: #ffffff;
+  position: absolute;
+  top: 19%;
+  left: 25%;
+}
 
 .intro__video {
   position: fixed;

@@ -1,5 +1,5 @@
 import React, {Component} from 'react';
-// import {Link} from 'react-router-dom';
+import {Link} from 'react-router-dom';
 import Lottie from "react-lottie";
 import animationIntro from '../assets/animation/perfumeIntro/data';
 import intro from '../assets/videos/experience2/lptalk_intro.mp4';
@@ -10,7 +10,8 @@ export default class LetPerfumeTalk extends Component {
         super(props);
         this.state = {
             rhombusAnimation: "perfume-starting__background " +
-                "perfume-starting__background--delay"
+                "perfume-starting__background--delay",
+            textAnimation: "perfume-starting__text"
         };
         this.animationEnds = this.animationEnds.bind(this);
         this.animationIntro = {
@@ -25,6 +26,7 @@ export default class LetPerfumeTalk extends Component {
                             options={this.animationIntro}
                             height={500}
                             width={500}
+                            isClickToPauseDisabled={true}
         />;
     }
 
@@ -32,11 +34,12 @@ export default class LetPerfumeTalk extends Component {
         this.setState({
             rhombusAnimation: "perfume-starting__background" +
                 " perfume-starting__background--hover",
+            textAnimation: "perfume-starting__text perfume-starting__text--transform"
         });
     };
 
     componentDidMount() {
-        setTimeout(this.animationEnds,900)
+        setTimeout(this.animationEnds, 1500)
     };
 
     render() {
@@ -45,11 +48,11 @@ export default class LetPerfumeTalk extends Component {
                 <video autoPlay muted loop className="perfume-starting__video">
                     <source src={intro} type="video/mp4"/>
                 </video>
-                <div className="perfume-starting__animation">
+                <Link to="/LetPerfumeTalk/Happy" className="perfume-starting__animation">
                     <img className={this.state.rhombusAnimation} src={image} alt="background"/>
                     {this.data}
-                    <p className="perfume-starting__text">Dedicated to perfume lovers</p>
-                </div>
+                    <p className={this.state.textAnimation}>Dedicated to perfume lovers</p>
+                </Link>
             </main>
         )
     }

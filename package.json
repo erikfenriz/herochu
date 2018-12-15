@@ -4,16 +4,19 @@
   "private": true,
   "dependencies": {
     "antd": "^3.11.0",
+    "gsap": "^2.0.2",
     "jquery": "^3.3.1",
     "normalize.css": "^8.0.1",
     "react": "^16.6.3",
     "react-dom": "^16.6.3",
     "react-lottie": "^1.2.3",
+    "react-owl-carousel": "^2.3.1",
     "react-router-dom": "^4.3.1",
     "react-scripts": "2.1.1",
     "react-slick": "^0.23.2",
     "recompose": "^0.30.0",
-    "slick-carousel": "^1.8.1"
+    "slick-carousel": "^1.8.1",
+    "splitting": "^1.0.6"
   },
   "scripts": {
     "start": "react-scripts start",

@@ -18,6 +18,12 @@
   font-family: 'Neutra display';
   src: url("fonts/NeutraText-BookItalic.otf") format("opentype");
   font-weight: 400; }
+@font-face {
+  font-family: 'Neutra display';
+  src: url("fonts/NeutraDisplay/neutradisplay-light-webfont.woff") format("woff"), url("fonts/NeutraDisplay/neutradisplay-light-webfont.ttf") format("opentype"), url("fonts/NeutraDisplay/neutradisplay-light-webfont.eot") format("opentype"), url("fonts/NeutraDisplay/neutradisplay-light-webfont.svg#webfontg8dbVmxj") format("svg"); }
+@font-face {
+  font-family: 'Neutra text';
+  src: url("/fonts/neutratext-book-webfont.woff") format("woff"), url("/fonts/neutratext-book-webfont.ttf") format("opentype"), url("/fonts/neutratext-book-webfont.svg#webfontg8dbVmxj") format("svg"); }
 @keyframes fadeInHeader {
   0% {
     opacity: 0; }
@@ -455,6 +461,36 @@ main.main-page {
     font-family: 'Neutra display', sans-serif;
     font-size: 14pt;
     padding-left: 40%; }
+  .smellMenu-page .smellMenu__text__name {
+    text-transform: uppercase;
+    font-weight: 200;
+    font-family: 'Neutra display', sans-serif;
+    font-size: 70pt;
+    padding-top: 2%; }
+  .smellMenu-page .bottle_item:hover .play_circle {
+    -moz-transform: scale(4);
+    -ms-transform: scale(4);
+    -webkit-transform: scale(4);
+    -o-transform: scale(4);
+    transform: scale(4); }
+  .smellMenu-page .play_circle {
+    transition: 0.3s;
+    position: absolute;
+    border-radius: 50%;
+    width: 30px;
+    height: 30px;
+    margin-left: 150px;
+    margin-top: 300px; }
+  .smellMenu-page .play_circle_text {
+    transition: 5s;
+    text-transform: uppercase;
+    font-weight: bold;
+    font-family: 'Neutra display', sans-serif;
+    font-size: 5pt;
+    color: #ffffff;
+    position: absolute;
+    top: 19%;
+    left: 25%; }
 
 @font-face {
   font-family: 'Neutra display';
@@ -476,6 +512,12 @@ main.main-page {
   font-family: 'Neutra display';
   src: url("fonts/NeutraText-BookItalic.otf") format("opentype");
   font-weight: 400; }
+@font-face {
+  font-family: 'Neutra display';
+  src: url("fonts/NeutraDisplay/neutradisplay-light-webfont.woff") format("woff"), url("fonts/NeutraDisplay/neutradisplay-light-webfont.ttf") format("opentype"), url("fonts/NeutraDisplay/neutradisplay-light-webfont.eot") format("opentype"), url("fonts/NeutraDisplay/neutradisplay-light-webfont.svg#webfontg8dbVmxj") format("svg"); }
+@font-face {
+  font-family: 'Neutra text';
+  src: url("/fonts/neutratext-book-webfont.woff") format("woff"), url("/fonts/neutratext-book-webfont.ttf") format("opentype"), url("/fonts/neutratext-book-webfont.svg#webfontg8dbVmxj") format("svg"); }
 @keyframes fadeIn {
   0% {
     opacity: 0; }
@@ -492,60 +534,6 @@ main.main-page {
   left: 0;
   bottom: 0;
   right: 0;
-<<<<<<< HEAD
-  bottom: 1%;
-}
-.smellMenu-page .smellMenu__footer .smellMenu__footer__right_item {
-  font-weight: 200;
-  font-family: "Neutra display", sans-serif;
-  font-size: 12pt;
-  padding-right: 5%;
-}
-.smellMenu-page .smellMenu__svg {
-  padding-left: 35%;
-  padding-top: 5%;
-}
-.smellMenu-page .smellMenu__text__perfume {
-  font-weight: bold;
-  font-family: "Neutra display", sans-serif;
-  font-size: 14pt;
-  padding-left: 40%;
-}
-.smellMenu-page .smellMenu__text__name {
-  text-transform: uppercase;
-  font-weight: 200;
-  font-family: "Neutra display", sans-serif;
-  font-size: 70pt;
-  padding-top: 2%;
-}
-.smellMenu-page .bottle_item:hover .play_circle {
-  -moz-transform: scale(4);
-  -ms-transform: scale(4);
-  -webkit-transform: scale(4);
-  -o-transform: scale(4);
-  transform: scale(4);
-}
-.smellMenu-page .play_circle {
-  transition: 0.3s;
-  position: absolute;
-  border-radius: 50%;
-  width: 30px;
-  height: 30px;
-  margin-left: 150px;
-  margin-top: 300px;
-}
-.smellMenu-page .play_circle_text {
-  transition: 5s;
-  text-transform: uppercase;
-  font-weight: bold;
-  font-family: "Neutra display", sans-serif;
-  font-size: 5pt;
-  color: #ffffff;
-  position: absolute;
-  top: 19%;
-  left: 25%;
-}
-=======
   display: flex;
   justify-content: center; }
   .perfume-starting__video {
@@ -583,7 +571,6 @@ main.main-page {
       color: white;
       text-align: center;
       transition: transform 500ms; }
->>>>>>> 69bd48a6eee2860b90ecda0a32d214b34c4dbf20
 
 @font-face {
   font-family: 'Neutra display';
@@ -605,20 +592,306 @@ main.main-page {
   font-family: 'Neutra display';
   src: url("fonts/NeutraText-BookItalic.otf") format("opentype");
   font-weight: 400; }
-.letPerfumeTalk .letPerfumeTalk__video {
-  cursor: url(../assets/images/experience2/cursor/cursor-feather.png), url(../assets/images/experience2/cursor/cursor-feather.cur), default;
-  position: fixed;
-  right: 0;
-  bottom: 0;
-  min-width: 100%;
-  min-height: 100%;
-  object-fit: fill; }
-.letPerfumeTalk .test {
+@font-face {
+  font-family: 'Neutra display';
+  src: url("fonts/NeutraDisplay/neutradisplay-light-webfont.woff") format("woff"), url("fonts/NeutraDisplay/neutradisplay-light-webfont.ttf") format("opentype"), url("fonts/NeutraDisplay/neutradisplay-light-webfont.eot") format("opentype"), url("fonts/NeutraDisplay/neutradisplay-light-webfont.svg#webfontg8dbVmxj") format("svg"); }
+@font-face {
+  font-family: 'Neutra text';
+  src: url("/fonts/neutratext-book-webfont.woff") format("woff"), url("/fonts/neutratext-book-webfont.ttf") format("opentype"), url("/fonts/neutratext-book-webfont.svg#webfontg8dbVmxj") format("svg"); }
+@keyframes anima {
+  0% {
+    opacity: 1; }
+  100% {
+    transform: scale(1.4);
+    opacity: 0; } }
+@keyframes loadingTop {
+  0% {
+    transform: translateY(-100px); }
+  100% {
+    transform: translateY(-50px); } }
+@keyframes loadingBottom {
+  0% {
+    transform: translateY(100px); }
+  100% {
+    transform: translateY(50px); } }
+.letPerfumeTalk {
+  font-family: "Neutra display", sans-serif;
+  font-weight: 600;
+  font-size: 14px;
+  cursor: none; }
+  .letPerfumeTalk > * {
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -o-user-select: none;
+    user-select: none;
+    -webkit-user-drag: none; }
+    .letPerfumeTalk > * > * {
+      -webkit-user-select: none;
+      -moz-user-select: none;
+      -o-user-select: none;
+      user-select: none;
+      -webkit-user-drag: none; }
+  .letPerfumeTalk .letPerfumeTalk__video {
+    position: fixed;
+    right: 0;
+    bottom: 0;
+    min-width: 100%;
+    min-height: 100%;
+    object-fit: fill;
+    transition: all 700ms; }
+  .letPerfumeTalk .menu {
+    text-transform: uppercase;
+    width: 100%;
+    height: 100vh;
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    color: white; }
+    .letPerfumeTalk .menu__top {
+      overflow-y: hidden; }
+      .letPerfumeTalk .menu__top .menu__circle--top {
+        width: 85px;
+        height: 85px;
+        border-radius: 50%;
+        padding: 10px;
+        justify-content: center;
+        display: flex;
+        transition: all 700ms;
+        overflow: hidden;
+        position: relative;
+        z-index: 1;
+        transform: translateY(-50px);
+        animation: loadingTop 600ms forwards;
+        -webkit-animation: loadingTop 600ms forwards;
+        /* Safari, Chrome and Opera > 12.1 */
+        -moz-animation: loadingTop 600ms forwards;
+        /* Firefox < 16 */
+        -ms-animation: loadingTop 600ms forwards;
+        /* Internet Explorer */
+        -o-animation: loadingTop 600ms forwards;
+        /* Opera < 12.1 */ }
+        .letPerfumeTalk .menu__top .menu__circle--top:hover::after {
+          opacity: 1; }
+        .letPerfumeTalk .menu__top .menu__circle--top::after {
+          content: '';
+          z-index: -1;
+          transition: all 700ms;
+          background: white;
+          display: block;
+          width: 100%;
+          height: 100%;
+          position: absolute;
+          left: 0;
+          top: 0;
+          opacity: 0; }
+        .letPerfumeTalk .menu__top .menu__circle--top:hover {
+          transition: all 700ms;
+          background: white; }
+        .letPerfumeTalk .menu__top .menu__circle--top:hover p {
+          color: black; }
+        .letPerfumeTalk .menu__top .menu__circle--top:hover {
+          cursor: pointer; }
+        .letPerfumeTalk .menu__top .menu__circle--top p {
+          position: absolute;
+          top: 50px;
+          transition: 700ms; }
+      .letPerfumeTalk .menu__top .menu__circle--happy {
+        background: -webkit-linear-gradient(left top, crimson 0%, #f90 100%); }
+    .letPerfumeTalk .menu__bottom {
+      display: inline-flex;
+      justify-content: space-between;
+      position: absolute;
+      bottom: 0;
+      overflow-y: hidden; }
+      .letPerfumeTalk .menu__bottom .menu__bottom--button {
+        transform: translateY(50px); }
+      .letPerfumeTalk .menu__bottom .menu__circle--happy {
+        background: -webkit-linear-gradient(left top, crimson 0%, #f90 100%); }
+      .letPerfumeTalk .menu__bottom .menu__circle--bottom {
+        width: 85px;
+        height: 85px;
+        border-radius: 50%;
+        padding: 10px;
+        justify-content: center;
+        display: flex;
+        transition: all 700ms;
+        overflow: hidden;
+        position: relative;
+        z-index: 1;
+        transform: translateY(50px); }
+        .letPerfumeTalk .menu__bottom .menu__circle--bottom:hover::after {
+          opacity: 1; }
+        .letPerfumeTalk .menu__bottom .menu__circle--bottom::after {
+          content: '';
+          z-index: -1;
+          transition: all 700ms;
+          background: white;
+          display: block;
+          width: 100%;
+          height: 100%;
+          position: absolute;
+          left: 0;
+          top: 0;
+          opacity: 0; }
+        .letPerfumeTalk .menu__bottom .menu__circle--bottom:hover {
+          transition: all 700ms;
+          background: white; }
+        .letPerfumeTalk .menu__bottom .menu__circle--bottom:hover p {
+          color: black; }
+      .letPerfumeTalk .menu__bottom .menu__bottom--side {
+        position: relative;
+        top: 10px;
+        font-size: 16px; }
+        .letPerfumeTalk .menu__bottom .menu__bottom--side .strikethrough {
+          position: relative; }
+        .letPerfumeTalk .menu__bottom .menu__bottom--side .strikethrough:before {
+          position: absolute;
+          content: "";
+          width: 105%;
+          top: 40%;
+          left: 0;
+          right: 0;
+          border-top: 1px solid;
+          border-color: inherit;
+          transform: rotate(-10deg); }
+        .letPerfumeTalk .menu__bottom .menu__bottom--side .menu__bottom--happy {
+          transition: color 400ms; }
+          .letPerfumeTalk .menu__bottom .menu__bottom--side .menu__bottom--happy:hover {
+            color: yellow; }
+    .letPerfumeTalk .menu__bottom > * {
+      margin: 0 20px 0 20px;
+      animation: loadingBottom 600ms forwards;
+      -webkit-animation: loadingBottom 600ms forwards;
+      /* Safari, Chrome and Opera > 12.1 */
+      -moz-animation: loadingBottom 600ms forwards;
+      /* Firefox < 16 */
+      -ms-animation: loadingBottom 600ms forwards;
+      /* Internet Explorer */
+      -o-animation: loadingBottom 600ms forwards;
+      /* Opera < 12.1 */ }
+      .letPerfumeTalk .menu__bottom > *:hover {
+        cursor: pointer; }
+      .letPerfumeTalk .menu__bottom > * p {
+        transition: 700ms; }
+  .letPerfumeTalk .LetPerfumeTalkByMane {
+    position: absolute;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    justify-content: flex-end; }
+    .letPerfumeTalk .LetPerfumeTalkByMane__experienceName {
+      text-transform: uppercase;
+      padding-left: 25px;
+      position: relative;
+      top: 12px;
+      font-family: 'Neutra display';
+      font-size: 25px;
+      font-weight: 400; }
+      .letPerfumeTalk .LetPerfumeTalkByMane__experienceName--small {
+        text-transform: none;
+        font-size: 12px;
+        font-weight: 600; }
+      @media (max-width: 700px) {
+        .letPerfumeTalk .LetPerfumeTalkByMane__experienceName {
+          display: none; } }
+
+#cursor {
+  position: fixed; }
+  #cursor > * {
+    width: 90px;
+    transition: all 1000ms; }
+  #cursor .cursor__click--clicked {
+    opacity: 0; }
+  #cursor .cursor__clicked {
+    position: relative;
+    right: 90px; }
+
+@font-face {
+  font-family: 'Neutra display';
+  src: url("fonts/NeutraDisplay-Thin.otf") format("opentype");
+  font-weight: 100; }
+@font-face {
+  font-family: 'Neutra display';
+  src: url("fonts/NeutraDisplay-Light.otf") format("opentype");
+  font-weight: 200; }
+@font-face {
+  font-family: 'Neutra display';
+  src: url("fonts/NeutraDisplay-Bold.otf") format("opentype");
+  font-weight: 700; }
+@font-face {
+  font-family: 'Neutra display';
+  src: url("fonts/NeutraDisplay-Light-Italic.otf") format("opentype");
+  font-weight: 300; }
+@font-face {
+  font-family: 'Neutra display';
+  src: url("fonts/NeutraText-BookItalic.otf") format("opentype");
+  font-weight: 400; }
+@font-face {
+  font-family: 'Neutra display';
+  src: url("fonts/NeutraDisplay/neutradisplay-light-webfont.woff") format("woff"), url("fonts/NeutraDisplay/neutradisplay-light-webfont.ttf") format("opentype"), url("fonts/NeutraDisplay/neutradisplay-light-webfont.eot") format("opentype"), url("fonts/NeutraDisplay/neutradisplay-light-webfont.svg#webfontg8dbVmxj") format("svg"); }
+@font-face {
+  font-family: 'Neutra text';
+  src: url("/fonts/neutratext-book-webfont.woff") format("woff"), url("/fonts/neutratext-book-webfont.ttf") format("opentype"), url("/fonts/neutratext-book-webfont.svg#webfontg8dbVmxj") format("svg"); }
+@keyframes bouncedelay {
+  0%, 80%, 100% {
+    transform: scale(0); }
+  40% {
+    transform: scale(0.2); } }
+.loading {
+  cursor: none;
+  width: 100%;
+  transition: opacity 1000ms;
+  height: 100vh;
+  background: black;
   position: absolute;
-  color: white;
-  transition: all 400ms;
-  font-family: "Neutra text", sans-serif;
-  font-weight: 300;
-  font-size: 13px; }
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -o-user-select: none;
+  user-select: none;
+  -webkit-user-drag: none; }
+  .loading__text {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-end; }
+    .loading__text h1 {
+      margin: 0;
+      line-height: 1;
+      -webkit-touch-callout: none;
+      /* iOS Safari */
+      -webkit-user-select: none;
+      /* Safari */
+      -khtml-user-select: none;
+      /* Konqueror HTML */
+      -moz-user-select: none;
+      /* Firefox */
+      -ms-user-select: none;
+      /* Internet Explorer/Edge */
+      user-select: none;
+      color: white;
+      text-transform: uppercase;
+      font-family: "Neutra display", sans-serif;
+      font-weight: 500;
+      font-size: 4em; }
+    .loading__text .three-bounce {
+      margin-left: 5px; }
+      .loading__text .three-bounce div {
+        background: #ffffff;
+        display: inline-block;
+        height: 18px;
+        width: 18px;
+        border-radius: 100%;
+        animation: bouncedelay 1.4s infinite ease-in-out;
+        animation-fill-mode: both;
+        transform: translateZ(0); }
+        .loading__text .three-bounce div.one {
+          animation-delay: -0.32s; }
+        .loading__text .three-bounce div.two {
+          animation-delay: -0.16s; }
+  .loading.loaded {
+    opacity: 0; }
 
 /*# sourceMappingURL=style.css.map */

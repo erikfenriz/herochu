@@ -1,24 +1,263 @@
 @import "fonts";
+
+@keyframes anima {
+  0% {
+    opacity: 1;
+  }
+  100% {
+    transform: scale(1.4);
+    opacity: 0;
+  }
+}
+
+@keyframes loadingTop {
+  0% {
+    transform: translateY(-100px);
+  }
+  100% {
+    transform: translateY(-50px);
+  }
+}
+
+@keyframes loadingBottom {
+  0% {
+    transform: translateY(100px);
+  }
+  100% {
+    transform: translateY(50px);
+  }
+}
+
+@mixin circle {
+  width: 85px;
+  height: 85px;
+  border-radius: 50%;
+  padding: 10px;
+  justify-content: center;
+  display: flex;
+  transition: all 700ms;
+  overflow: hidden;
+  position: relative;
+  z-index: 1;
+  &:hover{
+    &::after {
+      opacity: 1;
+    }
+  }
+  &::after{
+    content: '';
+    z-index: -1;
+    transition: all 700ms;
+    background: white;
+    display: block;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    left: 0;
+    top: 0;
+    opacity: 0;
+  }
+  &:hover {
+    transition: all 700ms;
+    background: white;
+  }
+}
+
 .letPerfumeTalk {
+  font: {
+    family: "Neutra display", sans-serif;
+    weight: 600;
+    size: 14px;
+  }
+  cursor: none;
+
+  & > * {
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -o-user-select: none;
+    user-select: none;
+    -webkit-user-drag: none;
+
+    > * {
+      -webkit-user-select: none;
+      -moz-user-select: none;
+      -o-user-select: none;
+      user-select: none;
+      -webkit-user-drag: none;
+    }
+  }
+
   .letPerfumeTalk__video {
-    cursor: url(../assets/images/experience2/cursor/cursor-feather.png),
-    url(../assets/images/experience2/cursor/cursor-feather.cur), default;
     position: fixed;
     right: 0;
     bottom: 0;
     min-width: 100%;
     min-height: 100%;
     object-fit: fill;
+    transition: all 700ms;
   }
 
-  .test {
+  .menu {
+    text-transform: uppercase;
+    width: 100%;
+    height: 100vh;
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    color: white;
+
+    &__top {
+      overflow-y: hidden;
+
+      .menu__circle--top {
+        @include circle;
+        transform: translateY(-50px);
+        animation: loadingTop 600ms forwards;
+        -webkit-animation: loadingTop 600ms forwards; /* Safari, Chrome and Opera > 12.1 */
+        -moz-animation: loadingTop 600ms forwards; /* Firefox < 16 */
+        -ms-animation: loadingTop 600ms forwards; /* Internet Explorer */
+        -o-animation: loadingTop 600ms forwards; /* Opera < 12.1 */
+        &:hover p {
+          color: black;
+        }
+
+        &:hover {
+          cursor: pointer;
+        }
+
+        p {
+          position: absolute;
+          top: 50px;
+          transition: 700ms;
+        }
+      }
+
+      .menu__circle--happy {
+        background: -webkit-linear-gradient(left top, crimson 0%, #f90 100%);
+
+      }
+    }
+
+    &__bottom {
+      display: inline-flex;
+      justify-content: space-between;
+      position: absolute;
+      bottom: 0;
+      overflow-y: hidden;
+
+      .menu__bottom--button {
+        transform: translateY(50px);
+      }
+
+      .menu__circle--happy {
+        background: -webkit-linear-gradient(left top, crimson 0%, #f90 100%);
+      }
+
+      .menu__circle--bottom {
+        @include circle;
+        transform: translateY(50px);
+
+        &:hover p {
+          color: black;
+        }
+      }
+
+      .menu__bottom--side {
+        position: relative;
+        top: 10px;
+        font-size: 16px;
+        .strikethrough {
+          position: relative;
+        }
+        .strikethrough:before {
+          position: absolute;
+          content: "";
+          width: 105%;
+          top: 40%;
+          left:0;
+          right: 0;
+          border-top: 1px solid;
+          border-color: inherit;
+          //-webkit-transform:rotate(-15deg);
+          //-moz-transform:rotate(-5deg);
+          //-ms-transform:rotate(-5deg);
+          //-o-transform:rotate(-5deg);
+          transform:rotate(-10deg);
+        }
+        .menu__bottom--happy{
+          transition: color 400ms;
+          &:hover{
+            color: yellow;
+          }
+        }
+      }
+    }
+
+    &__bottom > * {
+      margin: 0 20px 0 20px;
+      animation: loadingBottom 600ms forwards;
+      -webkit-animation: loadingBottom 600ms forwards; /* Safari, Chrome and Opera > 12.1 */
+      -moz-animation: loadingBottom 600ms forwards; /* Firefox < 16 */
+      -ms-animation: loadingBottom 600ms forwards; /* Internet Explorer */
+      -o-animation: loadingBottom 600ms forwards; /* Opera < 12.1 */
+      &:hover {
+        cursor: pointer;
+      }
+
+      p {
+        transition: 700ms;
+      }
+    }
+  }
+
+  .LetPerfumeTalkByMane {
     position: absolute;
     color: white;
-    transition: all 400ms;
-    font: {
-      family: "Neutra text", sans-serif;
-      weight: 300;
-      size: 13px;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    justify-content: flex-end;
+
+    &__experienceName {
+      text-transform: uppercase;
+      padding-left: 25px;
+      position: relative;
+      top: 12px;
+      font: {
+        family: 'Neutra display';
+        size: 25px;
+        weight: 400;
+      }
+
+      &--small {
+        text-transform: none;
+        font: {
+          size: 12px;
+          weight: 600;
+        }
+      }
+
+      @media (max-width: 700px) {
+        display: none;
+      }
     }
+  }
+}
+
+#cursor {
+  position: fixed;
+
+  > * {
+    width: 90px;
+    transition: all 1000ms;
+  }
+
+  .cursor__click--clicked {
+    opacity: 0;
+  }
+
+  .cursor__clicked {
+    position: relative;
+    right: 90px;
   }
 }

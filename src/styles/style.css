@@ -892,6 +892,7 @@ main.main-page {
         .loading__text .three-bounce div.two {
           animation-delay: -0.16s; }
   .loading.loaded {
-    opacity: 0; }
+    opacity: 0;
+    z-index: -1000; }
 
 /*# sourceMappingURL=style.css.map */

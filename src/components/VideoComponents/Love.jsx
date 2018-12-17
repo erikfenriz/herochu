@@ -132,7 +132,7 @@ export default class Happy extends Component {
         this.playVideo();
         this.setCoordinates.bind(this);
         document.addEventListener('click', this.setCoordinates);
-        document.addEventListener('mousemove', this.setCoordinates);
+        // document.addEventListener('mousemove', this.setCoordinates);
         setTimeout(this.loaded, 1000);
         // document.addEventListener('DOMContentLoaded', this.loaded);
     };
@@ -142,6 +142,7 @@ export default class Happy extends Component {
         return (
             <React.Fragment>
                 <main onClick={this.clicked}
+                      onMouseMove={this.setCoordinates}
                       className="letPerfumeTalk"
                 >
                     <video className="letPerfumeTalk__video"

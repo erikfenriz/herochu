@@ -23,9 +23,42 @@ const BottleItem = props => {
     >
       <center>
         <Link to={link}>
-          <div style={{ opacity: visible, background: gradient }} className="play_circle">
-            <p className="play_circle_text">play</p>
-          </div>
+          { count === 0 &&
+            <div style={{ opacity: visible, background: gradient, transition: "0.3s", position: "absolute", borderRadius: "50%",  width: "20px", height: "20px", marginLeft:"95px", marginTop: "160px" }} className="play_circle">
+              <p className="play_circle_text1">play</p>
+            </div>
+          }
+           { count === 1 &&
+            <div style={{ opacity: visible, background: gradient, transition: "0.3s", position: "absolute", borderRadius: "50%",  width: "25px", height: "25px", marginLeft:"90px", marginTop: "190px" }} className="play_circle">
+              <p className="play_circle_text2">play</p>
+            </div>
+          }
+           { count === 2 &&
+            <div style={{ opacity: visible, background: gradient, transition: "0.3s", position: "absolute", borderRadius: "50%",  width: "27px", height: "27px", marginLeft:"90px", marginTop: "220px" }} className="play_circle">
+              <p className="play_circle_text3">play</p>
+            </div>
+          }
+           { count === 3 &&
+            <div style={{ opacity: visible, background: gradient, transition: "0.3s", position: "absolute", borderRadius: "50%",  width: "30px", height: "30px", marginLeft:"90px", marginTop: "260px" }} className="play_circle">
+              <p className="play_circle_text">play</p>
+            </div>
+          }
+           { count === 4 &&
+            <div style={{ opacity: visible, background: gradient, transition: "0.3s", position: "absolute", borderRadius: "50%",  width: "27px", height: "27px", marginLeft:"90px", marginTop: "220px" }} className="play_circle">
+              <p className="play_circle_text3">play</p>
+            </div>
+          }
+           { count === 5 &&
+            <div style={{ opacity: visible, background: gradient, transition: "0.3s", position: "absolute", borderRadius: "50%",  width: "25px", height: "25px", marginLeft:"90px", marginTop: "190px" }} className="play_circle">
+              <p className="play_circle_text2">play</p>
+            </div>
+          }
+           { count === 6 &&
+            <div style={{ opacity: visible, background: gradient, transition: "0.3s", position: "absolute", borderRadius: "50%",  width: "20px", height: "20px", marginLeft:"95px", marginTop: "160px" }} className="play_circle">
+              <p className="play_circle_text1">play</p>
+            </div>
+          }
+
         </Link>
         {visible === 0 ? <img className={countItem} alt={name} src={img} /> : <img className={countItem} alt={name} src={imgGif} />}
       </center>

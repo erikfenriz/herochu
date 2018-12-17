@@ -3,6 +3,9 @@ import { compose, withState, withHandlers } from 'recompose';
 import { Icon } from 'antd';
 import splitting from 'splitting';
 import BottleCarousel from './components/BottleСarousel'
+import youtube from '../../assets/images/main/MANE_youtube.svg'
+import twitter from '../../assets/images/main/MANE_twitter.svg'
+import facebook from '../../assets/images/main/MANE_facebook.svg'
 import '../../styles/style.css';
 
 const SmellMenu = props => {
@@ -11,8 +14,13 @@ const SmellMenu = props => {
   return (
     <div className="smellMenu-page" >
       <h1 className='smellMenu__title'>What's your mood today?</h1>
+      {/* <div className='smellMenu__svg'> */}
+
+      {/* </div> */}
+
       <div className='smellMenu__carousel'>
         <BottleCarousel visible={visible} visibleChange={visibleChange} visibleChangeFalse={visibleChangeFalse} />
+     
         {visible ?
           <div>
             <div className='smellMenu__svg'>
@@ -39,9 +47,9 @@ const SmellMenu = props => {
           <label className='smellMenu__footer__right_item'>Legal </label>
           <label className='smellMenu__footer__right_item'>Credits</label>
           <label className='smellMenu__footer__right_item'>MANE©2018</label>
-          <label className='smellMenu__footer__right_item'><Icon type="youtube" /></label>
-          <label className='smellMenu__footer__right_item'><Icon type="facebook" /></label>
-          <label className='smellMenu__footer__right_item'><Icon type="twitter" /></label>
+          <label className='smellMenu__footer__right_item'><img alt="youtube" src={youtube}  /></label>
+          <label className='smellMenu__footer__right_item'><img alt="facebook" src={facebook} /></label>
+          <label className='smellMenu__footer__right_item'><img alt="twitter" src={twitter}  /></label>
         </div>
       </div>
     </div>

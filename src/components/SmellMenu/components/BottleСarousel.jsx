@@ -30,7 +30,7 @@ const data = [
     link: "/LetPerfumeTalk/Natural",
   },
   {
-    name: "citrus",
+    name: "alive",
     img: citrus_1,
     imgGif: citrus_2,
     color: "#00f5f0",
@@ -122,7 +122,8 @@ export default class BottleCarousel extends Component {
       return $(result);
     }
     function updatescroll() {
-      var max_scroll = container[0].scrollWidth;
+
+      //var max_scroll = container[0].scrollWidth;
       // if (speed !== 0) {
       //   scroll += speed / 5;
       //   if (scroll < 0) scroll = 0;
@@ -313,23 +314,27 @@ export default class BottleCarousel extends Component {
     window.requestAnimationFrame(updatescroll);
 
     let loadMore = () => {
-      console.log(inWindow("img.item0"));
-      console.log("--loadMore--")
-      for (var i = 0; i < data.length; i++) {
-        var item = document.createElement('li');
-        item.className = 'carousel-item';
-        item.innerHTML = '<div  style="margin-left:20px;margin-right:20px;" id=' + i + '} key=' + data[i].name + '  ><center><img class="item' + i + '" alt=' + data[i].name + ' src=' + data[i].img + ' /></center></div>'
+      if (container[0]) {
+        console.log(inWindow("img.item0"));
+        console.log("--loadMore--")
+        for (var i = 0; i < data.length; i++) {
+          var item = document.createElement('li');
+          item.className = 'carousel-item';
+          item.innerHTML = '<div  style="margin-left:20px;margin-right:20px;" id=' + i + '} key=' + data[i].name + '  ><center><img class="item' + i + '" alt=' + data[i].name + ' src=' + data[i].img + ' /></center></div>'
 
-        container[0].appendChild(item);
+          container[0].appendChild(item);
+        }
+        tickLoadMore++;
       }
-      tickLoadMore++;
     }
-    container[0].addEventListener('scroll', function () {
-      if (container[0].scrollLeft + container[0].clientWidth >= container[0].scrollWidth) {
-        loadMore();
-      }
+    if (container[0]) {
+      container[0].addEventListener('scroll', function () {
+        if (container[0].scrollLeft + container[0].clientWidth >= container[0].scrollWidth) {
+          loadMore();
+        }
 
-    });
+      });
+    }
     loadMore();
   }
   render() {
@@ -344,19 +349,22 @@ export default class BottleCarousel extends Component {
     )
 
     $(document).ready(this.init);
-    return (
+    return (<div>
+      
+      {/* <svg width="1920" height="100" xmlns="http://www.w3.org/2000/svg">
+        <line x1="0" y1="0" x2="220" y2="100" stroke="gray" strokeWidth="1" />
+        <line x1="1920" y1="0" x2="1700" y2="100" stroke="gray" strokeWidth="1" />
+      </svg>
+      */}
       <div id="infinite-list" ref={this.myRef} className="carousel-frame">
         {items}
-        {/* <li class="carousel-item">
-          <div
-          // class="testBottle"
-          >
-            <center>
-              <img className="item0" alt="apsha" src={data[0].img} />
-            </center>
-          </div>
-        </li> */}
       </div>
+{/*       
+       <svg width="1920" height="100" xmlns="http://www.w3.org/2000/svg">
+        <line x1="-250" y1="100" x2="120" y2="0" stroke="gray" strokeWidth="1" />
+        <line x1="1920" y1="0" x2="1700" y2="100" stroke="gray" strokeWidth="1" />
+      </svg> */}
+    </div>
     );
   }
 }

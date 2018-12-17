@@ -9,6 +9,7 @@ import {rotatingCursor} from "./cursor";
 // import $ from 'jquery';
 import pineapple from '../../assets/images/experience2/elements/happy/gr_ananas.png';
 import sun from '../../assets/images/experience2/elements/happy/gr_sun.png';
+import {Link} from "react-router-dom";
 // import candy1 from '../../assets/images/experience2/elements/happy/gr_candy1.png';
 // import candy2 from '../../assets/images/experience2/elements/happy/gr_candy2.png';
 // import iceCream from '../../assets/images/experience2/elements/happy/gr_icecream.png';
@@ -165,11 +166,13 @@ export default class Happy extends Component {
 
                     <div className="menu">
                         <div className="menu__top">
-                            <div onMouseOver={this.hide}
-                                 onMouseOut={this.display}
-                                 className="menu__top--button menu__circle--top menu__circle--happy">
-                                <p>Back</p>
-                            </div>
+                            <Link className="menu__top--link" to={'/SmellMenu'}>
+                                <div onMouseOver={this.hide}
+                                     onMouseOut={this.display}
+                                     className="menu__top--button menu__circle--top menu__circle--happy">
+                                    <p>Back</p>
+                                </div>
+                            </Link>
                         </div>
 
                         <div className="menu__bottom">

@@ -27,3 +27,18 @@
   src: url("fonts/NeutraText-BookItalic.otf") format("opentype");
   font-weight: 400;
 }
+
+@font-face {
+  font-family: 'Neutra display';
+  src:        url('fonts/NeutraDisplay/neutradisplay-light-webfont.woff') format('woff'),
+  url("fonts/NeutraDisplay/neutradisplay-light-webfont.ttf") format('opentype'),
+  url("fonts/NeutraDisplay/neutradisplay-light-webfont.eot") format('opentype'),
+  url('fonts/NeutraDisplay/neutradisplay-light-webfont.svg#webfontg8dbVmxj') format('svg');
+}
+
+@font-face {
+  font-family: 'Neutra text';
+  src:        url('/fonts/neutratext-book-webfont.woff') format('woff'),
+  url("/fonts/neutratext-book-webfont.ttf") format('opentype'),
+  url('/fonts/neutratext-book-webfont.svg#webfontg8dbVmxj') format('svg');
+}

@@ -189,11 +189,46 @@
           transform: rotate(-10deg);
         }
 
+        .menu__bottom--alive {
+          transition: color 400ms;
+          &:hover {
+            color: #00DF6C;
+          }
+        }
         .menu__bottom--happy {
           transition: color 400ms;
-
           &:hover {
             color: yellow;
+          }
+        }
+        .menu__bottom--love {
+          transition: color 400ms;
+          &:hover {
+            color: #DE76B7;
+          }
+        }
+        .menu__bottom--natural {
+          transition: color 400ms;
+          &:hover {
+            color: #86B051;
+          }
+        }
+        .menu__bottom--rebellious {
+          transition: color 400ms;
+          &:hover {
+            color: red;
+          }
+        }
+        .menu__bottom--sexy {
+          transition: color 400ms;
+          &:hover {
+            color: yellow;
+          }
+        }
+        .menu__bottom--zen {
+          transition: color 400ms;
+          &:hover {
+            color: bisque;
           }
         }
       }

@@ -1,4 +1,5 @@
 @import "fonts";
+@import "videoGradient";
 
 @keyframes anima {
   0% {
@@ -39,12 +40,12 @@
   overflow: hidden;
   position: relative;
   z-index: 1;
-  &:hover{
+  &:hover {
     &::after {
       opacity: 1;
     }
   }
-  &::after{
+  &::after {
     content: '';
     z-index: -1;
     transition: all 700ms;
@@ -109,6 +110,10 @@
     &__top {
       overflow-y: hidden;
 
+      &--link {
+        cursor: none;
+      }
+
       .menu__circle--top {
         @include circle;
         transform: translateY(-50px);
@@ -129,13 +134,12 @@
           position: absolute;
           top: 50px;
           transition: 700ms;
+          color: white;
         }
-      }
-
-      .menu__circle--happy {
-        background: -webkit-linear-gradient(left top, crimson 0%, #f90 100%);
 
       }
+
+      @include gradients;
     }
 
     &__bottom {
@@ -149,9 +153,7 @@
         transform: translateY(50px);
       }
 
-      .menu__circle--happy {
-        background: -webkit-linear-gradient(left top, crimson 0%, #f90 100%);
-      }
+      @include gradients;
 
       .menu__circle--bottom {
         @include circle;
@@ -166,15 +168,17 @@
         position: relative;
         top: 10px;
         font-size: 16px;
+
         .strikethrough {
           position: relative;
         }
+
         .strikethrough:before {
           position: absolute;
           content: "";
           width: 105%;
           top: 40%;
-          left:0;
+          left: 0;
           right: 0;
           border-top: 1px solid;
           border-color: inherit;
@@ -182,11 +186,13 @@
           //-moz-transform:rotate(-5deg);
           //-ms-transform:rotate(-5deg);
           //-o-transform:rotate(-5deg);
-          transform:rotate(-10deg);
+          transform: rotate(-10deg);
         }
-        .menu__bottom--happy{
+
+        .menu__bottom--happy {
           transition: color 400ms;
-          &:hover{
+
+          &:hover {
             color: yellow;
           }
         }

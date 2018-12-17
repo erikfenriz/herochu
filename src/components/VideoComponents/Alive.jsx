@@ -1,14 +1,15 @@
 import React, {Component} from 'react';
 import happyMP4 from '../../assets/videos/experience2/mp4/alive.mp4';
 import happyWebM from "../../assets/videos/experience2/webm/alive.webm";
-// import happyMP3 from "../../assets/audio/happy.mp3";
 import featherClick from "../../assets/images/experience2/cursor/feather-click.png";
 import featherClicked from "../../assets/images/experience2/cursor/feather-clicked.png";
 import {rotatingCursor} from "./cursor";
+// import happyMP3 from "../../assets/audio/happy.mp3";
 // import {TweenMax} from "gsap/TweenMax";
 // import $ from 'jquery';
 import pineapple from '../../assets/images/experience2/elements/happy/gr_ananas.png';
 import sun from '../../assets/images/experience2/elements/happy/gr_sun.png';
+import {Link} from "react-router-dom";
 // import candy1 from '../../assets/images/experience2/elements/happy/gr_candy1.png';
 // import candy2 from '../../assets/images/experience2/elements/happy/gr_candy2.png';
 // import iceCream from '../../assets/images/experience2/elements/happy/gr_icecream.png';
@@ -166,11 +167,14 @@ export default class Happy extends Component {
 
                     <div className="menu">
                         <div className="menu__top">
-                            <div onMouseOver={this.hide}
-                                 onMouseOut={this.display}
-                                 className="menu__top--button menu__circle--top menu__circle--happy">
-                                <p>Back</p>
-                            </div>
+                            <Link className="menu__top--link" to={'/SmellMenu'}>
+                                <div onMouseOver={this.hide}
+                                     onMouseOut={this.display}
+                                     className="menu__top--button menu__circle--top
+                                     menu__circle--alive">
+                                    <p>Back</p>
+                                </div>
+                            </Link>
                         </div>
 
                         <div className="menu__bottom">
@@ -181,8 +185,9 @@ export default class Happy extends Component {
                             </div>
                             <div onMouseOver={this.hide}
                                  onMouseOut={this.display}
-                                 className="menu__bottom--button menu__circle--bottom menu__circle--happy">
-                                <p>Happy</p>
+                                 className="menu__bottom--button menu__circle--bottom
+                                 menu__circle--alive">
+                                <p>Alive</p>
                             </div>
                             <div onMouseOver={this.hide}
                                  onMouseOut={this.display}
@@ -202,9 +207,9 @@ export default class Happy extends Component {
                     <div className="loading__text">
                         <h1>Loading</h1>
                         <div className="three-bounce">
-                            <div className="one"></div>
-                            <div className="two"></div>
-                            <div className="three"></div>
+                            <div className="dot one"></div>
+                            <div className="dot two"></div>
+                            <div className="dot three"></div>
                         </div>
                     </div>
                 </div>

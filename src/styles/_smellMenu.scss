@@ -107,6 +107,7 @@
   }
   padding-top: 2%;
 }
+
  .bottle_item:hover .play_circle {
   -moz-transform: scale(4); 
   -ms-transform: scale(4); 
@@ -117,14 +118,14 @@
 
   .play_circle{
   transition: 0.3s;
-
   position: absolute;
   border-radius: 50%;
   width: 30px;
   height: 30px;
-  margin-left: 150px;
-  margin-top: 300px;
+  margin-left: 90px;
+  margin-top: 280px;
 }
+
 .play_circle_text{
   transition: 5s;
   text-transform: uppercase;
@@ -139,3 +140,221 @@
   left: 25%;
 }
 }
+.bottle_item {  
+  margin-left: 20px;
+  margin-right: 20px;
+   }
+
+
+   #item0{
+     padding-bottom: 36%;
+     height: 250px;
+     transition: 1s;
+   }
+   #item1{
+    padding-bottom: 27%;
+    transition: 1s;
+    height: 300px;
+  }
+  #item2{
+    padding-bottom: 18%;
+   transition: 1s;
+   height: 350px;
+  }
+  #item3{
+    transition: 1s;
+    height: 450px;
+  }
+
+
+
+
+
+
+
+
+
+
+@function set-button-text-color($color) {
+  @if (lightness( $color ) > 40) {
+    @return black;
+  }
+  @else {
+    @return white;
+  }  
+}
+
+// $background-color-dark:black;
+$background-color-light:white;
+
+
+
+$animation-dur: 0.4s;
+$animation-timing-func: cubic-bezier(.78,.1,.19,.91);
+$animation-fill-mode: forwards;
+
+.smellMenu__text__perfume {
+	display: inline-block;
+	position: relative;
+	animation: accent-color-slide-reveal $animation-dur $animation-timing-func $animation-fill-mode;
+  
+	&::after {
+		content: '';
+		position:absolute;
+   		top:0;
+    	bottom:0;
+   		left:0;
+		right: 0;
+		animation: accent-color-slide-reveal-rt $animation-dur $animation-timing-func $animation-fill-mode;
+		transform-origin: left 50%;
+	}
+}
+.smellMenu__text__name, .smellMenu__svg {
+	display: inline-block;
+	margin-top: 50px;
+	position: relative;
+	animation: accent-color-slide-reveal $animation-dur $animation-timing-func $animation-fill-mode;
+  
+	&::after {
+		content: '';
+		position:absolute;
+   		top:0;
+    	bottom:0;
+   		left:0;
+		right: 0;
+		animation: accent-color-slide-reveal-rt $animation-dur $animation-timing-func $animation-fill-mode;
+		transform-origin: left 50%;
+	}
+}
+
+@keyframes accent-color-slide-reveal-rt {
+	0% { 
+		transform: scaleX(0); 
+	}
+	49% { 
+		transform: scaleX(1); 
+		transform-origin: left 50%; 
+	}
+	49.1% { 
+		transform: scaleX(.9); 
+		transform-origin: right 50%; 
+	}
+	100% { 
+		transform: scaleX(0); 
+		transform-origin: right 50%; 
+	}
+}
+
+@keyframes accent-color-slide-reveal {
+	0% { 
+		color: transparent;  
+	}
+	49% { 
+		color: transparent; 
+	}
+	49.1% { 
+		// color: set-button-text-color($background-color-dark); 
+	}
+	100% { 
+		// color: set-button-text-color($background-color-dark); 
+	}
+}
+
+//------------------------------------------------------------------
+.carousel-frame {
+  width: 100%;
+  margin-bottom: 0.5em;
+  padding-bottom: 1em;
+  position: relative;
+  overflow-x: scroll;
+  white-space: nowrap;
+}
+.carousel-frame ul {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  list-style: none;
+}
+.carousel-frame li.carousel-item {
+  cursor: pointer;
+  display: inline-block;
+  margin: 0 5px 0 0;
+  padding: 0;
+}
+
+/* хром, сафари */
+.carousel-frame::-webkit-scrollbar { width: 0; }
+
+/* ie 10+ */
+.carousel-frame { -ms-overflow-style: none; }
+
+/* фф (свойство больше не работает, других способов тоже нет)*/
+.carousel-frame { overflow: -moz-scrollbars-none; }
+// .trans3d
+// 	{
+// 		-webkit-transform-style: preserve-3d;
+// 		-webkit-transform: translate3d(0, 0, 0);
+// 		-moz-transform-style: preserve-3d;
+// 		-moz-transform: translate3d(0, 0, 0);
+// 		-ms-transform-style:preserve-3d;
+// 		-ms-transform: translate3d(0, 0, 0);
+// /* 		transform-style:preserve-3d; */
+// /* 		transform: translate3d(0, 0, 0); */
+
+// 		/*-webkit-backface-visibility: hidden;
+// 		-moz-backface-visibility: hidden;
+// 		-ms-backface-visibility:hidden;
+// 		backface-visibility:hidden;*/
+// 	}
+	
+	// #contentContainer
+	// {
+	// 	position:absolute;
+	// 	margin-left:-500px;
+	// 	margin-top:-500px;
+	// 	left:50%;
+	// 	top:50%;
+	// 	width:1000px;
+	// 	height:1000px;
+	// }
+	
+	// #carouselContainer
+	// {
+	// 	// position:absolute;
+	// 	// margin-left:-500px;
+	// 	// margin-top:-500px;
+	// 	left:50%;
+	// 	top:50%;
+	// 	width:500px;
+	// 	height:500px;
+	// }
+	
+	.carouselItem
+	{
+		// width:320px;
+		// height:130px;
+		// position:absolute;
+		// left:50%;
+		// top:50%;
+		// margin-left:-160px;
+		// margin-top:-90px;
+		// visibility:hidden;
+	}
+	
+	// .carouselItemInner
+	// {
+	// 	width:320px;
+	// 	height:130px;
+	// 	position:absolute;
+	// 	background-color:rgba(255, 255, 255, .75);
+	// 	border:10px solid rgba(255, 255, 255, .5);
+	// 	color:aqua;
+	// 	font-size:72px;
+	// 	left:50%;
+	// 	top:50%;
+	// 	margin-left:-160px;
+	// 	margin-top:-90px;
+	// 	text-align:center;
+	// 	padding-top:50px;
+		
+	// }

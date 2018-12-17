@@ -24,7 +24,7 @@ export default class Happy extends Component {
         super(props);
         this.state = {
             mute: false,
-            strikeThrough: "menu__bottom--happy",
+            strikeThrough: "menu__bottom--natural",
             displayCursor: true,
             cursor: "cursor__click",
             x: Number,
@@ -95,10 +95,10 @@ export default class Happy extends Component {
     };
 
     mute = () => {
-        if (this.state.strikeThrough === "menu__bottom--happy") {
-            this.setState({strikeThrough: "menu__bottom--happy strikethrough"});
+        if (this.state.strikeThrough === "menu__bottom--natural") {
+            this.setState({strikeThrough: "menu__bottom--natural strikethrough"});
         } else {
-            this.setState({strikeThrough: "menu__bottom--happy"});
+            this.setState({strikeThrough: "menu__bottom--natural"});
         }
         // if (this.state.strikeThrough === "menu__bottom--happy strikethrough") {
         //     this.video.current.muted = true;
@@ -181,7 +181,7 @@ export default class Happy extends Component {
                             <div onMouseOver={this.hide}
                                  onMouseOut={this.display}
                                  className="menu__bottom--button menu__bottom--side">
-                                <p className="menu__bottom--happy">Share</p>
+                                <p className="menu__bottom--natural">Share</p>
                             </div>
                             <div onMouseOver={this.hide}
                                  onMouseOut={this.display}

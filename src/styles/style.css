@@ -981,10 +981,34 @@ main.main-page {
           border-top: 1px solid;
           border-color: inherit;
           transform: rotate(-10deg); }
+        .letPerfumeTalk .menu__bottom .menu__bottom--side .menu__bottom--alive {
+          transition: color 400ms; }
+          .letPerfumeTalk .menu__bottom .menu__bottom--side .menu__bottom--alive:hover {
+            color: #00DF6C; }
         .letPerfumeTalk .menu__bottom .menu__bottom--side .menu__bottom--happy {
           transition: color 400ms; }
           .letPerfumeTalk .menu__bottom .menu__bottom--side .menu__bottom--happy:hover {
             color: yellow; }
+        .letPerfumeTalk .menu__bottom .menu__bottom--side .menu__bottom--love {
+          transition: color 400ms; }
+          .letPerfumeTalk .menu__bottom .menu__bottom--side .menu__bottom--love:hover {
+            color: #DE76B7; }
+        .letPerfumeTalk .menu__bottom .menu__bottom--side .menu__bottom--natural {
+          transition: color 400ms; }
+          .letPerfumeTalk .menu__bottom .menu__bottom--side .menu__bottom--natural:hover {
+            color: #86B051; }
+        .letPerfumeTalk .menu__bottom .menu__bottom--side .menu__bottom--rebellious {
+          transition: color 400ms; }
+          .letPerfumeTalk .menu__bottom .menu__bottom--side .menu__bottom--rebellious:hover {
+            color: red; }
+        .letPerfumeTalk .menu__bottom .menu__bottom--side .menu__bottom--sexy {
+          transition: color 400ms; }
+          .letPerfumeTalk .menu__bottom .menu__bottom--side .menu__bottom--sexy:hover {
+            color: yellow; }
+        .letPerfumeTalk .menu__bottom .menu__bottom--side .menu__bottom--zen {
+          transition: color 400ms; }
+          .letPerfumeTalk .menu__bottom .menu__bottom--side .menu__bottom--zen:hover {
+            color: bisque; }
     .letPerfumeTalk .menu__bottom > * {
       margin: 0 20px 0 20px;
       animation: loadingBottom 600ms forwards;

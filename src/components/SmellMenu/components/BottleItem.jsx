@@ -22,7 +22,7 @@ const BottleItem = props => {
       style={{ width: "230px" }}
     >
       <center>
-        <Link to={link}>
+        {/* <Link to={link}> */}
           { count === 0 &&
             <div style={{ opacity: visible, background: gradient, transition: "0.3s", position: "absolute", borderRadius: "50%",  width: "20px", height: "20px", marginLeft:"95px", marginTop: "160px" }} className="play_circle">
               <p className="play_circle_text1">play</p>
@@ -34,12 +34,12 @@ const BottleItem = props => {
             </div>
           }
            { count === 2 &&
-            <div style={{ opacity: visible, background: gradient, transition: "0.3s", position: "absolute", borderRadius: "50%",  width: "27px", height: "27px", marginLeft:"90px", marginTop: "220px" }} className="play_circle">
+            <div  style={{ opacity: visible, background: gradient, transition: "0.3s", position: "absolute", borderRadius: "50%",  width: "27px", height: "27px", marginLeft:"90px", marginTop: "220px" }} className="play_circle">
               <p className="play_circle_text3">play</p>
             </div>
           }
            { count === 3 &&
-            <div style={{ opacity: visible, background: gradient, transition: "0.3s", position: "absolute", borderRadius: "50%",  width: "30px", height: "30px", marginLeft:"90px", marginTop: "260px" }} className="play_circle">
+            <div onClick={console.log("_____________--")} style={{ opacity: visible, background: gradient, transition: "0.3s", position: "absolute", borderRadius: "50%",  width: "30px", height: "30px", marginLeft:"90px", marginTop: "260px" }} className="play_circle">
               <p className="play_circle_text">play</p>
             </div>
           }
@@ -59,7 +59,7 @@ const BottleItem = props => {
             </div>
           }
 
-        </Link>
+        {/* </Link> */}
         {visible === 0 ? <img className={countItem} alt={name} src={img} /> : <img className={countItem} alt={name} src={imgGif} />}
       </center>
     </div>

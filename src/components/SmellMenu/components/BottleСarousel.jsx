@@ -57,8 +57,8 @@ const data = [
     name: "rebelious",
     img: rebelious_1,
     imgGif: rebelious_2,
-    color: "#dc0714",
-    colorNext: "#7c045d",
+    color: "#7c045d",
+    colorNext: "#dc0714",
     link: "/LetPerfumeTalk/Rebellious",
   },
   {

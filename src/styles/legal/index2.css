@@ -1,0 +1,24 @@
+.primaryContainer {
+    height: auto;
+    margin-left: auto;
+    margin-right: auto;
+    min-height: 100%;
+    width: 50%;
+	padding:10px 10px 50px;
+	font-size:14px;
+	line-height:20px;
+}
+
+.legal {
+	color: #89cf34;
+	font-family: neutra_display_light,Arial,Helvetica,sans-serif;
+	font-size: 90px;
+	font-weight: normal;
+	height: auto;
+	line-height: 1em;
+	 margin: 6px 0 30px -9px;
+	min-height: 0;
+	text-align: left;
+	width: auto;
+	word-wrap: break-word;
+}

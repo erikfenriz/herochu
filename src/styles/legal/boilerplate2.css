@@ -1,0 +1,10 @@
+.primaryContainer { margin: 0; font-size: 100%; line-height: 1.231; }
+
+.primaryContainer { font-family: helvetica, arial,"lucida grande", verdana, "メイリオ", "ＭＳ Ｐゴシック", sans-serif; color: #222; }
+
+.primaryContainer {
+    position: relative;
+    height: 100%;
+    box-sizing: border-box;
+    overflow-y: auto;
+}

@@ -554,11 +554,11 @@ main.main-page .main-page__content .experience .experience__choice .experience__
   font-weight: normal;
   font-family: "Neutra display", sans-serif;
   font-style: italic;
-  font-size: 30pt;
+  font-size: 26pt;
   padding-left: 40%;
   line-height: 71px;
   margin-bottom: 2%;
-  margin-top: 5%;
+  margin-top: 4%;
 }
 .smellMenu-page .smellMenu__carousel {
   margin: 50px 50px 10px 0px;
@@ -573,47 +573,46 @@ main.main-page .main-page__content .experience .experience__choice .experience__
   font-weight: 200;
   font-family: "Neutra display", sans-serif;
   font-size: 30pt;
-  padding-left: 3%;
 }
 .smellMenu-page .smellMenu__footer .smellMenu__footer__mane {
   font-weight: 200;
   font-family: "Neutra display", sans-serif;
   font-size: 12pt;
-  padding-left: 3%;
+  color: green;
 }
 .smellMenu-page .smellMenu__footer .smellMenu__footer__left {
   position: fixed;
-  left: 0;
-  bottom: 0;
+  left: 1%;
+  bottom: 1%;
 }
 .smellMenu-page .smellMenu__footer .smellMenu__footer__right {
   position: fixed;
-  width: 300px;
-  right: 0;
+  width: 260px;
+  right: 1%;
   bottom: 1%;
 }
 .smellMenu-page .smellMenu__footer .smellMenu__footer__right_item {
   font-weight: 200;
   font-family: "Neutra display", sans-serif;
   font-size: 12pt;
-  padding-right: 5%;
+  padding-right: 2%;
 }
 .smellMenu-page .smellMenu__svg {
-  padding-left: 35%;
-  padding-top: 5%;
+  padding-left: 37%;
 }
 .smellMenu-page .smellMenu__text__perfume {
-  font-weight: bold;
+  font-weight: bolder;
   font-family: "Neutra display", sans-serif;
   font-size: 14pt;
-  padding-left: 40%;
+  padding-left: 42%;
 }
 .smellMenu-page .smellMenu__text__name {
   text-transform: uppercase;
   font-weight: 200;
   font-family: "Neutra display", sans-serif;
   font-size: 70pt;
-  padding-top: 2%;
+  letter-spacing: 0.2em;
+  padding-top: 0%;
 }
 .smellMenu-page .bottle_item:hover .play_circle {
   -moz-transform: scale(4);
@@ -622,16 +621,40 @@ main.main-page .main-page__content .experience .experience__choice .experience__
   -o-transform: scale(4);
   transform: scale(4);
 }
-.smellMenu-page .play_circle {
-  transition: 0.3s;
-  position: absolute;
-  border-radius: 50%;
-  width: 30px;
-  height: 30px;
-  margin-left: 90px;
-  margin-top: 280px;
-}
 .smellMenu-page .play_circle_text {
+  transition: 5s;
+  text-transform: uppercase;
+  font-weight: normal;
+  font-family: "Neutra display", sans-serif;
+  font-size: 5pt;
+  color: #ffffff;
+  position: absolute;
+  top: 19%;
+  left: 25%;
+}
+.smellMenu-page .play_circle_text1 {
+  transition: 5s;
+  text-transform: uppercase;
+  font-weight: bold;
+  font-family: "Neutra display", sans-serif;
+  font-size: 3pt;
+  color: #ffffff;
+  position: absolute;
+  top: 22%;
+  left: 28%;
+}
+.smellMenu-page .play_circle_text2 {
+  transition: 5s;
+  text-transform: uppercase;
+  font-weight: bold;
+  font-family: "Neutra display", sans-serif;
+  font-size: 4pt;
+  color: #ffffff;
+  position: absolute;
+  top: 19%;
+  left: 25%;
+}
+.smellMenu-page .play_circle_text3 {
   transition: 5s;
   text-transform: uppercase;
   font-weight: bold;
@@ -639,8 +662,8 @@ main.main-page .main-page__content .experience .experience__choice .experience__
   font-size: 5pt;
   color: #ffffff;
   position: absolute;
-  top: 19%;
-  left: 25%;
+  top: 17%;
+  left: 23%;
 }
 
 .bottle_item {
@@ -667,8 +690,9 @@ main.main-page .main-page__content .experience .experience__choice .experience__
 }
 
 #item3 {
+  padding-bottom: 7%;
   transition: 1s;
-  height: 450px;
+  height: 420px;
 }
 
 .smellMenu__text__perfume {
@@ -689,7 +713,7 @@ main.main-page .main-page__content .experience .experience__choice .experience__
 
 .smellMenu__text__name, .smellMenu__svg {
   display: inline-block;
-  margin-top: 50px;
+  padding-top: 5%;
   position: relative;
   animation: accent-color-slide-reveal 0.4s cubic-bezier(0.78, 0.1, 0.19, 0.91) forwards;
 }
@@ -701,7 +725,7 @@ main.main-page .main-page__content .experience .experience__choice .experience__
   left: 0;
   right: 0;
   animation: accent-color-slide-reveal-rt 0.4s cubic-bezier(0.78, 0.1, 0.19, 0.91) forwards;
-  transform-origin: left 50%;
+  transform-origin: left 55%;
 }
 
 @keyframes accent-color-slide-reveal-rt {
@@ -731,8 +755,6 @@ main.main-page .main-page__content .experience .experience__choice .experience__
 }
 .carousel-frame {
   width: 100%;
-  margin-bottom: 0.5em;
-  padding-bottom: 1em;
   position: relative;
   overflow-x: scroll;
   white-space: nowrap;

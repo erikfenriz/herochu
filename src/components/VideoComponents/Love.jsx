@@ -199,7 +199,9 @@ export default class Happy extends Component {
                         </p>
                     </div>
                 </main>
-                <div className={this.state.loader}>
+                <div onClick={this.clicked}
+                     onMouseMove={this.setCoordinates}
+                     className={this.state.loader}>
                     <div className="loading__text">
                         <h1>Loading</h1>
                         <div className="three-bounce">

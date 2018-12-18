@@ -45,7 +45,10 @@ export default class LetPerfumeTalk extends Component {
     render() {
         return (
             <main className="perfume-starting">
-                <video autoPlay muted loop className="perfume-starting__video">
+                <video autoPlay
+                       muted
+                       loop
+                       className="perfume-starting__video">
                     <source src={intro} type="video/mp4"/>
                 </video>
                 <Link to="/SmellMenu" className="perfume-starting__animation">

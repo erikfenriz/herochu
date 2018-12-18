@@ -40,6 +40,97 @@
 @font-face {
   font-family: 'Neutra display';
   src: url("fonts/NeutraDisplay/neutradisplay-thin-webfont.woff") format("woff"), url("fonts/NeutraDisplay/neutradisplay-thin-webfont.ttf") format("opentype"), url("fonts/NeutraDisplay/neutradisplay-thin-webfont.eot") format("opentype"), url("fonts/NeutraDisplay/neutradisplay-thin-webfont.svg#webfontg8dbVmxj") format("svg"); }
+/***************** CSS STYLES FROM ORIGINAL *****************/
+/***************** NEUTRA TEXT *****************/
+@font-face {
+  font-family: 'neutra_text_light';
+  src: url("fonts/NeutraText/neutratext-light-webfont.eot");
+  src: url("fonts/NeutraText/neutratext-light-webfont.eot?#iefix") format("embedded-opentype"), url("fonts/NeutraText/neutratext-light-webfont.woff") format("woff"), url("fonts/NeutraText/neutratext-light-webfont.ttf") format("truetype"), url("fonts/NeutraText/neutratext-light-webfont.svg#neutra_textlight") format("svg");
+  font-weight: normal;
+  font-style: normal; }
+@font-face {
+  font-family: 'neutra_text_light_italic';
+  src: url("fonts/NeutraText/neutratext-lightitalic-webfont.eot");
+  src: url("fonts/NeutraText/neutratext-lightitalic-webfont.eot?#iefix") format("embedded-opentype"), url("fonts/NeutraText/neutratext-lightitalic-webfont.woff") format("woff"), url("fonts/NeutraText/neutratext-lightitalic-webfont.ttf") format("truetype"), url("fonts/NeutraText/neutratext-lightitalic-webfont.svg#neutra_textlight_italic") format("svg");
+  font-weight: normal;
+  font-style: normal; }
+@font-face {
+  font-family: 'neutra_text_demi';
+  src: url("fonts/NeutraText/neutratext-demi-webfont.eot");
+  src: url("fonts/NeutraText/neutratext-demi-webfont.eot?#iefix") format("embedded-opentype"), url("fonts/NeutraText/neutratext-demi-webfont.woff") format("woff"), url("fonts/NeutraText/neutratext-demi-webfont.ttf") format("truetype"), url("fonts/NeutraText/neutratext-demi-webfont.svg#neutra_textdemi") format("svg");
+  font-weight: normal;
+  font-style: normal; }
+@font-face {
+  font-family: 'neutra_text_demi_italic';
+  src: url("fonts/NeutraText/neutratext-demiitalic-webfont.eot");
+  src: url("fonts/NeutraText/neutratext-demiitalic-webfont.eot?#iefix") format("embedded-opentype"), url("fonts/NeutraText/neutratext-demiitalic-webfont.woff") format("woff"), url("fonts/NeutraText/neutratext-demiitalic-webfont.ttf") format("truetype"), url("fonts/NeutraText/neutratext-demiitalic-webfont.svg#neutra_textdemi_italic") format("svg");
+  font-weight: normal;
+  font-style: normal; }
+@font-face {
+  font-family: 'neutra_text_book';
+  src: url("fonts/NeutraText/neutratext-book-webfont.eot");
+  src: url("fonts/NeutraText/neutratext-book-webfont.eot?#iefix") format("embedded-opentype"), url("fonts/NeutraText/neutratext-book-webfont.woff") format("woff"), url("fonts/NeutraText/neutratext-book-webfont.ttf") format("truetype"), url("fonts/NeutraText/neutratext-book-webfont.svg#neutra_textregular") format("svg");
+  font-weight: normal;
+  font-style: normal; }
+@font-face {
+  font-family: 'neutra_text_book_italic';
+  src: url("fonts/NeutraText/neutratext-bookitalic-webfont.eot");
+  src: url("fonts/NeutraText/neutratext-bookitalic-webfont.eot?#iefix") format("embedded-opentype"), url("fonts/NeutraText/neutratext-bookitalic-webfont.woff") format("woff"), url("fonts/NeutraText/neutratext-bookitalic-webfont.ttf") format("truetype"), url("fonts/NeutraText/neutratext-bookitalic-webfont.svg#neutra_textitalic") format("svg");
+  font-weight: normal;
+  font-style: normal; }
+@font-face {
+  font-family: 'neutra_text_bold';
+  src: url("fonts/NeutraText/neutratext-bold-webfont.eot");
+  src: url("fonts/NeutraText/neutratext-bold-webfont.eot?#iefix") format("embedded-opentype"), url("fonts/NeutraText/neutratext-bold-webfont.woff") format("woff"), url("fonts/NeutraText/neutratext-bold-webfont.ttf") format("truetype"), url("fonts/NeutraText/neutratext-bold-webfont.svg#neutra_textbold") format("svg");
+  font-weight: normal;
+  font-style: normal; }
+@font-face {
+  font-family: 'neutra_text_bold_italic';
+  src: url("fonts/NeutraText/neutratext-bolditalic-webfont.eot");
+  src: url("fonts/NeutraText/neutratext-bolditalic-webfont.eot?#iefix") format("embedded-opentype"), url("fonts/NeutraText/neutratext-bolditalic-webfont.woff") format("woff"), url("fonts/NeutraText/neutratext-bolditalic-webfont.ttf") format("truetype"), url("fonts/NeutraText/neutratext-bolditalic-webfont.svg#neutra_textbold_italic") format("svg");
+  font-weight: normal;
+  font-style: italic; }
+/***************** NEUTRA DISPLAY *****************/
+@font-face {
+  font-family: 'neutra_display_thin';
+  src: url("fonts/NeutraDisplay/neutradisplay-thin-webfont.eot");
+  src: url("fonts/NeutraDisplay/neutradisplay-thin-webfont.eot?#iefix") format("embedded-opentype"), url("fonts/NeutraDisplay/neutradisplay-thin-webfont.woff") format("woff"), url("fonts/NeutraDisplay/neutradisplay-thin-webfont.ttf") format("truetype"), url("fonts/NeutraDisplay/neutradisplay-thin-webfont.svg#neutra_displaythin") format("svg");
+  font-weight: normal;
+  font-style: normal; }
+@font-face {
+  font-family: 'neutra_display_light';
+  src: url("fonts/NeutraDisplay/neutradisplay-light-webfont.eot");
+  src: url("fonts/NeutraDisplay/neutradisplay-light-webfont.eot?#iefix") format("embedded-opentype"), url("fonts/NeutraDisplay/neutradisplay-light-webfont.woff") format("woff"), url("fonts/NeutraDisplay/neutradisplay-light-webfont.ttf") format("truetype"), url("fonts/NeutraDisplay/neutradisplay-light-webfont.svg#neutra_displayregular") format("svg");
+  font-weight: normal;
+  font-style: normal; }
+@font-face {
+  font-family: 'neutra_display_medium';
+  src: url("fonts/NeutraDisplay/neutradisplay-medium-webfont.eot");
+  src: url("fonts/NeutraDisplay/neutradisplay-medium-webfont.eot?#iefix") format("embedded-opentype"), url("fonts/NeutraDisplay/neutradisplay-medium-webfont.woff") format("woff"), url("fonts/NeutraDisplay/neutradisplay-medium-webfont.ttf") format("truetype"), url("fonts/NeutraDisplay/neutradisplay-medium-webfont.svg#neutra_displaymedium") format("svg");
+  font-weight: normal;
+  font-style: normal; }
+@font-face {
+  font-family: 'neutra_display_bold';
+  src: url("fonts/NeutraDisplay/neutradisplay-bold-webfont.eot");
+  src: url("fonts/NeutraDisplay/neutradisplay-bold-webfont.eot?#iefix") format("embedded-opentype"), url("fonts/NeutraDisplay/neutradisplay-bold-webfont.woff") format("woff"), url("fonts/NeutraDisplay/neutradisplay-bold-webfont.ttf") format("truetype"), url("fonts/NeutraDisplay/neutradisplay-bold-webfont.svg#neutra_displaybold") format("svg");
+  font-weight: normal;
+  font-style: normal; }
+/*
+@media screen and (-webkit-min-device-pixel-ratio: 0) {
+
+	@font-face {
+		font-family: 'neutra_display_thin';
+		src: url('neutradisplay-light-webfont.svg#neutra_displayregular') format('svg');
+		font-weight: normal;
+		font-style: normal;
+	}
+
+	#primaryContainer .voc .header, #primaryContainer .voc .header a {
+		font-family: "neutra_display_bold", Arial, Helvetica, sans-serif !important;
+	}
+
+}
+*/
 @keyframes fadeInHeader {
   0% {
     opacity: 0; }
@@ -126,8 +217,8 @@ main.main-page {
               font-size: 40px;
               line-height: 1.1em; } }
       main.main-page .main-page__content .intro__title--secondary {
-        font-family: 'Neutra display', sans-serif;
-        font-weight: 400;
+        font-family: 'Neutra text', sans-serif;
+        font-weight: 600;
         font-style: italic;
         font-size: 31px;
         animation: fadeInSecondary 1.5s 1 forwards;
@@ -155,9 +246,10 @@ main.main-page {
         -o-animation: fadeInListSummary 1.5s 1 forwards;
         /* Opera < 12.1 */
         transition: opacity 1500ms ease 0s;
-        font-family: 'Neutra display', sans-serif;
+        font-family: 'neutra_text_light', sans-serif;
         font-weight: 200;
-        font-size: 22px; }
+        font-size: 18.5px;
+        font-style: normal !important; }
       main.main-page .main-page__content .intro__title--summary {
         line-height: 20px;
         max-width: 716px;
@@ -171,9 +263,10 @@ main.main-page {
         -o-animation: fadeInListSummary 1.5s 1 forwards;
         /* Opera < 12.1 */
         transition: opacity 1500ms ease 0s;
-        font-family: 'Neutra display', sans-serif;
+        font-family: 'neutra_text_light', sans-serif;
         font-weight: 200;
-        font-size: 22px; }
+        font-size: 18.5px;
+        font-style: normal !important; }
     main.main-page .main-page__content .intro .experience__responsive {
       display: none; }
       @media (max-width: 1100px) {
@@ -670,6 +763,97 @@ main.main-page {
 @font-face {
   font-family: 'Neutra display';
   src: url("fonts/NeutraDisplay/neutradisplay-thin-webfont.woff") format("woff"), url("fonts/NeutraDisplay/neutradisplay-thin-webfont.ttf") format("opentype"), url("fonts/NeutraDisplay/neutradisplay-thin-webfont.eot") format("opentype"), url("fonts/NeutraDisplay/neutradisplay-thin-webfont.svg#webfontg8dbVmxj") format("svg"); }
+/***************** CSS STYLES FROM ORIGINAL *****************/
+/***************** NEUTRA TEXT *****************/
+@font-face {
+  font-family: 'neutra_text_light';
+  src: url("fonts/NeutraText/neutratext-light-webfont.eot");
+  src: url("fonts/NeutraText/neutratext-light-webfont.eot?#iefix") format("embedded-opentype"), url("fonts/NeutraText/neutratext-light-webfont.woff") format("woff"), url("fonts/NeutraText/neutratext-light-webfont.ttf") format("truetype"), url("fonts/NeutraText/neutratext-light-webfont.svg#neutra_textlight") format("svg");
+  font-weight: normal;
+  font-style: normal; }
+@font-face {
+  font-family: 'neutra_text_light_italic';
+  src: url("fonts/NeutraText/neutratext-lightitalic-webfont.eot");
+  src: url("fonts/NeutraText/neutratext-lightitalic-webfont.eot?#iefix") format("embedded-opentype"), url("fonts/NeutraText/neutratext-lightitalic-webfont.woff") format("woff"), url("fonts/NeutraText/neutratext-lightitalic-webfont.ttf") format("truetype"), url("fonts/NeutraText/neutratext-lightitalic-webfont.svg#neutra_textlight_italic") format("svg");
+  font-weight: normal;
+  font-style: normal; }
+@font-face {
+  font-family: 'neutra_text_demi';
+  src: url("fonts/NeutraText/neutratext-demi-webfont.eot");
+  src: url("fonts/NeutraText/neutratext-demi-webfont.eot?#iefix") format("embedded-opentype"), url("fonts/NeutraText/neutratext-demi-webfont.woff") format("woff"), url("fonts/NeutraText/neutratext-demi-webfont.ttf") format("truetype"), url("fonts/NeutraText/neutratext-demi-webfont.svg#neutra_textdemi") format("svg");
+  font-weight: normal;
+  font-style: normal; }
+@font-face {
+  font-family: 'neutra_text_demi_italic';
+  src: url("fonts/NeutraText/neutratext-demiitalic-webfont.eot");
+  src: url("fonts/NeutraText/neutratext-demiitalic-webfont.eot?#iefix") format("embedded-opentype"), url("fonts/NeutraText/neutratext-demiitalic-webfont.woff") format("woff"), url("fonts/NeutraText/neutratext-demiitalic-webfont.ttf") format("truetype"), url("fonts/NeutraText/neutratext-demiitalic-webfont.svg#neutra_textdemi_italic") format("svg");
+  font-weight: normal;
+  font-style: normal; }
+@font-face {
+  font-family: 'neutra_text_book';
+  src: url("fonts/NeutraText/neutratext-book-webfont.eot");
+  src: url("fonts/NeutraText/neutratext-book-webfont.eot?#iefix") format("embedded-opentype"), url("fonts/NeutraText/neutratext-book-webfont.woff") format("woff"), url("fonts/NeutraText/neutratext-book-webfont.ttf") format("truetype"), url("fonts/NeutraText/neutratext-book-webfont.svg#neutra_textregular") format("svg");
+  font-weight: normal;
+  font-style: normal; }
+@font-face {
+  font-family: 'neutra_text_book_italic';
+  src: url("fonts/NeutraText/neutratext-bookitalic-webfont.eot");
+  src: url("fonts/NeutraText/neutratext-bookitalic-webfont.eot?#iefix") format("embedded-opentype"), url("fonts/NeutraText/neutratext-bookitalic-webfont.woff") format("woff"), url("fonts/NeutraText/neutratext-bookitalic-webfont.ttf") format("truetype"), url("fonts/NeutraText/neutratext-bookitalic-webfont.svg#neutra_textitalic") format("svg");
+  font-weight: normal;
+  font-style: normal; }
+@font-face {
+  font-family: 'neutra_text_bold';
+  src: url("fonts/NeutraText/neutratext-bold-webfont.eot");
+  src: url("fonts/NeutraText/neutratext-bold-webfont.eot?#iefix") format("embedded-opentype"), url("fonts/NeutraText/neutratext-bold-webfont.woff") format("woff"), url("fonts/NeutraText/neutratext-bold-webfont.ttf") format("truetype"), url("fonts/NeutraText/neutratext-bold-webfont.svg#neutra_textbold") format("svg");
+  font-weight: normal;
+  font-style: normal; }
+@font-face {
+  font-family: 'neutra_text_bold_italic';
+  src: url("fonts/NeutraText/neutratext-bolditalic-webfont.eot");
+  src: url("fonts/NeutraText/neutratext-bolditalic-webfont.eot?#iefix") format("embedded-opentype"), url("fonts/NeutraText/neutratext-bolditalic-webfont.woff") format("woff"), url("fonts/NeutraText/neutratext-bolditalic-webfont.ttf") format("truetype"), url("fonts/NeutraText/neutratext-bolditalic-webfont.svg#neutra_textbold_italic") format("svg");
+  font-weight: normal;
+  font-style: italic; }
+/***************** NEUTRA DISPLAY *****************/
+@font-face {
+  font-family: 'neutra_display_thin';
+  src: url("fonts/NeutraDisplay/neutradisplay-thin-webfont.eot");
+  src: url("fonts/NeutraDisplay/neutradisplay-thin-webfont.eot?#iefix") format("embedded-opentype"), url("fonts/NeutraDisplay/neutradisplay-thin-webfont.woff") format("woff"), url("fonts/NeutraDisplay/neutradisplay-thin-webfont.ttf") format("truetype"), url("fonts/NeutraDisplay/neutradisplay-thin-webfont.svg#neutra_displaythin") format("svg");
+  font-weight: normal;
+  font-style: normal; }
+@font-face {
+  font-family: 'neutra_display_light';
+  src: url("fonts/NeutraDisplay/neutradisplay-light-webfont.eot");
+  src: url("fonts/NeutraDisplay/neutradisplay-light-webfont.eot?#iefix") format("embedded-opentype"), url("fonts/NeutraDisplay/neutradisplay-light-webfont.woff") format("woff"), url("fonts/NeutraDisplay/neutradisplay-light-webfont.ttf") format("truetype"), url("fonts/NeutraDisplay/neutradisplay-light-webfont.svg#neutra_displayregular") format("svg");
+  font-weight: normal;
+  font-style: normal; }
+@font-face {
+  font-family: 'neutra_display_medium';
+  src: url("fonts/NeutraDisplay/neutradisplay-medium-webfont.eot");
+  src: url("fonts/NeutraDisplay/neutradisplay-medium-webfont.eot?#iefix") format("embedded-opentype"), url("fonts/NeutraDisplay/neutradisplay-medium-webfont.woff") format("woff"), url("fonts/NeutraDisplay/neutradisplay-medium-webfont.ttf") format("truetype"), url("fonts/NeutraDisplay/neutradisplay-medium-webfont.svg#neutra_displaymedium") format("svg");
+  font-weight: normal;
+  font-style: normal; }
+@font-face {
+  font-family: 'neutra_display_bold';
+  src: url("fonts/NeutraDisplay/neutradisplay-bold-webfont.eot");
+  src: url("fonts/NeutraDisplay/neutradisplay-bold-webfont.eot?#iefix") format("embedded-opentype"), url("fonts/NeutraDisplay/neutradisplay-bold-webfont.woff") format("woff"), url("fonts/NeutraDisplay/neutradisplay-bold-webfont.ttf") format("truetype"), url("fonts/NeutraDisplay/neutradisplay-bold-webfont.svg#neutra_displaybold") format("svg");
+  font-weight: normal;
+  font-style: normal; }
+/*
+@media screen and (-webkit-min-device-pixel-ratio: 0) {
+
+	@font-face {
+		font-family: 'neutra_display_thin';
+		src: url('neutradisplay-light-webfont.svg#neutra_displayregular') format('svg');
+		font-weight: normal;
+		font-style: normal;
+	}
+
+	#primaryContainer .voc .header, #primaryContainer .voc .header a {
+		font-family: "neutra_display_bold", Arial, Helvetica, sans-serif !important;
+	}
+
+}
+*/
 @keyframes fadeIn {
   0% {
     opacity: 0; }
@@ -716,8 +900,10 @@ main.main-page {
       -webkit-transform: scale(0.4);
       transform: scale(0); }
     .perfume-starting__animation .perfume-starting__text {
-      font-family: 'Neutra display', sans-serif;
+      font-family: 'Neutra text', sans-serif;
       font-size: 1.8em;
+      font-weight: 500;
+      font-style: italic;
       animation: fadeIn 2000ms;
       position: relative;
       color: white;
@@ -765,6 +951,97 @@ main.main-page {
 @font-face {
   font-family: 'Neutra display';
   src: url("fonts/NeutraDisplay/neutradisplay-thin-webfont.woff") format("woff"), url("fonts/NeutraDisplay/neutradisplay-thin-webfont.ttf") format("opentype"), url("fonts/NeutraDisplay/neutradisplay-thin-webfont.eot") format("opentype"), url("fonts/NeutraDisplay/neutradisplay-thin-webfont.svg#webfontg8dbVmxj") format("svg"); }
+/***************** CSS STYLES FROM ORIGINAL *****************/
+/***************** NEUTRA TEXT *****************/
+@font-face {
+  font-family: 'neutra_text_light';
+  src: url("fonts/NeutraText/neutratext-light-webfont.eot");
+  src: url("fonts/NeutraText/neutratext-light-webfont.eot?#iefix") format("embedded-opentype"), url("fonts/NeutraText/neutratext-light-webfont.woff") format("woff"), url("fonts/NeutraText/neutratext-light-webfont.ttf") format("truetype"), url("fonts/NeutraText/neutratext-light-webfont.svg#neutra_textlight") format("svg");
+  font-weight: normal;
+  font-style: normal; }
+@font-face {
+  font-family: 'neutra_text_light_italic';
+  src: url("fonts/NeutraText/neutratext-lightitalic-webfont.eot");
+  src: url("fonts/NeutraText/neutratext-lightitalic-webfont.eot?#iefix") format("embedded-opentype"), url("fonts/NeutraText/neutratext-lightitalic-webfont.woff") format("woff"), url("fonts/NeutraText/neutratext-lightitalic-webfont.ttf") format("truetype"), url("fonts/NeutraText/neutratext-lightitalic-webfont.svg#neutra_textlight_italic") format("svg");
+  font-weight: normal;
+  font-style: normal; }
+@font-face {
+  font-family: 'neutra_text_demi';
+  src: url("fonts/NeutraText/neutratext-demi-webfont.eot");
+  src: url("fonts/NeutraText/neutratext-demi-webfont.eot?#iefix") format("embedded-opentype"), url("fonts/NeutraText/neutratext-demi-webfont.woff") format("woff"), url("fonts/NeutraText/neutratext-demi-webfont.ttf") format("truetype"), url("fonts/NeutraText/neutratext-demi-webfont.svg#neutra_textdemi") format("svg");
+  font-weight: normal;
+  font-style: normal; }
+@font-face {
+  font-family: 'neutra_text_demi_italic';
+  src: url("fonts/NeutraText/neutratext-demiitalic-webfont.eot");
+  src: url("fonts/NeutraText/neutratext-demiitalic-webfont.eot?#iefix") format("embedded-opentype"), url("fonts/NeutraText/neutratext-demiitalic-webfont.woff") format("woff"), url("fonts/NeutraText/neutratext-demiitalic-webfont.ttf") format("truetype"), url("fonts/NeutraText/neutratext-demiitalic-webfont.svg#neutra_textdemi_italic") format("svg");
+  font-weight: normal;
+  font-style: normal; }
+@font-face {
+  font-family: 'neutra_text_book';
+  src: url("fonts/NeutraText/neutratext-book-webfont.eot");
+  src: url("fonts/NeutraText/neutratext-book-webfont.eot?#iefix") format("embedded-opentype"), url("fonts/NeutraText/neutratext-book-webfont.woff") format("woff"), url("fonts/NeutraText/neutratext-book-webfont.ttf") format("truetype"), url("fonts/NeutraText/neutratext-book-webfont.svg#neutra_textregular") format("svg");
+  font-weight: normal;
+  font-style: normal; }
+@font-face {
+  font-family: 'neutra_text_book_italic';
+  src: url("fonts/NeutraText/neutratext-bookitalic-webfont.eot");
+  src: url("fonts/NeutraText/neutratext-bookitalic-webfont.eot?#iefix") format("embedded-opentype"), url("fonts/NeutraText/neutratext-bookitalic-webfont.woff") format("woff"), url("fonts/NeutraText/neutratext-bookitalic-webfont.ttf") format("truetype"), url("fonts/NeutraText/neutratext-bookitalic-webfont.svg#neutra_textitalic") format("svg");
+  font-weight: normal;
+  font-style: normal; }
+@font-face {
+  font-family: 'neutra_text_bold';
+  src: url("fonts/NeutraText/neutratext-bold-webfont.eot");
+  src: url("fonts/NeutraText/neutratext-bold-webfont.eot?#iefix") format("embedded-opentype"), url("fonts/NeutraText/neutratext-bold-webfont.woff") format("woff"), url("fonts/NeutraText/neutratext-bold-webfont.ttf") format("truetype"), url("fonts/NeutraText/neutratext-bold-webfont.svg#neutra_textbold") format("svg");
+  font-weight: normal;
+  font-style: normal; }
+@font-face {
+  font-family: 'neutra_text_bold_italic';
+  src: url("fonts/NeutraText/neutratext-bolditalic-webfont.eot");
+  src: url("fonts/NeutraText/neutratext-bolditalic-webfont.eot?#iefix") format("embedded-opentype"), url("fonts/NeutraText/neutratext-bolditalic-webfont.woff") format("woff"), url("fonts/NeutraText/neutratext-bolditalic-webfont.ttf") format("truetype"), url("fonts/NeutraText/neutratext-bolditalic-webfont.svg#neutra_textbold_italic") format("svg");
+  font-weight: normal;
+  font-style: italic; }
+/***************** NEUTRA DISPLAY *****************/
+@font-face {
+  font-family: 'neutra_display_thin';
+  src: url("fonts/NeutraDisplay/neutradisplay-thin-webfont.eot");
+  src: url("fonts/NeutraDisplay/neutradisplay-thin-webfont.eot?#iefix") format("embedded-opentype"), url("fonts/NeutraDisplay/neutradisplay-thin-webfont.woff") format("woff"), url("fonts/NeutraDisplay/neutradisplay-thin-webfont.ttf") format("truetype"), url("fonts/NeutraDisplay/neutradisplay-thin-webfont.svg#neutra_displaythin") format("svg");
+  font-weight: normal;
+  font-style: normal; }
+@font-face {
+  font-family: 'neutra_display_light';
+  src: url("fonts/NeutraDisplay/neutradisplay-light-webfont.eot");
+  src: url("fonts/NeutraDisplay/neutradisplay-light-webfont.eot?#iefix") format("embedded-opentype"), url("fonts/NeutraDisplay/neutradisplay-light-webfont.woff") format("woff"), url("fonts/NeutraDisplay/neutradisplay-light-webfont.ttf") format("truetype"), url("fonts/NeutraDisplay/neutradisplay-light-webfont.svg#neutra_displayregular") format("svg");
+  font-weight: normal;
+  font-style: normal; }
+@font-face {
+  font-family: 'neutra_display_medium';
+  src: url("fonts/NeutraDisplay/neutradisplay-medium-webfont.eot");
+  src: url("fonts/NeutraDisplay/neutradisplay-medium-webfont.eot?#iefix") format("embedded-opentype"), url("fonts/NeutraDisplay/neutradisplay-medium-webfont.woff") format("woff"), url("fonts/NeutraDisplay/neutradisplay-medium-webfont.ttf") format("truetype"), url("fonts/NeutraDisplay/neutradisplay-medium-webfont.svg#neutra_displaymedium") format("svg");
+  font-weight: normal;
+  font-style: normal; }
+@font-face {
+  font-family: 'neutra_display_bold';
+  src: url("fonts/NeutraDisplay/neutradisplay-bold-webfont.eot");
+  src: url("fonts/NeutraDisplay/neutradisplay-bold-webfont.eot?#iefix") format("embedded-opentype"), url("fonts/NeutraDisplay/neutradisplay-bold-webfont.woff") format("woff"), url("fonts/NeutraDisplay/neutradisplay-bold-webfont.ttf") format("truetype"), url("fonts/NeutraDisplay/neutradisplay-bold-webfont.svg#neutra_displaybold") format("svg");
+  font-weight: normal;
+  font-style: normal; }
+/*
+@media screen and (-webkit-min-device-pixel-ratio: 0) {
+
+	@font-face {
+		font-family: 'neutra_display_thin';
+		src: url('neutradisplay-light-webfont.svg#neutra_displayregular') format('svg');
+		font-weight: normal;
+		font-style: normal;
+	}
+
+	#primaryContainer .voc .header, #primaryContainer .voc .header a {
+		font-family: "neutra_display_bold", Arial, Helvetica, sans-serif !important;
+	}
+
+}
+*/
 @keyframes anima {
   0% {
     opacity: 1; }
@@ -1164,6 +1441,97 @@ main.main-page {
 @font-face {
   font-family: 'Neutra display';
   src: url("fonts/NeutraDisplay/neutradisplay-thin-webfont.woff") format("woff"), url("fonts/NeutraDisplay/neutradisplay-thin-webfont.ttf") format("opentype"), url("fonts/NeutraDisplay/neutradisplay-thin-webfont.eot") format("opentype"), url("fonts/NeutraDisplay/neutradisplay-thin-webfont.svg#webfontg8dbVmxj") format("svg"); }
+/***************** CSS STYLES FROM ORIGINAL *****************/
+/***************** NEUTRA TEXT *****************/
+@font-face {
+  font-family: 'neutra_text_light';
+  src: url("fonts/NeutraText/neutratext-light-webfont.eot");
+  src: url("fonts/NeutraText/neutratext-light-webfont.eot?#iefix") format("embedded-opentype"), url("fonts/NeutraText/neutratext-light-webfont.woff") format("woff"), url("fonts/NeutraText/neutratext-light-webfont.ttf") format("truetype"), url("fonts/NeutraText/neutratext-light-webfont.svg#neutra_textlight") format("svg");
+  font-weight: normal;
+  font-style: normal; }
+@font-face {
+  font-family: 'neutra_text_light_italic';
+  src: url("fonts/NeutraText/neutratext-lightitalic-webfont.eot");
+  src: url("fonts/NeutraText/neutratext-lightitalic-webfont.eot?#iefix") format("embedded-opentype"), url("fonts/NeutraText/neutratext-lightitalic-webfont.woff") format("woff"), url("fonts/NeutraText/neutratext-lightitalic-webfont.ttf") format("truetype"), url("fonts/NeutraText/neutratext-lightitalic-webfont.svg#neutra_textlight_italic") format("svg");
+  font-weight: normal;
+  font-style: normal; }
+@font-face {
+  font-family: 'neutra_text_demi';
+  src: url("fonts/NeutraText/neutratext-demi-webfont.eot");
+  src: url("fonts/NeutraText/neutratext-demi-webfont.eot?#iefix") format("embedded-opentype"), url("fonts/NeutraText/neutratext-demi-webfont.woff") format("woff"), url("fonts/NeutraText/neutratext-demi-webfont.ttf") format("truetype"), url("fonts/NeutraText/neutratext-demi-webfont.svg#neutra_textdemi") format("svg");
+  font-weight: normal;
+  font-style: normal; }
+@font-face {
+  font-family: 'neutra_text_demi_italic';
+  src: url("fonts/NeutraText/neutratext-demiitalic-webfont.eot");
+  src: url("fonts/NeutraText/neutratext-demiitalic-webfont.eot?#iefix") format("embedded-opentype"), url("fonts/NeutraText/neutratext-demiitalic-webfont.woff") format("woff"), url("fonts/NeutraText/neutratext-demiitalic-webfont.ttf") format("truetype"), url("fonts/NeutraText/neutratext-demiitalic-webfont.svg#neutra_textdemi_italic") format("svg");
+  font-weight: normal;
+  font-style: normal; }
+@font-face {
+  font-family: 'neutra_text_book';
+  src: url("fonts/NeutraText/neutratext-book-webfont.eot");
+  src: url("fonts/NeutraText/neutratext-book-webfont.eot?#iefix") format("embedded-opentype"), url("fonts/NeutraText/neutratext-book-webfont.woff") format("woff"), url("fonts/NeutraText/neutratext-book-webfont.ttf") format("truetype"), url("fonts/NeutraText/neutratext-book-webfont.svg#neutra_textregular") format("svg");
+  font-weight: normal;
+  font-style: normal; }
+@font-face {
+  font-family: 'neutra_text_book_italic';
+  src: url("fonts/NeutraText/neutratext-bookitalic-webfont.eot");
+  src: url("fonts/NeutraText/neutratext-bookitalic-webfont.eot?#iefix") format("embedded-opentype"), url("fonts/NeutraText/neutratext-bookitalic-webfont.woff") format("woff"), url("fonts/NeutraText/neutratext-bookitalic-webfont.ttf") format("truetype"), url("fonts/NeutraText/neutratext-bookitalic-webfont.svg#neutra_textitalic") format("svg");
+  font-weight: normal;
+  font-style: normal; }
+@font-face {
+  font-family: 'neutra_text_bold';
+  src: url("fonts/NeutraText/neutratext-bold-webfont.eot");
+  src: url("fonts/NeutraText/neutratext-bold-webfont.eot?#iefix") format("embedded-opentype"), url("fonts/NeutraText/neutratext-bold-webfont.woff") format("woff"), url("fonts/NeutraText/neutratext-bold-webfont.ttf") format("truetype"), url("fonts/NeutraText/neutratext-bold-webfont.svg#neutra_textbold") format("svg");
+  font-weight: normal;
+  font-style: normal; }
+@font-face {
+  font-family: 'neutra_text_bold_italic';
+  src: url("fonts/NeutraText/neutratext-bolditalic-webfont.eot");
+  src: url("fonts/NeutraText/neutratext-bolditalic-webfont.eot?#iefix") format("embedded-opentype"), url("fonts/NeutraText/neutratext-bolditalic-webfont.woff") format("woff"), url("fonts/NeutraText/neutratext-bolditalic-webfont.ttf") format("truetype"), url("fonts/NeutraText/neutratext-bolditalic-webfont.svg#neutra_textbold_italic") format("svg");
+  font-weight: normal;
+  font-style: italic; }
+/***************** NEUTRA DISPLAY *****************/
+@font-face {
+  font-family: 'neutra_display_thin';
+  src: url("fonts/NeutraDisplay/neutradisplay-thin-webfont.eot");
+  src: url("fonts/NeutraDisplay/neutradisplay-thin-webfont.eot?#iefix") format("embedded-opentype"), url("fonts/NeutraDisplay/neutradisplay-thin-webfont.woff") format("woff"), url("fonts/NeutraDisplay/neutradisplay-thin-webfont.ttf") format("truetype"), url("fonts/NeutraDisplay/neutradisplay-thin-webfont.svg#neutra_displaythin") format("svg");
+  font-weight: normal;
+  font-style: normal; }
+@font-face {
+  font-family: 'neutra_display_light';
+  src: url("fonts/NeutraDisplay/neutradisplay-light-webfont.eot");
+  src: url("fonts/NeutraDisplay/neutradisplay-light-webfont.eot?#iefix") format("embedded-opentype"), url("fonts/NeutraDisplay/neutradisplay-light-webfont.woff") format("woff"), url("fonts/NeutraDisplay/neutradisplay-light-webfont.ttf") format("truetype"), url("fonts/NeutraDisplay/neutradisplay-light-webfont.svg#neutra_displayregular") format("svg");
+  font-weight: normal;
+  font-style: normal; }
+@font-face {
+  font-family: 'neutra_display_medium';
+  src: url("fonts/NeutraDisplay/neutradisplay-medium-webfont.eot");
+  src: url("fonts/NeutraDisplay/neutradisplay-medium-webfont.eot?#iefix") format("embedded-opentype"), url("fonts/NeutraDisplay/neutradisplay-medium-webfont.woff") format("woff"), url("fonts/NeutraDisplay/neutradisplay-medium-webfont.ttf") format("truetype"), url("fonts/NeutraDisplay/neutradisplay-medium-webfont.svg#neutra_displaymedium") format("svg");
+  font-weight: normal;
+  font-style: normal; }
+@font-face {
+  font-family: 'neutra_display_bold';
+  src: url("fonts/NeutraDisplay/neutradisplay-bold-webfont.eot");
+  src: url("fonts/NeutraDisplay/neutradisplay-bold-webfont.eot?#iefix") format("embedded-opentype"), url("fonts/NeutraDisplay/neutradisplay-bold-webfont.woff") format("woff"), url("fonts/NeutraDisplay/neutradisplay-bold-webfont.ttf") format("truetype"), url("fonts/NeutraDisplay/neutradisplay-bold-webfont.svg#neutra_displaybold") format("svg");
+  font-weight: normal;
+  font-style: normal; }
+/*
+@media screen and (-webkit-min-device-pixel-ratio: 0) {
+
+	@font-face {
+		font-family: 'neutra_display_thin';
+		src: url('neutradisplay-light-webfont.svg#neutra_displayregular') format('svg');
+		font-weight: normal;
+		font-style: normal;
+	}
+
+	#primaryContainer .voc .header, #primaryContainer .voc .header a {
+		font-family: "neutra_display_bold", Arial, Helvetica, sans-serif !important;
+	}
+
+}
+*/
 @keyframes bouncedelay {
   0%, 80%, 100% {
     transform: scale(0); }

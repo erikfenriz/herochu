@@ -44,9 +44,10 @@
 
 @mixin experience-text {
   font: {
-    family: 'Neutra display', sans-serif;
+    family: 'neutra_text_light', sans-serif;
     weight: 200;
-    size: 22px;
+    size: 18.5px;
+    style: normal !important;
   }
 }
 
@@ -227,8 +228,8 @@ main.main-page {
 
         &--secondary {
           font: {
-            family: 'Neutra display', sans-serif;
-            weight: 400;
+            family: 'Neutra text', sans-serif;
+            weight: 600;
             style: italic;
             size: 31px;
           }

@@ -66,8 +66,10 @@
 
     .perfume-starting__text {
       font: {
-        family: 'Neutra display', sans-serif;
+        family: 'Neutra text', sans-serif;
         size: 1.8em;
+        weight: 500;
+        style: italic;
       }
       animation: fadeIn 2000ms;
       position: relative;

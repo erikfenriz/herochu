@@ -53,6 +53,7 @@ const SmellMenu = props => {
           <label className='smellMenu__footer__right_item text_footer'>Legal </label>
           <label className='smellMenu__footer__right_item text_footer'>Credits</label>
           <label className='smellMenu__footer__right_item text_footer'>MANE © 2019</label>
+   
           <label className='smellMenu__footer__right_item '><img alt="youtube" src={youtube}  /></label>
           <label className='smellMenu__footer__right_item '><img alt="facebook" src={facebook} /></label>
           <label className='smellMenu__footer__right_item '><img alt="twitter" src={twitter}  /></label>

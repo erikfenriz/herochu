@@ -6,9 +6,9 @@
   .smellMenu__title {
     font: {
       weight: normal;
-      family: 'Neutra text', sans-serif;
+      family: 'neutra_text_book_italic', sans-serif;
       style: italic;
-      size: 33pt;
+      size: 28pt;
     }
     padding-left: 40%;
     margin-bottom: 2%;
@@ -31,8 +31,8 @@
   .smellMenu__footer__text{
     text-transform: uppercase;
     font: {
-      weight: 300;
-      family: 'Neutra text', sans-serif;
+      // weight: 300;
+      family: 'neutra_display_light', sans-serif;
       size: 30pt;
     }
     // width: 8%;
@@ -41,7 +41,7 @@
   .smellMenu__footer__mane{
     font: {
       weight: 200;
-      family: 'Neutra text', sans-serif;
+      family: 'neutra_display_light', sans-serif;
       size: 12pt;
     }
     color:green;
@@ -53,17 +53,17 @@
   }
   .smellMenu__footer__right{
     position: fixed;
-    width: 280px;
+    width: 300px;
     right: 1%; bottom: 1%;
   }
-  .text_footer{
- margin-top: 10%
+  .footer__center{
+ padding-bottom: 10%
   }
   .smellMenu__footer__right_item{
     font: {
-      weight: 900;
-      family: 'Neutra display', sans-serif;
-      size: 10pt;
+      // weight: 900;
+      family: 'neutra_text_demi', sans-serif;
+      size: 8pt;
     }
     padding-right: 4%;
     // padding: 2%;
@@ -77,8 +77,8 @@
 .smellMenu__text__perfume{
   font: {
     weight: bolder;
-    family: 'Neutra text', sans-serif;
-    size: 14pt;
+    family: 'neutra_display_light', sans-serif;
+    size: 15pt;
   }
   padding-left: 42%;
 }
@@ -86,12 +86,13 @@
 
   text-transform: uppercase;
   font: {
-    weight: 300;
-    family: 'Neutra display', sans-serif;
+    // weight: normal;
+    family: 'neutra_display_light', sans-serif;
     size: 70pt;
   }
   letter-spacing: 0.2em;
   padding-top: 0%;
+  padding-left: 3%;
 }
 
  .bottle_item:hover .play_circle {
@@ -117,7 +118,7 @@
   text-transform: uppercase;
   font: {
     weight: 250;
-    family: 'Neutra text', sans-serif;
+    family: 'neutra_display_light', sans-serif;
     size: 5pt;
   }
   color:#ffffff;
@@ -130,7 +131,7 @@
   text-transform: uppercase;
   font: {
     weight: 250;
-    family: 'Neutra text', sans-serif;
+    family: 'neutra_display_light', sans-serif;
     size: 3pt;
   }
   color:#ffffff;
@@ -143,20 +144,20 @@
   text-transform: uppercase;
   font: {
     weight: 250;
-    family: 'Neutra text', sans-serif;
+    family: 'neutra_display_light', sans-serif;
     size: 4pt;
   }
   color:#ffffff;
   position: absolute;
-  top: 19%;
-  left: 25%;
+  top: 15%;
+  left: 27%;
 }
 .play_circle_text3{
   transition: 5s;
   text-transform: uppercase;
   font: {
     weight: 250;
-    family: 'Neutra text', sans-serif;
+    family: 'neutra_display_light', sans-serif;
     size: 5pt;
   }
   color:#ffffff;

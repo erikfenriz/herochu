@@ -49,8 +49,8 @@ const data = [
     name: "in love",
     img: passion_1,
     imgGif: passion_2,
-    color: "#e34b80",
-    colorNext: "#dc0714",
+    color: "#dc0714",
+    colorNext: "#e34b80",
     link: "/LetPerfumeTalk/In_love",
   },
   {

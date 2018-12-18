@@ -1,44 +1,109 @@
+
+/************************** NEUTRA TEXT **************************/
+
 @font-face {
-  font-family: 'Neutra display';
-  src: url("fonts/NeutraDisplay-Thin.otf") format("opentype");
-  font-weight: 100;
+  font-family: "Neutra text";
+  src: url("fonts/NeutraText/neutratext-bold-webfont.woff") format('woff'),
+  url("fonts/NeutraText/neutratext-bold-webfont.ttf") format('opentype'),
+  url("fonts/NeutraText/neutratext-bold-webfont.eot") format('opentype'),
+  url("fonts/NeutraText/neutratext-bold-webfont.svg#webfontg8dbVmxj") format('svg');
+}
+
+@font-face {
+  font-family: "Neutra text";
+  src: url("fonts/NeutraText/neutratext-bolditalic-webfont.woff") format('woff'),
+  url("fonts/NeutraText/neutratext-bolditalic-webfont.ttf") format('opentype'),
+  url("fonts/NeutraText/neutratext-bolditalic-webfont.eot") format('opentype'),
+  url("fonts/NeutraText/neutratext-bolditalic-webfont.svg#webfontg8dbVmxj") format('svg');
+}
+
+@font-face {
+  font-family: "Neutra text";
+  src: url("fonts/NeutraText/neutratext-book-webfont.woff") format('woff'),
+  url("fonts/NeutraText/neutratext-book-webfont.ttf") format('opentype'),
+  url("fonts/NeutraText/neutratext-book-webfont.eot") format('opentype'),
+  url("fonts/NeutraText/neutratext-book-webfont.svg#webfontg8dbVmxj");
+}
+
+@font-face {
+  font-family: "Neutra text";
+  src: url("fonts/NeutraText/neutratext-bookitalic-webfont.woff") format('woff'),
+  url("fonts/NeutraText/neutratext-bookitalic-webfont.ttf") format('opentype'),
+  url("fonts/NeutraText/neutratext-bookitalic-webfont.eot") format('opentype'),
+  url("fonts/NeutraText/neutratext-bookitalic-webfont.svg#webfontg8dbVmxj") format('svg');
+}
+
+@font-face {
+  font-family: "Neutra text";
+  src: url("fonts/NeutraText/neutratext-demi-webfont.woff") format('woff'),
+  url("fonts/NeutraText/neutratext-demi-webfont.ttf") format('opentype'),
+  url("fonts/NeutraText/neutratext-demi-webfont.eot") format('opentype'),
+  url("fonts/NeutraText/neutratext-demi-webfont.svg#webfontg8dbVmxj") format('svg');
+}
+
+@font-face {
+  font-family: "Neutra text";
+  src: url("fonts/NeutraText/neutratext-demiitalic-webfont.woff") format('woff'),
+  url("fonts/NeutraText/neutratext-demiitalic-webfont.ttf") format('opentype'),
+  url("fonts/NeutraText/neutratext-demiitalic-webfont.eot") format('opentype'),
+  url("fonts/NeutraText/neutratext-demiitalic-webfont.svg#webfontg8dbVmxj") format('svg');
+}
+
+@font-face {
+  font-family: "Neutra text";
+  src: url("fonts/NeutraText/neutratext-demiitalic-webfont.woff") format('woff'),
+  url("fonts/NeutraText/neutratext-demiitalic-webfont.ttf") format('opentype'),
+  url("fonts/NeutraText/neutratext-demiitalic-webfont.eot") format('opentype'),
+  url("fonts/NeutraText/neutratext-demiitalic-webfont.svg#webfontg8dbVmxj") format('svg');
+}
+
+@font-face {
+  font-family: "Neutra text";
+  src: url("fonts/NeutraText/neutratext-light-webfont.woff") format('woff'),
+  url("fonts/NeutraText/neutratext-light-webfont.ttf") format('opentype'),
+  url("fonts/NeutraText/neutratext-light-webfont.eot") format('opentype'),
+  url("fonts/NeutraText/neutratext-light-webfont.svg#webfontg8dbVmxj") format('svg');
+}
+
+@font-face {
+  font-family: "Neutra text";
+  src: url("fonts/NeutraText/neutratext-lightitalic-webfont.woff") format('woff'),
+  url("fonts/NeutraText/neutratext-lightitalic-webfont.ttf") format('opentype'),
+  url("fonts/NeutraText/neutratext-lightitalic-webfont.eot") format('opentype'),
+  url("fonts/NeutraText/neutratext-lightitalic-webfont.svg#webfontg8dbVmxj") format('svg');
+}
+
+/************************** NEUTRA DISPLAY **************************/
+
+@font-face {
+  font-family: "Neutra display";
+  src: url('fonts/NeutraDisplay/neutradisplay-bold-webfont.woff') format('woff'),
+  url("fonts/NeutraDisplay/neutradisplay-bold-webfont.ttf") format('opentype'),
+  url("fonts/NeutraDisplay/neutradisplay-bold-webfont.eot") format('opentype'),
+  url('fonts/NeutraDisplay/neutradisplay-bold-webfont.svg#webfontg8dbVmxj') format('svg');
 }
 
 @font-face {
   font-family: 'Neutra display';
-  src: url("fonts/NeutraDisplay-Light.otf") format("opentype");
-  font-weight: 200;
-}
-
-@font-face {
-  font-family: 'Neutra display';
-  src: url("fonts/NeutraDisplay-Bold.otf") format("opentype");
-  font-weight: 700;
-}
-
-@font-face {
-  font-family: 'Neutra display';
-  src: url("fonts/NeutraDisplay-Light-Italic.otf") format("opentype");
-  font-weight: 300;
-}
-
-@font-face {
-  font-family: 'Neutra display';
-  src: url("fonts/NeutraText-BookItalic.otf") format("opentype");
-  font-weight: 400;
-}
-
-@font-face {
-  font-family: 'Neutra display';
-  src:        url('fonts/NeutraDisplay/neutradisplay-light-webfont.woff') format('woff'),
+  src: url('fonts/NeutraDisplay/neutradisplay-light-webfont.woff') format('woff'),
   url("fonts/NeutraDisplay/neutradisplay-light-webfont.ttf") format('opentype'),
   url("fonts/NeutraDisplay/neutradisplay-light-webfont.eot") format('opentype'),
   url('fonts/NeutraDisplay/neutradisplay-light-webfont.svg#webfontg8dbVmxj') format('svg');
 }
 
 @font-face {
-  font-family: 'Neutra text';
-  src:        url('/fonts/neutratext-book-webfont.woff') format('woff'),
-  url("/fonts/neutratext-book-webfont.ttf") format('opentype'),
-  url('/fonts/neutratext-book-webfont.svg#webfontg8dbVmxj') format('svg');
+  font-family: 'Neutra display';
+  src: url('fonts/NeutraDisplay/neutradisplay-medium-webfont.woff') format('woff'),
+  url("fonts/NeutraDisplay/neutradisplay-medium-webfont.ttf") format('opentype'),
+  url("fonts/NeutraDisplay/neutradisplay-medium-webfont.eot") format('opentype'),
+  url('fonts/NeutraDisplay/neutradisplay-medium-webfont.svg#webfontg8dbVmxj') format('svg');
 }
+
+@font-face {
+  font-family: 'Neutra display';
+  src: url('fonts/NeutraDisplay/neutradisplay-thin-webfont.woff') format('woff'),
+  url("fonts/NeutraDisplay/neutradisplay-thin-webfont.ttf") format('opentype'),
+  url("fonts/NeutraDisplay/neutradisplay-thin-webfont.eot") format('opentype'),
+  url('fonts/NeutraDisplay/neutradisplay-thin-webfont.svg#webfontg8dbVmxj') format('svg');
+}
+

@@ -6,17 +6,24 @@
   .smellMenu__title {
     font: {
       weight: normal;
-      family: 'Neutra display', sans-serif;
+      family: 'neutra_text_book_italic', sans-serif;
       style: italic;
-      size: 26pt;
+      size: 28pt;
     }
     padding-left: 40%;
-    line-height: 71px;
     margin-bottom: 2%;
     margin-top: 4%;
   }
   .smellMenu__carousel {
    margin: 50px 50px 10px 0px;
+  }
+  .smellMenu__header{
+    position: fixed;
+    right: 2%; top: 2%;
+    width: 200px;
+  }
+  .twitterShare{
+    padding-right: 5%;
   }
   .smellMenu__footer{
     position: fixed;
@@ -24,8 +31,8 @@
   .smellMenu__footer__text{
     text-transform: uppercase;
     font: {
-      weight: 200;
-      family: 'Neutra display', sans-serif;
+      // weight: 300;
+      family: 'neutra_display_light', sans-serif;
       size: 30pt;
     }
     // width: 8%;
@@ -34,7 +41,7 @@
   .smellMenu__footer__mane{
     font: {
       weight: 200;
-      family: 'Neutra display', sans-serif;
+      family: 'neutra_display_light', sans-serif;
       size: 12pt;
     }
     color:green;
@@ -46,16 +53,19 @@
   }
   .smellMenu__footer__right{
     position: fixed;
-    width: 260px;
+    width: 300px;
     right: 1%; bottom: 1%;
+  }
+  .footer__center{
+ padding-bottom: 10%
   }
   .smellMenu__footer__right_item{
     font: {
-      weight: 200;
-      family: 'Neutra display', sans-serif;
-      size: 12pt;
+      // weight: 900;
+      family: 'neutra_text_demi', sans-serif;
+      size: 8pt;
     }
-    padding-right: 2%;
+    padding-right: 4%;
     // padding: 2%;
 
   }
@@ -67,8 +77,8 @@
 .smellMenu__text__perfume{
   font: {
     weight: bolder;
-    family: 'Neutra display', sans-serif;
-    size: 14pt;
+    family: 'neutra_display_light', sans-serif;
+    size: 15pt;
   }
   padding-left: 42%;
 }
@@ -76,12 +86,13 @@
 
   text-transform: uppercase;
   font: {
-    weight: 200;
-    family: 'Neutra display', sans-serif;
+    // weight: normal;
+    family: 'neutra_display_light', sans-serif;
     size: 70pt;
   }
   letter-spacing: 0.2em;
   padding-top: 0%;
+  padding-left: 3%;
 }
 
  .bottle_item:hover .play_circle {
@@ -106,8 +117,8 @@
   transition: 5s;
   text-transform: uppercase;
   font: {
-    weight: bold;
-    family: 'Neutra display', sans-serif;
+    weight: 250;
+    family: 'neutra_display_light', sans-serif;
     size: 5pt;
   }
   color:#ffffff;
@@ -119,8 +130,8 @@
   transition: 5s;
   text-transform: uppercase;
   font: {
-    weight: bold;
-    family: 'Neutra display', sans-serif;
+    weight: 250;
+    family: 'neutra_display_light', sans-serif;
     size: 3pt;
   }
   color:#ffffff;
@@ -132,21 +143,21 @@
   transition: 5s;
   text-transform: uppercase;
   font: {
-    weight: bold;
-    family: 'Neutra display', sans-serif;
+    weight: 250;
+    family: 'neutra_display_light', sans-serif;
     size: 4pt;
   }
   color:#ffffff;
   position: absolute;
-  top: 19%;
-  left: 25%;
+  top: 15%;
+  left: 27%;
 }
 .play_circle_text3{
   transition: 5s;
   text-transform: uppercase;
   font: {
-    weight: bold;
-    family: 'Neutra display', sans-serif;
+    weight: 250;
+    family: 'neutra_display_light', sans-serif;
     size: 5pt;
   }
   color:#ffffff;

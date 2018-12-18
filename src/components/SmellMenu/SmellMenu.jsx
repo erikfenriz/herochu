@@ -1,11 +1,13 @@
 import React from 'react';
 import { compose, withState, withHandlers } from 'recompose';
-import { Icon } from 'antd';
+import { Row,Col } from 'antd';
 import splitting from 'splitting';
 import BottleCarousel from './components/BottleСarousel'
 import youtube from '../../assets/images/main/MANE_youtube.svg'
 import twitter from '../../assets/images/main/MANE_twitter.svg'
 import facebook from '../../assets/images/main/MANE_facebook.svg'
+import twitterShare from '../../assets/images/main/twitter.png'
+import facebookShare from '../../assets/images/main/fb.png'
 import '../../styles/style.css';
 
 const SmellMenu = props => {
@@ -13,6 +15,10 @@ const SmellMenu = props => {
 
   return (
     <div className="smellMenu-page" >
+    <div className="smellMenu__header">
+      <img className="twitterShare"  alt="youtube" src={facebookShare}  />    <img  alt="youtube" src={twitterShare}  />
+
+    </div>
       <h1 className='smellMenu__title'>What's your mood today?</h1>
       {/* <div className='smellMenu__svg'> */}
 
@@ -44,12 +50,13 @@ const SmellMenu = props => {
           <label className='smellMenu__footer__mane'>by MANE</label>
         </div>
         <div className='smellMenu__footer__right'>
-          <label className='smellMenu__footer__right_item'>Legal </label>
-          <label className='smellMenu__footer__right_item'>Credits</label>
-          <label className='smellMenu__footer__right_item'>MANE©2018</label>
-          <label className='smellMenu__footer__right_item'><img alt="youtube" src={youtube}  /></label>
-          <label className='smellMenu__footer__right_item'><img alt="facebook" src={facebook} /></label>
-          <label className='smellMenu__footer__right_item'><img alt="twitter" src={twitter}  /></label>
+          <label className='smellMenu__footer__right_item text_footer'>Legal </label>
+          <label className='smellMenu__footer__right_item text_footer'>Credits</label>
+          <label className='smellMenu__footer__right_item text_footer'>MANE © 2019</label>
+   
+          <label className='smellMenu__footer__right_item '><img alt="youtube" src={youtube}  /></label>
+          <label className='smellMenu__footer__right_item '><img alt="facebook" src={facebook} /></label>
+          <label className='smellMenu__footer__right_item '><img alt="twitter" src={twitter}  /></label>
         </div>
       </div>
     </div>

@@ -51,7 +51,8 @@ export default class LetPerfumeTalk extends Component {
                 <Link to="/SmellMenu" className="perfume-starting__animation">
                     <img className={this.state.rhombusAnimation} src={image} alt="background"/>
                     {this.data}
-                    <p className={this.state.textAnimation}>Dedicated to perfume lovers</p>
+                    <p className={this.state.textAnimation}>
+                        Dedicated to perfume lovers</p>
                 </Link>
             </main>
         )

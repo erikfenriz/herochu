@@ -902,7 +902,7 @@ main.main-page {
     .perfume-starting__animation .perfume-starting__text {
       font-family: 'Neutra text', sans-serif;
       font-size: 1.8em;
-      font-weight: 500;
+      font-weight: 600;
       font-style: italic;
       animation: fadeIn 2000ms;
       position: relative;
@@ -1212,6 +1212,7 @@ main.main-page {
       bottom: 0;
       overflow-y: hidden; }
       .letPerfumeTalk .menu__bottom .menu__bottom--button {
+        z-index: 10;
         transform: translateY(50px); }
       .letPerfumeTalk .menu__bottom .menu__circle--happy {
         background: #ff7327;
@@ -1375,12 +1376,12 @@ main.main-page {
     justify-content: flex-end; }
     .letPerfumeTalk .LetPerfumeTalkByMane__experienceName {
       text-transform: uppercase;
-      padding-left: 25px;
+      padding-left: 20px;
       position: relative;
-      top: 12px;
-      font-family: 'Neutra display';
-      font-size: 25px;
-      font-weight: 400; }
+      top: 7px;
+      font-family: 'neutra_text_book';
+      font-size: 19px;
+      font-weight: 300; }
       .letPerfumeTalk .LetPerfumeTalkByMane__experienceName--small {
         text-transform: none;
         font-size: 12px;
@@ -1591,7 +1592,6 @@ main.main-page {
         .loading__text .three-bounce div.two {
           animation-delay: -0.16s; }
   .loading.loaded {
-    opacity: 0;
-    z-index: -1000; }
+    opacity: 0; }
 
 /*# sourceMappingURL=style.css.map */

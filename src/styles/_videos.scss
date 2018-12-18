@@ -150,6 +150,7 @@
       overflow-y: hidden;
 
       .menu__bottom--button {
+        z-index: 10;
         transform: translateY(50px);
       }
 
@@ -261,13 +262,13 @@
 
     &__experienceName {
       text-transform: uppercase;
-      padding-left: 25px;
+      padding-left: 20px;
       position: relative;
-      top: 12px;
+      top: 7px;
       font: {
-        family: 'Neutra display';
-        size: 25px;
-        weight: 400;
+        family: 'neutra_text_book';
+        size: 19px;
+        weight: 300;
       }
 
       &--small {

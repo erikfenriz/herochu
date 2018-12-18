@@ -9,6 +9,7 @@ import Natural from './VideoComponents/Natural';
 import Rebellious from './VideoComponents/Rebellious';
 import Sexy from './VideoComponents/Sexy';
 import Zen from './VideoComponents/Zen';
+import {Legal} from './Legal';
 import {
     BrowserRouter, Route, Switch
 } from 'react-router-dom';
@@ -25,6 +26,7 @@ const Router = () => (
             <Route path="/LetPerfumeTalk/Rebellious" component={Rebellious}/>
             <Route path="/LetPerfumeTalk/Sexy" component={Sexy}/>
             <Route path="/LetPerfumeTalk/Zen" component={Zen}/>
+            <Route path="/LetPerfumeTalk/legal" component={Legal}/>
             <Route path="/SmellMenu" component={SmellMenu}/>
         </Switch>
     </BrowserRouter>

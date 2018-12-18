@@ -1,33 +1,4 @@
-@font-face {
-  font-family: 'Neutra display';
-  src: url("fonts/NeutraDisplay-Thin.otf") format("opentype");
-  font-weight: 100;
-}
-
-@font-face {
-  font-family: 'Neutra display';
-  src: url("fonts/NeutraDisplay-Light.otf") format("opentype");
-  font-weight: 200;
-}
-
-@font-face {
-  font-family: 'Neutra display';
-  src: url("fonts/NeutraDisplay-Bold.otf") format("opentype");
-  font-weight: 700;
-}
-
-@font-face {
-  font-family: 'Neutra display';
-  src: url("fonts/NeutraDisplay-Light-Italic.otf") format("opentype");
-  font-weight: 300;
-}
-
-@font-face {
-  font-family: 'Neutra display';
-  src: url("fonts/NeutraText-BookItalic.otf") format("opentype");
-  font-weight: 400;
-}
-
+@import "fonts";
 .smellMenu-page {
   top: 0;
   left: 0;
@@ -35,17 +6,24 @@
   .smellMenu__title {
     font: {
       weight: normal;
-      family: 'Neutra display', sans-serif;
+      family: 'Neutra text', sans-serif;
       style: italic;
-      size: 26pt;
+      size: 33pt;
     }
     padding-left: 40%;
-    line-height: 71px;
     margin-bottom: 2%;
     margin-top: 4%;
   }
   .smellMenu__carousel {
    margin: 50px 50px 10px 0px;
+  }
+  .smellMenu__header{
+    position: fixed;
+    right: 2%; top: 2%;
+    width: 200px;
+  }
+  .twitterShare{
+    padding-right: 5%;
   }
   .smellMenu__footer{
     position: fixed;
@@ -53,8 +31,8 @@
   .smellMenu__footer__text{
     text-transform: uppercase;
     font: {
-      weight: 200;
-      family: 'Neutra display', sans-serif;
+      weight: 300;
+      family: 'Neutra text', sans-serif;
       size: 30pt;
     }
     // width: 8%;
@@ -63,7 +41,7 @@
   .smellMenu__footer__mane{
     font: {
       weight: 200;
-      family: 'Neutra display', sans-serif;
+      family: 'Neutra text', sans-serif;
       size: 12pt;
     }
     color:green;
@@ -75,16 +53,19 @@
   }
   .smellMenu__footer__right{
     position: fixed;
-    width: 260px;
+    width: 280px;
     right: 1%; bottom: 1%;
+  }
+  .text_footer{
+ margin-top: 10%
   }
   .smellMenu__footer__right_item{
     font: {
-      weight: 200;
+      weight: 900;
       family: 'Neutra display', sans-serif;
-      size: 12pt;
+      size: 10pt;
     }
-    padding-right: 2%;
+    padding-right: 4%;
     // padding: 2%;
 
   }
@@ -96,7 +77,7 @@
 .smellMenu__text__perfume{
   font: {
     weight: bolder;
-    family: 'Neutra display', sans-serif;
+    family: 'Neutra text', sans-serif;
     size: 14pt;
   }
   padding-left: 42%;
@@ -105,7 +86,7 @@
 
   text-transform: uppercase;
   font: {
-    weight: 200;
+    weight: 300;
     family: 'Neutra display', sans-serif;
     size: 70pt;
   }
@@ -135,8 +116,8 @@
   transition: 5s;
   text-transform: uppercase;
   font: {
-    weight: normal;
-    family: 'Neutra display', sans-serif;
+    weight: 250;
+    family: 'Neutra text', sans-serif;
     size: 5pt;
   }
   color:#ffffff;
@@ -148,8 +129,8 @@
   transition: 5s;
   text-transform: uppercase;
   font: {
-    weight: bold;
-    family: 'Neutra display', sans-serif;
+    weight: 250;
+    family: 'Neutra text', sans-serif;
     size: 3pt;
   }
   color:#ffffff;
@@ -161,8 +142,8 @@
   transition: 5s;
   text-transform: uppercase;
   font: {
-    weight: bold;
-    family: 'Neutra display', sans-serif;
+    weight: 250;
+    family: 'Neutra text', sans-serif;
     size: 4pt;
   }
   color:#ffffff;
@@ -174,8 +155,8 @@
   transition: 5s;
   text-transform: uppercase;
   font: {
-    weight: bold;
-    family: 'Neutra display', sans-serif;
+    weight: 250;
+    family: 'Neutra text', sans-serif;
     size: 5pt;
   }
   color:#ffffff;

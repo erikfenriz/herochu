@@ -39,8 +39,8 @@ export default {
                 "ix": 11
             },
             "r": {"a": 0, "k": 0, "ix": 10},
-            "p": {"a": 0, "k": [350, 454.688, 0], "ix": 2},
-            "a": {"a": 0, "k": [0.035, -12.417, 0], "ix": 1},
+            "p": {"a": 0, "k": [349.998, 449.357, 0], "ix": 2},
+            "a": {"a": 0, "k": [0.024, -8.623, 0], "ix": 1},
             "s": {"a": 0, "k": [100, 100, 100], "ix": 6}
         },
         "ao": 0,
@@ -48,12 +48,12 @@ export default {
             "d": {
                 "k": [{
                     "s": {
-                        "s": 28,
+                        "s": 27,
                         "f": "NeutraDisp-Bold",
                         "t": "START",
                         "j": 2,
                         "tr": 0,
-                        "lh": 33.6,
+                        "lh": 32.4,
                         "ls": 0,
                         "fc": [0, 0, 0]
                     }, "t": 0
@@ -84,8 +84,8 @@ export default {
                 "ix": 11
             },
             "r": {"a": 0, "k": 0, "ix": 10},
-            "p": {"a": 0, "k": [350, 259.516, 0], "ix": 2},
-            "a": {"a": 0, "k": [1.264, -12.852, 0], "ix": 1},
+            "p": {"a": 0, "k": [349.923, 305.172, 0], "ix": 2},
+            "a": {"a": 0, "k": [1.026, 30.304, 0], "ix": 1},
             "s": {"a": 0, "k": [100, 100, 100], "ix": 6}
         },
         "ao": 0,
@@ -93,12 +93,12 @@ export default {
             "d": {
                 "k": [{
                     "s": {
-                        "s": 49,
+                        "s": 43,
                         "f": "NeutraDisp-Light",
                         "t": "LET\rPERFUME\rTALK",
                         "j": 2,
                         "tr": 0,
-                        "lh": 58.8000030517578,
+                        "lh": 45,
                         "ls": 0,
                         "fc": [0, 0, 0]
                     }, "t": 0
@@ -118,7 +118,7 @@ export default {
         "ks": {
             "o": {"a": 0, "k": 100, "ix": 11},
             "r": {"a": 0, "k": 0, "ix": 10},
-            "p": {"a": 0, "k": [350, 422.75, 0], "ix": 2},
+            "p": {"a": 0, "k": [350, 406.5, 0], "ix": 2},
             "a": {"a": 0, "k": [-2, 72.75, 0], "ix": 1},
             "s": {
                 "a": 1,
@@ -126,10 +126,10 @@ export default {
                     "i": {"x": [0.833, 0.833, 0.833], "y": [0.833, 0.833, 0.833]},
                     "o": {"x": [0.167, 0.167, 0.167], "y": [0.167, 0.167, 0.167]},
                     "n": ["0p833_0p833_0p167_0p167", "0p833_0p833_0p167_0p167", "0p833_0p833_0p167_0p167"],
-                    "t": 75,
+                    "t": 91,
                     "s": [0, 100, 100],
-                    "e": [100, 100, 100]
-                }, {"t": 85.000003462121}],
+                    "e": [-88.495, 316.48, 100]
+                }, {"t": 115.000004684046}],
                 "ix": 6
             }
         },
@@ -189,7 +189,7 @@ export default {
         "bm": 0
     }, {
         "ddd": 0,
-        "ind": 5,
+        "ind": 6,
         "ty": 4,
         "nm": "Shape Layer 1",
         "sr": 1,
@@ -201,19 +201,19 @@ export default {
             "s": {
                 "a": 1,
                 "k": [{
-                    "i": {"x": [0.833, 0.833, 0.833], "y": [0.904, 0.904, -8.333]},
+                    "i": {"x": [0.833, 0.833, 0.833], "y": [0.911, 0.911, -7.635]},
                     "o": {"x": [0.167, 0.167, 0.167], "y": [0.167, 0.167, 16.497]},
-                    "n": ["0p833_0p904_0p167_0p167", "0p833_0p904_0p167_0p167", "0p833_-8p333_0p167_16p497"],
+                    "n": ["0p833_0p911_0p167_0p167", "0p833_0p911_0p167_0p167", "0p833_-7p635_0p167_16p497"],
                     "t": 15,
                     "s": [0, 0, 100],
                     "e": [97.04, 97.04, 100]
                 }, {
-                    "i": {"x": [0.833, 0.833, 0.833], "y": [0.833, 0.833, -1.17]},
-                    "o": {"x": [0.167, 0.167, 0.167], "y": [0.624, 0.624, 9.333]},
-                    "n": ["0p833_0p833_0p167_0p624", "0p833_0p833_0p167_0p624", "0p833_-1p17_0p167_9p333"],
+                    "i": {"x": [0.833, 0.833, 0.833], "y": [0.833, 0.833, 0.228]},
+                    "o": {"x": [0.167, 0.167, 0.167], "y": [1.313, 1.313, 8.635]},
+                    "n": ["0p833_0p833_0p167_1p313", "0p833_0p833_0p167_1p313", "0p833_0p228_0p167_8p635"],
                     "t": 30,
                     "s": [97.04, 97.04, 100],
-                    "e": [112, 112, 100]
+                    "e": [103.614, 103.614, 100]
                 }, {"t": 45.0000018328876}],
                 "ix": 6
             }
@@ -274,7 +274,7 @@ export default {
         "bm": 0
     }, {
         "ddd": 0,
-        "ind": 6,
+        "ind": 7,
         "ty": 2,
         "nm": "Ромб.png",
         "cl": "png",
@@ -307,7 +307,7 @@ export default {
     "markers": [],
     "chars": [{
         "ch": "L",
-        "size": 49,
+        "size": 43,
         "style": "Light",
         "w": 49.4,
         "data": {
@@ -342,7 +342,7 @@ export default {
         "fFamily": "Neutra Display"
     }, {
         "ch": "E",
-        "size": 49,
+        "size": 43,
         "style": "Light",
         "w": 55.7,
         "data": {
@@ -377,7 +377,7 @@ export default {
         "fFamily": "Neutra Display"
     }, {
         "ch": "T",
-        "size": 49,
+        "size": 43,
         "style": "Light",
         "w": 52,
         "data": {
@@ -410,9 +410,9 @@ export default {
             }]
         },
         "fFamily": "Neutra Display"
-    }, {"ch": "\r", "size": 49, "style": "Light", "w": 0, "fFamily": "Neutra Display"}, {
+    }, {"ch": "\r", "size": 43, "style": "Light", "w": 0, "fFamily": "Neutra Display"}, {
         "ch": "P",
-        "size": 49,
+        "size": 43,
         "style": "Light",
         "w": 54.8,
         "data": {
@@ -464,7 +464,7 @@ export default {
         "fFamily": "Neutra Display"
     }, {
         "ch": "R",
-        "size": 49,
+        "size": 43,
         "style": "Light",
         "w": 56,
         "data": {
@@ -516,7 +516,7 @@ export default {
         "fFamily": "Neutra Display"
     }, {
         "ch": "F",
-        "size": 49,
+        "size": 43,
         "style": "Light",
         "w": 54.2,
         "data": {
@@ -551,7 +551,7 @@ export default {
         "fFamily": "Neutra Display"
     }, {
         "ch": "U",
-        "size": 49,
+        "size": 43,
         "style": "Light",
         "w": 63.4,
         "data": {
@@ -586,7 +586,7 @@ export default {
         "fFamily": "Neutra Display"
     }, {
         "ch": "M",
-        "size": 49,
+        "size": 43,
         "style": "Light",
         "w": 82.6,
         "data": {
@@ -621,7 +621,7 @@ export default {
         "fFamily": "Neutra Display"
     }, {
         "ch": "A",
-        "size": 49,
+        "size": 43,
         "style": "Light",
         "w": 63.6,
         "data": {
@@ -673,7 +673,7 @@ export default {
         "fFamily": "Neutra Display"
     }, {
         "ch": "K",
-        "size": 49,
+        "size": 43,
         "style": "Light",
         "w": 56.8,
         "data": {
@@ -708,7 +708,7 @@ export default {
         "fFamily": "Neutra Display"
     }, {
         "ch": "S",
-        "size": 28,
+        "size": 27,
         "style": "Bold",
         "w": 53.1,
         "data": {
@@ -743,7 +743,7 @@ export default {
         "fFamily": "Neutra Display"
     }, {
         "ch": "T",
-        "size": 28,
+        "size": 27,
         "style": "Bold",
         "w": 55.9,
         "data": {
@@ -778,7 +778,7 @@ export default {
         "fFamily": "Neutra Display"
     }, {
         "ch": "A",
-        "size": 28,
+        "size": 27,
         "style": "Bold",
         "w": 65.5,
         "data": {
@@ -830,7 +830,7 @@ export default {
         "fFamily": "Neutra Display"
     }, {
         "ch": "R",
-        "size": 28,
+        "size": 27,
         "style": "Bold",
         "w": 58.6,
         "data": {

@@ -1,67 +1,69 @@
 @charset "UTF-8";
+/************************** NEUTRA TEXT **************************/
+@font-face {
+  font-family: "Neutra text";
+  src: url("fonts/NeutraText/neutratext-bold-webfont.woff") format("woff"), url("fonts/NeutraText/neutratext-bold-webfont.ttf") format("opentype"), url("fonts/NeutraText/neutratext-bold-webfont.eot") format("opentype"), url("fonts/NeutraText/neutratext-bold-webfont.svg#webfontg8dbVmxj") format("svg"); }
+@font-face {
+  font-family: "Neutra text";
+  src: url("fonts/NeutraText/neutratext-bolditalic-webfont.woff") format("woff"), url("fonts/NeutraText/neutratext-bolditalic-webfont.ttf") format("opentype"), url("fonts/NeutraText/neutratext-bolditalic-webfont.eot") format("opentype"), url("fonts/NeutraText/neutratext-bolditalic-webfont.svg#webfontg8dbVmxj") format("svg"); }
+@font-face {
+  font-family: "Neutra text";
+  src: url("fonts/NeutraText/neutratext-book-webfont.woff") format("woff"), url("fonts/NeutraText/neutratext-book-webfont.ttf") format("opentype"), url("fonts/NeutraText/neutratext-book-webfont.eot") format("opentype"), url("fonts/NeutraText/neutratext-book-webfont.svg#webfontg8dbVmxj"); }
+@font-face {
+  font-family: "Neutra text";
+  src: url("fonts/NeutraText/neutratext-bookitalic-webfont.woff") format("woff"), url("fonts/NeutraText/neutratext-bookitalic-webfont.ttf") format("opentype"), url("fonts/NeutraText/neutratext-bookitalic-webfont.eot") format("opentype"), url("fonts/NeutraText/neutratext-bookitalic-webfont.svg#webfontg8dbVmxj") format("svg"); }
+@font-face {
+  font-family: "Neutra text";
+  src: url("fonts/NeutraText/neutratext-demi-webfont.woff") format("woff"), url("fonts/NeutraText/neutratext-demi-webfont.ttf") format("opentype"), url("fonts/NeutraText/neutratext-demi-webfont.eot") format("opentype"), url("fonts/NeutraText/neutratext-demi-webfont.svg#webfontg8dbVmxj") format("svg"); }
+@font-face {
+  font-family: "Neutra text";
+  src: url("fonts/NeutraText/neutratext-demiitalic-webfont.woff") format("woff"), url("fonts/NeutraText/neutratext-demiitalic-webfont.ttf") format("opentype"), url("fonts/NeutraText/neutratext-demiitalic-webfont.eot") format("opentype"), url("fonts/NeutraText/neutratext-demiitalic-webfont.svg#webfontg8dbVmxj") format("svg"); }
+@font-face {
+  font-family: "Neutra text";
+  src: url("fonts/NeutraText/neutratext-demiitalic-webfont.woff") format("woff"), url("fonts/NeutraText/neutratext-demiitalic-webfont.ttf") format("opentype"), url("fonts/NeutraText/neutratext-demiitalic-webfont.eot") format("opentype"), url("fonts/NeutraText/neutratext-demiitalic-webfont.svg#webfontg8dbVmxj") format("svg"); }
+@font-face {
+  font-family: "Neutra text";
+  src: url("fonts/NeutraText/neutratext-light-webfont.woff") format("woff"), url("fonts/NeutraText/neutratext-light-webfont.ttf") format("opentype"), url("fonts/NeutraText/neutratext-light-webfont.eot") format("opentype"), url("fonts/NeutraText/neutratext-light-webfont.svg#webfontg8dbVmxj") format("svg"); }
+@font-face {
+  font-family: "Neutra text";
+  src: url("fonts/NeutraText/neutratext-lightitalic-webfont.woff") format("woff"), url("fonts/NeutraText/neutratext-lightitalic-webfont.ttf") format("opentype"), url("fonts/NeutraText/neutratext-lightitalic-webfont.eot") format("opentype"), url("fonts/NeutraText/neutratext-lightitalic-webfont.svg#webfontg8dbVmxj") format("svg"); }
+/************************** NEUTRA DISPLAY **************************/
 @font-face {
   font-family: "Neutra display";
-  src: url("fonts/NeutraDisplay-Thin.otf") format("opentype");
-  font-weight: 100;
-}
+  src: url("fonts/NeutraDisplay/neutradisplay-bold-webfont.woff") format("woff"), url("fonts/NeutraDisplay/neutradisplay-bold-webfont.ttf") format("opentype"), url("fonts/NeutraDisplay/neutradisplay-bold-webfont.eot") format("opentype"), url("fonts/NeutraDisplay/neutradisplay-bold-webfont.svg#webfontg8dbVmxj") format("svg"); }
 @font-face {
-  font-family: "Neutra display";
-  src: url("fonts/NeutraDisplay-Light.otf") format("opentype");
-  font-weight: 200;
-}
+  font-family: 'Neutra display';
+  src: url("fonts/NeutraDisplay/neutradisplay-light-webfont.woff") format("woff"), url("fonts/NeutraDisplay/neutradisplay-light-webfont.ttf") format("opentype"), url("fonts/NeutraDisplay/neutradisplay-light-webfont.eot") format("opentype"), url("fonts/NeutraDisplay/neutradisplay-light-webfont.svg#webfontg8dbVmxj") format("svg"); }
 @font-face {
-  font-family: "Neutra display";
-  src: url("fonts/NeutraDisplay-Bold.otf") format("opentype");
-  font-weight: 700;
-}
+  font-family: 'Neutra display';
+  src: url("fonts/NeutraDisplay/neutradisplay-medium-webfont.woff") format("woff"), url("fonts/NeutraDisplay/neutradisplay-medium-webfont.ttf") format("opentype"), url("fonts/NeutraDisplay/neutradisplay-medium-webfont.eot") format("opentype"), url("fonts/NeutraDisplay/neutradisplay-medium-webfont.svg#webfontg8dbVmxj") format("svg"); }
 @font-face {
-  font-family: "Neutra display";
-  src: url("fonts/NeutraDisplay-Light-Italic.otf") format("opentype");
-  font-weight: 300;
-}
-@font-face {
-  font-family: "Neutra display";
-  src: url("fonts/NeutraText-BookItalic.otf") format("opentype");
-  font-weight: 400;
-}
+  font-family: 'Neutra display';
+  src: url("fonts/NeutraDisplay/neutradisplay-thin-webfont.woff") format("woff"), url("fonts/NeutraDisplay/neutradisplay-thin-webfont.ttf") format("opentype"), url("fonts/NeutraDisplay/neutradisplay-thin-webfont.eot") format("opentype"), url("fonts/NeutraDisplay/neutradisplay-thin-webfont.svg#webfontg8dbVmxj") format("svg"); }
 @keyframes fadeInHeader {
   0% {
-    opacity: 0;
-  }
+    opacity: 0; }
   100% {
-    opacity: 1;
-  }
-}
+    opacity: 1; } }
 @keyframes fadeInSecondary {
   0% {
-    opacity: 0;
-  }
+    opacity: 0; }
   30% {
-    opacity: 0;
-  }
+    opacity: 0; }
   100% {
-    opacity: 1;
-  }
-}
+    opacity: 1; } }
 @keyframes fadeInListSummary {
   0% {
-    opacity: 0;
-  }
+    opacity: 0; }
   50% {
-    opacity: 0;
-  }
+    opacity: 0; }
   100% {
-    opacity: 1;
-  }
-}
+    opacity: 1; } }
 @keyframes openSlideAnimation {
   0% {
-    transform: translateX(2500px);
-  }
+    transform: translateX(2500px); }
   100% {
-    transform: translateX(0px);
-  }
-}
+    transform: translateX(0px); } }
 main.main-page {
   position: fixed;
   display: flex;
@@ -77,477 +79,356 @@ main.main-page {
   background: -o-linear-gradient(-45deg, #00451a 0%, #add444 100%);
   background: -ms-linear-gradient(-45deg, #00451a 0%, #add444 100%);
   background: linear-gradient(135deg, #00451a 0%, #add444 100%);
-  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#00451a", endColorstr="#add444", GradientType=1);
-}
-@media (max-width: 1100px) {
-  main.main-page {
-    position: relative;
-  }
-}
-main.main-page .main-page__content {
-  display: flex;
-  width: 100%;
-  padding: 110px 0 0 81px;
-}
-@media (max-width: 1100px) {
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#00451a', endColorstr='#add444', GradientType=1); }
+  @media (max-width: 1100px) {
+    main.main-page {
+      position: relative; } }
   main.main-page .main-page__content {
-    padding: 0 0 0 50px;
-  }
-}
-@media (max-width: 1100px) {
-  main.main-page .main-page__content .intro {
-    width: 100%;
-  }
-}
-main.main-page .main-page__content .intro__title {
-  color: white;
-}
-main.main-page .main-page__content .intro__title--container-headline {
-  animation: fadeInHeader 1.5s 1 forwards;
-  -webkit-animation: fadeInHeader 1.5s 1 forwards;
-  /* Safari, Chrome and Opera > 12.1 */
-  -moz-animation: fadeInHeader 1.5s 1 forwards;
-  /* Firefox < 16 */
-  -ms-animation: fadeInHeader 1.5s 1 forwards;
-  /* Internet Explorer */
-  -o-animation: fadeInHeader 1.5s 1 forwards;
-  /* Opera < 12.1 */
-  transition: opacity 1500ms ease 0s;
-  max-width: 369px;
-}
-main.main-page .main-page__content .intro__title--container-headline .intro__title--headline {
-  font-family: "Neutra display", sans-serif;
-  font-weight: 100;
-  font-size: 66px;
-  line-height: 71px;
-  margin-bottom: 0;
-}
-@media (max-width: 1100px) {
-  main.main-page .main-page__content .intro__title--container-headline .intro__title--headline {
-    font-size: 5.3em;
-    line-height: 1.1em;
-  }
-}
-@media (max-width: 520px) {
-  main.main-page .main-page__content .intro__title--container-headline .intro__title--headline {
-    font-size: 40px;
-    line-height: 1.1em;
-  }
-}
-@media (max-width: 520px) {
-  main.main-page .main-page__content .intro__title--container-headline .intro__title--headline {
-    font-size: 40px;
-    line-height: 1.1em;
-  }
-}
-main.main-page .main-page__content .intro__title--secondary {
-  font-family: "Neutra display", sans-serif;
-  font-weight: 400;
-  font-style: italic;
-  font-size: 31px;
-  animation: fadeInSecondary 1.5s 1 forwards;
-  -webkit-animation: fadeInSecondary 1.5s 1 forwards;
-  /* Safari, Chrome and Opera > 12.1 */
-  -moz-animation: fadeInSecondary 1.5s 1 forwards;
-  /* Firefox < 16 */
-  -ms-animation: fadeInSecondary 1.5s 1 forwards;
-  /* Internet Explorer */
-  -o-animation: fadeInSecondary 1.5s 1 forwards;
-  /* Opera < 12.1 */
-  transition: opacity 1500ms ease 0s;
-  margin-top: 20px;
-}
-main.main-page .main-page__content .intro__title--list {
-  list-style: none;
-  padding-left: 0;
-  line-height: 20px;
-  animation: fadeInListSummary 1.5s 1 forwards;
-  -webkit-animation: fadeInListSummary 1.5s 1 forwards;
-  /* Safari, Chrome and Opera > 12.1 */
-  -moz-animation: fadeInListSummary 1.5s 1 forwards;
-  /* Firefox < 16 */
-  -ms-animation: fadeInListSummary 1.5s 1 forwards;
-  /* Internet Explorer */
-  -o-animation: fadeInListSummary 1.5s 1 forwards;
-  /* Opera < 12.1 */
-  transition: opacity 1500ms ease 0s;
-  font-family: "Neutra display", sans-serif;
-  font-weight: 200;
-  font-size: 22px;
-}
-main.main-page .main-page__content .intro__title--summary {
-  line-height: 20px;
-  max-width: 716px;
-  animation: fadeInListSummary 1.5s 1 forwards;
-  -webkit-animation: fadeInListSummary 1.5s 1 forwards;
-  /* Safari, Chrome and Opera > 12.1 */
-  -moz-animation: fadeInListSummary 1.5s 1 forwards;
-  /* Firefox < 16 */
-  -ms-animation: fadeInListSummary 1.5s 1 forwards;
-  /* Internet Explorer */
-  -o-animation: fadeInListSummary 1.5s 1 forwards;
-  /* Opera < 12.1 */
-  transition: opacity 1500ms ease 0s;
-  font-family: "Neutra display", sans-serif;
-  font-weight: 200;
-  font-size: 22px;
-}
-main.main-page .main-page__content .intro .experience__responsive {
-  display: none;
-}
-@media (max-width: 1100px) {
-  main.main-page .main-page__content .intro .experience__responsive {
     display: flex;
-  }
-}
-main.main-page .main-page__content .experience {
-  width: 100%;
-}
-@media (max-width: 1100px) {
-  main.main-page .main-page__content .experience {
-    display: none;
-  }
-}
-main.main-page .main-page__content .experience .experience__choice {
-  display: flex;
-  width: 85%;
-  bottom: 50px;
-  position: relative;
-}
-@media (max-width: 1100px) {
-  main.main-page .main-page__content .experience .experience__choice {
     width: 100%;
-  }
-}
-@media (max-width: 720px) {
-  main.main-page .main-page__content .experience .experience__choice {
-    flex-direction: column;
-    left: 25px;
-  }
-}
-@media (max-width: 520px) {
-  main.main-page .main-page__content .experience .experience__choice {
-    left: 13px;
-  }
-}
-main.main-page .main-page__content .experience .experience__choice .experience__perfume {
-  background-image: url("../assets/images/main/exp2title.png");
-  width: 80%;
-  height: 620px;
-  background-size: contain;
-  background-repeat: no-repeat;
-  background-position: center;
-  margin-right: 5%;
-  text-decoration: none;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  transition: all 0.5s ease 0s;
-  will-change: auto;
-}
-main.main-page .main-page__content .experience .experience__choice .experience__perfume .experience__link--container {
-  width: 130px;
-  text-align: center;
-  color: black;
-  text-transform: uppercase;
-  margin-top: 30px;
-}
-main.main-page .main-page__content .experience .experience__choice .experience__perfume .experience__link--container .experience__link--title {
-  font-family: "Neutra display", sans-serif;
-  font-weight: 200;
-  font-size: 30px;
-  margin: 0;
-}
-@media (max-width: 1400px) {
-  main.main-page .main-page__content .experience .experience__choice .experience__perfume .experience__link--container .experience__link--title {
-    font-size: 25px;
-  }
-}
-@media (max-width: 1300px) {
-  main.main-page .main-page__content .experience .experience__choice .experience__perfume .experience__link--container .experience__link--title {
-    font-size: 22px;
-  }
-}
-@media (max-width: 1200px) {
-  main.main-page .main-page__content .experience .experience__choice .experience__perfume .experience__link--container .experience__link--title {
-    font-size: 20px;
-    margin: 0 auto;
-    max-width: 100px;
-  }
-}
-@media (max-width: 1100px) {
-  main.main-page .main-page__content .experience .experience__choice .experience__perfume .experience__link--container .experience__link--title {
-    font-size: 30px;
-    margin: 0 auto;
-    max-width: 200px;
-  }
-}
-@media (max-width: 810px) {
-  main.main-page .main-page__content .experience .experience__choice .experience__perfume .experience__link--container .experience__link--title {
-    font-size: 24px;
-    margin: 0 auto;
-    max-width: 200px;
-  }
-}
-@media (max-width: 720px) {
-  main.main-page .main-page__content .experience .experience__choice .experience__perfume .experience__link--container .experience__link--title {
-    font-size: 30px;
-    margin: 0 auto;
-    max-width: 200px;
-  }
-}
-@media (max-width: 520px) {
-  main.main-page .main-page__content .experience .experience__choice .experience__perfume .experience__link--container .experience__link--title {
-    font-size: 25px;
-    margin: 0 auto;
-    max-width: 200px;
-  }
-}
-@media (max-width: 416px) {
-  main.main-page .main-page__content .experience .experience__choice .experience__perfume .experience__link--container .experience__link--title {
-    font-size: 22px;
-    margin: 0 auto;
-    max-width: 200px;
-  }
-}
-main.main-page .main-page__content .experience .experience__choice .experience__perfume .experience__link--container .experience__link--underline {
-  border: 0;
-  border-top: 1px solid #8c8b8b;
-  width: 90px;
-  margin-top: 10px;
-}
-main.main-page .main-page__content .experience .experience__choice .experience__perfume .experience__link--container .experience__link--entry {
-  font-family: "Neutra display", sans-serif;
-  font-weight: 800;
-  font-size: 20px;
-}
-@media (max-width: 1400px) {
-  main.main-page .main-page__content .experience .experience__choice .experience__perfume .experience__link--container .experience__link--entry {
-    font-size: 17px;
-  }
-}
-@media (max-width: 1300px) {
-  main.main-page .main-page__content .experience .experience__choice .experience__perfume .experience__link--container .experience__link--entry {
-    font-size: 15px;
-  }
-}
-@media (max-width: 1200px) {
-  main.main-page .main-page__content .experience .experience__choice .experience__perfume .experience__link--container .experience__link--entry {
-    font-size: 13px;
-  }
-}
-@media (max-width: 1100px) {
-  main.main-page .main-page__content .experience .experience__choice .experience__perfume .experience__link--container .experience__link--entry {
-    font-size: 20px;
-  }
-}
-@media (max-width: 520px) {
-  main.main-page .main-page__content .experience .experience__choice .experience__perfume .experience__link--container .experience__link--entry {
-    font-size: 18px;
-  }
-}
-@media (max-width: 420px) {
-  main.main-page .main-page__content .experience .experience__choice .experience__perfume .experience__link--container .experience__link--entry {
-    font-size: 16px;
-  }
-}
-@media (max-width: 360px) {
-  main.main-page .main-page__content .experience .experience__choice .experience__perfume .experience__link--container .experience__link--entry {
-    font-size: 14px;
-  }
-}
-@media (max-width: 340px) {
-  main.main-page .main-page__content .experience .experience__choice .experience__perfume .experience__link--container .experience__link--entry {
-    font-size: 12px;
-  }
-}
-main.main-page .main-page__content .experience .experience__choice .experience__perfume:hover {
-  transform: scale(1.1);
-}
-@media (max-width: 500px) {
-  main.main-page .main-page__content .experience .experience__choice .experience__perfume {
-    height: 420px;
-  }
-}
-main.main-page .main-page__content .experience .experience__choice .experience__perfume--animation {
-  animation: openSlideAnimation 1.5s 1 ease-in-out;
-}
-main.main-page .main-page__content .experience .experience__choice .experience__perfume--animation-none {
-  animation: none !important;
-}
-main.main-page .main-page__content .experience .experience__choice .experience__essence {
-  background-image: url("../assets/images/main/exp1title.png");
-  width: 80%;
-  height: 620px;
-  background-size: contain;
-  background-repeat: no-repeat;
-  background-position: center;
-  margin-right: 5%;
-  text-decoration: none;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  transition: all 0.5s ease 0s;
-  will-change: auto;
-}
-main.main-page .main-page__content .experience .experience__choice .experience__essence .experience__link--container {
-  width: 130px;
-  text-align: center;
-  color: black;
-  text-transform: uppercase;
-  margin-top: 30px;
-}
-main.main-page .main-page__content .experience .experience__choice .experience__essence .experience__link--container .experience__link--title {
-  font-family: "Neutra display", sans-serif;
-  font-weight: 200;
-  font-size: 30px;
-  margin: 0;
-}
-@media (max-width: 1400px) {
-  main.main-page .main-page__content .experience .experience__choice .experience__essence .experience__link--container .experience__link--title {
-    font-size: 25px;
-  }
-}
-@media (max-width: 1300px) {
-  main.main-page .main-page__content .experience .experience__choice .experience__essence .experience__link--container .experience__link--title {
-    font-size: 22px;
-  }
-}
-@media (max-width: 1200px) {
-  main.main-page .main-page__content .experience .experience__choice .experience__essence .experience__link--container .experience__link--title {
-    font-size: 20px;
-    margin: 0 auto;
-    max-width: 100px;
-  }
-}
-@media (max-width: 1100px) {
-  main.main-page .main-page__content .experience .experience__choice .experience__essence .experience__link--container .experience__link--title {
-    font-size: 30px;
-    margin: 0 auto;
-    max-width: 200px;
-  }
-}
-@media (max-width: 810px) {
-  main.main-page .main-page__content .experience .experience__choice .experience__essence .experience__link--container .experience__link--title {
-    font-size: 24px;
-    margin: 0 auto;
-    max-width: 200px;
-  }
-}
-@media (max-width: 720px) {
-  main.main-page .main-page__content .experience .experience__choice .experience__essence .experience__link--container .experience__link--title {
-    font-size: 30px;
-    margin: 0 auto;
-    max-width: 200px;
-  }
-}
-@media (max-width: 520px) {
-  main.main-page .main-page__content .experience .experience__choice .experience__essence .experience__link--container .experience__link--title {
-    font-size: 25px;
-    margin: 0 auto;
-    max-width: 200px;
-  }
-}
-@media (max-width: 416px) {
-  main.main-page .main-page__content .experience .experience__choice .experience__essence .experience__link--container .experience__link--title {
-    font-size: 22px;
-    margin: 0 auto;
-    max-width: 200px;
-  }
-}
-main.main-page .main-page__content .experience .experience__choice .experience__essence .experience__link--container .experience__link--underline {
-  border: 0;
-  border-top: 1px solid #8c8b8b;
-  width: 90px;
-  margin-top: 10px;
-}
-main.main-page .main-page__content .experience .experience__choice .experience__essence .experience__link--container .experience__link--entry {
-  font-family: "Neutra display", sans-serif;
-  font-weight: 800;
-  font-size: 20px;
-}
-@media (max-width: 1400px) {
-  main.main-page .main-page__content .experience .experience__choice .experience__essence .experience__link--container .experience__link--entry {
-    font-size: 17px;
-  }
-}
-@media (max-width: 1300px) {
-  main.main-page .main-page__content .experience .experience__choice .experience__essence .experience__link--container .experience__link--entry {
-    font-size: 15px;
-  }
-}
-@media (max-width: 1200px) {
-  main.main-page .main-page__content .experience .experience__choice .experience__essence .experience__link--container .experience__link--entry {
-    font-size: 13px;
-  }
-}
-@media (max-width: 1100px) {
-  main.main-page .main-page__content .experience .experience__choice .experience__essence .experience__link--container .experience__link--entry {
-    font-size: 20px;
-  }
-}
-@media (max-width: 520px) {
-  main.main-page .main-page__content .experience .experience__choice .experience__essence .experience__link--container .experience__link--entry {
-    font-size: 18px;
-  }
-}
-@media (max-width: 420px) {
-  main.main-page .main-page__content .experience .experience__choice .experience__essence .experience__link--container .experience__link--entry {
-    font-size: 16px;
-  }
-}
-@media (max-width: 360px) {
-  main.main-page .main-page__content .experience .experience__choice .experience__essence .experience__link--container .experience__link--entry {
-    font-size: 14px;
-  }
-}
-@media (max-width: 340px) {
-  main.main-page .main-page__content .experience .experience__choice .experience__essence .experience__link--container .experience__link--entry {
-    font-size: 12px;
-  }
-}
-main.main-page .main-page__content .experience .experience__choice .experience__essence:hover {
-  transform: scale(1.1);
-}
-@media (max-width: 520px) {
-  main.main-page .main-page__content .experience .experience__choice .experience__essence {
-    height: 420px;
-  }
-}
-main.main-page .main-page__content .experience .experience__choice .experience__essence--animation {
-  animation: openSlideAnimation 2s 1 ease-in-out;
-}
-main.main-page .main-page__content .experience .experience__choice .experience__essence--animation-none {
-  animation: none !important;
-}
+    padding: 110px 0 0 81px; }
+    @media (max-width: 1100px) {
+      main.main-page .main-page__content {
+        padding: 0 0 0 50px; } }
+    @media (max-width: 1100px) {
+      main.main-page .main-page__content .intro {
+        width: 100%; } }
+    main.main-page .main-page__content .intro__title {
+      color: white; }
+      main.main-page .main-page__content .intro__title--container-headline {
+        animation: fadeInHeader 1.5s 1 forwards;
+        -webkit-animation: fadeInHeader 1.5s 1 forwards;
+        /* Safari, Chrome and Opera > 12.1 */
+        -moz-animation: fadeInHeader 1.5s 1 forwards;
+        /* Firefox < 16 */
+        -ms-animation: fadeInHeader 1.5s 1 forwards;
+        /* Internet Explorer */
+        -o-animation: fadeInHeader 1.5s 1 forwards;
+        /* Opera < 12.1 */
+        transition: opacity 1500ms ease 0s;
+        max-width: 369px; }
+        main.main-page .main-page__content .intro__title--container-headline .intro__title--headline {
+          font-family: 'Neutra display', sans-serif;
+          font-weight: 100;
+          font-size: 66px;
+          line-height: 71px;
+          margin-bottom: 0; }
+          @media (max-width: 1100px) {
+            main.main-page .main-page__content .intro__title--container-headline .intro__title--headline {
+              font-size: 5.3em;
+              line-height: 1.1em; } }
+          @media (max-width: 520px) {
+            main.main-page .main-page__content .intro__title--container-headline .intro__title--headline {
+              font-size: 40px;
+              line-height: 1.1em; } }
+          @media (max-width: 520px) {
+            main.main-page .main-page__content .intro__title--container-headline .intro__title--headline {
+              font-size: 40px;
+              line-height: 1.1em; } }
+      main.main-page .main-page__content .intro__title--secondary {
+        font-family: 'Neutra display', sans-serif;
+        font-weight: 400;
+        font-style: italic;
+        font-size: 31px;
+        animation: fadeInSecondary 1.5s 1 forwards;
+        -webkit-animation: fadeInSecondary 1.5s 1 forwards;
+        /* Safari, Chrome and Opera > 12.1 */
+        -moz-animation: fadeInSecondary 1.5s 1 forwards;
+        /* Firefox < 16 */
+        -ms-animation: fadeInSecondary 1.5s 1 forwards;
+        /* Internet Explorer */
+        -o-animation: fadeInSecondary 1.5s 1 forwards;
+        /* Opera < 12.1 */
+        transition: opacity 1500ms ease 0s;
+        margin-top: 20px; }
+      main.main-page .main-page__content .intro__title--list {
+        list-style: none;
+        padding-left: 0;
+        line-height: 20px;
+        animation: fadeInListSummary 1.5s 1 forwards;
+        -webkit-animation: fadeInListSummary 1.5s 1 forwards;
+        /* Safari, Chrome and Opera > 12.1 */
+        -moz-animation: fadeInListSummary 1.5s 1 forwards;
+        /* Firefox < 16 */
+        -ms-animation: fadeInListSummary 1.5s 1 forwards;
+        /* Internet Explorer */
+        -o-animation: fadeInListSummary 1.5s 1 forwards;
+        /* Opera < 12.1 */
+        transition: opacity 1500ms ease 0s;
+        font-family: 'Neutra display', sans-serif;
+        font-weight: 200;
+        font-size: 22px; }
+      main.main-page .main-page__content .intro__title--summary {
+        line-height: 20px;
+        max-width: 716px;
+        animation: fadeInListSummary 1.5s 1 forwards;
+        -webkit-animation: fadeInListSummary 1.5s 1 forwards;
+        /* Safari, Chrome and Opera > 12.1 */
+        -moz-animation: fadeInListSummary 1.5s 1 forwards;
+        /* Firefox < 16 */
+        -ms-animation: fadeInListSummary 1.5s 1 forwards;
+        /* Internet Explorer */
+        -o-animation: fadeInListSummary 1.5s 1 forwards;
+        /* Opera < 12.1 */
+        transition: opacity 1500ms ease 0s;
+        font-family: 'Neutra display', sans-serif;
+        font-weight: 200;
+        font-size: 22px; }
+    main.main-page .main-page__content .intro .experience__responsive {
+      display: none; }
+      @media (max-width: 1100px) {
+        main.main-page .main-page__content .intro .experience__responsive {
+          display: flex; } }
+    main.main-page .main-page__content .experience {
+      width: 100%; }
+      @media (max-width: 1100px) {
+        main.main-page .main-page__content .experience {
+          display: none; } }
+      main.main-page .main-page__content .experience .experience__choice {
+        display: flex;
+        width: 85%;
+        bottom: 50px;
+        position: relative; }
+        @media (max-width: 1100px) {
+          main.main-page .main-page__content .experience .experience__choice {
+            width: 100%; } }
+        @media (max-width: 720px) {
+          main.main-page .main-page__content .experience .experience__choice {
+            flex-direction: column;
+            left: 25px; } }
+        @media (max-width: 520px) {
+          main.main-page .main-page__content .experience .experience__choice {
+            left: 13px; } }
+        main.main-page .main-page__content .experience .experience__choice .experience__perfume {
+          background-image: url("../assets/images/main/exp2title.png");
+          width: 80%;
+          height: 620px;
+          background-size: contain;
+          background-repeat: no-repeat;
+          background-position: center;
+          margin-right: 5%;
+          text-decoration: none;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          transition: all 0.5s ease 0s;
+          will-change: auto; }
+          main.main-page .main-page__content .experience .experience__choice .experience__perfume .experience__link--container {
+            width: 130px;
+            text-align: center;
+            color: black;
+            text-transform: uppercase;
+            margin-top: 30px; }
+            main.main-page .main-page__content .experience .experience__choice .experience__perfume .experience__link--container .experience__link--title {
+              font-family: 'Neutra display', sans-serif;
+              font-weight: 200;
+              font-size: 30px;
+              margin: 0; }
+              @media (max-width: 1400px) {
+                main.main-page .main-page__content .experience .experience__choice .experience__perfume .experience__link--container .experience__link--title {
+                  font-size: 25px; } }
+              @media (max-width: 1300px) {
+                main.main-page .main-page__content .experience .experience__choice .experience__perfume .experience__link--container .experience__link--title {
+                  font-size: 22px; } }
+              @media (max-width: 1200px) {
+                main.main-page .main-page__content .experience .experience__choice .experience__perfume .experience__link--container .experience__link--title {
+                  font-size: 20px;
+                  margin: 0 auto;
+                  max-width: 100px; } }
+              @media (max-width: 1100px) {
+                main.main-page .main-page__content .experience .experience__choice .experience__perfume .experience__link--container .experience__link--title {
+                  font-size: 30px;
+                  margin: 0 auto;
+                  max-width: 200px; } }
+              @media (max-width: 810px) {
+                main.main-page .main-page__content .experience .experience__choice .experience__perfume .experience__link--container .experience__link--title {
+                  font-size: 24px;
+                  margin: 0 auto;
+                  max-width: 200px; } }
+              @media (max-width: 720px) {
+                main.main-page .main-page__content .experience .experience__choice .experience__perfume .experience__link--container .experience__link--title {
+                  font-size: 30px;
+                  margin: 0 auto;
+                  max-width: 200px; } }
+              @media (max-width: 520px) {
+                main.main-page .main-page__content .experience .experience__choice .experience__perfume .experience__link--container .experience__link--title {
+                  font-size: 25px;
+                  margin: 0 auto;
+                  max-width: 200px; } }
+              @media (max-width: 416px) {
+                main.main-page .main-page__content .experience .experience__choice .experience__perfume .experience__link--container .experience__link--title {
+                  font-size: 22px;
+                  margin: 0 auto;
+                  max-width: 200px; } }
+            main.main-page .main-page__content .experience .experience__choice .experience__perfume .experience__link--container .experience__link--underline {
+              border: 0;
+              border-top: 1px solid #8c8b8b;
+              width: 90px;
+              margin-top: 10px; }
+            main.main-page .main-page__content .experience .experience__choice .experience__perfume .experience__link--container .experience__link--entry {
+              font-family: 'Neutra display', sans-serif;
+              font-weight: 800;
+              font-size: 20px; }
+              @media (max-width: 1400px) {
+                main.main-page .main-page__content .experience .experience__choice .experience__perfume .experience__link--container .experience__link--entry {
+                  font-size: 17px; } }
+              @media (max-width: 1300px) {
+                main.main-page .main-page__content .experience .experience__choice .experience__perfume .experience__link--container .experience__link--entry {
+                  font-size: 15px; } }
+              @media (max-width: 1200px) {
+                main.main-page .main-page__content .experience .experience__choice .experience__perfume .experience__link--container .experience__link--entry {
+                  font-size: 13px; } }
+              @media (max-width: 1100px) {
+                main.main-page .main-page__content .experience .experience__choice .experience__perfume .experience__link--container .experience__link--entry {
+                  font-size: 20px; } }
+              @media (max-width: 520px) {
+                main.main-page .main-page__content .experience .experience__choice .experience__perfume .experience__link--container .experience__link--entry {
+                  font-size: 18px; } }
+              @media (max-width: 420px) {
+                main.main-page .main-page__content .experience .experience__choice .experience__perfume .experience__link--container .experience__link--entry {
+                  font-size: 16px; } }
+              @media (max-width: 360px) {
+                main.main-page .main-page__content .experience .experience__choice .experience__perfume .experience__link--container .experience__link--entry {
+                  font-size: 14px; } }
+              @media (max-width: 340px) {
+                main.main-page .main-page__content .experience .experience__choice .experience__perfume .experience__link--container .experience__link--entry {
+                  font-size: 12px; } }
+          main.main-page .main-page__content .experience .experience__choice .experience__perfume:hover {
+            transform: scale(1.1); }
+          @media (max-width: 500px) {
+            main.main-page .main-page__content .experience .experience__choice .experience__perfume {
+              height: 420px; } }
+        main.main-page .main-page__content .experience .experience__choice .experience__perfume--animation {
+          animation: openSlideAnimation 1.5s 1 ease-in-out; }
+        main.main-page .main-page__content .experience .experience__choice .experience__perfume--animation-none {
+          animation: none !important; }
+        main.main-page .main-page__content .experience .experience__choice .experience__essence {
+          background-image: url("../assets/images/main/exp1title.png");
+          width: 80%;
+          height: 620px;
+          background-size: contain;
+          background-repeat: no-repeat;
+          background-position: center;
+          margin-right: 5%;
+          text-decoration: none;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          transition: all 0.5s ease 0s;
+          will-change: auto; }
+          main.main-page .main-page__content .experience .experience__choice .experience__essence .experience__link--container {
+            width: 130px;
+            text-align: center;
+            color: black;
+            text-transform: uppercase;
+            margin-top: 30px; }
+            main.main-page .main-page__content .experience .experience__choice .experience__essence .experience__link--container .experience__link--title {
+              font-family: 'Neutra display', sans-serif;
+              font-weight: 200;
+              font-size: 30px;
+              margin: 0; }
+              @media (max-width: 1400px) {
+                main.main-page .main-page__content .experience .experience__choice .experience__essence .experience__link--container .experience__link--title {
+                  font-size: 25px; } }
+              @media (max-width: 1300px) {
+                main.main-page .main-page__content .experience .experience__choice .experience__essence .experience__link--container .experience__link--title {
+                  font-size: 22px; } }
+              @media (max-width: 1200px) {
+                main.main-page .main-page__content .experience .experience__choice .experience__essence .experience__link--container .experience__link--title {
+                  font-size: 20px;
+                  margin: 0 auto;
+                  max-width: 100px; } }
+              @media (max-width: 1100px) {
+                main.main-page .main-page__content .experience .experience__choice .experience__essence .experience__link--container .experience__link--title {
+                  font-size: 30px;
+                  margin: 0 auto;
+                  max-width: 200px; } }
+              @media (max-width: 810px) {
+                main.main-page .main-page__content .experience .experience__choice .experience__essence .experience__link--container .experience__link--title {
+                  font-size: 24px;
+                  margin: 0 auto;
+                  max-width: 200px; } }
+              @media (max-width: 720px) {
+                main.main-page .main-page__content .experience .experience__choice .experience__essence .experience__link--container .experience__link--title {
+                  font-size: 30px;
+                  margin: 0 auto;
+                  max-width: 200px; } }
+              @media (max-width: 520px) {
+                main.main-page .main-page__content .experience .experience__choice .experience__essence .experience__link--container .experience__link--title {
+                  font-size: 25px;
+                  margin: 0 auto;
+                  max-width: 200px; } }
+              @media (max-width: 416px) {
+                main.main-page .main-page__content .experience .experience__choice .experience__essence .experience__link--container .experience__link--title {
+                  font-size: 22px;
+                  margin: 0 auto;
+                  max-width: 200px; } }
+            main.main-page .main-page__content .experience .experience__choice .experience__essence .experience__link--container .experience__link--underline {
+              border: 0;
+              border-top: 1px solid #8c8b8b;
+              width: 90px;
+              margin-top: 10px; }
+            main.main-page .main-page__content .experience .experience__choice .experience__essence .experience__link--container .experience__link--entry {
+              font-family: 'Neutra display', sans-serif;
+              font-weight: 800;
+              font-size: 20px; }
+              @media (max-width: 1400px) {
+                main.main-page .main-page__content .experience .experience__choice .experience__essence .experience__link--container .experience__link--entry {
+                  font-size: 17px; } }
+              @media (max-width: 1300px) {
+                main.main-page .main-page__content .experience .experience__choice .experience__essence .experience__link--container .experience__link--entry {
+                  font-size: 15px; } }
+              @media (max-width: 1200px) {
+                main.main-page .main-page__content .experience .experience__choice .experience__essence .experience__link--container .experience__link--entry {
+                  font-size: 13px; } }
+              @media (max-width: 1100px) {
+                main.main-page .main-page__content .experience .experience__choice .experience__essence .experience__link--container .experience__link--entry {
+                  font-size: 20px; } }
+              @media (max-width: 520px) {
+                main.main-page .main-page__content .experience .experience__choice .experience__essence .experience__link--container .experience__link--entry {
+                  font-size: 18px; } }
+              @media (max-width: 420px) {
+                main.main-page .main-page__content .experience .experience__choice .experience__essence .experience__link--container .experience__link--entry {
+                  font-size: 16px; } }
+              @media (max-width: 360px) {
+                main.main-page .main-page__content .experience .experience__choice .experience__essence .experience__link--container .experience__link--entry {
+                  font-size: 14px; } }
+              @media (max-width: 340px) {
+                main.main-page .main-page__content .experience .experience__choice .experience__essence .experience__link--container .experience__link--entry {
+                  font-size: 12px; } }
+          main.main-page .main-page__content .experience .experience__choice .experience__essence:hover {
+            transform: scale(1.1); }
+          @media (max-width: 520px) {
+            main.main-page .main-page__content .experience .experience__choice .experience__essence {
+              height: 420px; } }
+        main.main-page .main-page__content .experience .experience__choice .experience__essence--animation {
+          animation: openSlideAnimation 2s 1 ease-in-out; }
+        main.main-page .main-page__content .experience .experience__choice .experience__essence--animation-none {
+          animation: none !important; }
 
 @font-face {
-  font-family: "Neutra display";
+  font-family: 'Neutra display';
   src: url("fonts/NeutraDisplay-Thin.otf") format("opentype");
-  font-weight: 100;
-}
+  font-weight: 100; }
 @font-face {
-  font-family: "Neutra display";
+  font-family: 'Neutra display';
   src: url("fonts/NeutraDisplay-Light.otf") format("opentype");
-  font-weight: 200;
-}
+  font-weight: 200; }
 @font-face {
-  font-family: "Neutra display";
+  font-family: 'Neutra display';
   src: url("fonts/NeutraDisplay-Bold.otf") format("opentype");
-  font-weight: 700;
-}
+  font-weight: 700; }
 @font-face {
-  font-family: "Neutra display";
+  font-family: 'Neutra display';
   src: url("fonts/NeutraDisplay-Light-Italic.otf") format("opentype");
-  font-weight: 300;
-}
+  font-weight: 300; }
 @font-face {
-  font-family: "Neutra display";
+  font-family: 'Neutra display';
   src: url("fonts/NeutraText-BookItalic.otf") format("opentype");
-  font-weight: 400;
-}
+  font-weight: 400; }
 .smellMenu-page {
   top: 0;
+<<<<<<< HEAD
   left: 0;
 }
 .smellMenu-page .smellMenu__title {
@@ -665,56 +546,157 @@ main.main-page .main-page__content .experience .experience__choice .experience__
   top: 17%;
   left: 23%;
 }
+=======
+  left: 0; }
+  .smellMenu-page .smellMenu__title {
+    font-weight: normal;
+    font-family: 'Neutra display', sans-serif;
+    font-style: italic;
+    font-size: 26pt;
+    padding-left: 40%;
+    line-height: 71px;
+    margin-bottom: 2%;
+    margin-top: 4%; }
+  .smellMenu-page .smellMenu__carousel {
+    margin: 50px 50px 10px 0px; }
+  .smellMenu-page .smellMenu__footer {
+    position: fixed;
+    left: 0;
+    bottom: 0; }
+    .smellMenu-page .smellMenu__footer .smellMenu__footer__text {
+      text-transform: uppercase;
+      font-weight: 200;
+      font-family: 'Neutra display', sans-serif;
+      font-size: 30pt; }
+    .smellMenu-page .smellMenu__footer .smellMenu__footer__mane {
+      font-weight: 200;
+      font-family: 'Neutra display', sans-serif;
+      font-size: 12pt;
+      color: green; }
+    .smellMenu-page .smellMenu__footer .smellMenu__footer__left {
+      position: fixed;
+      left: 1%;
+      bottom: 1%; }
+    .smellMenu-page .smellMenu__footer .smellMenu__footer__right {
+      position: fixed;
+      width: 260px;
+      right: 1%;
+      bottom: 1%; }
+    .smellMenu-page .smellMenu__footer .smellMenu__footer__right_item {
+      font-weight: 200;
+      font-family: 'Neutra display', sans-serif;
+      font-size: 12pt;
+      padding-right: 2%; }
+  .smellMenu-page .smellMenu__svg {
+    padding-left: 37%; }
+  .smellMenu-page .smellMenu__text__perfume {
+    font-weight: bolder;
+    font-family: 'Neutra display', sans-serif;
+    font-size: 14pt;
+    padding-left: 42%; }
+  .smellMenu-page .smellMenu__text__name {
+    text-transform: uppercase;
+    font-weight: 200;
+    font-family: 'Neutra display', sans-serif;
+    font-size: 70pt;
+    letter-spacing: 0.2em;
+    padding-top: 0%; }
+  .smellMenu-page .bottle_item:hover .play_circle {
+    -moz-transform: scale(4);
+    -ms-transform: scale(4);
+    -webkit-transform: scale(4);
+    -o-transform: scale(4);
+    transform: scale(4); }
+  .smellMenu-page .play_circle_text {
+    transition: 5s;
+    text-transform: uppercase;
+    font-weight: bold;
+    font-family: 'Neutra display', sans-serif;
+    font-size: 5pt;
+    color: #ffffff;
+    position: absolute;
+    top: 19%;
+    left: 25%; }
+  .smellMenu-page .play_circle_text1 {
+    transition: 5s;
+    text-transform: uppercase;
+    font-weight: bold;
+    font-family: 'Neutra display', sans-serif;
+    font-size: 3pt;
+    color: #ffffff;
+    position: absolute;
+    top: 22%;
+    left: 28%; }
+  .smellMenu-page .play_circle_text2 {
+    transition: 5s;
+    text-transform: uppercase;
+    font-weight: bold;
+    font-family: 'Neutra display', sans-serif;
+    font-size: 4pt;
+    color: #ffffff;
+    position: absolute;
+    top: 19%;
+    left: 25%; }
+  .smellMenu-page .play_circle_text3 {
+    transition: 5s;
+    text-transform: uppercase;
+    font-weight: bold;
+    font-family: 'Neutra display', sans-serif;
+    font-size: 5pt;
+    color: #ffffff;
+    position: absolute;
+    top: 17%;
+    left: 23%; }
+>>>>>>> origin/master
 
 .bottle_item {
   margin-left: 20px;
-  margin-right: 20px;
-}
+  margin-right: 20px; }
 
 #item0 {
   padding-bottom: 36%;
   height: 250px;
-  transition: 1s;
-}
+  transition: 1s; }
 
 #item1 {
   padding-bottom: 27%;
   transition: 1s;
-  height: 300px;
-}
+  height: 300px; }
 
 #item2 {
   padding-bottom: 18%;
   transition: 1s;
-  height: 350px;
-}
+  height: 350px; }
 
 #item3 {
   padding-bottom: 7%;
   transition: 1s;
+<<<<<<< HEAD
   height: 420px;
 }
+=======
+  height: 420px; }
+>>>>>>> origin/master
 
 .smellMenu__text__perfume {
   display: inline-block;
   position: relative;
-  animation: accent-color-slide-reveal 0.4s cubic-bezier(0.78, 0.1, 0.19, 0.91) forwards;
-}
-.smellMenu__text__perfume::after {
-  content: "";
-  position: absolute;
-  top: 0;
-  bottom: 0;
-  left: 0;
-  right: 0;
-  animation: accent-color-slide-reveal-rt 0.4s cubic-bezier(0.78, 0.1, 0.19, 0.91) forwards;
-  transform-origin: left 50%;
-}
+  animation: accent-color-slide-reveal 0.4s cubic-bezier(0.78, 0.1, 0.19, 0.91) forwards; }
+  .smellMenu__text__perfume::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    animation: accent-color-slide-reveal-rt 0.4s cubic-bezier(0.78, 0.1, 0.19, 0.91) forwards;
+    transform-origin: left 50%; }
 
 .smellMenu__text__name, .smellMenu__svg {
   display: inline-block;
   padding-top: 5%;
   position: relative;
+<<<<<<< HEAD
   animation: accent-color-slide-reveal 0.4s cubic-bezier(0.78, 0.1, 0.19, 0.91) forwards;
 }
 .smellMenu__text__name::after, .smellMenu__svg::after {
@@ -727,104 +709,114 @@ main.main-page .main-page__content .experience .experience__choice .experience__
   animation: accent-color-slide-reveal-rt 0.4s cubic-bezier(0.78, 0.1, 0.19, 0.91) forwards;
   transform-origin: left 55%;
 }
+=======
+  animation: accent-color-slide-reveal 0.4s cubic-bezier(0.78, 0.1, 0.19, 0.91) forwards; }
+  .smellMenu__text__name::after, .smellMenu__svg::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    animation: accent-color-slide-reveal-rt 0.4s cubic-bezier(0.78, 0.1, 0.19, 0.91) forwards;
+    transform-origin: left 55%; }
+>>>>>>> origin/master
 
 @keyframes accent-color-slide-reveal-rt {
   0% {
-    transform: scaleX(0);
-  }
+    transform: scaleX(0); }
   49% {
     transform: scaleX(1);
-    transform-origin: left 50%;
-  }
+    transform-origin: left 50%; }
   49.1% {
     transform: scaleX(0.9);
-    transform-origin: right 50%;
-  }
+    transform-origin: right 50%; }
   100% {
     transform: scaleX(0);
-    transform-origin: right 50%;
-  }
-}
+    transform-origin: right 50%; } }
 @keyframes accent-color-slide-reveal {
   0% {
-    color: transparent;
-  }
+    color: transparent; }
   49% {
-    color: transparent;
-  }
-}
+    color: transparent; } }
 .carousel-frame {
   width: 100%;
   position: relative;
   overflow-x: scroll;
-  white-space: nowrap;
-}
+  white-space: nowrap; }
 
 .carousel-frame ul {
   margin: 0;
   padding: 0;
   height: 100%;
-  list-style: none;
-}
+  list-style: none; }
 
 .carousel-frame li.carousel-item {
   cursor: pointer;
   display: inline-block;
   margin: 0 5px 0 0;
-  padding: 0;
-}
+  padding: 0; }
 
 /* хром, сафари */
 .carousel-frame::-webkit-scrollbar {
-  width: 0;
-}
+  width: 0; }
 
 /* ie 10+ */
 .carousel-frame {
-  -ms-overflow-style: none;
-}
+  -ms-overflow-style: none; }
 
 /* фф (свойство больше не работает, других способов тоже нет)*/
 .carousel-frame {
-  overflow: -moz-scrollbars-none;
-}
+  overflow: -moz-scrollbars-none; }
 
+/************************** NEUTRA TEXT **************************/
+@font-face {
+  font-family: "Neutra text";
+  src: url("fonts/NeutraText/neutratext-bold-webfont.woff") format("woff"), url("fonts/NeutraText/neutratext-bold-webfont.ttf") format("opentype"), url("fonts/NeutraText/neutratext-bold-webfont.eot") format("opentype"), url("fonts/NeutraText/neutratext-bold-webfont.svg#webfontg8dbVmxj") format("svg"); }
+@font-face {
+  font-family: "Neutra text";
+  src: url("fonts/NeutraText/neutratext-bolditalic-webfont.woff") format("woff"), url("fonts/NeutraText/neutratext-bolditalic-webfont.ttf") format("opentype"), url("fonts/NeutraText/neutratext-bolditalic-webfont.eot") format("opentype"), url("fonts/NeutraText/neutratext-bolditalic-webfont.svg#webfontg8dbVmxj") format("svg"); }
+@font-face {
+  font-family: "Neutra text";
+  src: url("fonts/NeutraText/neutratext-book-webfont.woff") format("woff"), url("fonts/NeutraText/neutratext-book-webfont.ttf") format("opentype"), url("fonts/NeutraText/neutratext-book-webfont.eot") format("opentype"), url("fonts/NeutraText/neutratext-book-webfont.svg#webfontg8dbVmxj"); }
+@font-face {
+  font-family: "Neutra text";
+  src: url("fonts/NeutraText/neutratext-bookitalic-webfont.woff") format("woff"), url("fonts/NeutraText/neutratext-bookitalic-webfont.ttf") format("opentype"), url("fonts/NeutraText/neutratext-bookitalic-webfont.eot") format("opentype"), url("fonts/NeutraText/neutratext-bookitalic-webfont.svg#webfontg8dbVmxj") format("svg"); }
+@font-face {
+  font-family: "Neutra text";
+  src: url("fonts/NeutraText/neutratext-demi-webfont.woff") format("woff"), url("fonts/NeutraText/neutratext-demi-webfont.ttf") format("opentype"), url("fonts/NeutraText/neutratext-demi-webfont.eot") format("opentype"), url("fonts/NeutraText/neutratext-demi-webfont.svg#webfontg8dbVmxj") format("svg"); }
+@font-face {
+  font-family: "Neutra text";
+  src: url("fonts/NeutraText/neutratext-demiitalic-webfont.woff") format("woff"), url("fonts/NeutraText/neutratext-demiitalic-webfont.ttf") format("opentype"), url("fonts/NeutraText/neutratext-demiitalic-webfont.eot") format("opentype"), url("fonts/NeutraText/neutratext-demiitalic-webfont.svg#webfontg8dbVmxj") format("svg"); }
+@font-face {
+  font-family: "Neutra text";
+  src: url("fonts/NeutraText/neutratext-demiitalic-webfont.woff") format("woff"), url("fonts/NeutraText/neutratext-demiitalic-webfont.ttf") format("opentype"), url("fonts/NeutraText/neutratext-demiitalic-webfont.eot") format("opentype"), url("fonts/NeutraText/neutratext-demiitalic-webfont.svg#webfontg8dbVmxj") format("svg"); }
+@font-face {
+  font-family: "Neutra text";
+  src: url("fonts/NeutraText/neutratext-light-webfont.woff") format("woff"), url("fonts/NeutraText/neutratext-light-webfont.ttf") format("opentype"), url("fonts/NeutraText/neutratext-light-webfont.eot") format("opentype"), url("fonts/NeutraText/neutratext-light-webfont.svg#webfontg8dbVmxj") format("svg"); }
+@font-face {
+  font-family: "Neutra text";
+  src: url("fonts/NeutraText/neutratext-lightitalic-webfont.woff") format("woff"), url("fonts/NeutraText/neutratext-lightitalic-webfont.ttf") format("opentype"), url("fonts/NeutraText/neutratext-lightitalic-webfont.eot") format("opentype"), url("fonts/NeutraText/neutratext-lightitalic-webfont.svg#webfontg8dbVmxj") format("svg"); }
+/************************** NEUTRA DISPLAY **************************/
 @font-face {
   font-family: "Neutra display";
-  src: url("fonts/NeutraDisplay-Thin.otf") format("opentype");
-  font-weight: 100;
-}
+  src: url("fonts/NeutraDisplay/neutradisplay-bold-webfont.woff") format("woff"), url("fonts/NeutraDisplay/neutradisplay-bold-webfont.ttf") format("opentype"), url("fonts/NeutraDisplay/neutradisplay-bold-webfont.eot") format("opentype"), url("fonts/NeutraDisplay/neutradisplay-bold-webfont.svg#webfontg8dbVmxj") format("svg"); }
 @font-face {
-  font-family: "Neutra display";
-  src: url("fonts/NeutraDisplay-Light.otf") format("opentype");
-  font-weight: 200;
-}
+  font-family: 'Neutra display';
+  src: url("fonts/NeutraDisplay/neutradisplay-light-webfont.woff") format("woff"), url("fonts/NeutraDisplay/neutradisplay-light-webfont.ttf") format("opentype"), url("fonts/NeutraDisplay/neutradisplay-light-webfont.eot") format("opentype"), url("fonts/NeutraDisplay/neutradisplay-light-webfont.svg#webfontg8dbVmxj") format("svg"); }
 @font-face {
-  font-family: "Neutra display";
-  src: url("fonts/NeutraDisplay-Bold.otf") format("opentype");
-  font-weight: 700;
-}
+  font-family: 'Neutra display';
+  src: url("fonts/NeutraDisplay/neutradisplay-medium-webfont.woff") format("woff"), url("fonts/NeutraDisplay/neutradisplay-medium-webfont.ttf") format("opentype"), url("fonts/NeutraDisplay/neutradisplay-medium-webfont.eot") format("opentype"), url("fonts/NeutraDisplay/neutradisplay-medium-webfont.svg#webfontg8dbVmxj") format("svg"); }
 @font-face {
-  font-family: "Neutra display";
-  src: url("fonts/NeutraDisplay-Light-Italic.otf") format("opentype");
-  font-weight: 300;
-}
-@font-face {
-  font-family: "Neutra display";
-  src: url("fonts/NeutraText-BookItalic.otf") format("opentype");
-  font-weight: 400;
-}
+  font-family: 'Neutra display';
+  src: url("fonts/NeutraDisplay/neutradisplay-thin-webfont.woff") format("woff"), url("fonts/NeutraDisplay/neutradisplay-thin-webfont.ttf") format("opentype"), url("fonts/NeutraDisplay/neutradisplay-thin-webfont.eot") format("opentype"), url("fonts/NeutraDisplay/neutradisplay-thin-webfont.svg#webfontg8dbVmxj") format("svg"); }
 @keyframes fadeIn {
   0% {
-    opacity: 0;
-  }
+    opacity: 0; }
   40% {
-    opacity: 0;
-  }
+    opacity: 0; }
   100% {
-    opacity: 1;
-  }
-}
+    opacity: 1; } }
 .perfume-starting {
   width: 50%;
   height: 50%;
@@ -835,92 +827,543 @@ main.main-page .main-page__content .experience .experience__choice .experience__
   bottom: 0;
   right: 0;
   display: flex;
-  justify-content: center;
-}
-.perfume-starting__video {
-  position: fixed;
-  right: 0;
-  bottom: 0;
-  min-width: 100%;
-  min-height: 100%;
-  object-fit: fill;
-}
-.perfume-starting__animation {
-  cursor: pointer;
-  text-decoration: none;
-}
-.perfume-starting__animation:hover .perfume-starting__background--hover {
-  -webkit-transform: scale(1);
-  transform: scale(1);
-  -webkit-transition: all 500ms ease-out;
-  transition: all 500ms ease-out;
-}
-.perfume-starting__animation:hover .perfume-starting__text.perfume-starting__text--transform {
-  transform: translateY(70px);
-}
-.perfume-starting__animation .perfume-starting__background--delay {
-  -webkit-transition-delay: 1s;
-  transition-delay: 1s;
-}
-.perfume-starting__animation .perfume-starting__background {
-  position: absolute;
-  margin: -100px;
-  -webkit-transition: all 500ms ease-out;
-  transition: all 500ms ease-out;
-  -webkit-transform: scale(0.4);
-  transform: scale(0);
-}
-.perfume-starting__animation .perfume-starting__text {
-  font-family: "Neutra display", sans-serif;
-  font-size: 1.8em;
-  animation: fadeIn 2000ms;
-  position: relative;
-  color: white;
-  text-align: center;
-  transition: transform 500ms;
-}
+  justify-content: center; }
+  .perfume-starting__video {
+    position: fixed;
+    right: 0;
+    bottom: 0;
+    min-width: 100%;
+    min-height: 100%;
+    object-fit: fill; }
+  .perfume-starting__animation {
+    cursor: pointer;
+    text-decoration: none; }
+    .perfume-starting__animation:hover .perfume-starting__background--hover {
+      -webkit-transform: scale(1);
+      transform: scale(1);
+      -webkit-transition: all 500ms ease-out;
+      transition: all 500ms ease-out; }
+    .perfume-starting__animation:hover .perfume-starting__text.perfume-starting__text--transform {
+      transform: translateY(70px); }
+    .perfume-starting__animation .perfume-starting__background--delay {
+      -webkit-transition-delay: 1s;
+      transition-delay: 1s; }
+    .perfume-starting__animation .perfume-starting__background {
+      position: absolute;
+      margin: -100px;
+      -webkit-transition: all 500ms ease-out;
+      transition: all 500ms ease-out;
+      -webkit-transform: scale(0.4);
+      transform: scale(0); }
+    .perfume-starting__animation .perfume-starting__text {
+      font-family: 'Neutra display', sans-serif;
+      font-size: 1.8em;
+      animation: fadeIn 2000ms;
+      position: relative;
+      color: white;
+      text-align: center;
+      transition: transform 500ms; }
 
+/************************** NEUTRA TEXT **************************/
+@font-face {
+  font-family: "Neutra text";
+  src: url("fonts/NeutraText/neutratext-bold-webfont.woff") format("woff"), url("fonts/NeutraText/neutratext-bold-webfont.ttf") format("opentype"), url("fonts/NeutraText/neutratext-bold-webfont.eot") format("opentype"), url("fonts/NeutraText/neutratext-bold-webfont.svg#webfontg8dbVmxj") format("svg"); }
+@font-face {
+  font-family: "Neutra text";
+  src: url("fonts/NeutraText/neutratext-bolditalic-webfont.woff") format("woff"), url("fonts/NeutraText/neutratext-bolditalic-webfont.ttf") format("opentype"), url("fonts/NeutraText/neutratext-bolditalic-webfont.eot") format("opentype"), url("fonts/NeutraText/neutratext-bolditalic-webfont.svg#webfontg8dbVmxj") format("svg"); }
+@font-face {
+  font-family: "Neutra text";
+  src: url("fonts/NeutraText/neutratext-book-webfont.woff") format("woff"), url("fonts/NeutraText/neutratext-book-webfont.ttf") format("opentype"), url("fonts/NeutraText/neutratext-book-webfont.eot") format("opentype"), url("fonts/NeutraText/neutratext-book-webfont.svg#webfontg8dbVmxj"); }
+@font-face {
+  font-family: "Neutra text";
+  src: url("fonts/NeutraText/neutratext-bookitalic-webfont.woff") format("woff"), url("fonts/NeutraText/neutratext-bookitalic-webfont.ttf") format("opentype"), url("fonts/NeutraText/neutratext-bookitalic-webfont.eot") format("opentype"), url("fonts/NeutraText/neutratext-bookitalic-webfont.svg#webfontg8dbVmxj") format("svg"); }
+@font-face {
+  font-family: "Neutra text";
+  src: url("fonts/NeutraText/neutratext-demi-webfont.woff") format("woff"), url("fonts/NeutraText/neutratext-demi-webfont.ttf") format("opentype"), url("fonts/NeutraText/neutratext-demi-webfont.eot") format("opentype"), url("fonts/NeutraText/neutratext-demi-webfont.svg#webfontg8dbVmxj") format("svg"); }
+@font-face {
+  font-family: "Neutra text";
+  src: url("fonts/NeutraText/neutratext-demiitalic-webfont.woff") format("woff"), url("fonts/NeutraText/neutratext-demiitalic-webfont.ttf") format("opentype"), url("fonts/NeutraText/neutratext-demiitalic-webfont.eot") format("opentype"), url("fonts/NeutraText/neutratext-demiitalic-webfont.svg#webfontg8dbVmxj") format("svg"); }
+@font-face {
+  font-family: "Neutra text";
+  src: url("fonts/NeutraText/neutratext-demiitalic-webfont.woff") format("woff"), url("fonts/NeutraText/neutratext-demiitalic-webfont.ttf") format("opentype"), url("fonts/NeutraText/neutratext-demiitalic-webfont.eot") format("opentype"), url("fonts/NeutraText/neutratext-demiitalic-webfont.svg#webfontg8dbVmxj") format("svg"); }
+@font-face {
+  font-family: "Neutra text";
+  src: url("fonts/NeutraText/neutratext-light-webfont.woff") format("woff"), url("fonts/NeutraText/neutratext-light-webfont.ttf") format("opentype"), url("fonts/NeutraText/neutratext-light-webfont.eot") format("opentype"), url("fonts/NeutraText/neutratext-light-webfont.svg#webfontg8dbVmxj") format("svg"); }
+@font-face {
+  font-family: "Neutra text";
+  src: url("fonts/NeutraText/neutratext-lightitalic-webfont.woff") format("woff"), url("fonts/NeutraText/neutratext-lightitalic-webfont.ttf") format("opentype"), url("fonts/NeutraText/neutratext-lightitalic-webfont.eot") format("opentype"), url("fonts/NeutraText/neutratext-lightitalic-webfont.svg#webfontg8dbVmxj") format("svg"); }
+/************************** NEUTRA DISPLAY **************************/
 @font-face {
   font-family: "Neutra display";
-  src: url("fonts/NeutraDisplay-Thin.otf") format("opentype");
-  font-weight: 100;
-}
+  src: url("fonts/NeutraDisplay/neutradisplay-bold-webfont.woff") format("woff"), url("fonts/NeutraDisplay/neutradisplay-bold-webfont.ttf") format("opentype"), url("fonts/NeutraDisplay/neutradisplay-bold-webfont.eot") format("opentype"), url("fonts/NeutraDisplay/neutradisplay-bold-webfont.svg#webfontg8dbVmxj") format("svg"); }
+@font-face {
+  font-family: 'Neutra display';
+  src: url("fonts/NeutraDisplay/neutradisplay-light-webfont.woff") format("woff"), url("fonts/NeutraDisplay/neutradisplay-light-webfont.ttf") format("opentype"), url("fonts/NeutraDisplay/neutradisplay-light-webfont.eot") format("opentype"), url("fonts/NeutraDisplay/neutradisplay-light-webfont.svg#webfontg8dbVmxj") format("svg"); }
+@font-face {
+  font-family: 'Neutra display';
+  src: url("fonts/NeutraDisplay/neutradisplay-medium-webfont.woff") format("woff"), url("fonts/NeutraDisplay/neutradisplay-medium-webfont.ttf") format("opentype"), url("fonts/NeutraDisplay/neutradisplay-medium-webfont.eot") format("opentype"), url("fonts/NeutraDisplay/neutradisplay-medium-webfont.svg#webfontg8dbVmxj") format("svg"); }
+@font-face {
+  font-family: 'Neutra display';
+  src: url("fonts/NeutraDisplay/neutradisplay-thin-webfont.woff") format("woff"), url("fonts/NeutraDisplay/neutradisplay-thin-webfont.ttf") format("opentype"), url("fonts/NeutraDisplay/neutradisplay-thin-webfont.eot") format("opentype"), url("fonts/NeutraDisplay/neutradisplay-thin-webfont.svg#webfontg8dbVmxj") format("svg"); }
+@keyframes anima {
+  0% {
+    opacity: 1; }
+  100% {
+    transform: scale(1.4);
+    opacity: 0; } }
+@keyframes loadingTop {
+  0% {
+    transform: translateY(-100px); }
+  100% {
+    transform: translateY(-50px); } }
+@keyframes loadingBottom {
+  0% {
+    transform: translateY(100px); }
+  100% {
+    transform: translateY(50px); } }
+.letPerfumeTalk {
+  font-family: "Neutra display", sans-serif;
+  font-weight: 600;
+  font-size: 14px;
+  cursor: none; }
+  .letPerfumeTalk > * {
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -o-user-select: none;
+    user-select: none;
+    -webkit-user-drag: none; }
+    .letPerfumeTalk > * > * {
+      -webkit-user-select: none;
+      -moz-user-select: none;
+      -o-user-select: none;
+      user-select: none;
+      -webkit-user-drag: none; }
+  .letPerfumeTalk .letPerfumeTalk__video {
+    position: fixed;
+    right: 0;
+    bottom: 0;
+    min-width: 100%;
+    min-height: 100%;
+    object-fit: fill;
+    transition: all 700ms; }
+  .letPerfumeTalk .menu {
+    text-transform: uppercase;
+    width: 100%;
+    height: 100vh;
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    color: white; }
+    .letPerfumeTalk .menu__top {
+      overflow-y: hidden; }
+      .letPerfumeTalk .menu__top--link {
+        cursor: none; }
+      .letPerfumeTalk .menu__top .menu__circle--top {
+        width: 85px;
+        height: 85px;
+        border-radius: 50%;
+        padding: 10px;
+        justify-content: center;
+        display: flex;
+        transition: all 700ms;
+        overflow: hidden;
+        position: relative;
+        z-index: 1;
+        transform: translateY(-50px);
+        animation: loadingTop 600ms forwards;
+        -webkit-animation: loadingTop 600ms forwards;
+        /* Safari, Chrome and Opera > 12.1 */
+        -moz-animation: loadingTop 600ms forwards;
+        /* Firefox < 16 */
+        -ms-animation: loadingTop 600ms forwards;
+        /* Internet Explorer */
+        -o-animation: loadingTop 600ms forwards;
+        /* Opera < 12.1 */ }
+        .letPerfumeTalk .menu__top .menu__circle--top:hover::after {
+          opacity: 1; }
+        .letPerfumeTalk .menu__top .menu__circle--top::after {
+          content: '';
+          z-index: -1;
+          transition: all 700ms;
+          background: white;
+          display: block;
+          width: 100%;
+          height: 100%;
+          position: absolute;
+          left: 0;
+          top: 0;
+          opacity: 0; }
+        .letPerfumeTalk .menu__top .menu__circle--top:hover {
+          transition: all 700ms;
+          background: white; }
+        .letPerfumeTalk .menu__top .menu__circle--top:hover p {
+          color: black; }
+        .letPerfumeTalk .menu__top .menu__circle--top:hover {
+          cursor: pointer; }
+        .letPerfumeTalk .menu__top .menu__circle--top p {
+          position: absolute;
+          top: 50px;
+          transition: 700ms;
+          color: white; }
+      .letPerfumeTalk .menu__top .menu__circle--happy {
+        background: #ff7327;
+        background: -moz-linear-gradient(left, #ff7327 0%, #ffe043 100%);
+        background: -webkit-gradient(left top, right top, color-stop(0%, #ff7327), color-stop(100%, #ffe043));
+        background: -webkit-linear-gradient(left, #ff7327 0%, #ffe043 100%);
+        background: -o-linear-gradient(left, #ff7327 0%, #ffe043 100%);
+        background: -ms-linear-gradient(left, #ff7327 0%, #ffe043 100%);
+        background: linear-gradient(to right, #ff7327 0%, #ffe043 100%);
+        filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ff7327', endColorstr='#ffe043', GradientType=1); }
+      .letPerfumeTalk .menu__top .menu__circle--zen {
+        background: #faae84;
+        background: -moz-linear-gradient(left, #faae84 0%, #e7ccab 100%);
+        background: -webkit-gradient(left top, right top, color-stop(0%, #faae84), color-stop(100%, #e7ccab));
+        background: -webkit-linear-gradient(left, #faae84 0%, #e7ccab 100%);
+        background: -o-linear-gradient(left, #faae84 0%, #e7ccab 100%);
+        background: -ms-linear-gradient(left, #faae84 0%, #e7ccab 100%);
+        background: linear-gradient(to right, #faae84 0%, #e7ccab 100%);
+        filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#faae84', endColorstr='#e7ccab', GradientType=1); }
+      .letPerfumeTalk .menu__top .menu__circle--inLove {
+        background: #cc2756;
+        background: -moz-linear-gradient(left, #cc2756 0%, #e974b6 100%);
+        background: -webkit-gradient(left top, right top, color-stop(0%, #cc2756), color-stop(100%, #e974b6));
+        background: -webkit-linear-gradient(left, #cc2756 0%, #e974b6 100%);
+        background: -o-linear-gradient(left, #cc2756 0%, #e974b6 100%);
+        background: -ms-linear-gradient(left, #cc2756 0%, #e974b6 100%);
+        background: linear-gradient(to right, #cc2756 0%, #e974b6 100%);
+        filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#cc2756', endColorstr='#e974b6', GradientType=1); }
+      .letPerfumeTalk .menu__top .menu__circle--sexy {
+        background: #ab2f96;
+        background: -moz-linear-gradient(left, #ab2f96 0%, #efab5d 100%);
+        background: -webkit-gradient(left top, right top, color-stop(0%, #ab2f96), color-stop(100%, #efab5d));
+        background: -webkit-linear-gradient(left, #ab2f96 0%, #efab5d 100%);
+        background: -o-linear-gradient(left, #ab2f96 0%, #efab5d 100%);
+        background: -ms-linear-gradient(left, #ab2f96 0%, #efab5d 100%);
+        background: linear-gradient(to right, #ab2f96 0%, #efab5d 100%);
+        filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ab2f96', endColorstr='#efab5d', GradientType=1); }
+      .letPerfumeTalk .menu__top .menu__circle--alive {
+        background: #00ffd9;
+        background: -moz-linear-gradient(left, #00ffd9 0%, #00ff77 100%);
+        background: -webkit-gradient(left top, right top, color-stop(0%, #00ffd9), color-stop(100%, #00ff77));
+        background: -webkit-linear-gradient(left, #00ffd9 0%, #00ff77 100%);
+        background: -o-linear-gradient(left, #00ffd9 0%, #00ff77 100%);
+        background: -ms-linear-gradient(left, #00ffd9 0%, #00ff77 100%);
+        background: linear-gradient(to right, #00ffd9 0%, #00ff77 100%);
+        filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#00ffd9', endColorstr='#00ff77', GradientType=1); }
+      .letPerfumeTalk .menu__top .menu__circle--rebellious {
+        background: #300004;
+        background: -moz-linear-gradient(left, #300004 0%, #c10512 100%);
+        background: -webkit-gradient(left top, right top, color-stop(0%, #300004), color-stop(100%, #c10512));
+        background: -webkit-linear-gradient(left, #300004 0%, #c10512 100%);
+        background: -o-linear-gradient(left, #300004 0%, #c10512 100%);
+        background: -ms-linear-gradient(left, #300004 0%, #c10512 100%);
+        background: linear-gradient(to right, #300004 0%, #c10512 100%);
+        filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#300004', endColorstr='#c10512', GradientType=1); }
+      .letPerfumeTalk .menu__top .menu__circle--natural {
+        background: #235a2e;
+        background: -moz-linear-gradient(left, #235a2e 0%, #9ac25d 100%);
+        background: -webkit-gradient(left top, right top, color-stop(0%, #235a2e), color-stop(100%, #9ac25d));
+        background: -webkit-linear-gradient(left, #235a2e 0%, #9ac25d 100%);
+        background: -o-linear-gradient(left, #235a2e 0%, #9ac25d 100%);
+        background: -ms-linear-gradient(left, #235a2e 0%, #9ac25d 100%);
+        background: linear-gradient(to right, #235a2e 0%, #9ac25d 100%);
+        filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#235a2e', endColorstr='#9ac25d', GradientType=1); }
+    .letPerfumeTalk .menu__bottom {
+      display: inline-flex;
+      justify-content: space-between;
+      position: absolute;
+      bottom: 0;
+      overflow-y: hidden; }
+      .letPerfumeTalk .menu__bottom .menu__bottom--button {
+        transform: translateY(50px); }
+      .letPerfumeTalk .menu__bottom .menu__circle--happy {
+        background: #ff7327;
+        background: -moz-linear-gradient(left, #ff7327 0%, #ffe043 100%);
+        background: -webkit-gradient(left top, right top, color-stop(0%, #ff7327), color-stop(100%, #ffe043));
+        background: -webkit-linear-gradient(left, #ff7327 0%, #ffe043 100%);
+        background: -o-linear-gradient(left, #ff7327 0%, #ffe043 100%);
+        background: -ms-linear-gradient(left, #ff7327 0%, #ffe043 100%);
+        background: linear-gradient(to right, #ff7327 0%, #ffe043 100%);
+        filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ff7327', endColorstr='#ffe043', GradientType=1); }
+      .letPerfumeTalk .menu__bottom .menu__circle--zen {
+        background: #faae84;
+        background: -moz-linear-gradient(left, #faae84 0%, #e7ccab 100%);
+        background: -webkit-gradient(left top, right top, color-stop(0%, #faae84), color-stop(100%, #e7ccab));
+        background: -webkit-linear-gradient(left, #faae84 0%, #e7ccab 100%);
+        background: -o-linear-gradient(left, #faae84 0%, #e7ccab 100%);
+        background: -ms-linear-gradient(left, #faae84 0%, #e7ccab 100%);
+        background: linear-gradient(to right, #faae84 0%, #e7ccab 100%);
+        filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#faae84', endColorstr='#e7ccab', GradientType=1); }
+      .letPerfumeTalk .menu__bottom .menu__circle--inLove {
+        background: #cc2756;
+        background: -moz-linear-gradient(left, #cc2756 0%, #e974b6 100%);
+        background: -webkit-gradient(left top, right top, color-stop(0%, #cc2756), color-stop(100%, #e974b6));
+        background: -webkit-linear-gradient(left, #cc2756 0%, #e974b6 100%);
+        background: -o-linear-gradient(left, #cc2756 0%, #e974b6 100%);
+        background: -ms-linear-gradient(left, #cc2756 0%, #e974b6 100%);
+        background: linear-gradient(to right, #cc2756 0%, #e974b6 100%);
+        filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#cc2756', endColorstr='#e974b6', GradientType=1); }
+      .letPerfumeTalk .menu__bottom .menu__circle--sexy {
+        background: #ab2f96;
+        background: -moz-linear-gradient(left, #ab2f96 0%, #efab5d 100%);
+        background: -webkit-gradient(left top, right top, color-stop(0%, #ab2f96), color-stop(100%, #efab5d));
+        background: -webkit-linear-gradient(left, #ab2f96 0%, #efab5d 100%);
+        background: -o-linear-gradient(left, #ab2f96 0%, #efab5d 100%);
+        background: -ms-linear-gradient(left, #ab2f96 0%, #efab5d 100%);
+        background: linear-gradient(to right, #ab2f96 0%, #efab5d 100%);
+        filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ab2f96', endColorstr='#efab5d', GradientType=1); }
+      .letPerfumeTalk .menu__bottom .menu__circle--alive {
+        background: #00ffd9;
+        background: -moz-linear-gradient(left, #00ffd9 0%, #00ff77 100%);
+        background: -webkit-gradient(left top, right top, color-stop(0%, #00ffd9), color-stop(100%, #00ff77));
+        background: -webkit-linear-gradient(left, #00ffd9 0%, #00ff77 100%);
+        background: -o-linear-gradient(left, #00ffd9 0%, #00ff77 100%);
+        background: -ms-linear-gradient(left, #00ffd9 0%, #00ff77 100%);
+        background: linear-gradient(to right, #00ffd9 0%, #00ff77 100%);
+        filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#00ffd9', endColorstr='#00ff77', GradientType=1); }
+      .letPerfumeTalk .menu__bottom .menu__circle--rebellious {
+        background: #300004;
+        background: -moz-linear-gradient(left, #300004 0%, #c10512 100%);
+        background: -webkit-gradient(left top, right top, color-stop(0%, #300004), color-stop(100%, #c10512));
+        background: -webkit-linear-gradient(left, #300004 0%, #c10512 100%);
+        background: -o-linear-gradient(left, #300004 0%, #c10512 100%);
+        background: -ms-linear-gradient(left, #300004 0%, #c10512 100%);
+        background: linear-gradient(to right, #300004 0%, #c10512 100%);
+        filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#300004', endColorstr='#c10512', GradientType=1); }
+      .letPerfumeTalk .menu__bottom .menu__circle--natural {
+        background: #235a2e;
+        background: -moz-linear-gradient(left, #235a2e 0%, #9ac25d 100%);
+        background: -webkit-gradient(left top, right top, color-stop(0%, #235a2e), color-stop(100%, #9ac25d));
+        background: -webkit-linear-gradient(left, #235a2e 0%, #9ac25d 100%);
+        background: -o-linear-gradient(left, #235a2e 0%, #9ac25d 100%);
+        background: -ms-linear-gradient(left, #235a2e 0%, #9ac25d 100%);
+        background: linear-gradient(to right, #235a2e 0%, #9ac25d 100%);
+        filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#235a2e', endColorstr='#9ac25d', GradientType=1); }
+      .letPerfumeTalk .menu__bottom .menu__circle--bottom {
+        width: 85px;
+        height: 85px;
+        border-radius: 50%;
+        padding: 10px;
+        justify-content: center;
+        display: flex;
+        transition: all 700ms;
+        overflow: hidden;
+        position: relative;
+        z-index: 1;
+        transform: translateY(50px); }
+        .letPerfumeTalk .menu__bottom .menu__circle--bottom:hover::after {
+          opacity: 1; }
+        .letPerfumeTalk .menu__bottom .menu__circle--bottom::after {
+          content: '';
+          z-index: -1;
+          transition: all 700ms;
+          background: white;
+          display: block;
+          width: 100%;
+          height: 100%;
+          position: absolute;
+          left: 0;
+          top: 0;
+          opacity: 0; }
+        .letPerfumeTalk .menu__bottom .menu__circle--bottom:hover {
+          transition: all 700ms;
+          background: white; }
+        .letPerfumeTalk .menu__bottom .menu__circle--bottom:hover p {
+          color: black; }
+      .letPerfumeTalk .menu__bottom .menu__bottom--side {
+        position: relative;
+        top: 10px;
+        font-size: 16px; }
+        .letPerfumeTalk .menu__bottom .menu__bottom--side .strikethrough {
+          position: relative; }
+        .letPerfumeTalk .menu__bottom .menu__bottom--side .strikethrough:before {
+          position: absolute;
+          content: "";
+          width: 105%;
+          top: 40%;
+          left: 0;
+          right: 0;
+          border-top: 1px solid;
+          border-color: inherit;
+          transform: rotate(-10deg); }
+        .letPerfumeTalk .menu__bottom .menu__bottom--side .menu__bottom--alive {
+          transition: color 400ms; }
+          .letPerfumeTalk .menu__bottom .menu__bottom--side .menu__bottom--alive:hover {
+            color: #00DF6C; }
+        .letPerfumeTalk .menu__bottom .menu__bottom--side .menu__bottom--happy {
+          transition: color 400ms; }
+          .letPerfumeTalk .menu__bottom .menu__bottom--side .menu__bottom--happy:hover {
+            color: yellow; }
+        .letPerfumeTalk .menu__bottom .menu__bottom--side .menu__bottom--love {
+          transition: color 400ms; }
+          .letPerfumeTalk .menu__bottom .menu__bottom--side .menu__bottom--love:hover {
+            color: #DE76B7; }
+        .letPerfumeTalk .menu__bottom .menu__bottom--side .menu__bottom--natural {
+          transition: color 400ms; }
+          .letPerfumeTalk .menu__bottom .menu__bottom--side .menu__bottom--natural:hover {
+            color: #86B051; }
+        .letPerfumeTalk .menu__bottom .menu__bottom--side .menu__bottom--rebellious {
+          transition: color 400ms; }
+          .letPerfumeTalk .menu__bottom .menu__bottom--side .menu__bottom--rebellious:hover {
+            color: red; }
+        .letPerfumeTalk .menu__bottom .menu__bottom--side .menu__bottom--sexy {
+          transition: color 400ms; }
+          .letPerfumeTalk .menu__bottom .menu__bottom--side .menu__bottom--sexy:hover {
+            color: yellow; }
+        .letPerfumeTalk .menu__bottom .menu__bottom--side .menu__bottom--zen {
+          transition: color 400ms; }
+          .letPerfumeTalk .menu__bottom .menu__bottom--side .menu__bottom--zen:hover {
+            color: bisque; }
+    .letPerfumeTalk .menu__bottom > * {
+      margin: 0 20px 0 20px;
+      animation: loadingBottom 600ms forwards;
+      -webkit-animation: loadingBottom 600ms forwards;
+      /* Safari, Chrome and Opera > 12.1 */
+      -moz-animation: loadingBottom 600ms forwards;
+      /* Firefox < 16 */
+      -ms-animation: loadingBottom 600ms forwards;
+      /* Internet Explorer */
+      -o-animation: loadingBottom 600ms forwards;
+      /* Opera < 12.1 */ }
+      .letPerfumeTalk .menu__bottom > *:hover {
+        cursor: pointer; }
+      .letPerfumeTalk .menu__bottom > * p {
+        transition: 700ms; }
+  .letPerfumeTalk .LetPerfumeTalkByMane {
+    position: absolute;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    justify-content: flex-end; }
+    .letPerfumeTalk .LetPerfumeTalkByMane__experienceName {
+      text-transform: uppercase;
+      padding-left: 25px;
+      position: relative;
+      top: 12px;
+      font-family: 'Neutra display';
+      font-size: 25px;
+      font-weight: 400; }
+      .letPerfumeTalk .LetPerfumeTalkByMane__experienceName--small {
+        text-transform: none;
+        font-size: 12px;
+        font-weight: 600; }
+      @media (max-width: 700px) {
+        .letPerfumeTalk .LetPerfumeTalkByMane__experienceName {
+          display: none; } }
+
+#cursor {
+  position: fixed; }
+  #cursor > * {
+    width: 90px;
+    transition: all 1000ms; }
+  #cursor .cursor__click--clicked {
+    opacity: 0; }
+  #cursor .cursor__clicked {
+    position: relative;
+    right: 90px; }
+
+/************************** NEUTRA TEXT **************************/
+@font-face {
+  font-family: "Neutra text";
+  src: url("fonts/NeutraText/neutratext-bold-webfont.woff") format("woff"), url("fonts/NeutraText/neutratext-bold-webfont.ttf") format("opentype"), url("fonts/NeutraText/neutratext-bold-webfont.eot") format("opentype"), url("fonts/NeutraText/neutratext-bold-webfont.svg#webfontg8dbVmxj") format("svg"); }
+@font-face {
+  font-family: "Neutra text";
+  src: url("fonts/NeutraText/neutratext-bolditalic-webfont.woff") format("woff"), url("fonts/NeutraText/neutratext-bolditalic-webfont.ttf") format("opentype"), url("fonts/NeutraText/neutratext-bolditalic-webfont.eot") format("opentype"), url("fonts/NeutraText/neutratext-bolditalic-webfont.svg#webfontg8dbVmxj") format("svg"); }
+@font-face {
+  font-family: "Neutra text";
+  src: url("fonts/NeutraText/neutratext-book-webfont.woff") format("woff"), url("fonts/NeutraText/neutratext-book-webfont.ttf") format("opentype"), url("fonts/NeutraText/neutratext-book-webfont.eot") format("opentype"), url("fonts/NeutraText/neutratext-book-webfont.svg#webfontg8dbVmxj"); }
+@font-face {
+  font-family: "Neutra text";
+  src: url("fonts/NeutraText/neutratext-bookitalic-webfont.woff") format("woff"), url("fonts/NeutraText/neutratext-bookitalic-webfont.ttf") format("opentype"), url("fonts/NeutraText/neutratext-bookitalic-webfont.eot") format("opentype"), url("fonts/NeutraText/neutratext-bookitalic-webfont.svg#webfontg8dbVmxj") format("svg"); }
+@font-face {
+  font-family: "Neutra text";
+  src: url("fonts/NeutraText/neutratext-demi-webfont.woff") format("woff"), url("fonts/NeutraText/neutratext-demi-webfont.ttf") format("opentype"), url("fonts/NeutraText/neutratext-demi-webfont.eot") format("opentype"), url("fonts/NeutraText/neutratext-demi-webfont.svg#webfontg8dbVmxj") format("svg"); }
+@font-face {
+  font-family: "Neutra text";
+  src: url("fonts/NeutraText/neutratext-demiitalic-webfont.woff") format("woff"), url("fonts/NeutraText/neutratext-demiitalic-webfont.ttf") format("opentype"), url("fonts/NeutraText/neutratext-demiitalic-webfont.eot") format("opentype"), url("fonts/NeutraText/neutratext-demiitalic-webfont.svg#webfontg8dbVmxj") format("svg"); }
+@font-face {
+  font-family: "Neutra text";
+  src: url("fonts/NeutraText/neutratext-demiitalic-webfont.woff") format("woff"), url("fonts/NeutraText/neutratext-demiitalic-webfont.ttf") format("opentype"), url("fonts/NeutraText/neutratext-demiitalic-webfont.eot") format("opentype"), url("fonts/NeutraText/neutratext-demiitalic-webfont.svg#webfontg8dbVmxj") format("svg"); }
+@font-face {
+  font-family: "Neutra text";
+  src: url("fonts/NeutraText/neutratext-light-webfont.woff") format("woff"), url("fonts/NeutraText/neutratext-light-webfont.ttf") format("opentype"), url("fonts/NeutraText/neutratext-light-webfont.eot") format("opentype"), url("fonts/NeutraText/neutratext-light-webfont.svg#webfontg8dbVmxj") format("svg"); }
+@font-face {
+  font-family: "Neutra text";
+  src: url("fonts/NeutraText/neutratext-lightitalic-webfont.woff") format("woff"), url("fonts/NeutraText/neutratext-lightitalic-webfont.ttf") format("opentype"), url("fonts/NeutraText/neutratext-lightitalic-webfont.eot") format("opentype"), url("fonts/NeutraText/neutratext-lightitalic-webfont.svg#webfontg8dbVmxj") format("svg"); }
+/************************** NEUTRA DISPLAY **************************/
 @font-face {
   font-family: "Neutra display";
-  src: url("fonts/NeutraDisplay-Light.otf") format("opentype");
-  font-weight: 200;
-}
+  src: url("fonts/NeutraDisplay/neutradisplay-bold-webfont.woff") format("woff"), url("fonts/NeutraDisplay/neutradisplay-bold-webfont.ttf") format("opentype"), url("fonts/NeutraDisplay/neutradisplay-bold-webfont.eot") format("opentype"), url("fonts/NeutraDisplay/neutradisplay-bold-webfont.svg#webfontg8dbVmxj") format("svg"); }
 @font-face {
-  font-family: "Neutra display";
-  src: url("fonts/NeutraDisplay-Bold.otf") format("opentype");
-  font-weight: 700;
-}
+  font-family: 'Neutra display';
+  src: url("fonts/NeutraDisplay/neutradisplay-light-webfont.woff") format("woff"), url("fonts/NeutraDisplay/neutradisplay-light-webfont.ttf") format("opentype"), url("fonts/NeutraDisplay/neutradisplay-light-webfont.eot") format("opentype"), url("fonts/NeutraDisplay/neutradisplay-light-webfont.svg#webfontg8dbVmxj") format("svg"); }
 @font-face {
-  font-family: "Neutra display";
-  src: url("fonts/NeutraDisplay-Light-Italic.otf") format("opentype");
-  font-weight: 300;
-}
+  font-family: 'Neutra display';
+  src: url("fonts/NeutraDisplay/neutradisplay-medium-webfont.woff") format("woff"), url("fonts/NeutraDisplay/neutradisplay-medium-webfont.ttf") format("opentype"), url("fonts/NeutraDisplay/neutradisplay-medium-webfont.eot") format("opentype"), url("fonts/NeutraDisplay/neutradisplay-medium-webfont.svg#webfontg8dbVmxj") format("svg"); }
 @font-face {
-  font-family: "Neutra display";
-  src: url("fonts/NeutraText-BookItalic.otf") format("opentype");
-  font-weight: 400;
-}
-.letPerfumeTalk .letPerfumeTalk__video {
-  cursor: url(../assets/images/experience2/cursor/cursor-feather.png), url(../assets/images/experience2/cursor/cursor-feather.cur), default;
-  position: fixed;
-  right: 0;
-  bottom: 0;
-  min-width: 100%;
-  min-height: 100%;
-  object-fit: fill;
-}
-.letPerfumeTalk .test {
+  font-family: 'Neutra display';
+  src: url("fonts/NeutraDisplay/neutradisplay-thin-webfont.woff") format("woff"), url("fonts/NeutraDisplay/neutradisplay-thin-webfont.ttf") format("opentype"), url("fonts/NeutraDisplay/neutradisplay-thin-webfont.eot") format("opentype"), url("fonts/NeutraDisplay/neutradisplay-thin-webfont.svg#webfontg8dbVmxj") format("svg"); }
+@keyframes bouncedelay {
+  0%, 80%, 100% {
+    transform: scale(0); }
+  40% {
+    transform: scale(0.2); } }
+.loading {
+  cursor: none;
+  width: 100%;
+  transition: opacity 1000ms;
+  height: 100vh;
+  background: black;
   position: absolute;
-  color: white;
-  transition: all 400ms;
-  font-family: "Neutra text", sans-serif;
-  font-weight: 300;
-  font-size: 13px;
-}
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -o-user-select: none;
+  user-select: none;
+  -webkit-user-drag: none; }
+  .loading__text {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-end; }
+    .loading__text h1 {
+      margin: 0;
+      line-height: 1;
+      -webkit-touch-callout: none;
+      /* iOS Safari */
+      -webkit-user-select: none;
+      /* Safari */
+      -khtml-user-select: none;
+      /* Konqueror HTML */
+      -moz-user-select: none;
+      /* Firefox */
+      -ms-user-select: none;
+      /* Internet Explorer/Edge */
+      user-select: none;
+      color: white;
+      text-transform: uppercase;
+      font-family: "Neutra display", sans-serif;
+      font-weight: 500;
+      font-size: 4em; }
+    .loading__text .three-bounce {
+      margin-left: 5px; }
+      .loading__text .three-bounce div {
+        background: #ffffff;
+        display: inline-block;
+        height: 18px;
+        width: 18px;
+        border-radius: 100%;
+        animation: bouncedelay 1.4s infinite ease-in-out;
+        animation-fill-mode: both;
+        transform: translateZ(0); }
+        .loading__text .three-bounce div.one {
+          animation-delay: -0.32s; }
+        .loading__text .three-bounce div.two {
+          animation-delay: -0.16s; }
+  .loading.loaded {
+    opacity: 0;
+    z-index: -1000; }
 
 /*# sourceMappingURL=style.css.map */

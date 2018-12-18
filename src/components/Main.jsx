@@ -63,7 +63,7 @@ export default class Main extends React.Component {
                                   id="animation-listener-responsive"
                                   className={this.state.animationEssence}>
                                 <div className="experience__link--container">
-                                    <h3 className="experience__link--title">Let perfume talk</h3>
+                                    <h3 className="experience__link--title">Find<br/> your<br/> essence</h3>
                                     <hr className="experience__link--underline"/>
                                     <h4 className="experience__link--entry">Enter</h4>
                                 </div>
@@ -84,7 +84,7 @@ export default class Main extends React.Component {
                         <Link to="#" id="animation-listener-desktop"
                               className={this.state.animationEssence}>
                             <div className="experience__link--container">
-                                <h3 className="experience__link--title">Let perfume talk</h3>
+                                <h3 className="experience__link--title">Find<br/> your<br/> essence</h3>
                                 <hr className="experience__link--underline"/>
                                 <h4 className="experience__link--entry">Enter</h4>
                             </div>

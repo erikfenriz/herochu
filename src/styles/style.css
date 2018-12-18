@@ -84,6 +84,7 @@
   font-style: normal;
 }
 @font-face {
+<<<<<<< HEAD
   font-family: "neutra_text_book";
   src: url("fonts/NeutraText/neutratext-book-webfont.eot");
   src: url("fonts/NeutraText/neutratext-book-webfont.eot?#iefix") format("embedded-opentype"), url("fonts/NeutraText/neutratext-book-webfont.woff") format("woff"), url("fonts/NeutraText/neutratext-book-webfont.ttf") format("truetype"), url("fonts/NeutraText/neutratext-book-webfont.svg#neutra_textregular") format("svg");
@@ -140,6 +141,85 @@
   font-weight: normal;
   font-style: normal;
 }
+=======
+  font-family: 'Neutra display';
+  src: url("fonts/NeutraDisplay/neutradisplay-thin-webfont.woff") format("woff"), url("fonts/NeutraDisplay/neutradisplay-thin-webfont.ttf") format("opentype"), url("fonts/NeutraDisplay/neutradisplay-thin-webfont.eot") format("opentype"), url("fonts/NeutraDisplay/neutradisplay-thin-webfont.svg#webfontg8dbVmxj") format("svg"); }
+/***************** CSS STYLES FROM ORIGINAL *****************/
+/***************** NEUTRA TEXT *****************/
+@font-face {
+  font-family: 'neutra_text_light';
+  src: url("fonts/NeutraText/neutratext-light-webfont.eot");
+  src: url("fonts/NeutraText/neutratext-light-webfont.eot?#iefix") format("embedded-opentype"), url("fonts/NeutraText/neutratext-light-webfont.woff") format("woff"), url("fonts/NeutraText/neutratext-light-webfont.ttf") format("truetype"), url("fonts/NeutraText/neutratext-light-webfont.svg#neutra_textlight") format("svg");
+  font-weight: normal;
+  font-style: normal; }
+@font-face {
+  font-family: 'neutra_text_light_italic';
+  src: url("fonts/NeutraText/neutratext-lightitalic-webfont.eot");
+  src: url("fonts/NeutraText/neutratext-lightitalic-webfont.eot?#iefix") format("embedded-opentype"), url("fonts/NeutraText/neutratext-lightitalic-webfont.woff") format("woff"), url("fonts/NeutraText/neutratext-lightitalic-webfont.ttf") format("truetype"), url("fonts/NeutraText/neutratext-lightitalic-webfont.svg#neutra_textlight_italic") format("svg");
+  font-weight: normal;
+  font-style: normal; }
+@font-face {
+  font-family: 'neutra_text_demi';
+  src: url("fonts/NeutraText/neutratext-demi-webfont.eot");
+  src: url("fonts/NeutraText/neutratext-demi-webfont.eot?#iefix") format("embedded-opentype"), url("fonts/NeutraText/neutratext-demi-webfont.woff") format("woff"), url("fonts/NeutraText/neutratext-demi-webfont.ttf") format("truetype"), url("fonts/NeutraText/neutratext-demi-webfont.svg#neutra_textdemi") format("svg");
+  font-weight: normal;
+  font-style: normal; }
+@font-face {
+  font-family: 'neutra_text_demi_italic';
+  src: url("fonts/NeutraText/neutratext-demiitalic-webfont.eot");
+  src: url("fonts/NeutraText/neutratext-demiitalic-webfont.eot?#iefix") format("embedded-opentype"), url("fonts/NeutraText/neutratext-demiitalic-webfont.woff") format("woff"), url("fonts/NeutraText/neutratext-demiitalic-webfont.ttf") format("truetype"), url("fonts/NeutraText/neutratext-demiitalic-webfont.svg#neutra_textdemi_italic") format("svg");
+  font-weight: normal;
+  font-style: normal; }
+@font-face {
+  font-family: 'neutra_text_book';
+  src: url("fonts/NeutraText/neutratext-book-webfont.eot");
+  src: url("fonts/NeutraText/neutratext-book-webfont.eot?#iefix") format("embedded-opentype"), url("fonts/NeutraText/neutratext-book-webfont.woff") format("woff"), url("fonts/NeutraText/neutratext-book-webfont.ttf") format("truetype"), url("fonts/NeutraText/neutratext-book-webfont.svg#neutra_textregular") format("svg");
+  font-weight: normal;
+  font-style: normal; }
+@font-face {
+  font-family: 'neutra_text_book_italic';
+  src: url("fonts/NeutraText/neutratext-bookitalic-webfont.eot");
+  src: url("fonts/NeutraText/neutratext-bookitalic-webfont.eot?#iefix") format("embedded-opentype"), url("fonts/NeutraText/neutratext-bookitalic-webfont.woff") format("woff"), url("fonts/NeutraText/neutratext-bookitalic-webfont.ttf") format("truetype"), url("fonts/NeutraText/neutratext-bookitalic-webfont.svg#neutra_textitalic") format("svg");
+  font-weight: normal;
+  font-style: normal; }
+@font-face {
+  font-family: 'neutra_text_bold';
+  src: url("fonts/NeutraText/neutratext-bold-webfont.eot");
+  src: url("fonts/NeutraText/neutratext-bold-webfont.eot?#iefix") format("embedded-opentype"), url("fonts/NeutraText/neutratext-bold-webfont.woff") format("woff"), url("fonts/NeutraText/neutratext-bold-webfont.ttf") format("truetype"), url("fonts/NeutraText/neutratext-bold-webfont.svg#neutra_textbold") format("svg");
+  font-weight: normal;
+  font-style: normal; }
+@font-face {
+  font-family: 'neutra_text_bold_italic';
+  src: url("fonts/NeutraText/neutratext-bolditalic-webfont.eot");
+  src: url("fonts/NeutraText/neutratext-bolditalic-webfont.eot?#iefix") format("embedded-opentype"), url("fonts/NeutraText/neutratext-bolditalic-webfont.woff") format("woff"), url("fonts/NeutraText/neutratext-bolditalic-webfont.ttf") format("truetype"), url("fonts/NeutraText/neutratext-bolditalic-webfont.svg#neutra_textbold_italic") format("svg");
+  font-weight: normal;
+  font-style: italic; }
+/***************** NEUTRA DISPLAY *****************/
+@font-face {
+  font-family: 'neutra_display_thin';
+  src: url("fonts/NeutraDisplay/neutradisplay-thin-webfont.eot");
+  src: url("fonts/NeutraDisplay/neutradisplay-thin-webfont.eot?#iefix") format("embedded-opentype"), url("fonts/NeutraDisplay/neutradisplay-thin-webfont.woff") format("woff"), url("fonts/NeutraDisplay/neutradisplay-thin-webfont.ttf") format("truetype"), url("fonts/NeutraDisplay/neutradisplay-thin-webfont.svg#neutra_displaythin") format("svg");
+  font-weight: normal;
+  font-style: normal; }
+@font-face {
+  font-family: 'neutra_display_light';
+  src: url("fonts/NeutraDisplay/neutradisplay-light-webfont.eot");
+  src: url("fonts/NeutraDisplay/neutradisplay-light-webfont.eot?#iefix") format("embedded-opentype"), url("fonts/NeutraDisplay/neutradisplay-light-webfont.woff") format("woff"), url("fonts/NeutraDisplay/neutradisplay-light-webfont.ttf") format("truetype"), url("fonts/NeutraDisplay/neutradisplay-light-webfont.svg#neutra_displayregular") format("svg");
+  font-weight: normal;
+  font-style: normal; }
+@font-face {
+  font-family: 'neutra_display_medium';
+  src: url("fonts/NeutraDisplay/neutradisplay-medium-webfont.eot");
+  src: url("fonts/NeutraDisplay/neutradisplay-medium-webfont.eot?#iefix") format("embedded-opentype"), url("fonts/NeutraDisplay/neutradisplay-medium-webfont.woff") format("woff"), url("fonts/NeutraDisplay/neutradisplay-medium-webfont.ttf") format("truetype"), url("fonts/NeutraDisplay/neutradisplay-medium-webfont.svg#neutra_displaymedium") format("svg");
+  font-weight: normal;
+  font-style: normal; }
+@font-face {
+  font-family: 'neutra_display_bold';
+  src: url("fonts/NeutraDisplay/neutradisplay-bold-webfont.eot");
+  src: url("fonts/NeutraDisplay/neutradisplay-bold-webfont.eot?#iefix") format("embedded-opentype"), url("fonts/NeutraDisplay/neutradisplay-bold-webfont.woff") format("woff"), url("fonts/NeutraDisplay/neutradisplay-bold-webfont.ttf") format("truetype"), url("fonts/NeutraDisplay/neutradisplay-bold-webfont.svg#neutra_displaybold") format("svg");
+  font-weight: normal;
+  font-style: normal; }
+>>>>>>> origin/master
 /*
 @media screen and (-webkit-min-device-pixel-ratio: 0) {
 
@@ -349,6 +429,7 @@ main.main-page .main-page__content .experience .experience__choice {
 @media (max-width: 1100px) {
   main.main-page .main-page__content .experience .experience__choice {
     width: 100%;
+<<<<<<< HEAD
   }
 }
 @media (max-width: 720px) {
@@ -652,6 +733,329 @@ main.main-page .main-page__content .experience .experience__choice .experience__
 main.main-page .main-page__content .experience .experience__choice .experience__essence--animation-none {
   animation: none !important;
 }
+=======
+    padding: 110px 0 0 81px; }
+    @media (max-width: 1100px) {
+      main.main-page .main-page__content {
+        padding: 0 0 0 50px; } }
+    @media (max-width: 1100px) {
+      main.main-page .main-page__content .intro {
+        width: 100%; } }
+    main.main-page .main-page__content .intro__title {
+      color: white; }
+      main.main-page .main-page__content .intro__title--container-headline {
+        animation: fadeInHeader 1.5s 1 forwards;
+        -webkit-animation: fadeInHeader 1.5s 1 forwards;
+        /* Safari, Chrome and Opera > 12.1 */
+        -moz-animation: fadeInHeader 1.5s 1 forwards;
+        /* Firefox < 16 */
+        -ms-animation: fadeInHeader 1.5s 1 forwards;
+        /* Internet Explorer */
+        -o-animation: fadeInHeader 1.5s 1 forwards;
+        /* Opera < 12.1 */
+        transition: opacity 1500ms ease 0s;
+        max-width: 369px; }
+        main.main-page .main-page__content .intro__title--container-headline .intro__title--headline {
+          font-family: 'Neutra display', sans-serif;
+          font-weight: 100;
+          font-size: 66px;
+          line-height: 71px;
+          margin-bottom: 0; }
+          @media (max-width: 1100px) {
+            main.main-page .main-page__content .intro__title--container-headline .intro__title--headline {
+              font-size: 5.3em;
+              line-height: 1.1em; } }
+          @media (max-width: 520px) {
+            main.main-page .main-page__content .intro__title--container-headline .intro__title--headline {
+              font-size: 40px;
+              line-height: 1.1em; } }
+          @media (max-width: 520px) {
+            main.main-page .main-page__content .intro__title--container-headline .intro__title--headline {
+              font-size: 40px;
+              line-height: 1.1em; } }
+      main.main-page .main-page__content .intro__title--secondary {
+        font-family: 'Neutra text', sans-serif;
+        font-weight: 600;
+        font-style: italic;
+        font-size: 31px;
+        animation: fadeInSecondary 1.5s 1 forwards;
+        -webkit-animation: fadeInSecondary 1.5s 1 forwards;
+        /* Safari, Chrome and Opera > 12.1 */
+        -moz-animation: fadeInSecondary 1.5s 1 forwards;
+        /* Firefox < 16 */
+        -ms-animation: fadeInSecondary 1.5s 1 forwards;
+        /* Internet Explorer */
+        -o-animation: fadeInSecondary 1.5s 1 forwards;
+        /* Opera < 12.1 */
+        transition: opacity 1500ms ease 0s;
+        margin-top: 20px; }
+      main.main-page .main-page__content .intro__title--list {
+        list-style: none;
+        padding-left: 0;
+        line-height: 20px;
+        animation: fadeInListSummary 1.5s 1 forwards;
+        -webkit-animation: fadeInListSummary 1.5s 1 forwards;
+        /* Safari, Chrome and Opera > 12.1 */
+        -moz-animation: fadeInListSummary 1.5s 1 forwards;
+        /* Firefox < 16 */
+        -ms-animation: fadeInListSummary 1.5s 1 forwards;
+        /* Internet Explorer */
+        -o-animation: fadeInListSummary 1.5s 1 forwards;
+        /* Opera < 12.1 */
+        transition: opacity 1500ms ease 0s;
+        font-family: 'neutra_text_light', sans-serif;
+        font-weight: 200;
+        font-size: 18.5px;
+        font-style: normal !important; }
+      main.main-page .main-page__content .intro__title--summary {
+        line-height: 20px;
+        max-width: 716px;
+        animation: fadeInListSummary 1.5s 1 forwards;
+        -webkit-animation: fadeInListSummary 1.5s 1 forwards;
+        /* Safari, Chrome and Opera > 12.1 */
+        -moz-animation: fadeInListSummary 1.5s 1 forwards;
+        /* Firefox < 16 */
+        -ms-animation: fadeInListSummary 1.5s 1 forwards;
+        /* Internet Explorer */
+        -o-animation: fadeInListSummary 1.5s 1 forwards;
+        /* Opera < 12.1 */
+        transition: opacity 1500ms ease 0s;
+        font-family: 'neutra_text_light', sans-serif;
+        font-weight: 200;
+        font-size: 18.5px;
+        font-style: normal !important; }
+    main.main-page .main-page__content .intro .experience__responsive {
+      display: none; }
+      @media (max-width: 1100px) {
+        main.main-page .main-page__content .intro .experience__responsive {
+          display: flex; } }
+    main.main-page .main-page__content .experience {
+      width: 100%; }
+      @media (max-width: 1100px) {
+        main.main-page .main-page__content .experience {
+          display: none; } }
+      main.main-page .main-page__content .experience .experience__choice {
+        display: flex;
+        width: 85%;
+        bottom: 50px;
+        position: relative; }
+        @media (max-width: 1100px) {
+          main.main-page .main-page__content .experience .experience__choice {
+            width: 100%; } }
+        @media (max-width: 720px) {
+          main.main-page .main-page__content .experience .experience__choice {
+            flex-direction: column;
+            left: 25px; } }
+        @media (max-width: 520px) {
+          main.main-page .main-page__content .experience .experience__choice {
+            left: 13px; } }
+        main.main-page .main-page__content .experience .experience__choice .experience__perfume {
+          background-image: url("../assets/images/main/exp2title.png");
+          width: 80%;
+          height: 620px;
+          background-size: contain;
+          background-repeat: no-repeat;
+          background-position: center;
+          margin-right: 5%;
+          text-decoration: none;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          transition: all 0.5s ease 0s;
+          will-change: auto; }
+          main.main-page .main-page__content .experience .experience__choice .experience__perfume .experience__link--container {
+            width: 130px;
+            text-align: center;
+            color: black;
+            text-transform: uppercase;
+            margin-top: 30px; }
+            main.main-page .main-page__content .experience .experience__choice .experience__perfume .experience__link--container .experience__link--title {
+              font-family: 'Neutra display', sans-serif;
+              font-weight: 200;
+              font-size: 30px;
+              margin: 0; }
+              @media (max-width: 1400px) {
+                main.main-page .main-page__content .experience .experience__choice .experience__perfume .experience__link--container .experience__link--title {
+                  font-size: 25px; } }
+              @media (max-width: 1300px) {
+                main.main-page .main-page__content .experience .experience__choice .experience__perfume .experience__link--container .experience__link--title {
+                  font-size: 22px; } }
+              @media (max-width: 1200px) {
+                main.main-page .main-page__content .experience .experience__choice .experience__perfume .experience__link--container .experience__link--title {
+                  font-size: 20px;
+                  margin: 0 auto;
+                  max-width: 100px; } }
+              @media (max-width: 1100px) {
+                main.main-page .main-page__content .experience .experience__choice .experience__perfume .experience__link--container .experience__link--title {
+                  font-size: 30px;
+                  margin: 0 auto;
+                  max-width: 200px; } }
+              @media (max-width: 810px) {
+                main.main-page .main-page__content .experience .experience__choice .experience__perfume .experience__link--container .experience__link--title {
+                  font-size: 24px;
+                  margin: 0 auto;
+                  max-width: 200px; } }
+              @media (max-width: 720px) {
+                main.main-page .main-page__content .experience .experience__choice .experience__perfume .experience__link--container .experience__link--title {
+                  font-size: 30px;
+                  margin: 0 auto;
+                  max-width: 200px; } }
+              @media (max-width: 520px) {
+                main.main-page .main-page__content .experience .experience__choice .experience__perfume .experience__link--container .experience__link--title {
+                  font-size: 25px;
+                  margin: 0 auto;
+                  max-width: 200px; } }
+              @media (max-width: 416px) {
+                main.main-page .main-page__content .experience .experience__choice .experience__perfume .experience__link--container .experience__link--title {
+                  font-size: 22px;
+                  margin: 0 auto;
+                  max-width: 200px; } }
+            main.main-page .main-page__content .experience .experience__choice .experience__perfume .experience__link--container .experience__link--underline {
+              border: 0;
+              border-top: 1px solid #8c8b8b;
+              width: 90px;
+              margin-top: 10px; }
+            main.main-page .main-page__content .experience .experience__choice .experience__perfume .experience__link--container .experience__link--entry {
+              font-family: 'Neutra display', sans-serif;
+              font-weight: 800;
+              font-size: 20px; }
+              @media (max-width: 1400px) {
+                main.main-page .main-page__content .experience .experience__choice .experience__perfume .experience__link--container .experience__link--entry {
+                  font-size: 17px; } }
+              @media (max-width: 1300px) {
+                main.main-page .main-page__content .experience .experience__choice .experience__perfume .experience__link--container .experience__link--entry {
+                  font-size: 15px; } }
+              @media (max-width: 1200px) {
+                main.main-page .main-page__content .experience .experience__choice .experience__perfume .experience__link--container .experience__link--entry {
+                  font-size: 13px; } }
+              @media (max-width: 1100px) {
+                main.main-page .main-page__content .experience .experience__choice .experience__perfume .experience__link--container .experience__link--entry {
+                  font-size: 20px; } }
+              @media (max-width: 520px) {
+                main.main-page .main-page__content .experience .experience__choice .experience__perfume .experience__link--container .experience__link--entry {
+                  font-size: 18px; } }
+              @media (max-width: 420px) {
+                main.main-page .main-page__content .experience .experience__choice .experience__perfume .experience__link--container .experience__link--entry {
+                  font-size: 16px; } }
+              @media (max-width: 360px) {
+                main.main-page .main-page__content .experience .experience__choice .experience__perfume .experience__link--container .experience__link--entry {
+                  font-size: 14px; } }
+              @media (max-width: 340px) {
+                main.main-page .main-page__content .experience .experience__choice .experience__perfume .experience__link--container .experience__link--entry {
+                  font-size: 12px; } }
+          main.main-page .main-page__content .experience .experience__choice .experience__perfume:hover {
+            transform: scale(1.1); }
+          @media (max-width: 500px) {
+            main.main-page .main-page__content .experience .experience__choice .experience__perfume {
+              height: 420px; } }
+        main.main-page .main-page__content .experience .experience__choice .experience__perfume--animation {
+          animation: openSlideAnimation 1.5s 1 ease-in-out; }
+        main.main-page .main-page__content .experience .experience__choice .experience__perfume--animation-none {
+          animation: none !important; }
+        main.main-page .main-page__content .experience .experience__choice .experience__essence {
+          background-image: url("../assets/images/main/exp1title.png");
+          width: 80%;
+          height: 620px;
+          background-size: contain;
+          background-repeat: no-repeat;
+          background-position: center;
+          margin-right: 5%;
+          text-decoration: none;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          transition: all 0.5s ease 0s;
+          will-change: auto; }
+          main.main-page .main-page__content .experience .experience__choice .experience__essence .experience__link--container {
+            width: 130px;
+            text-align: center;
+            color: black;
+            text-transform: uppercase;
+            margin-top: 30px; }
+            main.main-page .main-page__content .experience .experience__choice .experience__essence .experience__link--container .experience__link--title {
+              font-family: 'Neutra display', sans-serif;
+              font-weight: 200;
+              font-size: 30px;
+              margin: 0; }
+              @media (max-width: 1400px) {
+                main.main-page .main-page__content .experience .experience__choice .experience__essence .experience__link--container .experience__link--title {
+                  font-size: 25px; } }
+              @media (max-width: 1300px) {
+                main.main-page .main-page__content .experience .experience__choice .experience__essence .experience__link--container .experience__link--title {
+                  font-size: 22px; } }
+              @media (max-width: 1200px) {
+                main.main-page .main-page__content .experience .experience__choice .experience__essence .experience__link--container .experience__link--title {
+                  font-size: 20px;
+                  margin: 0 auto;
+                  max-width: 100px; } }
+              @media (max-width: 1100px) {
+                main.main-page .main-page__content .experience .experience__choice .experience__essence .experience__link--container .experience__link--title {
+                  font-size: 30px;
+                  margin: 0 auto;
+                  max-width: 200px; } }
+              @media (max-width: 810px) {
+                main.main-page .main-page__content .experience .experience__choice .experience__essence .experience__link--container .experience__link--title {
+                  font-size: 24px;
+                  margin: 0 auto;
+                  max-width: 200px; } }
+              @media (max-width: 720px) {
+                main.main-page .main-page__content .experience .experience__choice .experience__essence .experience__link--container .experience__link--title {
+                  font-size: 30px;
+                  margin: 0 auto;
+                  max-width: 200px; } }
+              @media (max-width: 520px) {
+                main.main-page .main-page__content .experience .experience__choice .experience__essence .experience__link--container .experience__link--title {
+                  font-size: 25px;
+                  margin: 0 auto;
+                  max-width: 200px; } }
+              @media (max-width: 416px) {
+                main.main-page .main-page__content .experience .experience__choice .experience__essence .experience__link--container .experience__link--title {
+                  font-size: 22px;
+                  margin: 0 auto;
+                  max-width: 200px; } }
+            main.main-page .main-page__content .experience .experience__choice .experience__essence .experience__link--container .experience__link--underline {
+              border: 0;
+              border-top: 1px solid #8c8b8b;
+              width: 90px;
+              margin-top: 10px; }
+            main.main-page .main-page__content .experience .experience__choice .experience__essence .experience__link--container .experience__link--entry {
+              font-family: 'Neutra display', sans-serif;
+              font-weight: 800;
+              font-size: 20px; }
+              @media (max-width: 1400px) {
+                main.main-page .main-page__content .experience .experience__choice .experience__essence .experience__link--container .experience__link--entry {
+                  font-size: 17px; } }
+              @media (max-width: 1300px) {
+                main.main-page .main-page__content .experience .experience__choice .experience__essence .experience__link--container .experience__link--entry {
+                  font-size: 15px; } }
+              @media (max-width: 1200px) {
+                main.main-page .main-page__content .experience .experience__choice .experience__essence .experience__link--container .experience__link--entry {
+                  font-size: 13px; } }
+              @media (max-width: 1100px) {
+                main.main-page .main-page__content .experience .experience__choice .experience__essence .experience__link--container .experience__link--entry {
+                  font-size: 20px; } }
+              @media (max-width: 520px) {
+                main.main-page .main-page__content .experience .experience__choice .experience__essence .experience__link--container .experience__link--entry {
+                  font-size: 18px; } }
+              @media (max-width: 420px) {
+                main.main-page .main-page__content .experience .experience__choice .experience__essence .experience__link--container .experience__link--entry {
+                  font-size: 16px; } }
+              @media (max-width: 360px) {
+                main.main-page .main-page__content .experience .experience__choice .experience__essence .experience__link--container .experience__link--entry {
+                  font-size: 14px; } }
+              @media (max-width: 340px) {
+                main.main-page .main-page__content .experience .experience__choice .experience__essence .experience__link--container .experience__link--entry {
+                  font-size: 12px; } }
+          main.main-page .main-page__content .experience .experience__choice .experience__essence:hover {
+            transform: scale(1.1); }
+          @media (max-width: 520px) {
+            main.main-page .main-page__content .experience .experience__choice .experience__essence {
+              height: 420px; } }
+        main.main-page .main-page__content .experience .experience__choice .experience__essence--animation {
+          animation: openSlideAnimation 2s 1 ease-in-out; }
+        main.main-page .main-page__content .experience .experience__choice .experience__essence--animation-none {
+          animation: none !important; }
+>>>>>>> origin/master
 
 /************************** NEUTRA TEXT **************************/
 @font-face {
@@ -1163,6 +1567,7 @@ main.main-page .main-page__content .experience .experience__choice .experience__
   font-style: normal;
 }
 @font-face {
+<<<<<<< HEAD
   font-family: "neutra_text_bold";
   src: url("fonts/NeutraText/neutratext-bold-webfont.eot");
   src: url("fonts/NeutraText/neutratext-bold-webfont.eot?#iefix") format("embedded-opentype"), url("fonts/NeutraText/neutratext-bold-webfont.woff") format("woff"), url("fonts/NeutraText/neutratext-bold-webfont.ttf") format("truetype"), url("fonts/NeutraText/neutratext-bold-webfont.svg#neutra_textbold") format("svg");
@@ -1205,6 +1610,85 @@ main.main-page .main-page__content .experience .experience__choice .experience__
   font-weight: normal;
   font-style: normal;
 }
+=======
+  font-family: 'Neutra display';
+  src: url("fonts/NeutraDisplay/neutradisplay-thin-webfont.woff") format("woff"), url("fonts/NeutraDisplay/neutradisplay-thin-webfont.ttf") format("opentype"), url("fonts/NeutraDisplay/neutradisplay-thin-webfont.eot") format("opentype"), url("fonts/NeutraDisplay/neutradisplay-thin-webfont.svg#webfontg8dbVmxj") format("svg"); }
+/***************** CSS STYLES FROM ORIGINAL *****************/
+/***************** NEUTRA TEXT *****************/
+@font-face {
+  font-family: 'neutra_text_light';
+  src: url("fonts/NeutraText/neutratext-light-webfont.eot");
+  src: url("fonts/NeutraText/neutratext-light-webfont.eot?#iefix") format("embedded-opentype"), url("fonts/NeutraText/neutratext-light-webfont.woff") format("woff"), url("fonts/NeutraText/neutratext-light-webfont.ttf") format("truetype"), url("fonts/NeutraText/neutratext-light-webfont.svg#neutra_textlight") format("svg");
+  font-weight: normal;
+  font-style: normal; }
+@font-face {
+  font-family: 'neutra_text_light_italic';
+  src: url("fonts/NeutraText/neutratext-lightitalic-webfont.eot");
+  src: url("fonts/NeutraText/neutratext-lightitalic-webfont.eot?#iefix") format("embedded-opentype"), url("fonts/NeutraText/neutratext-lightitalic-webfont.woff") format("woff"), url("fonts/NeutraText/neutratext-lightitalic-webfont.ttf") format("truetype"), url("fonts/NeutraText/neutratext-lightitalic-webfont.svg#neutra_textlight_italic") format("svg");
+  font-weight: normal;
+  font-style: normal; }
+@font-face {
+  font-family: 'neutra_text_demi';
+  src: url("fonts/NeutraText/neutratext-demi-webfont.eot");
+  src: url("fonts/NeutraText/neutratext-demi-webfont.eot?#iefix") format("embedded-opentype"), url("fonts/NeutraText/neutratext-demi-webfont.woff") format("woff"), url("fonts/NeutraText/neutratext-demi-webfont.ttf") format("truetype"), url("fonts/NeutraText/neutratext-demi-webfont.svg#neutra_textdemi") format("svg");
+  font-weight: normal;
+  font-style: normal; }
+@font-face {
+  font-family: 'neutra_text_demi_italic';
+  src: url("fonts/NeutraText/neutratext-demiitalic-webfont.eot");
+  src: url("fonts/NeutraText/neutratext-demiitalic-webfont.eot?#iefix") format("embedded-opentype"), url("fonts/NeutraText/neutratext-demiitalic-webfont.woff") format("woff"), url("fonts/NeutraText/neutratext-demiitalic-webfont.ttf") format("truetype"), url("fonts/NeutraText/neutratext-demiitalic-webfont.svg#neutra_textdemi_italic") format("svg");
+  font-weight: normal;
+  font-style: normal; }
+@font-face {
+  font-family: 'neutra_text_book';
+  src: url("fonts/NeutraText/neutratext-book-webfont.eot");
+  src: url("fonts/NeutraText/neutratext-book-webfont.eot?#iefix") format("embedded-opentype"), url("fonts/NeutraText/neutratext-book-webfont.woff") format("woff"), url("fonts/NeutraText/neutratext-book-webfont.ttf") format("truetype"), url("fonts/NeutraText/neutratext-book-webfont.svg#neutra_textregular") format("svg");
+  font-weight: normal;
+  font-style: normal; }
+@font-face {
+  font-family: 'neutra_text_book_italic';
+  src: url("fonts/NeutraText/neutratext-bookitalic-webfont.eot");
+  src: url("fonts/NeutraText/neutratext-bookitalic-webfont.eot?#iefix") format("embedded-opentype"), url("fonts/NeutraText/neutratext-bookitalic-webfont.woff") format("woff"), url("fonts/NeutraText/neutratext-bookitalic-webfont.ttf") format("truetype"), url("fonts/NeutraText/neutratext-bookitalic-webfont.svg#neutra_textitalic") format("svg");
+  font-weight: normal;
+  font-style: normal; }
+@font-face {
+  font-family: 'neutra_text_bold';
+  src: url("fonts/NeutraText/neutratext-bold-webfont.eot");
+  src: url("fonts/NeutraText/neutratext-bold-webfont.eot?#iefix") format("embedded-opentype"), url("fonts/NeutraText/neutratext-bold-webfont.woff") format("woff"), url("fonts/NeutraText/neutratext-bold-webfont.ttf") format("truetype"), url("fonts/NeutraText/neutratext-bold-webfont.svg#neutra_textbold") format("svg");
+  font-weight: normal;
+  font-style: normal; }
+@font-face {
+  font-family: 'neutra_text_bold_italic';
+  src: url("fonts/NeutraText/neutratext-bolditalic-webfont.eot");
+  src: url("fonts/NeutraText/neutratext-bolditalic-webfont.eot?#iefix") format("embedded-opentype"), url("fonts/NeutraText/neutratext-bolditalic-webfont.woff") format("woff"), url("fonts/NeutraText/neutratext-bolditalic-webfont.ttf") format("truetype"), url("fonts/NeutraText/neutratext-bolditalic-webfont.svg#neutra_textbold_italic") format("svg");
+  font-weight: normal;
+  font-style: italic; }
+/***************** NEUTRA DISPLAY *****************/
+@font-face {
+  font-family: 'neutra_display_thin';
+  src: url("fonts/NeutraDisplay/neutradisplay-thin-webfont.eot");
+  src: url("fonts/NeutraDisplay/neutradisplay-thin-webfont.eot?#iefix") format("embedded-opentype"), url("fonts/NeutraDisplay/neutradisplay-thin-webfont.woff") format("woff"), url("fonts/NeutraDisplay/neutradisplay-thin-webfont.ttf") format("truetype"), url("fonts/NeutraDisplay/neutradisplay-thin-webfont.svg#neutra_displaythin") format("svg");
+  font-weight: normal;
+  font-style: normal; }
+@font-face {
+  font-family: 'neutra_display_light';
+  src: url("fonts/NeutraDisplay/neutradisplay-light-webfont.eot");
+  src: url("fonts/NeutraDisplay/neutradisplay-light-webfont.eot?#iefix") format("embedded-opentype"), url("fonts/NeutraDisplay/neutradisplay-light-webfont.woff") format("woff"), url("fonts/NeutraDisplay/neutradisplay-light-webfont.ttf") format("truetype"), url("fonts/NeutraDisplay/neutradisplay-light-webfont.svg#neutra_displayregular") format("svg");
+  font-weight: normal;
+  font-style: normal; }
+@font-face {
+  font-family: 'neutra_display_medium';
+  src: url("fonts/NeutraDisplay/neutradisplay-medium-webfont.eot");
+  src: url("fonts/NeutraDisplay/neutradisplay-medium-webfont.eot?#iefix") format("embedded-opentype"), url("fonts/NeutraDisplay/neutradisplay-medium-webfont.woff") format("woff"), url("fonts/NeutraDisplay/neutradisplay-medium-webfont.ttf") format("truetype"), url("fonts/NeutraDisplay/neutradisplay-medium-webfont.svg#neutra_displaymedium") format("svg");
+  font-weight: normal;
+  font-style: normal; }
+@font-face {
+  font-family: 'neutra_display_bold';
+  src: url("fonts/NeutraDisplay/neutradisplay-bold-webfont.eot");
+  src: url("fonts/NeutraDisplay/neutradisplay-bold-webfont.eot?#iefix") format("embedded-opentype"), url("fonts/NeutraDisplay/neutradisplay-bold-webfont.woff") format("woff"), url("fonts/NeutraDisplay/neutradisplay-bold-webfont.ttf") format("truetype"), url("fonts/NeutraDisplay/neutradisplay-bold-webfont.svg#neutra_displaybold") format("svg");
+  font-weight: normal;
+  font-style: normal; }
+>>>>>>> origin/master
 /*
 @media screen and (-webkit-min-device-pixel-ratio: 0) {
 
@@ -1242,6 +1726,7 @@ main.main-page .main-page__content .experience .experience__choice .experience__
   bottom: 0;
   right: 0;
   display: flex;
+<<<<<<< HEAD
   justify-content: center;
 }
 .perfume-starting__video {
@@ -1286,6 +1771,46 @@ main.main-page .main-page__content .experience .experience__choice .experience__
   text-align: center;
   transition: transform 500ms;
 }
+=======
+  justify-content: center; }
+  .perfume-starting__video {
+    position: fixed;
+    right: 0;
+    bottom: 0;
+    min-width: 100%;
+    min-height: 100%;
+    object-fit: fill; }
+  .perfume-starting__animation {
+    cursor: pointer;
+    text-decoration: none; }
+    .perfume-starting__animation:hover .perfume-starting__background--hover {
+      -webkit-transform: scale(1);
+      transform: scale(1);
+      -webkit-transition: all 500ms ease-out;
+      transition: all 500ms ease-out; }
+    .perfume-starting__animation:hover .perfume-starting__text.perfume-starting__text--transform {
+      transform: translateY(70px); }
+    .perfume-starting__animation .perfume-starting__background--delay {
+      -webkit-transition-delay: 1s;
+      transition-delay: 1s; }
+    .perfume-starting__animation .perfume-starting__background {
+      position: absolute;
+      margin: -100px;
+      -webkit-transition: all 500ms ease-out;
+      transition: all 500ms ease-out;
+      -webkit-transform: scale(0.4);
+      transform: scale(0); }
+    .perfume-starting__animation .perfume-starting__text {
+      font-family: 'Neutra text', sans-serif;
+      font-size: 1.8em;
+      font-weight: 500;
+      font-style: italic;
+      animation: fadeIn 2000ms;
+      position: relative;
+      color: white;
+      text-align: center;
+      transition: transform 500ms; }
+>>>>>>> origin/master
 
 /************************** NEUTRA TEXT **************************/
 @font-face {
@@ -1408,6 +1933,7 @@ main.main-page .main-page__content .experience .experience__choice .experience__
   font-style: normal;
 }
 @font-face {
+<<<<<<< HEAD
   font-family: "neutra_display_light";
   src: url("fonts/NeutraDisplay/neutradisplay-light-webfont.eot");
   src: url("fonts/NeutraDisplay/neutradisplay-light-webfont.eot?#iefix") format("embedded-opentype"), url("fonts/NeutraDisplay/neutradisplay-light-webfont.woff") format("woff"), url("fonts/NeutraDisplay/neutradisplay-light-webfont.ttf") format("truetype"), url("fonts/NeutraDisplay/neutradisplay-light-webfont.svg#neutra_displayregular") format("svg");
@@ -1428,6 +1954,85 @@ main.main-page .main-page__content .experience .experience__choice .experience__
   font-weight: normal;
   font-style: normal;
 }
+=======
+  font-family: 'Neutra display';
+  src: url("fonts/NeutraDisplay/neutradisplay-thin-webfont.woff") format("woff"), url("fonts/NeutraDisplay/neutradisplay-thin-webfont.ttf") format("opentype"), url("fonts/NeutraDisplay/neutradisplay-thin-webfont.eot") format("opentype"), url("fonts/NeutraDisplay/neutradisplay-thin-webfont.svg#webfontg8dbVmxj") format("svg"); }
+/***************** CSS STYLES FROM ORIGINAL *****************/
+/***************** NEUTRA TEXT *****************/
+@font-face {
+  font-family: 'neutra_text_light';
+  src: url("fonts/NeutraText/neutratext-light-webfont.eot");
+  src: url("fonts/NeutraText/neutratext-light-webfont.eot?#iefix") format("embedded-opentype"), url("fonts/NeutraText/neutratext-light-webfont.woff") format("woff"), url("fonts/NeutraText/neutratext-light-webfont.ttf") format("truetype"), url("fonts/NeutraText/neutratext-light-webfont.svg#neutra_textlight") format("svg");
+  font-weight: normal;
+  font-style: normal; }
+@font-face {
+  font-family: 'neutra_text_light_italic';
+  src: url("fonts/NeutraText/neutratext-lightitalic-webfont.eot");
+  src: url("fonts/NeutraText/neutratext-lightitalic-webfont.eot?#iefix") format("embedded-opentype"), url("fonts/NeutraText/neutratext-lightitalic-webfont.woff") format("woff"), url("fonts/NeutraText/neutratext-lightitalic-webfont.ttf") format("truetype"), url("fonts/NeutraText/neutratext-lightitalic-webfont.svg#neutra_textlight_italic") format("svg");
+  font-weight: normal;
+  font-style: normal; }
+@font-face {
+  font-family: 'neutra_text_demi';
+  src: url("fonts/NeutraText/neutratext-demi-webfont.eot");
+  src: url("fonts/NeutraText/neutratext-demi-webfont.eot?#iefix") format("embedded-opentype"), url("fonts/NeutraText/neutratext-demi-webfont.woff") format("woff"), url("fonts/NeutraText/neutratext-demi-webfont.ttf") format("truetype"), url("fonts/NeutraText/neutratext-demi-webfont.svg#neutra_textdemi") format("svg");
+  font-weight: normal;
+  font-style: normal; }
+@font-face {
+  font-family: 'neutra_text_demi_italic';
+  src: url("fonts/NeutraText/neutratext-demiitalic-webfont.eot");
+  src: url("fonts/NeutraText/neutratext-demiitalic-webfont.eot?#iefix") format("embedded-opentype"), url("fonts/NeutraText/neutratext-demiitalic-webfont.woff") format("woff"), url("fonts/NeutraText/neutratext-demiitalic-webfont.ttf") format("truetype"), url("fonts/NeutraText/neutratext-demiitalic-webfont.svg#neutra_textdemi_italic") format("svg");
+  font-weight: normal;
+  font-style: normal; }
+@font-face {
+  font-family: 'neutra_text_book';
+  src: url("fonts/NeutraText/neutratext-book-webfont.eot");
+  src: url("fonts/NeutraText/neutratext-book-webfont.eot?#iefix") format("embedded-opentype"), url("fonts/NeutraText/neutratext-book-webfont.woff") format("woff"), url("fonts/NeutraText/neutratext-book-webfont.ttf") format("truetype"), url("fonts/NeutraText/neutratext-book-webfont.svg#neutra_textregular") format("svg");
+  font-weight: normal;
+  font-style: normal; }
+@font-face {
+  font-family: 'neutra_text_book_italic';
+  src: url("fonts/NeutraText/neutratext-bookitalic-webfont.eot");
+  src: url("fonts/NeutraText/neutratext-bookitalic-webfont.eot?#iefix") format("embedded-opentype"), url("fonts/NeutraText/neutratext-bookitalic-webfont.woff") format("woff"), url("fonts/NeutraText/neutratext-bookitalic-webfont.ttf") format("truetype"), url("fonts/NeutraText/neutratext-bookitalic-webfont.svg#neutra_textitalic") format("svg");
+  font-weight: normal;
+  font-style: normal; }
+@font-face {
+  font-family: 'neutra_text_bold';
+  src: url("fonts/NeutraText/neutratext-bold-webfont.eot");
+  src: url("fonts/NeutraText/neutratext-bold-webfont.eot?#iefix") format("embedded-opentype"), url("fonts/NeutraText/neutratext-bold-webfont.woff") format("woff"), url("fonts/NeutraText/neutratext-bold-webfont.ttf") format("truetype"), url("fonts/NeutraText/neutratext-bold-webfont.svg#neutra_textbold") format("svg");
+  font-weight: normal;
+  font-style: normal; }
+@font-face {
+  font-family: 'neutra_text_bold_italic';
+  src: url("fonts/NeutraText/neutratext-bolditalic-webfont.eot");
+  src: url("fonts/NeutraText/neutratext-bolditalic-webfont.eot?#iefix") format("embedded-opentype"), url("fonts/NeutraText/neutratext-bolditalic-webfont.woff") format("woff"), url("fonts/NeutraText/neutratext-bolditalic-webfont.ttf") format("truetype"), url("fonts/NeutraText/neutratext-bolditalic-webfont.svg#neutra_textbold_italic") format("svg");
+  font-weight: normal;
+  font-style: italic; }
+/***************** NEUTRA DISPLAY *****************/
+@font-face {
+  font-family: 'neutra_display_thin';
+  src: url("fonts/NeutraDisplay/neutradisplay-thin-webfont.eot");
+  src: url("fonts/NeutraDisplay/neutradisplay-thin-webfont.eot?#iefix") format("embedded-opentype"), url("fonts/NeutraDisplay/neutradisplay-thin-webfont.woff") format("woff"), url("fonts/NeutraDisplay/neutradisplay-thin-webfont.ttf") format("truetype"), url("fonts/NeutraDisplay/neutradisplay-thin-webfont.svg#neutra_displaythin") format("svg");
+  font-weight: normal;
+  font-style: normal; }
+@font-face {
+  font-family: 'neutra_display_light';
+  src: url("fonts/NeutraDisplay/neutradisplay-light-webfont.eot");
+  src: url("fonts/NeutraDisplay/neutradisplay-light-webfont.eot?#iefix") format("embedded-opentype"), url("fonts/NeutraDisplay/neutradisplay-light-webfont.woff") format("woff"), url("fonts/NeutraDisplay/neutradisplay-light-webfont.ttf") format("truetype"), url("fonts/NeutraDisplay/neutradisplay-light-webfont.svg#neutra_displayregular") format("svg");
+  font-weight: normal;
+  font-style: normal; }
+@font-face {
+  font-family: 'neutra_display_medium';
+  src: url("fonts/NeutraDisplay/neutradisplay-medium-webfont.eot");
+  src: url("fonts/NeutraDisplay/neutradisplay-medium-webfont.eot?#iefix") format("embedded-opentype"), url("fonts/NeutraDisplay/neutradisplay-medium-webfont.woff") format("woff"), url("fonts/NeutraDisplay/neutradisplay-medium-webfont.ttf") format("truetype"), url("fonts/NeutraDisplay/neutradisplay-medium-webfont.svg#neutra_displaymedium") format("svg");
+  font-weight: normal;
+  font-style: normal; }
+@font-face {
+  font-family: 'neutra_display_bold';
+  src: url("fonts/NeutraDisplay/neutradisplay-bold-webfont.eot");
+  src: url("fonts/NeutraDisplay/neutradisplay-bold-webfont.eot?#iefix") format("embedded-opentype"), url("fonts/NeutraDisplay/neutradisplay-bold-webfont.woff") format("woff"), url("fonts/NeutraDisplay/neutradisplay-bold-webfont.ttf") format("truetype"), url("fonts/NeutraDisplay/neutradisplay-bold-webfont.svg#neutra_displaybold") format("svg");
+  font-weight: normal;
+  font-style: normal; }
+>>>>>>> origin/master
 /*
 @media screen and (-webkit-min-device-pixel-ratio: 0) {
 
@@ -1989,6 +2594,7 @@ main.main-page .main-page__content .experience .experience__choice .experience__
 }
 /***************** NEUTRA DISPLAY *****************/
 @font-face {
+<<<<<<< HEAD
   font-family: "neutra_display_thin";
   src: url("fonts/NeutraDisplay/neutradisplay-thin-webfont.eot");
   src: url("fonts/NeutraDisplay/neutradisplay-thin-webfont.eot?#iefix") format("embedded-opentype"), url("fonts/NeutraDisplay/neutradisplay-thin-webfont.woff") format("woff"), url("fonts/NeutraDisplay/neutradisplay-thin-webfont.ttf") format("truetype"), url("fonts/NeutraDisplay/neutradisplay-thin-webfont.svg#neutra_displaythin") format("svg");
@@ -2016,6 +2622,85 @@ main.main-page .main-page__content .experience .experience__choice .experience__
   font-weight: normal;
   font-style: normal;
 }
+=======
+  font-family: 'Neutra display';
+  src: url("fonts/NeutraDisplay/neutradisplay-thin-webfont.woff") format("woff"), url("fonts/NeutraDisplay/neutradisplay-thin-webfont.ttf") format("opentype"), url("fonts/NeutraDisplay/neutradisplay-thin-webfont.eot") format("opentype"), url("fonts/NeutraDisplay/neutradisplay-thin-webfont.svg#webfontg8dbVmxj") format("svg"); }
+/***************** CSS STYLES FROM ORIGINAL *****************/
+/***************** NEUTRA TEXT *****************/
+@font-face {
+  font-family: 'neutra_text_light';
+  src: url("fonts/NeutraText/neutratext-light-webfont.eot");
+  src: url("fonts/NeutraText/neutratext-light-webfont.eot?#iefix") format("embedded-opentype"), url("fonts/NeutraText/neutratext-light-webfont.woff") format("woff"), url("fonts/NeutraText/neutratext-light-webfont.ttf") format("truetype"), url("fonts/NeutraText/neutratext-light-webfont.svg#neutra_textlight") format("svg");
+  font-weight: normal;
+  font-style: normal; }
+@font-face {
+  font-family: 'neutra_text_light_italic';
+  src: url("fonts/NeutraText/neutratext-lightitalic-webfont.eot");
+  src: url("fonts/NeutraText/neutratext-lightitalic-webfont.eot?#iefix") format("embedded-opentype"), url("fonts/NeutraText/neutratext-lightitalic-webfont.woff") format("woff"), url("fonts/NeutraText/neutratext-lightitalic-webfont.ttf") format("truetype"), url("fonts/NeutraText/neutratext-lightitalic-webfont.svg#neutra_textlight_italic") format("svg");
+  font-weight: normal;
+  font-style: normal; }
+@font-face {
+  font-family: 'neutra_text_demi';
+  src: url("fonts/NeutraText/neutratext-demi-webfont.eot");
+  src: url("fonts/NeutraText/neutratext-demi-webfont.eot?#iefix") format("embedded-opentype"), url("fonts/NeutraText/neutratext-demi-webfont.woff") format("woff"), url("fonts/NeutraText/neutratext-demi-webfont.ttf") format("truetype"), url("fonts/NeutraText/neutratext-demi-webfont.svg#neutra_textdemi") format("svg");
+  font-weight: normal;
+  font-style: normal; }
+@font-face {
+  font-family: 'neutra_text_demi_italic';
+  src: url("fonts/NeutraText/neutratext-demiitalic-webfont.eot");
+  src: url("fonts/NeutraText/neutratext-demiitalic-webfont.eot?#iefix") format("embedded-opentype"), url("fonts/NeutraText/neutratext-demiitalic-webfont.woff") format("woff"), url("fonts/NeutraText/neutratext-demiitalic-webfont.ttf") format("truetype"), url("fonts/NeutraText/neutratext-demiitalic-webfont.svg#neutra_textdemi_italic") format("svg");
+  font-weight: normal;
+  font-style: normal; }
+@font-face {
+  font-family: 'neutra_text_book';
+  src: url("fonts/NeutraText/neutratext-book-webfont.eot");
+  src: url("fonts/NeutraText/neutratext-book-webfont.eot?#iefix") format("embedded-opentype"), url("fonts/NeutraText/neutratext-book-webfont.woff") format("woff"), url("fonts/NeutraText/neutratext-book-webfont.ttf") format("truetype"), url("fonts/NeutraText/neutratext-book-webfont.svg#neutra_textregular") format("svg");
+  font-weight: normal;
+  font-style: normal; }
+@font-face {
+  font-family: 'neutra_text_book_italic';
+  src: url("fonts/NeutraText/neutratext-bookitalic-webfont.eot");
+  src: url("fonts/NeutraText/neutratext-bookitalic-webfont.eot?#iefix") format("embedded-opentype"), url("fonts/NeutraText/neutratext-bookitalic-webfont.woff") format("woff"), url("fonts/NeutraText/neutratext-bookitalic-webfont.ttf") format("truetype"), url("fonts/NeutraText/neutratext-bookitalic-webfont.svg#neutra_textitalic") format("svg");
+  font-weight: normal;
+  font-style: normal; }
+@font-face {
+  font-family: 'neutra_text_bold';
+  src: url("fonts/NeutraText/neutratext-bold-webfont.eot");
+  src: url("fonts/NeutraText/neutratext-bold-webfont.eot?#iefix") format("embedded-opentype"), url("fonts/NeutraText/neutratext-bold-webfont.woff") format("woff"), url("fonts/NeutraText/neutratext-bold-webfont.ttf") format("truetype"), url("fonts/NeutraText/neutratext-bold-webfont.svg#neutra_textbold") format("svg");
+  font-weight: normal;
+  font-style: normal; }
+@font-face {
+  font-family: 'neutra_text_bold_italic';
+  src: url("fonts/NeutraText/neutratext-bolditalic-webfont.eot");
+  src: url("fonts/NeutraText/neutratext-bolditalic-webfont.eot?#iefix") format("embedded-opentype"), url("fonts/NeutraText/neutratext-bolditalic-webfont.woff") format("woff"), url("fonts/NeutraText/neutratext-bolditalic-webfont.ttf") format("truetype"), url("fonts/NeutraText/neutratext-bolditalic-webfont.svg#neutra_textbold_italic") format("svg");
+  font-weight: normal;
+  font-style: italic; }
+/***************** NEUTRA DISPLAY *****************/
+@font-face {
+  font-family: 'neutra_display_thin';
+  src: url("fonts/NeutraDisplay/neutradisplay-thin-webfont.eot");
+  src: url("fonts/NeutraDisplay/neutradisplay-thin-webfont.eot?#iefix") format("embedded-opentype"), url("fonts/NeutraDisplay/neutradisplay-thin-webfont.woff") format("woff"), url("fonts/NeutraDisplay/neutradisplay-thin-webfont.ttf") format("truetype"), url("fonts/NeutraDisplay/neutradisplay-thin-webfont.svg#neutra_displaythin") format("svg");
+  font-weight: normal;
+  font-style: normal; }
+@font-face {
+  font-family: 'neutra_display_light';
+  src: url("fonts/NeutraDisplay/neutradisplay-light-webfont.eot");
+  src: url("fonts/NeutraDisplay/neutradisplay-light-webfont.eot?#iefix") format("embedded-opentype"), url("fonts/NeutraDisplay/neutradisplay-light-webfont.woff") format("woff"), url("fonts/NeutraDisplay/neutradisplay-light-webfont.ttf") format("truetype"), url("fonts/NeutraDisplay/neutradisplay-light-webfont.svg#neutra_displayregular") format("svg");
+  font-weight: normal;
+  font-style: normal; }
+@font-face {
+  font-family: 'neutra_display_medium';
+  src: url("fonts/NeutraDisplay/neutradisplay-medium-webfont.eot");
+  src: url("fonts/NeutraDisplay/neutradisplay-medium-webfont.eot?#iefix") format("embedded-opentype"), url("fonts/NeutraDisplay/neutradisplay-medium-webfont.woff") format("woff"), url("fonts/NeutraDisplay/neutradisplay-medium-webfont.ttf") format("truetype"), url("fonts/NeutraDisplay/neutradisplay-medium-webfont.svg#neutra_displaymedium") format("svg");
+  font-weight: normal;
+  font-style: normal; }
+@font-face {
+  font-family: 'neutra_display_bold';
+  src: url("fonts/NeutraDisplay/neutradisplay-bold-webfont.eot");
+  src: url("fonts/NeutraDisplay/neutradisplay-bold-webfont.eot?#iefix") format("embedded-opentype"), url("fonts/NeutraDisplay/neutradisplay-bold-webfont.woff") format("woff"), url("fonts/NeutraDisplay/neutradisplay-bold-webfont.ttf") format("truetype"), url("fonts/NeutraDisplay/neutradisplay-bold-webfont.svg#neutra_displaybold") format("svg");
+  font-weight: normal;
+  font-style: normal; }
+>>>>>>> origin/master
 /*
 @media screen and (-webkit-min-device-pixel-ratio: 0) {
 

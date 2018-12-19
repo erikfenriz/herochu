@@ -121,6 +121,10 @@ export default class Happy extends Component {
         this.video.current.play();
     };
 
+    share = () => {
+
+    };
+
     componentDidMount() {
         this.setTitle();
         document.addEventListener('contextmenu', event => event.preventDefault());
@@ -174,7 +178,10 @@ export default class Happy extends Component {
                             <div onMouseOver={this.hide}
                                  onMouseOut={this.display}
                                  className="menu__bottom--button menu__bottom--side">
-                                <p className="menu__bottom--love">Share</p>
+                                <p className="menu__bottom--love"
+                                   onClick={this.share}>
+                                    Share
+                                </p>
                             </div>
                             <div onMouseOver={this.hide}
                                  onMouseOut={this.display}
@@ -194,6 +201,21 @@ export default class Happy extends Component {
                             <span className="LetPerfumeTalkByMane__experienceName--small">&nbsp;by MANE</span>
                         </p>
                     </div>
+                    {/*<div className="letPerfumeTalk__share small-rhombus">*/}
+                        {/*<div className="letPerfumeTalk__share--close">*/}
+                            {/*<p>Close</p>*/}
+                        {/*</div>*/}
+                        {/*<div className="letPerfumeTalk__share--media menu__circle--inLove animation">*/}
+                            {/*<h3>Share your<br/>experience</h3>*/}
+                            {/*<img src="../../assets/images/main/twitter.png" alt=""/>*/}
+
+                            {/*<div>*/}
+                                {/*<img src="../../assets/images/main/twitter.png" alt=""/>*/}
+                                {/*<img src="../../assets/images/main/twitter-logo-button.svg" alt=""/>*/}
+                                {/*<img src="../../assets/images/main/twitter-logo-button.svg" alt=""/>*/}
+                            {/*</div>*/}
+                        {/*</div>*/}
+                    {/*</div>*/}
                 </main>
                 <div onClick={this.clicked}
                      onMouseMove={this.setCoordinates}
@@ -207,6 +229,7 @@ export default class Happy extends Component {
                         </div>
                     </div>
                 </div>
+
             </React.Fragment>
         )
     }

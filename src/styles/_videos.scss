@@ -11,6 +11,12 @@
   }
 }
 
+@keyframes share {
+  100% {
+    transform: scale(1);
+  }
+}
+
 @keyframes loadingTop {
   0% {
     transform: translateY(-100px);
@@ -192,42 +198,55 @@
 
         .menu__bottom--alive {
           transition: color 400ms;
+
           &:hover {
             color: #00DF6C;
           }
         }
+
         .menu__bottom--happy {
           transition: color 400ms;
+
           &:hover {
             color: yellow;
           }
         }
+
         .menu__bottom--love {
           transition: color 400ms;
+
           &:hover {
             color: #DE76B7;
           }
         }
+
         .menu__bottom--natural {
           transition: color 400ms;
+
           &:hover {
             color: #86B051;
           }
         }
+
         .menu__bottom--rebellious {
           transition: color 400ms;
+
           &:hover {
             color: red;
           }
         }
+
         .menu__bottom--sexy {
           transition: color 400ms;
+
           &:hover {
             color: yellow;
           }
         }
+
         .menu__bottom--zen {
           transition: color 400ms;
+
           &:hover {
             color: bisque;
           }
@@ -284,10 +303,75 @@
       }
     }
   }
+
+  &__share {
+    transition: all;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    cursor: pointer;
+    vertical-align: middle;
+    text-align: center;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 200px;
+    //transform: scale(0);
+    //animation: share 10000ms forwards;
+
+    &--close {
+      display: flex;
+      font-size: 16px;
+      margin-right: 90px;
+      text-transform: uppercase;
+      width: 100px;
+      height: 100px;
+      background-color: white;
+      -webkit-transform: rotate(45deg);
+      vertical-align: middle;
+      text-align: center;
+      justify-content: center;
+      align-items: center;
+
+      p {
+        position: relative;
+        top: 4px;
+        -webkit-transform: rotate(-45deg);
+        text-align: center;
+        line-height: 100px;
+      }
+    }
+
+    @include gradients;
+
+    &--media {
+      width: 330px;
+      height: 330px;
+      background-color: white;
+      -webkit-transform: rotate(45deg);
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      font-size: 20px;
+
+      & > * {
+        -webkit-transform: rotate(-45deg);
+        text-align: center;
+        //line-height: 100px;
+        color: white;
+        text-transform: uppercase;
+        position: relative;
+        z-index: 10;
+
+      }
+    }
+  }
 }
 
 #cursor {
   position: fixed;
+  z-index: 1;
 
   > * {
     width: 90px;

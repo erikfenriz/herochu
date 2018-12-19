@@ -1162,6 +1162,9 @@ main.main-page {
   100% {
     transform: scale(1.4);
     opacity: 0; } }
+@keyframes share {
+  100% {
+    transform: scale(1); } }
 @keyframes loadingTop {
   0% {
     transform: translateY(-100px); }
@@ -1503,9 +1506,121 @@ main.main-page {
       @media (max-width: 700px) {
         .letPerfumeTalk .LetPerfumeTalkByMane__experienceName {
           display: none; } }
+  .letPerfumeTalk__share {
+    transition: all;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    cursor: pointer;
+    vertical-align: middle;
+    text-align: center;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 200px; }
+    .letPerfumeTalk__share--close {
+      display: flex;
+      font-size: 16px;
+      margin-right: 90px;
+      text-transform: uppercase;
+      width: 100px;
+      height: 100px;
+      background-color: white;
+      -webkit-transform: rotate(45deg);
+      vertical-align: middle;
+      text-align: center;
+      justify-content: center;
+      align-items: center; }
+      .letPerfumeTalk__share--close p {
+        position: relative;
+        top: 4px;
+        -webkit-transform: rotate(-45deg);
+        text-align: center;
+        line-height: 100px; }
+    .letPerfumeTalk__share .menu__circle--happy {
+      background: #ff7327;
+      background: -moz-linear-gradient(left, #ff7327 0%, #ffe043 100%);
+      background: -webkit-gradient(left top, right top, color-stop(0%, #ff7327), color-stop(100%, #ffe043));
+      background: -webkit-linear-gradient(left, #ff7327 0%, #ffe043 100%);
+      background: -o-linear-gradient(left, #ff7327 0%, #ffe043 100%);
+      background: -ms-linear-gradient(left, #ff7327 0%, #ffe043 100%);
+      background: linear-gradient(to right, #ff7327 0%, #ffe043 100%);
+      filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ff7327', endColorstr='#ffe043', GradientType=1); }
+    .letPerfumeTalk__share .menu__circle--zen {
+      background: #faae84;
+      background: -moz-linear-gradient(left, #faae84 0%, #e7ccab 100%);
+      background: -webkit-gradient(left top, right top, color-stop(0%, #faae84), color-stop(100%, #e7ccab));
+      background: -webkit-linear-gradient(left, #faae84 0%, #e7ccab 100%);
+      background: -o-linear-gradient(left, #faae84 0%, #e7ccab 100%);
+      background: -ms-linear-gradient(left, #faae84 0%, #e7ccab 100%);
+      background: linear-gradient(to right, #faae84 0%, #e7ccab 100%);
+      filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#faae84', endColorstr='#e7ccab', GradientType=1); }
+    .letPerfumeTalk__share .menu__circle--inLove {
+      background: #cc2756;
+      background: -moz-linear-gradient(left, #cc2756 0%, #e974b6 100%);
+      background: -webkit-gradient(left top, right top, color-stop(0%, #cc2756), color-stop(100%, #e974b6));
+      background: -webkit-linear-gradient(left, #cc2756 0%, #e974b6 100%);
+      background: -o-linear-gradient(left, #cc2756 0%, #e974b6 100%);
+      background: -ms-linear-gradient(left, #cc2756 0%, #e974b6 100%);
+      background: linear-gradient(to right, #cc2756 0%, #e974b6 100%);
+      filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#cc2756', endColorstr='#e974b6', GradientType=1); }
+    .letPerfumeTalk__share .menu__circle--sexy {
+      background: #ab2f96;
+      background: -moz-linear-gradient(left, #ab2f96 0%, #efab5d 100%);
+      background: -webkit-gradient(left top, right top, color-stop(0%, #ab2f96), color-stop(100%, #efab5d));
+      background: -webkit-linear-gradient(left, #ab2f96 0%, #efab5d 100%);
+      background: -o-linear-gradient(left, #ab2f96 0%, #efab5d 100%);
+      background: -ms-linear-gradient(left, #ab2f96 0%, #efab5d 100%);
+      background: linear-gradient(to right, #ab2f96 0%, #efab5d 100%);
+      filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ab2f96', endColorstr='#efab5d', GradientType=1); }
+    .letPerfumeTalk__share .menu__circle--alive {
+      background: #00ffd9;
+      background: -moz-linear-gradient(left, #00ffd9 0%, #00ff77 100%);
+      background: -webkit-gradient(left top, right top, color-stop(0%, #00ffd9), color-stop(100%, #00ff77));
+      background: -webkit-linear-gradient(left, #00ffd9 0%, #00ff77 100%);
+      background: -o-linear-gradient(left, #00ffd9 0%, #00ff77 100%);
+      background: -ms-linear-gradient(left, #00ffd9 0%, #00ff77 100%);
+      background: linear-gradient(to right, #00ffd9 0%, #00ff77 100%);
+      filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#00ffd9', endColorstr='#00ff77', GradientType=1); }
+    .letPerfumeTalk__share .menu__circle--rebellious {
+      background: #300004;
+      background: -moz-linear-gradient(left, #300004 0%, #c10512 100%);
+      background: -webkit-gradient(left top, right top, color-stop(0%, #300004), color-stop(100%, #c10512));
+      background: -webkit-linear-gradient(left, #300004 0%, #c10512 100%);
+      background: -o-linear-gradient(left, #300004 0%, #c10512 100%);
+      background: -ms-linear-gradient(left, #300004 0%, #c10512 100%);
+      background: linear-gradient(to right, #300004 0%, #c10512 100%);
+      filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#300004', endColorstr='#c10512', GradientType=1); }
+    .letPerfumeTalk__share .menu__circle--natural {
+      background: #235a2e;
+      background: -moz-linear-gradient(left, #235a2e 0%, #9ac25d 100%);
+      background: -webkit-gradient(left top, right top, color-stop(0%, #235a2e), color-stop(100%, #9ac25d));
+      background: -webkit-linear-gradient(left, #235a2e 0%, #9ac25d 100%);
+      background: -o-linear-gradient(left, #235a2e 0%, #9ac25d 100%);
+      background: -ms-linear-gradient(left, #235a2e 0%, #9ac25d 100%);
+      background: linear-gradient(to right, #235a2e 0%, #9ac25d 100%);
+      filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#235a2e', endColorstr='#9ac25d', GradientType=1); }
+    .letPerfumeTalk__share--media {
+      width: 330px;
+      height: 330px;
+      background-color: white;
+      -webkit-transform: rotate(45deg);
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      font-size: 20px; }
+      .letPerfumeTalk__share--media > * {
+        -webkit-transform: rotate(-45deg);
+        text-align: center;
+        color: white;
+        text-transform: uppercase;
+        position: relative;
+        z-index: 10; }
 
 #cursor {
-  position: fixed; }
+  position: fixed;
+  z-index: 1; }
   #cursor > * {
     width: 90px;
     transition: all 1000ms; }

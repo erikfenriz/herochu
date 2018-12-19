@@ -54,7 +54,7 @@ const data = [
     link: "/LetPerfumeTalk/In_love",
   },
   {
-    name: "rebelious",
+    name: "rebellious",
     img: rebelious_1,
     imgGif: rebelious_2,
     color: "#7c045d",

@@ -1,5 +1,8 @@
 import React from 'react';
 import { compose, withState, withHandlers } from 'recompose';
+import { Link } from 'react-router-dom'
+import ShareLink from 'react-facebook-share-link'
+import ShareLinkTwitter from 'react-twitter-share-link'
 import { Row,Col } from 'antd';
 import splitting from 'splitting';
 import BottleCarousel from './components/BottleСarousel'
@@ -16,7 +19,17 @@ const SmellMenu = props => {
   return (
     <div className="smellMenu-page" >
     <div className="smellMenu__header">
-      <img className="twitterShare"  alt="youtube" src={facebookShare}  />    <img  alt="youtube" src={twitterShare}  />
+    <ShareLink link='https://experiences.mane.com/LetPerfumeTalk/'>
+   {link => (
+      <a href={link} target='_blank'><img  className="twitterShare"  alt="youtube" src={facebookShare}  /></a>
+   )}
+   </ShareLink>
+   <ShareLinkTwitter link='https://experiences.mane.com/LetPerfumeTalk/'>
+   {link => (
+      <a href={link} target='_blank'><img  alt="youtube" src={twitterShare}  /></a>
+   )}
+   </ShareLinkTwitter>
+          
 
     </div>
       <h1 className='smellMenu__title'>What's your mood today?</h1>
@@ -50,7 +63,7 @@ const SmellMenu = props => {
           <label className='smellMenu__footer__mane'>by MANE</label>
         </div>
         <div className='smellMenu__footer__right'>
-          <label className='smellMenu__footer__right_item text_footer'>Legal </label>
+          <label className='smellMenu__footer__right_item text_footer'><Link  to={"/LetPerfumeTalk/legal"}>Legal </Link></label>
           <label className='smellMenu__footer__right_item text_footer'>Credits</label>
           <label className='smellMenu__footer__right_item text_footer'>MANE © 2019</label>
    

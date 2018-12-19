@@ -11,9 +11,8 @@ const BottleItem = props => {
   // console.log(props);
   return (
     // <figure id={countItem} class="carouselItem trans3d">
-<div>{
-      visib ===1 && <p>pasha</p>
-    }
+<div>
+
     <div
       // id={countItem}
 

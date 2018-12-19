@@ -29,6 +29,7 @@
     display: flex;
     flex-direction: row;
     align-items: flex-end;
+    outline: red solid 1px;
 
     h1 {
       margin: 0;
@@ -42,15 +43,15 @@
       color: white;
       text-transform: uppercase;
       font: {
-        family: "Neutra display", sans-serif;
+        family: "neutra_text_light", sans-serif;
         weight: 500;
-        size: 4em;
+        size: 2.7em;
       }
     }
 
     .three-bounce {
       margin-left: 5px;
-
+      display: flex;
       div {
         background: #ffffff;
         display: inline-block;
@@ -72,7 +73,7 @@
     }
   }
   &.loaded {
-    opacity: 0;
+    //opacity: 0;
   }
 }
 

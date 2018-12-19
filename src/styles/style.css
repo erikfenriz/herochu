@@ -1669,7 +1669,8 @@ main.main-page {
   .loading__text {
     display: flex;
     flex-direction: row;
-    align-items: flex-end; }
+    align-items: flex-end;
+    outline: red solid 1px; }
     .loading__text h1 {
       margin: 0;
       line-height: 1;
@@ -1686,11 +1687,12 @@ main.main-page {
       user-select: none;
       color: white;
       text-transform: uppercase;
-      font-family: "Neutra display", sans-serif;
+      font-family: "neutra_text_light", sans-serif;
       font-weight: 500;
-      font-size: 4em; }
+      font-size: 2.7em; }
     .loading__text .three-bounce {
-      margin-left: 5px; }
+      margin-left: 5px;
+      display: flex; }
       .loading__text .three-bounce div {
         background: #ffffff;
         display: inline-block;
@@ -1704,7 +1706,5 @@ main.main-page {
           animation-delay: -0.32s; }
         .loading__text .three-bounce div.two {
           animation-delay: -0.16s; }
-  .loading.loaded {
-    opacity: 0; }
 
 /*# sourceMappingURL=style.css.map */

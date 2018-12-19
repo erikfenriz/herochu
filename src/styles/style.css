@@ -1669,8 +1669,7 @@ main.main-page {
   .loading__text {
     display: flex;
     flex-direction: row;
-    align-items: flex-end;
-    outline: red solid 1px; }
+    align-items: flex-end; }
     .loading__text h1 {
       margin: 0;
       line-height: 1;
@@ -1706,5 +1705,7 @@ main.main-page {
           animation-delay: -0.32s; }
         .loading__text .three-bounce div.two {
           animation-delay: -0.16s; }
+  .loading.loaded {
+    opacity: 0; }
 
 /*# sourceMappingURL=style.css.map */

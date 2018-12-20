@@ -1,4 +1,37 @@
 @import "fonts";
+
+
+
+.monster {
+  width: 225px;
+  height: 446px;
+  margin: 2% auto;
+  background: url('../assets/citrus.jpg') left center;
+  animation: in .8s steps(34);
+  // animation-play-state: paused;
+
+}
+.monster:hover {
+  animation: playOut .8s steps(34);
+}
+@keyframes play {
+  from   {background-position: -7650px; }
+  to {  background-position: 0px;}
+}
+@keyframes in {
+  // from   { -webkit-transform: rotate(0deg); }
+  // to { -webkit-transform: rotate(360deg);}
+}
+
+@keyframes playOut {
+  0%   { background-position: 0px; }
+  100% { background-position: -7650px; }
+  // 0%   { animation-iteration-count:infinite; }
+  // 100% { background-position: -7650px; }
+}
+
+
+
 .smellMenu-page {
   top: 0;
   left: 0;

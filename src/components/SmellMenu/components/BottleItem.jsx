@@ -17,8 +17,8 @@ const BottleItem = props => {
       // id={countItem}
 
       key={name}
-      onMouseOver={visibleChangeButton}
-      onMouseLeave={visibleChangeButtonFalse}
+      // onMouseOver={visibleChangeButton}
+      // onMouseLeave={visibleChangeButtonFalse}
       className="bottle_item"
       style={{ width: "230px" }}
     >
@@ -62,7 +62,8 @@ const BottleItem = props => {
           }
 
         </Link>
-        {visible === 0 ? <img className={countItem} alt={name} src={img} /> : <img className={countItem} alt={name} src={imgGif} />}
+        {/* {visible === 0 ? <img className={countItem} alt={name} src={img} /> : <img className={countItem} alt={name} src={imgGif} />} */}
+        <div class="monster"></div>
       </center>
     </div>
     </div>

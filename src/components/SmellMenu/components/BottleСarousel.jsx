@@ -123,13 +123,13 @@ export default class BottleCarousel extends Component {
     }
     function updatescroll() {
 
-      //var max_scroll = container[0].scrollWidth;
-      // if (speed !== 0) {
-      //   scroll += speed / 5;
-      //   if (scroll < 0) scroll = 0;
-      //   if (scroll > max_scroll) scroll = max_scroll;
-      //   $('.carousel-frame').scrollLeft(scroll);
-      // }
+      var max_scroll = container[0].scrollWidth;
+      if (speed !== 0) {
+        scroll += speed / 5;
+        if (scroll < 0) scroll = 0;
+        if (scroll > max_scroll) scroll = max_scroll;
+        $('.carousel-frame').scrollLeft(scroll);
+      }
       var item0 = '.item0';
       var item1 = '.item1';
       var item2 = '.item2';
@@ -153,161 +153,161 @@ export default class BottleCarousel extends Component {
 
       // for (i = tickLoadMore - 1; i <= tickLoadMore; i++) {
       // console.log("_____________for___________");
-      if (coordinate0 < window.innerWidth / 7 && coordinate0 > 0) {
-        // console.log("_______________1");
-        $(item0)[0].id = "item0";
-      }
-      if (coordinate0 > window.innerWidth / 7 && coordinate0 < (window.innerWidth / 7) * 2) {
-        $(item0)[0].id = "item1";
-      }
-      if (coordinate0 > (window.innerWidth / 7) * 2 && coordinate0 < (window.innerWidth / 7) * 3) {
-        $(item0)[0].id = "item2";
-      }
-      if (coordinate0 > (window.innerWidth / 7) * 3 && coordinate0 < (window.innerWidth / 7) * 4) {
-        $(item0)[0].id = "item3";
-      }
-      if (coordinate0 > (window.innerWidth / 7) * 4 && coordinate0 < (window.innerWidth / 7) * 5) {
-        $(item0)[0].id = "item2";
-      }
-      if (coordinate0 > (window.innerWidth / 7) * 5 && coordinate0 < (window.innerWidth / 7) * 6) {
-        $(item0)[0].id = "item1";
-      }
-      if (coordinate0 > (window.innerWidth / 7) * 6 && coordinate0 < window.innerWidth) {
-        $(item0)[0].id = "item0";
-      }
-      //----------------------------------------------------------------------------
-      if (coordinate1 < window.innerWidth / 7 && coordinate1 > 0) {
-        $(item1)[0].id = "item0";
-      }
-      if (coordinate1 > window.innerWidth / 7 && coordinate1 < (window.innerWidth / 7) * 2) {
-        $(item1)[0].id = "item1";
-      }
-      if (coordinate1 > (window.innerWidth / 7) * 2 && coordinate1 < (window.innerWidth / 7) * 3) {
-        $(item1)[0].id = "item2";
-      }
-      if (coordinate1 > (window.innerWidth / 7) * 3 && coordinate1 < (window.innerWidth / 7) * 4) {
-        $(item1)[0].id = "item3";
-      }
-      if (coordinate1 > (window.innerWidth / 7) * 4 && coordinate1 < (window.innerWidth / 7) * 5) {
-        $(item1)[0].id = "item2";
-      }
-      if (coordinate1 > (window.innerWidth / 7) * 5 && coordinate1 < (window.innerWidth / 7) * 6) {
-        $(item1)[0].id = "item1";
-      }
-      if (coordinate1 > (window.innerWidth / 7) * 6 && coordinate1 < window.innerWidth) {
-        $(item1)[0].id = "item0";
-      }
-      //----------------------------------------------------------------------------
-      if (coordinate2 < window.innerWidth / 7 && coordinate2 > 0) {
-        $(item2)[0].id = "item0";
-      }
-      if (coordinate2 > window.innerWidth / 7 && coordinate2 < (window.innerWidth / 7) * 2) {
-        $(item2)[0].id = "item1";
-      }
-      if (coordinate2 > (window.innerWidth / 7) * 2 && coordinate2 < (window.innerWidth / 7) * 3) {
-        $(item2)[0].id = "item2";
-      }
-      if (coordinate2 > (window.innerWidth / 7) * 3 && coordinate2 < (window.innerWidth / 7) * 4) {
-        $(item2)[0].id = "item3";
-      }
-      if (coordinate2 > (window.innerWidth / 7) * 4 && coordinate2 < (window.innerWidth / 7) * 5) {
-        $(item2)[0].id = "item2";
-      }
-      if (coordinate2 > (window.innerWidth / 7) * 5 && coordinate2 < (window.innerWidth / 7) * 6) {
-        $(item2)[0].id = "item1";
-      }
-      if (coordinate2 > (window.innerWidth / 7) * 6 && coordinate2 < window.innerWidth) {
-        $(item2)[0].id = "item0";
-      }
-      //----------------------------------------------------------------------------
-      if (coordinate3 < window.innerWidth / 7 && coordinate3 > 0) {
-        $(item3)[0].id = "item0";
-      }
-      if (coordinate3 > window.innerWidth / 7 && coordinate3 < (window.innerWidth / 7) * 2) {
-        $(item3)[0].id = "item1";
-      }
-      if (coordinate3 > (window.innerWidth / 7) * 2 && coordinate3 < (window.innerWidth / 7) * 3) {
-        $(item3)[0].id = "item2";
-      }
-      if (coordinate3 > (window.innerWidth / 7) * 3 && coordinate3 < (window.innerWidth / 7) * 4) {
-        $(item3)[0].id = "item3";
-      }
-      if (coordinate3 > (window.innerWidth / 7) * 4 && coordinate3 < (window.innerWidth / 7) * 5) {
-        $(item3)[0].id = "item2";
-      }
-      if (coordinate3 > (window.innerWidth / 7) * 5 && coordinate3 < (window.innerWidth / 7) * 6) {
-        $(item3)[0].id = "item1";
-      }
-      if (coordinate3 > (window.innerWidth / 7) * 6 && coordinate3 < window.innerWidth) {
-        $(item3)[0].id = "item0";
-      }
-      //----------------------------------------------------------------------------
-      if (coordinate4 < window.innerWidth / 7 && coordinate4 > 0) {
-        $(item4)[0].id = "item0";
-      }
-      if (coordinate4 > window.innerWidth / 7 && coordinate4 < (window.innerWidth / 7) * 2) {
-        $(item4)[0].id = "item1";
-      }
-      if (coordinate4 > (window.innerWidth / 7) * 2 && coordinate4 < (window.innerWidth / 7) * 3) {
-        $(item4)[0].id = "item2";
-      }
-      if (coordinate4 > (window.innerWidth / 7) * 3 && coordinate4 < (window.innerWidth / 7) * 4) {
-        $(item4)[0].id = "item3";
-      }
-      if (coordinate4 > (window.innerWidth / 7) * 4 && coordinate4 < (window.innerWidth / 7) * 5) {
-        $(item4)[0].id = "item2";
-      }
-      if (coordinate4 > (window.innerWidth / 7) * 5 && coordinate4 < (window.innerWidth / 7) * 6) {
-        $(item4)[0].id = "item1";
-      }
-      if (coordinate4 > (window.innerWidth / 7) * 6 && coordinate4 < window.innerWidth) {
-        $(item4)[0].id = "item0";
-      }
-      //----------------------------------------------------------------------------
-      if (coordinate5 < window.innerWidth / 7 && coordinate5 > 0) {
-        $(item5)[0].id = "item0";
-      }
-      if (coordinate5 > window.innerWidth / 7 && coordinate5 < (window.innerWidth / 7) * 2) {
-        $(item5)[0].id = "item1";
-      }
-      if (coordinate5 > (window.innerWidth / 7) * 2 && coordinate5 < (window.innerWidth / 7) * 3) {
-        $(item5)[0].id = "item2";
-      }
-      if (coordinate5 > (window.innerWidth / 7) * 3 && coordinate5 < (window.innerWidth / 7) * 4) {
-        $(item5)[0].id = "item3";
-      }
-      if (coordinate5 > (window.innerWidth / 7) * 4 && coordinate5 < (window.innerWidth / 7) * 5) {
-        $(item5)[0].id = "item2";
-      }
-      if (coordinate5 > (window.innerWidth / 7) * 5 && coordinate5 < (window.innerWidth / 7) * 6) {
-        $(item5)[0].id = "item1";
-      }
-      if (coordinate5 > (window.innerWidth / 7) * 6 && coordinate5 < window.innerWidth) {
-        $(item5)[0].id = "item0";
-      }
-      //----------------------------------------------------------------------------
-      if (coordinate6 < window.innerWidth / 7 && coordinate6 > 0) {
-        $(item6)[0].id = "item0";
-      }
-      if (coordinate6 > window.innerWidth / 7 && coordinate6 < (window.innerWidth / 7) * 2) {
-        $(item6)[0].id = "item1";
-      }
-      if (coordinate6 > (window.innerWidth / 7) * 2 && coordinate6 < (window.innerWidth / 7) * 3) {
-        $(item6)[0].id = "item2";
-      }
-      if (coordinate6 > (window.innerWidth / 7) * 3 && coordinate6 < (window.innerWidth / 7) * 4) {
-        $(item6)[0].id = "item3";
-      }
-      if (coordinate6 > (window.innerWidth / 7) * 4 && coordinate6 < (window.innerWidth / 7) * 5) {
-        $(item6)[0].id = "item2";
-      }
-      if (coordinate6 > (window.innerWidth / 7) * 5 && coordinate6 < (window.innerWidth / 7) * 6) {
-        $(item6)[0].id = "item1";
-      }
-      if (coordinate6 > (window.innerWidth / 7) * 6 && coordinate6 < window.innerWidth) {
-        $(item6)[0].id = "item0";
-        // }
-      }
+      // if (coordinate0 < window.innerWidth / 7 && coordinate0 > 0) {
+      //   // console.log("_______________1");
+      //   $(item0)[0].id = "item0";
+      // }
+      // if (coordinate0 > window.innerWidth / 7 && coordinate0 < (window.innerWidth / 7) * 2) {
+      //   $(item0)[0].id = "item1";
+      // }
+      // if (coordinate0 > (window.innerWidth / 7) * 2 && coordinate0 < (window.innerWidth / 7) * 3) {
+      //   $(item0)[0].id = "item2";
+      // }
+      // if (coordinate0 > (window.innerWidth / 7) * 3 && coordinate0 < (window.innerWidth / 7) * 4) {
+      //   $(item0)[0].id = "item3";
+      // }
+      // if (coordinate0 > (window.innerWidth / 7) * 4 && coordinate0 < (window.innerWidth / 7) * 5) {
+      //   $(item0)[0].id = "item2";
+      // }
+      // if (coordinate0 > (window.innerWidth / 7) * 5 && coordinate0 < (window.innerWidth / 7) * 6) {
+      //   $(item0)[0].id = "item1";
+      // }
+      // if (coordinate0 > (window.innerWidth / 7) * 6 && coordinate0 < window.innerWidth) {
+      //   $(item0)[0].id = "item0";
+      // }
+      // //----------------------------------------------------------------------------
+      // if (coordinate1 < window.innerWidth / 7 && coordinate1 > 0) {
+      //   $(item1)[0].id = "item0";
+      // }
+      // if (coordinate1 > window.innerWidth / 7 && coordinate1 < (window.innerWidth / 7) * 2) {
+      //   $(item1)[0].id = "item1";
+      // }
+      // if (coordinate1 > (window.innerWidth / 7) * 2 && coordinate1 < (window.innerWidth / 7) * 3) {
+      //   $(item1)[0].id = "item2";
+      // }
+      // if (coordinate1 > (window.innerWidth / 7) * 3 && coordinate1 < (window.innerWidth / 7) * 4) {
+      //   $(item1)[0].id = "item3";
+      // }
+      // if (coordinate1 > (window.innerWidth / 7) * 4 && coordinate1 < (window.innerWidth / 7) * 5) {
+      //   $(item1)[0].id = "item2";
+      // }
+      // if (coordinate1 > (window.innerWidth / 7) * 5 && coordinate1 < (window.innerWidth / 7) * 6) {
+      //   $(item1)[0].id = "item1";
+      // }
+      // if (coordinate1 > (window.innerWidth / 7) * 6 && coordinate1 < window.innerWidth) {
+      //   $(item1)[0].id = "item0";
+      // }
+      // //----------------------------------------------------------------------------
+      // if (coordinate2 < window.innerWidth / 7 && coordinate2 > 0) {
+      //   $(item2)[0].id = "item0";
+      // }
+      // if (coordinate2 > window.innerWidth / 7 && coordinate2 < (window.innerWidth / 7) * 2) {
+      //   $(item2)[0].id = "item1";
+      // }
+      // if (coordinate2 > (window.innerWidth / 7) * 2 && coordinate2 < (window.innerWidth / 7) * 3) {
+      //   $(item2)[0].id = "item2";
+      // }
+      // if (coordinate2 > (window.innerWidth / 7) * 3 && coordinate2 < (window.innerWidth / 7) * 4) {
+      //   $(item2)[0].id = "item3";
+      // }
+      // if (coordinate2 > (window.innerWidth / 7) * 4 && coordinate2 < (window.innerWidth / 7) * 5) {
+      //   $(item2)[0].id = "item2";
+      // }
+      // if (coordinate2 > (window.innerWidth / 7) * 5 && coordinate2 < (window.innerWidth / 7) * 6) {
+      //   $(item2)[0].id = "item1";
+      // }
+      // if (coordinate2 > (window.innerWidth / 7) * 6 && coordinate2 < window.innerWidth) {
+      //   $(item2)[0].id = "item0";
+      // }
+      // //----------------------------------------------------------------------------
+      // if (coordinate3 < window.innerWidth / 7 && coordinate3 > 0) {
+      //   $(item3)[0].id = "item0";
+      // }
+      // if (coordinate3 > window.innerWidth / 7 && coordinate3 < (window.innerWidth / 7) * 2) {
+      //   $(item3)[0].id = "item1";
+      // }
+      // if (coordinate3 > (window.innerWidth / 7) * 2 && coordinate3 < (window.innerWidth / 7) * 3) {
+      //   $(item3)[0].id = "item2";
+      // }
+      // if (coordinate3 > (window.innerWidth / 7) * 3 && coordinate3 < (window.innerWidth / 7) * 4) {
+      //   $(item3)[0].id = "item3";
+      // }
+      // if (coordinate3 > (window.innerWidth / 7) * 4 && coordinate3 < (window.innerWidth / 7) * 5) {
+      //   $(item3)[0].id = "item2";
+      // }
+      // if (coordinate3 > (window.innerWidth / 7) * 5 && coordinate3 < (window.innerWidth / 7) * 6) {
+      //   $(item3)[0].id = "item1";
+      // }
+      // if (coordinate3 > (window.innerWidth / 7) * 6 && coordinate3 < window.innerWidth) {
+      //   $(item3)[0].id = "item0";
+      // }
+      // //----------------------------------------------------------------------------
+      // if (coordinate4 < window.innerWidth / 7 && coordinate4 > 0) {
+      //   $(item4)[0].id = "item0";
+      // }
+      // if (coordinate4 > window.innerWidth / 7 && coordinate4 < (window.innerWidth / 7) * 2) {
+      //   $(item4)[0].id = "item1";
+      // }
+      // if (coordinate4 > (window.innerWidth / 7) * 2 && coordinate4 < (window.innerWidth / 7) * 3) {
+      //   $(item4)[0].id = "item2";
+      // }
+      // if (coordinate4 > (window.innerWidth / 7) * 3 && coordinate4 < (window.innerWidth / 7) * 4) {
+      //   $(item4)[0].id = "item3";
+      // }
+      // if (coordinate4 > (window.innerWidth / 7) * 4 && coordinate4 < (window.innerWidth / 7) * 5) {
+      //   $(item4)[0].id = "item2";
+      // }
+      // if (coordinate4 > (window.innerWidth / 7) * 5 && coordinate4 < (window.innerWidth / 7) * 6) {
+      //   $(item4)[0].id = "item1";
+      // }
+      // if (coordinate4 > (window.innerWidth / 7) * 6 && coordinate4 < window.innerWidth) {
+      //   $(item4)[0].id = "item0";
+      // }
+      // //----------------------------------------------------------------------------
+      // if (coordinate5 < window.innerWidth / 7 && coordinate5 > 0) {
+      //   $(item5)[0].id = "item0";
+      // }
+      // if (coordinate5 > window.innerWidth / 7 && coordinate5 < (window.innerWidth / 7) * 2) {
+      //   $(item5)[0].id = "item1";
+      // }
+      // if (coordinate5 > (window.innerWidth / 7) * 2 && coordinate5 < (window.innerWidth / 7) * 3) {
+      //   $(item5)[0].id = "item2";
+      // }
+      // if (coordinate5 > (window.innerWidth / 7) * 3 && coordinate5 < (window.innerWidth / 7) * 4) {
+      //   $(item5)[0].id = "item3";
+      // }
+      // if (coordinate5 > (window.innerWidth / 7) * 4 && coordinate5 < (window.innerWidth / 7) * 5) {
+      //   $(item5)[0].id = "item2";
+      // }
+      // if (coordinate5 > (window.innerWidth / 7) * 5 && coordinate5 < (window.innerWidth / 7) * 6) {
+      //   $(item5)[0].id = "item1";
+      // }
+      // if (coordinate5 > (window.innerWidth / 7) * 6 && coordinate5 < window.innerWidth) {
+      //   $(item5)[0].id = "item0";
+      // }
+      // //----------------------------------------------------------------------------
+      // if (coordinate6 < window.innerWidth / 7 && coordinate6 > 0) {
+      //   $(item6)[0].id = "item0";
+      // }
+      // if (coordinate6 > window.innerWidth / 7 && coordinate6 < (window.innerWidth / 7) * 2) {
+      //   $(item6)[0].id = "item1";
+      // }
+      // if (coordinate6 > (window.innerWidth / 7) * 2 && coordinate6 < (window.innerWidth / 7) * 3) {
+      //   $(item6)[0].id = "item2";
+      // }
+      // if (coordinate6 > (window.innerWidth / 7) * 3 && coordinate6 < (window.innerWidth / 7) * 4) {
+      //   $(item6)[0].id = "item3";
+      // }
+      // if (coordinate6 > (window.innerWidth / 7) * 4 && coordinate6 < (window.innerWidth / 7) * 5) {
+      //   $(item6)[0].id = "item2";
+      // }
+      // if (coordinate6 > (window.innerWidth / 7) * 5 && coordinate6 < (window.innerWidth / 7) * 6) {
+      //   $(item6)[0].id = "item1";
+      // }
+      // if (coordinate6 > (window.innerWidth / 7) * 6 && coordinate6 < window.innerWidth) {
+      //   $(item6)[0].id = "item0";
+      //   // }
+      // }
       //  console.log($(item6));
       window.requestAnimationFrame(updatescroll);
     }

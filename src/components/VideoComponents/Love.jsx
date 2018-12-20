@@ -1,6 +1,9 @@
 import React, {Component} from 'react';
 import happyMP4 from '../../assets/videos/experience2/mp4/in_love.mp4';
 import happyWebM from "../../assets/videos/experience2/webm/alive.webm";
+import facebook from "../../assets/images/main/facebook-logo-button.svg";
+import twitter from "../../assets/images/main/twitter-logo-button.svg";
+import google from "../../assets/images/main/google-plus-logo-button.svg";
 // import happyMP3 from "../../assets/audio/happy.mp3";
 import featherClick from "../../assets/images/experience2/cursor/feather-click.png";
 import featherClicked from "../../assets/images/experience2/cursor/feather-clicked.png";
@@ -23,6 +26,7 @@ export default class Happy extends Component {
     constructor(props) {
         super(props);
         this.state = {
+            mood: "love",
             mute: false,
             strikeThrough: "menu__bottom--love",
             displayCursor: true,
@@ -95,17 +99,12 @@ export default class Happy extends Component {
     };
 
     mute = () => {
-        if (this.state.strikeThrough === "menu__bottom--love") {
-            this.setState({strikeThrough: "menu__bottom--love strikethrough"});
+        if (this.state.strikeThrough === `menu__bottom--${this.state.mood}`) {
+            this.setState({strikeThrough: `menu__bottom--${this.state.mood} strikethrough`});
         } else {
-            this.setState({strikeThrough: "menu__bottom--love"});
+            this.setState({strikeThrough: `menu__bottom--${this.state.mood}`});
         }
-        // if (this.state.strikeThrough === "menu__bottom--happy strikethrough") {
-        //     this.video.current.muted = true;
-        // } else{
-        //     this.video.current.muted = false;
-        // }
-        this.state.strikeThrough === "menu__bottom--happy strikethrough"
+        this.state.strikeThrough === `menu__bottom--${this.state.mood} strikethrough`
             ? this.video.current.muted = false :
             this.video.current.muted = true;
 
@@ -123,6 +122,10 @@ export default class Happy extends Component {
     loaded = () => {
         this.setState({loader: "loading loaded"});
         this.video.current.play();
+    };
+
+    share = () => {
+
     };
 
     componentDidMount() {
@@ -168,7 +171,8 @@ export default class Happy extends Component {
                             <Link className="menu__top--link" to={'/SmellMenu'}>
                                 <div onMouseOver={this.hide}
                                      onMouseOut={this.display}
-                                     className="menu__top--button menu__circle--top menu__circle--inLove">
+                                     className="menu__top--button menu__circle--top
+                                     menu__circle--inLove">
                                     <p>Back</p>
                                 </div>
                             </Link>
@@ -178,7 +182,10 @@ export default class Happy extends Component {
                             <div onMouseOver={this.hide}
                                  onMouseOut={this.display}
                                  className="menu__bottom--button menu__bottom--side">
-                                <p className="menu__bottom--love">Share</p>
+                                <p className="menu__bottom--love"
+                                   onClick={this.share}>
+                                    Share
+                                </p>
                             </div>
                             <div onMouseOver={this.hide}
                                  onMouseOut={this.display}
@@ -198,6 +205,22 @@ export default class Happy extends Component {
                             <span className="LetPerfumeTalkByMane__experienceName--small">&nbsp;by MANE</span>
                         </p>
                     </div>
+                    <div className="letPerfumeTalk__share small-rhombus">
+                        <div className="letPerfumeTalk__share--close">
+                            <p>Close</p>
+                        </div>
+                        <div className="letPerfumeTalk__share--media
+                        menu__circle--inLove animation">
+                            <div className="letPerfumeTalk__share--container">
+                                <h3>Share your<br/>experience</h3>
+                                <div className="letPerfumeTalk__share--icons">
+                                    <img src={facebook} alt="facebook icon"/>
+                                    <img src={twitter} alt="twitter icon"/>
+                                    <img src={google} alt="google icon"/>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
                 </main>
                 <div onClick={this.clicked}
                      onMouseMove={this.setCoordinates}
@@ -211,6 +234,7 @@ export default class Happy extends Component {
                         </div>
                     </div>
                 </div>
+
             </React.Fragment>
         )
     }

@@ -23,6 +23,7 @@ export default class Happy extends Component {
     constructor(props) {
         super(props);
         this.state = {
+            mood: "natural",
             mute: false,
             strikeThrough: "menu__bottom--natural",
             displayCursor: true,
@@ -95,17 +96,12 @@ export default class Happy extends Component {
     };
 
     mute = () => {
-        if (this.state.strikeThrough === "menu__bottom--natural") {
-            this.setState({strikeThrough: "menu__bottom--natural strikethrough"});
+        if (this.state.strikeThrough === `menu__bottom--${this.state.mood}`) {
+            this.setState({strikeThrough: `menu__bottom--${this.state.mood} strikethrough`});
         } else {
-            this.setState({strikeThrough: "menu__bottom--natural"});
+            this.setState({strikeThrough: `menu__bottom--${this.state.mood}`});
         }
-        // if (this.state.strikeThrough === "menu__bottom--happy strikethrough") {
-        //     this.video.current.muted = true;
-        // } else{
-        //     this.video.current.muted = false;
-        // }
-        this.state.strikeThrough === "menu__bottom--happy strikethrough"
+        this.state.strikeThrough === `menu__bottom--${this.state.mood} strikethrough`
             ? this.video.current.muted = false :
             this.video.current.muted = true;
 

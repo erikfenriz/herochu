@@ -74,8 +74,8 @@
 
     .experience__link--title {
       font: {
-        family: 'Neutra display', sans-serif;
-        weight: 200;
+        family: 'neutra_display_light', sans-serif;
+        weight: 400;
         size: 30px;
       }
       margin: 0;
@@ -126,9 +126,9 @@
 
     .experience__link--entry {
       font: {
-        family: 'Neutra display', sans-serif;
-        weight: 800;
-        size: 20px;
+        family: 'neutra_text_bold', sans-serif;
+        weight: 200;
+        size: 19px;
       }
       @media (max-width: 1400px) {
         font-size: 17px;

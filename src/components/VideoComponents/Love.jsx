@@ -1,6 +1,9 @@
 import React, {Component} from 'react';
 import happyMP4 from '../../assets/videos/experience2/mp4/in_love.mp4';
 import happyWebM from "../../assets/videos/experience2/webm/alive.webm";
+import facebook from "../../assets/images/main/facebook-logo-button.svg";
+import twitter from "../../assets/images/main/twitter-logo-button.svg";
+import google from "../../assets/images/main/google-plus-logo-button.svg";
 // import happyMP3 from "../../assets/audio/happy.mp3";
 import featherClick from "../../assets/images/experience2/cursor/feather-click.png";
 import featherClicked from "../../assets/images/experience2/cursor/feather-clicked.png";
@@ -168,7 +171,8 @@ export default class Happy extends Component {
                             <Link className="menu__top--link" to={'/SmellMenu'}>
                                 <div onMouseOver={this.hide}
                                      onMouseOut={this.display}
-                                     className="menu__top--button menu__circle--top menu__circle--inLove">
+                                     className="menu__top--button menu__circle--top
+                                     menu__circle--inLove">
                                     <p>Back</p>
                                 </div>
                             </Link>
@@ -201,21 +205,22 @@ export default class Happy extends Component {
                             <span className="LetPerfumeTalkByMane__experienceName--small">&nbsp;by MANE</span>
                         </p>
                     </div>
-                    {/*<div className="letPerfumeTalk__share small-rhombus">*/}
-                        {/*<div className="letPerfumeTalk__share--close">*/}
-                            {/*<p>Close</p>*/}
-                        {/*</div>*/}
-                        {/*<div className="letPerfumeTalk__share--media menu__circle--inLove animation">*/}
-                            {/*<h3>Share your<br/>experience</h3>*/}
-                            {/*<img src="../../assets/images/main/twitter.png" alt=""/>*/}
-
-                            {/*<div>*/}
-                                {/*<img src="../../assets/images/main/twitter.png" alt=""/>*/}
-                                {/*<img src="../../assets/images/main/twitter-logo-button.svg" alt=""/>*/}
-                                {/*<img src="../../assets/images/main/twitter-logo-button.svg" alt=""/>*/}
-                            {/*</div>*/}
-                        {/*</div>*/}
-                    {/*</div>*/}
+                    <div className="letPerfumeTalk__share small-rhombus">
+                        <div className="letPerfumeTalk__share--close">
+                            <p>Close</p>
+                        </div>
+                        <div className="letPerfumeTalk__share--media
+                        menu__circle--inLove animation">
+                            <div className="letPerfumeTalk__share--container">
+                                <h3>Share your<br/>experience</h3>
+                                <div className="letPerfumeTalk__share--icons">
+                                    <img src={facebook} alt="facebook icon"/>
+                                    <img src={twitter} alt="twitter icon"/>
+                                    <img src={google} alt="google icon"/>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
                 </main>
                 <div onClick={this.clicked}
                      onMouseMove={this.setCoordinates}

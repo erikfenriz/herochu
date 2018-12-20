@@ -25,6 +25,10 @@
 styles/.sass-cache
 styles/.sass-cache/*
 
+# compiled files
+styles/style.css
+styles/style.css.map
+
 npm-debug.log*
 yarn-debug.log*
 yarn-error.log*

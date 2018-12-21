@@ -1162,11 +1162,23 @@ main.main-page {
   100% {
     transform: scale(1.4);
     opacity: 0; } }
-@keyframes share {
+@keyframes shareComesIn {
   0% {
     transform: scale(0) rotate(45deg); }
   100% {
     transform: scale(1) rotate(45deg); } }
+@keyframes shareGoesOut {
+  0% {
+    transform: scale(1) rotate(45deg); }
+  100% {
+    transform: scale(0) rotate(45deg); } }
+@keyframes shareGoesOut--delay {
+  0% {
+    transform: scale(1) rotate(45deg); }
+  40% {
+    transform: scale(1) rotate(45deg); }
+  100% {
+    transform: scale(0) rotate(45deg); } }
 @keyframes loadingTop {
   0% {
     transform: translateY(-100px); }
@@ -1182,6 +1194,8 @@ main.main-page {
   font-weight: 600;
   font-size: 14px;
   cursor: none; }
+  .letPerfumeTalk.cursor {
+    cursor: auto; }
   .letPerfumeTalk > * {
     -webkit-user-select: none;
     -moz-user-select: none;
@@ -1457,9 +1471,9 @@ main.main-page {
           transition: color 400ms; }
           .letPerfumeTalk .menu__bottom .menu__bottom--side .menu__bottom--happy:hover {
             color: yellow; }
-        .letPerfumeTalk .menu__bottom .menu__bottom--side .menu__bottom--love {
+        .letPerfumeTalk .menu__bottom .menu__bottom--side .menu__bottom--inLove {
           transition: color 400ms; }
-          .letPerfumeTalk .menu__bottom .menu__bottom--side .menu__bottom--love:hover {
+          .letPerfumeTalk .menu__bottom .menu__bottom--side .menu__bottom--inLove:hover {
             color: #DE76B7; }
         .letPerfumeTalk .menu__bottom .menu__bottom--side .menu__bottom--natural {
           transition: color 400ms; }
@@ -1511,10 +1525,11 @@ main.main-page {
         text-transform: none;
         font-size: 12px;
         font-weight: 600; }
-      @media (max-width: 700px) {
+      @media (max-width: 800px) {
         .letPerfumeTalk .LetPerfumeTalkByMane__experienceName {
           display: none; } }
   .letPerfumeTalk__share {
+    width: 100%;
     transition: all;
     display: flex;
     justify-content: center;
@@ -1523,12 +1538,13 @@ main.main-page {
     vertical-align: middle;
     text-align: center;
     top: 0;
-    left: 0;
     bottom: 0;
-    right: 200px;
     font-family: 'neutra_display_medium', sans-serif;
     letter-spacing: 2px;
     z-index: 10; }
+    .letPerfumeTalk__share > * {
+      position: relative;
+      right: 100px; }
     .letPerfumeTalk__share--close {
       display: flex;
       font-size: 16px;
@@ -1541,8 +1557,12 @@ main.main-page {
       text-align: center;
       justify-content: center;
       align-items: center;
-      animation: share 500ms 2.5s forwards;
       transform: scale(0); }
+      .letPerfumeTalk__share--close.comesIn {
+        z-index: 10;
+        animation: shareComesIn 500ms 300ms forwards; }
+      .letPerfumeTalk__share--close.goesOut {
+        animation: shareGoesOut 500ms forwards; }
       .letPerfumeTalk__share--close p {
         position: relative;
         top: 4px;
@@ -1621,8 +1641,11 @@ main.main-page {
       justify-content: center;
       align-items: center;
       font-size: 20px;
-      flex-direction: column;
-      animation: share 1s 2s forwards; }
+      flex-direction: column; }
+      .letPerfumeTalk__share--media.comesIn {
+        animation: shareComesIn 500ms forwards; }
+      .letPerfumeTalk__share--media.goesOut {
+        animation: shareGoesOut--delay 700ms forwards; }
       .letPerfumeTalk__share--media .letPerfumeTalk__share--container {
         display: flex;
         transform: rotate(45deg);

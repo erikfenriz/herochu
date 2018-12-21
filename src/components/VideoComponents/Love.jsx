@@ -9,7 +9,7 @@ import featherClick from "../../assets/images/experience2/cursor/feather-click.p
 import featherClicked from "../../assets/images/experience2/cursor/feather-clicked.png";
 import {rotatingCursor} from "./cursor";
 // import {TweenMax} from "gsap/TweenMax";
-// import $ from 'jquery';
+import $ from 'jquery';
 import pineapple from '../../assets/images/experience2/elements/happy/gr_ananas.png';
 import sun from '../../assets/images/experience2/elements/happy/gr_sun.png';
 import {Link} from "react-router-dom";
@@ -17,7 +17,6 @@ import {Link} from "react-router-dom";
 // import candy2 from '../../assets/images/experience2/elements/happy/gr_candy2.png';
 // import iceCream from '../../assets/images/experience2/elements/happy/gr_icecream.png';
 // import note from '../../assets/images/experience2/elements/happy/gr_musicnote.png';
-
 export default class Happy extends Component {
     setTitle = () => {
         document.title = "Feeling in love today? Let Perfume Talk by MANE";
@@ -26,26 +25,32 @@ export default class Happy extends Component {
     constructor(props) {
         super(props);
         this.state = {
-            mood: "love",
+            mood: "inLove",
             mute: false,
-            strikeThrough: "menu__bottom--love",
+            play: true,
+            strikeThrough: "menu__bottom--inLove",
             displayCursor: true,
+            isSharing: false,
             cursor: "cursor__click",
             x: Number,
             y: Number,
             element: [],
-            loader: "loading"
+            loader: "loading",
+            shareMedia: `letPerfumeTalk__share--media menu__circle--inLove`,
+            shareClose: `letPerfumeTalk__share--close`,
+            mainClassToggleCursor: "letPerfumeTalk"
         };
         this.video = React.createRef();
         // this.audio = React.createRef();
-        this.test = React.createRef();
         this.setCoordinates = this.setCoordinates.bind(this);
     };
 
     setCoordinates = e => {
         this.setState({x: e.pageX, y: e.pageY});
         if (this.video.current)
-            if ((e.buttons === 1 || e.which === 1) && this.state.displayCursor === true) {
+            if ((e.buttons === 1 || e.which === 1) &&
+                this.state.displayCursor === true &&
+                this.state.isSharing === false) {
                 if (this.video.current.currentTime < 5) {
                     let element = React.createElement('img', {
                         src: sun,
@@ -98,6 +103,18 @@ export default class Happy extends Component {
         this.setState({displayCursor: true});
     };
 
+    hideCursorClicked = () => {
+        const cursor = document.getElementById('cursor');
+        cursor.style.zIndex = '-10';
+        this.setState({displayCursor: false});
+    };
+
+    displayCursorClicked = () => {
+        const cursor = document.getElementById('cursor');
+        cursor.style.zIndex = '1';
+        this.setState({displayCursor: true});
+    };
+
     mute = () => {
         if (this.state.strikeThrough === `menu__bottom--${this.state.mood}`) {
             this.setState({strikeThrough: `menu__bottom--${this.state.mood} strikethrough`});
@@ -111,8 +128,11 @@ export default class Happy extends Component {
         console.log(this.video.current.muted);
     };
 
-    clicked = () => {
-        this.video.current.play();
+    mouseFirstClick = (e) => {
+        e.stopPropagation();
+        if (!this.state.isSharing) {
+            this.video.current.play();
+        }
         // this.video.current.muted = false;
         this.setState({
             cursor: "cursor__click--clicked"
@@ -120,12 +140,60 @@ export default class Happy extends Component {
     };
 
     loaded = () => {
-        this.setState({loader: "loading loaded"});
-        this.video.current.play();
+        if (this.video.current) {
+            this.setState({loader: "loading loaded"});
+            this.video.current.play();
+        }
     };
 
-    share = () => {
+    shareSwitcher = () => {
+        this.setState(prevState => ({
+            isSharing: !prevState.isSharing
+        }));
+        if (this.state.mainClassToggleCursor === "letPerfumeTalk") {
+            this.setState({mainClassToggleCursor: "letPerfumeTalk cursor"});
+        } else if (this.state.mainClassToggleCursor === "letPerfumeTalk cursor") {
+            this.setState({mainClassToggleCursor: "letPerfumeTalk"});
+        }
+    };
 
+    shareIn = (e) => {
+        e.stopPropagation();
+        if (this.state.isSharing === false) {
+            this.hideCursorClicked();
+            this.shareSwitcher();
+            this.video.current.pause();
+            if (this.state.shareClose === "letPerfumeTalk__share--close" &&
+                this.state.shareMedia === `letPerfumeTalk__share--media menu__circle--${this.state.mood}`) {
+                this.setState({
+                    shareClose: "letPerfumeTalk__share--close comesIn",
+                    shareMedia: `letPerfumeTalk__share--media menu__circle--${this.state.mood} comesIn`
+                });
+            } else if (this.state.shareClose.includes("goesOut") &&
+                this.state.shareMedia.includes("goesOut")) {
+                this.setState({
+                    shareClose: "letPerfumeTalk__share--close comesIn",
+                    shareMedia: `letPerfumeTalk__share--media menu__circle--${this.state.mood} comesIn`
+                });
+            }
+        }
+    };
+
+    shareOut = (e) => {
+        e.stopPropagation();
+        if (this.state.isSharing === true) {
+            this.displayCursorClicked();
+
+            if (this.state.shareClose.includes("comesIn") &&
+                this.state.shareMedia.includes("comesIn")) {
+                this.setState({
+                    shareClose: "letPerfumeTalk__share--close goesOut",
+                    shareMedia: `letPerfumeTalk__share--media menu__circle--${this.state.mood} goesOut`
+                });
+            }
+            setTimeout(this.shareSwitcher, 100);
+            this.video.current.play();
+        }
     };
 
     componentDidMount() {
@@ -143,9 +211,9 @@ export default class Happy extends Component {
     render() {
         return (
             <React.Fragment>
-                <main onClick={this.clicked}
+                <main onClick={this.mouseFirstClick}
                       onMouseMove={this.setCoordinates}
-                      className="letPerfumeTalk"
+                      className={this.state.mainClassToggleCursor}
                 >
                     <video className="letPerfumeTalk__video"
                            autoPlay={true}
@@ -171,8 +239,8 @@ export default class Happy extends Component {
                             <Link className="menu__top--link" to={'/SmellMenu'}>
                                 <div onMouseOver={this.hide}
                                      onMouseOut={this.display}
-                                     className="menu__top--button menu__circle--top
-                                     menu__circle--inLove">
+                                     className={`menu__top--button menu__circle--top
+                                     menu__circle--${this.state.mood}`}>
                                     <p>Back</p>
                                 </div>
                             </Link>
@@ -182,15 +250,15 @@ export default class Happy extends Component {
                             <div onMouseOver={this.hide}
                                  onMouseOut={this.display}
                                  className="menu__bottom--button menu__bottom--side">
-                                <p className="menu__bottom--love"
-                                   onClick={this.share}>
+                                <p className={`menu__bottom--${this.state.mood}`}
+                                   onClick={this.shareIn}>
                                     Share
                                 </p>
                             </div>
                             <div onMouseOver={this.hide}
                                  onMouseOut={this.display}
-                                 className="menu__bottom--button menu__circle--bottom menu__circle--inLove">
-                                <p>Inlove</p>
+                                 className={`menu__bottom--button menu__circle--bottom menu__circle--${this.state.mood}`}>
+                                <p>{this.state.mood}</p>
                             </div>
                             <div onMouseOver={this.hide}
                                  onMouseOut={this.display}
@@ -205,12 +273,13 @@ export default class Happy extends Component {
                             <span className="LetPerfumeTalkByMane__experienceName--small">&nbsp;by MANE</span>
                         </p>
                     </div>
-                    <div className="letPerfumeTalk__share small-rhombus">
-                        <div className="letPerfumeTalk__share--close">
+                    <div className="letPerfumeTalk__share">
+                        <div className={this.state.shareClose}
+                             onClick={this.shareOut}
+                        >
                             <p>Close</p>
                         </div>
-                        <div className="letPerfumeTalk__share--media
-                        menu__circle--inLove animation">
+                        <div className={this.state.shareMedia}>
                             <div className="letPerfumeTalk__share--container">
                                 <h3>Share your<br/>experience</h3>
                                 <div className="letPerfumeTalk__share--icons">
@@ -222,7 +291,7 @@ export default class Happy extends Component {
                         </div>
                     </div>
                 </main>
-                <div onClick={this.clicked}
+                <div onClick={this.mouseFirstClick}
                      onMouseMove={this.setCoordinates}
                      className={this.state.loader}>
                     <div className="loading__text">
@@ -234,7 +303,6 @@ export default class Happy extends Component {
                         </div>
                     </div>
                 </div>
-
             </React.Fragment>
         )
     }

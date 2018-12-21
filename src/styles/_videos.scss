@@ -11,13 +11,33 @@
   }
 }
 
-@keyframes share {
+@keyframes shareComesIn {
   0% {
     transform: scale(0) rotate(45deg);
-
   }
   100% {
     transform: scale(1) rotate(45deg);
+  }
+}
+
+@keyframes shareGoesOut {
+  0% {
+    transform: scale(1) rotate(45deg);
+  }
+  100% {
+    transform: scale(0) rotate(45deg);
+  }
+}
+
+@keyframes shareGoesOut--delay {
+  0% {
+    transform: scale(1) rotate(45deg);
+  }
+  40% {
+    transform: scale(1) rotate(45deg);
+  }
+  100% {
+    transform: scale(0) rotate(45deg);
   }
 }
 
@@ -81,6 +101,10 @@
     size: 14px;
   }
   cursor: none;
+
+  &.cursor {
+    cursor: auto;
+  }
 
   & > * {
     -webkit-user-select: none;
@@ -163,7 +187,6 @@
       z-index: 20;
 
       .menu__bottom--button {
-
         transform: translateY(50px);
       }
 
@@ -219,7 +242,7 @@
           }
         }
 
-        .menu__bottom--love {
+        .menu__bottom--inLove {
           transition: color 400ms;
 
           &:hover {
@@ -305,13 +328,14 @@
         }
       }
 
-      @media (max-width: 700px) {
+      @media (max-width: 800px) {
         display: none;
       }
     }
   }
 
   &__share {
+    width: 100%;
     transition: all;
     display: flex;
     justify-content: center;
@@ -320,12 +344,15 @@
     vertical-align: middle;
     text-align: center;
     top: 0;
-    left: 0;
     bottom: 0;
-    right: 200px;
     font-family: 'neutra_display_medium', sans-serif;
     letter-spacing: 2px;
     z-index: 10;
+
+    > * {
+      position: relative;
+      right: 100px;
+    }
 
     &--close {
       display: flex;
@@ -339,8 +366,16 @@
       text-align: center;
       justify-content: center;
       align-items: center;
-      animation: share 500ms 2.5s forwards;
       transform: scale(0);
+
+      &.comesIn {
+        z-index: 10;
+        animation: shareComesIn 500ms 300ms forwards;
+      }
+
+      &.goesOut {
+        animation: shareGoesOut 500ms forwards;
+      }
 
       p {
         position: relative;
@@ -363,7 +398,14 @@
       align-items: center;
       font-size: 20px;
       flex-direction: column;
-      animation: share 1s 2s forwards;
+
+      &.comesIn {
+        animation: shareComesIn 500ms forwards;
+      }
+
+      &.goesOut {
+        animation: shareGoesOut--delay 700ms forwards;
+      }
 
       .letPerfumeTalk__share--container {
         display: flex;

@@ -4,12 +4,12 @@ import happyWebM from "../../assets/videos/experience2/webm/alive.webm";
 import facebook from "../../assets/images/main/facebook-logo-button.svg";
 import twitter from "../../assets/images/main/twitter-logo-button.svg";
 import google from "../../assets/images/main/google-plus-logo-button.svg";
-// import happyMP3 from "../../assets/audio/happy.mp3";
+import MP3 from "../../assets/audio/in_love.mp3";
 import featherClick from "../../assets/images/experience2/cursor/feather-click.png";
 import featherClicked from "../../assets/images/experience2/cursor/feather-clicked.png";
 import {rotatingCursor} from "./cursor";
 // import {TweenMax} from "gsap/TweenMax";
-import $ from 'jquery';
+// import $ from 'jquery';
 import pineapple from '../../assets/images/experience2/elements/happy/gr_ananas.png';
 import sun from '../../assets/images/experience2/elements/happy/gr_sun.png';
 import {Link} from "react-router-dom";
@@ -17,6 +17,7 @@ import {Link} from "react-router-dom";
 // import candy2 from '../../assets/images/experience2/elements/happy/gr_candy2.png';
 // import iceCream from '../../assets/images/experience2/elements/happy/gr_icecream.png';
 // import note from '../../assets/images/experience2/elements/happy/gr_musicnote.png';
+
 export default class Happy extends Component {
     setTitle = () => {
         document.title = "Feeling in love today? Let Perfume Talk by MANE";
@@ -28,6 +29,7 @@ export default class Happy extends Component {
             mood: "inLove",
             mute: false,
             play: true,
+            audioPlayBack: false,
             strikeThrough: "menu__bottom--inLove",
             displayCursor: true,
             isSharing: false,
@@ -41,7 +43,7 @@ export default class Happy extends Component {
             mainClassToggleCursor: "letPerfumeTalk"
         };
         this.video = React.createRef();
-        // this.audio = React.createRef();
+        this.audio = React.createRef();
         this.setCoordinates = this.setCoordinates.bind(this);
     };
 
@@ -87,8 +89,9 @@ export default class Happy extends Component {
             }
     };
 
-    playVideo = () => {
+    playContent = () => {
         this.video.current.play();
+        this.audio.current.play();
     };
 
     hide = () => {
@@ -122,8 +125,8 @@ export default class Happy extends Component {
             this.setState({strikeThrough: `menu__bottom--${this.state.mood}`});
         }
         this.state.strikeThrough === `menu__bottom--${this.state.mood} strikethrough`
-            ? this.video.current.muted = false :
-            this.video.current.muted = true;
+            ? this.audio.current.muted = false :
+            this.audio.current.muted = true;
 
         console.log(this.video.current.muted);
     };
@@ -132,8 +135,12 @@ export default class Happy extends Component {
         e.stopPropagation();
         if (!this.state.isSharing) {
             this.video.current.play();
+            this.audio.current.play();
+            if (!this.state.audioPlayBack) {
+                this.audio.current.currentTime = this.video.current.currentTime;
+                this.setState({audioPlayBack: true});
+            }
         }
-        // this.video.current.muted = false;
         this.setState({
             cursor: "cursor__click--clicked"
         });
@@ -163,6 +170,7 @@ export default class Happy extends Component {
             this.hideCursorClicked();
             this.shareSwitcher();
             this.video.current.pause();
+            this.audio.current.pause();
             if (this.state.shareClose === "letPerfumeTalk__share--close" &&
                 this.state.shareMedia === `letPerfumeTalk__share--media menu__circle--${this.state.mood}`) {
                 this.setState({
@@ -193,6 +201,11 @@ export default class Happy extends Component {
             }
             setTimeout(this.shareSwitcher, 100);
             this.video.current.play();
+            this.audio.current.play();
+            if (!this.state.audioPlayBack) {
+                this.audio.current.currentTime = this.video.current.currentTime;
+                this.setState({audioPlayBack: true});
+            }
         }
     };
 
@@ -200,7 +213,7 @@ export default class Happy extends Component {
         this.setTitle();
         document.addEventListener('contextmenu', event => event.preventDefault());
         rotatingCursor.initialize();
-        this.playVideo();
+        this.playContent();
         this.setCoordinates.bind(this);
         document.addEventListener('click', this.setCoordinates);
         // document.addEventListener('mousemove', this.setCoordinates);
@@ -218,16 +231,17 @@ export default class Happy extends Component {
                     <video className="letPerfumeTalk__video"
                            autoPlay={true}
                            loop={true}
-                           muted={false}
+                           muted={true}
                            ref={this.video}
                     >
                         <source src={happyMP4} type='video/mp4; codecs="avc1.4D401E, mp4a.40.2"'/>
                         <source src={happyWebM} type="video/webm"/>
                     </video>
-                    {/*<audio autoPlay*/}
-                    {/*ref={this.audio}>*/}
-                    {/*<source src={happyMP3} type="audio/mpeg"/>*/}
-                    {/*</audio>*/}
+                    <audio autoPlay
+                           loop
+                           ref={this.audio}>
+                        <source src={MP3} type="audio/mpeg"/>
+                    </audio>
                     {this.state.element}
                     <div ref="cursor" id="cursor">
                         <img className={this.state.cursor} alt="feather" src={featherClick}/>
@@ -249,9 +263,9 @@ export default class Happy extends Component {
                         <div className="menu__bottom">
                             <div onMouseOver={this.hide}
                                  onMouseOut={this.display}
+                                 onClick={this.shareIn}
                                  className="menu__bottom--button menu__bottom--side">
-                                <p className={`menu__bottom--${this.state.mood}`}
-                                   onClick={this.shareIn}>
+                                <p className={`menu__bottom--${this.state.mood}`}>
                                     Share
                                 </p>
                             </div>

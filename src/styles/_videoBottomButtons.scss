@@ -1,0 +1,38 @@
+@mixin bottomButton {
+  .menu__bottom--alive,
+  .menu__bottom--happy,
+  .menu__bottom--inLove,
+  .menu__bottom--natural,
+  .menu__bottom--rebellious,
+  .menu__bottom--sexy,
+  .menu__bottom--zen {
+    transition: color 400ms;
+  }
+  &:hover > .menu__bottom--alive {
+    color: #00DF6C;
+  }
+
+  &:hover > .menu__bottom--happy {
+    color: yellow;
+  }
+
+  &:hover > .menu__bottom--inLove {
+    color: #DE76B7;
+  }
+
+  &:hover > .menu__bottom--natural {
+    color: #86B051;
+  }
+
+  &:hover > .menu__bottom--rebellious {
+    color: red;
+  }
+
+  &:hover > .menu__bottom--sexy {
+    color: yellow;
+  }
+
+  &:hover > .menu__bottom--zen {
+    color: bisque;
+  }
+}

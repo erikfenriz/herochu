@@ -1,7 +1,6 @@
 import React, { Component } from 'react';
 import Slider from "react-slick";
 import { Icon } from "antd";
-import { TweenMax, Expo, Quint } from "gsap/TweenMax";
 import BottleItem from "./BottleItem";
 import citrus_1 from '../../../assets/images/experience2/citrus/citrus_1.gif';
 import citrus_2 from '../../../assets/images/experience2/citrus/citrus_2.gif';

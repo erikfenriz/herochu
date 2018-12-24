@@ -24,7 +24,7 @@ const BottleItem = props => {
     >
     
       <center>
-        <Link to={link}>
+        {/* <Link to={link}>
           { count === 0 &&
             <div style={{ opacity: visible, background: gradient, transition: "0.0s", position: "absolute", borderRadius: "50%",  width: "20px", height: "20px", marginLeft:"95px", marginTop: "160px" }} className="play_circle">
               <p className="play_circle_text1">play</p>
@@ -61,7 +61,7 @@ const BottleItem = props => {
             </div>
           }
 
-        </Link>
+        </Link> */}
         {/* {visible === 0 ? <img className={countItem} alt={name} src={img} /> : <img className={countItem} alt={name} src={imgGif} />} */}
         <div class="monster"></div>
       </center>

@@ -1,0 +1,412 @@
+@import "fonts";
+
+.monster {
+  width: 225px;
+  height: 446px;
+  margin: 2% auto;
+  background: url('../assets/images/experience2/citrus.jpg') left center;
+  animation: play .8s steps(34);
+}
+.monster:hover {
+  background: url('../assets/images/experience2/citrus_revers.jpg') left center;
+  animation: playOut .8s steps(34);
+}
+
+@keyframes play {
+  from   {background-position: -7650px; }
+  to {  background-position: 0px;}
+}
+
+@keyframes playOut {
+  0%   { background-position: -7650px; }
+  100% { background-position: 0px; }
+}
+
+
+
+.smellMenu-page {
+  top: 0;
+  left: 0;
+
+  .smellMenu__title {
+    font: {
+      weight: normal;
+      family: 'neutra_text_book_italic', sans-serif;
+      style: italic;
+      size: 27pt;
+    }
+    padding-left: 40%;
+    margin-bottom: 2%;
+    margin-top: 4%;
+  }
+  .smellMenu__carousel {
+   margin: 50px 50px 10px 0px;
+  }
+  .smellMenu__header{
+    position: fixed;
+    right: 2%; top: 2%;
+    width: 200px;
+  }
+  .twitterShare{
+    padding-right: 5%;
+  }
+  .smellMenu__footer{
+    position: fixed;
+    left: 0; bottom: 0;
+  .smellMenu__footer__text{
+    text-transform: uppercase;
+    font: {
+      // weight: 300;
+      family: 'neutra_display_light', sans-serif;
+      size: 30pt;
+    }
+    // width: 8%;
+    //  padding: 2%;
+  }
+  .smellMenu__footer__mane{
+    font: {
+      weight: 200;
+      family: 'neutra_display_light', sans-serif;
+      size: 12pt;
+    }
+    color:green;
+    // padding-left: 3%;
+  }
+  .smellMenu__footer__left{
+    position: fixed;
+    left: 1%;  bottom: 1%;
+  }
+  .smellMenu__footer__right{
+    position: fixed;
+    width: 300px;
+    right: 1%; bottom: 1%;
+  }
+  .footer__center{
+ padding-bottom: 10%
+  }
+  .smellMenu__footer__right_item{
+    font: {
+      // weight: 900;
+      family: 'neutra_text_demi', sans-serif;
+      size: 8pt;
+    }
+    padding-right: 4%;
+    // padding: 2%;
+
+  }
+}
+.smellMenu__svg{
+  padding-left: 37%;
+  // padding-top: 5%;
+}
+.smellMenu__text__perfume{
+  font: {
+    weight: bolder;
+    family: 'neutra_display_light', sans-serif;
+    size: 15pt;
+  }
+  padding-left: 42%;
+}
+.smellMenu__text__name{
+
+  text-transform: uppercase;
+  font: {
+    // weight: normal;
+    family: 'neutra_display_light', sans-serif;
+    size: 70pt;
+  }
+  letter-spacing: 0.2em;
+  padding-top: 0%;
+  padding-left: 3%;
+}
+
+ .bottle_item:hover .play_circle {
+  -moz-transform: scale(4); 
+  -ms-transform: scale(4); 
+  -webkit-transform: scale(4); 
+  -o-transform: scale(4); 
+  transform: scale(4);
+ }
+
+  .play_circle{
+  // transition: 0.3s;
+  // position: absolute;
+  // border-radius: 50%;
+  // width: 30px;
+  // height: 30px;
+  // margin-left: 90px;
+  // margin-top: 280px;
+}
+
+.play_circle_text{
+  transition: 5s;
+  text-transform: uppercase;
+  font: {
+    weight: 250;
+    family: 'neutra_display_light', sans-serif;
+    size: 5pt;
+  }
+  color:#ffffff;
+  position: absolute;
+  top: 19%;
+  left: 25%;
+}
+.play_circle_text1{
+  transition: 5s;
+  text-transform: uppercase;
+  font: {
+    weight: 250;
+    family: 'neutra_display_light', sans-serif;
+    size: 3pt;
+  }
+  color:#ffffff;
+  position: absolute;
+  top: 22%;
+  left: 28%;
+}
+.play_circle_text2{
+  transition: 5s;
+  text-transform: uppercase;
+  font: {
+    weight: 250;
+    family: 'neutra_display_light', sans-serif;
+    size: 4pt;
+  }
+  color:#ffffff;
+  position: absolute;
+  top: 15%;
+  left: 27%;
+}
+.play_circle_text3{
+  transition: 5s;
+  text-transform: uppercase;
+  font: {
+    weight: 250;
+    family: 'neutra_display_light', sans-serif;
+    size: 5pt;
+  }
+  color:#ffffff;
+  position: absolute;
+  top: 17%;
+  left: 23%;
+}
+}
+.bottle_item {  
+  margin-left: 20px;
+  margin-right: 20px;
+   }
+
+
+   #item0{
+     padding-bottom: 36%;
+     height: 250px;
+     transition: 1s;
+   }
+   #item1{
+    padding-bottom: 27%;
+    transition: 1s;
+    height: 300px;
+  }
+  #item2{
+    padding-bottom: 18%;
+   transition: 1s;
+   height: 350px;
+  }
+  #item3{
+    padding-bottom: 7%;
+    transition: 1s;
+    height: 420px;
+  }
+
+
+
+
+
+
+
+
+
+
+@function set-button-text-color($color) {
+  @if (lightness( $color ) > 40) {
+    @return black;
+  }
+  @else {
+    @return white;
+  }  
+}
+
+// $background-color-dark:black;
+$background-color-light:white;
+
+
+
+$animation-dur: 0.4s;
+$animation-timing-func: cubic-bezier(.78,.1,.19,.91);
+$animation-fill-mode: forwards;
+
+.smellMenu__text__perfume {
+	display: inline-block;
+	position: relative;
+	animation: accent-color-slide-reveal $animation-dur $animation-timing-func $animation-fill-mode;
+  
+	&::after {
+		content: '';
+		position:absolute;
+   		top:0;
+    	bottom:0;
+   		left:0;
+		right: 0;
+		animation: accent-color-slide-reveal-rt $animation-dur $animation-timing-func $animation-fill-mode;
+		transform-origin: left 50%;
+	}
+}
+.smellMenu__text__name, .smellMenu__svg {
+	display: inline-block;
+	padding-top: 5%;
+	position: relative;
+	animation: accent-color-slide-reveal $animation-dur $animation-timing-func $animation-fill-mode;
+  
+	&::after {
+		content: '';
+		position:absolute;
+   		top:0;
+    	bottom:0;
+   		left:0;
+		right: 0;
+		animation: accent-color-slide-reveal-rt $animation-dur $animation-timing-func $animation-fill-mode;
+		transform-origin: left 55%;
+	}
+}
+
+@keyframes accent-color-slide-reveal-rt {
+	0% { 
+		transform: scaleX(0); 
+	}
+	49% { 
+		transform: scaleX(1); 
+		transform-origin: left 50%; 
+	}
+	49.1% { 
+		transform: scaleX(.9); 
+		transform-origin: right 50%; 
+	}
+	100% { 
+		transform: scaleX(0); 
+		transform-origin: right 50%; 
+	}
+}
+
+@keyframes accent-color-slide-reveal {
+	0% { 
+		color: transparent;  
+	}
+	49% { 
+		color: transparent; 
+	}
+	49.1% { 
+		// color: set-button-text-color($background-color-dark); 
+	}
+	100% { 
+		// color: set-button-text-color($background-color-dark); 
+	}
+}
+
+//------------------------------------------------------------------
+.carousel-frame {
+  width: 100%;
+  // margin-bottom: 0.5em;
+  // padding-bottom: 1em;
+  position: relative;
+  overflow-x: scroll;
+  white-space: nowrap;
+}
+.carousel-frame ul {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  list-style: none;
+}
+.carousel-frame li.carousel-item {
+  cursor: pointer;
+  display: inline-block;
+  margin: 0 5px 0 0;
+  padding: 0;
+}
+
+/* хром, сафари */
+.carousel-frame::-webkit-scrollbar { width: 0; }
+
+/* ie 10+ */
+.carousel-frame { -ms-overflow-style: none; }
+
+/* фф (свойство больше не работает, других способов тоже нет)*/
+.carousel-frame { overflow: -moz-scrollbars-none; }
+// .trans3d
+// 	{
+// 		-webkit-transform-style: preserve-3d;
+// 		-webkit-transform: translate3d(0, 0, 0);
+// 		-moz-transform-style: preserve-3d;
+// 		-moz-transform: translate3d(0, 0, 0);
+// 		-ms-transform-style:preserve-3d;
+// 		-ms-transform: translate3d(0, 0, 0);
+// /* 		transform-style:preserve-3d; */
+// /* 		transform: translate3d(0, 0, 0); */
+
+// 		/*-webkit-backface-visibility: hidden;
+// 		-moz-backface-visibility: hidden;
+// 		-ms-backface-visibility:hidden;
+// 		backface-visibility:hidden;*/
+// 	}
+	
+	// #contentContainer
+	// {
+	// 	position:absolute;
+	// 	margin-left:-500px;
+	// 	margin-top:-500px;
+	// 	left:50%;
+	// 	top:50%;
+	// 	width:1000px;
+	// 	height:1000px;
+	// }
+	
+	// #carouselContainer
+	// {
+	// 	// position:absolute;
+	// 	// margin-left:-500px;
+	// 	// margin-top:-500px;
+	// 	left:50%;
+	// 	top:50%;
+	// 	width:500px;
+	// 	height:500px;
+	// }
+	
+	.carouselItem
+	{
+		// width:320px;
+		// height:130px;
+		// position:absolute;
+		// left:50%;
+		// top:50%;
+		// margin-left:-160px;
+		// margin-top:-90px;
+		// visibility:hidden;
+	}
+	
+	// .carouselItemInner
+	// {
+	// 	width:320px;
+	// 	height:130px;
+	// 	position:absolute;
+	// 	background-color:rgba(255, 255, 255, .75);
+	// 	border:10px solid rgba(255, 255, 255, .5);
+	// 	color:aqua;
+	// 	font-size:72px;
+	// 	left:50%;
+	// 	top:50%;
+	// 	margin-left:-160px;
+	// 	margin-top:-90px;
+	// 	text-align:center;
+	// 	padding-top:50px;
+		
+  // }

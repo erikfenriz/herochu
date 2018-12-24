@@ -45,7 +45,7 @@ const data = [
     link: "/LetPerfumeTalk/Happy",
   },
   {
-    name: "in love",
+    name: "in_love",
     img: passion_1,
     imgGif: passion_2,
     color: "#dc0714",
@@ -319,7 +319,7 @@ export default class BottleCarousel extends Component {
         for (var i = 0; i < data.length; i++) {
           var item = document.createElement('li');
           item.className = 'carousel-item';
-          item.innerHTML = '<div  style="margin-left:20px;margin-right:20px;" id=' + i + '} key=' + data[i].name + '  ><center><img class="item' + i + '" alt=' + data[i].name + ' src=' + data[i].img + ' /></center></div>'
+          item.innerHTML = '<div  style="margin-left:20px;margin-right:20px;" id=' + i + '} key=' + data[i].name + '  ><center><div class='+data[i].name+'></div></center></div>'
 
           container[0].appendChild(item);
         }

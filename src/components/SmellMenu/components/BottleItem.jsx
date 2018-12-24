@@ -9,6 +9,8 @@ const BottleItem = props => {
   const gradient = "linear-gradient(to bottom right," + color + ", " + colorNext + ")";
   const countItem = "item" + count;
   // console.log(props);
+  console.log(name);
+
   return (
     // <figure id={countItem} class="carouselItem trans3d">
 <div>
@@ -17,15 +19,15 @@ const BottleItem = props => {
       // id={countItem}
 
       key={name}
-      // onMouseOver={visibleChangeButton}
-      // onMouseLeave={visibleChangeButtonFalse}
+      onMouseOver={visibleChangeButton}
+      onMouseLeave={visibleChangeButtonFalse}
       className="bottle_item"
       style={{ width: "230px" }}
     >
     
       <center>
-        {/* <Link to={link}>
-          { count === 0 &&
+        <Link to={link}>
+          {/* { count === 0 &&
             <div style={{ opacity: visible, background: gradient, transition: "0.0s", position: "absolute", borderRadius: "50%",  width: "20px", height: "20px", marginLeft:"95px", marginTop: "160px" }} className="play_circle">
               <p className="play_circle_text1">play</p>
             </div>
@@ -39,13 +41,13 @@ const BottleItem = props => {
             <div  style={{ opacity: visible, background: gradient, transition: "0.0s", position: "absolute", borderRadius: "50%",  width: "27px", height: "27px", marginLeft:"90px", marginTop: "220px" }} className="play_circle">
               <p className="play_circle_text3">play</p>
             </div>
-          }
-           { count === 3 &&
+          } */}
+           {/* { count === 3 && */}
             <div onClick={visibChange} style={{ opacity: visible, background: gradient, transition: "0.0s", position: "absolute", borderRadius: "50%",  width: "30px", height: "30px", marginLeft:"90px", marginTop: "260px" }} className="play_circle">
               <p className="play_circle_text">play</p>
             </div>
-          }
-           { count === 4 &&
+        
+           {/* { count === 4 &&
             <div style={{ opacity: visible, background: gradient, transition: "0.0s", position: "absolute", borderRadius: "50%",  width: "27px", height: "27px", marginLeft:"90px", marginTop: "220px" }} className="play_circle">
               <p className="play_circle_text3">play</p>
             </div>
@@ -59,11 +61,11 @@ const BottleItem = props => {
             <div style={{ opacity: visible, background: gradient, transition: "0.0s", position: "absolute", borderRadius: "50%",  width: "20px", height: "20px", marginLeft:"95px", marginTop: "160px" }} className="play_circle">
               <p className="play_circle_text1">play</p>
             </div>
-          }
+          } */}
 
-        </Link> */}
+        </Link>
         {/* {visible === 0 ? <img className={countItem} alt={name} src={img} /> : <img className={countItem} alt={name} src={imgGif} />} */}
-        <div class="monster"></div>
+        <div class={name}></div>
       </center>
     </div>
     </div>

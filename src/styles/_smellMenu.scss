@@ -1,14 +1,86 @@
 @import "fonts";
 
-.monster {
+.alive {
   width: 225px;
   height: 446px;
   margin: 2% auto;
   background: url('../assets/images/experience2/citrus.jpg') left center;
   animation: play .8s steps(34);
 }
-.monster:hover {
+.alive:hover {
   background: url('../assets/images/experience2/citrus_revers.jpg') left center;
+  animation: playOut .8s steps(34);
+}
+
+.natural {
+  width: 225px;
+  height: 446px;
+  margin: 2% auto;
+  background: url('../assets/images/experience2/green.jpg') left center;
+  animation: play .8s steps(34);
+}
+.natural:hover {
+  background: url('../assets/images/experience2/green_revers.jpg') left center;
+  animation: playOut .8s steps(34);
+}
+
+.happy {
+  width: 225px;
+  height: 446px;
+  margin: 2% auto;
+  background: url('../assets/images/experience2/happy.jpg') left center;
+  animation: play .8s steps(34);
+}
+.happy:hover {
+  background: url('../assets/images/experience2/happy_revers.jpg') left center;
+  animation: playOut .8s steps(34);
+}
+
+.rebellious {
+  width: 225px;
+  height: 446px;
+  margin: 2% auto;
+  background: url('../assets/images/experience2/rebelious.jpg') left center;
+  animation: play .8s steps(34);
+}
+.rebellious:hover {
+  background: url('../assets/images/experience2/rebelious_revers.jpg') left center;
+  animation: playOut .8s steps(34);
+}
+
+.sexy {
+  width: 225px;
+  height: 446px;
+  margin: 2% auto;
+  background: url('../assets/images/experience2/sexy.jpg') left center;
+  animation: play .8s steps(34);
+}
+.sexy:hover {
+  background: url('../assets/images/experience2/sexy_revers.jpg') left center;
+  animation: playOut .8s steps(34);
+}
+
+.zen {
+  width: 225px;
+  height: 446px;
+  margin: 2% auto;
+  background: url('../assets/images/experience2/zen.jpg') left center;
+  animation: play .8s steps(33);
+}
+.zen:hover {
+  background: url('../assets/images/experience2/zen_revers.jpg') left center;
+  animation: playOut .8s steps(33);
+}
+
+.in_love {
+  width: 225px;
+  height: 446px;
+  margin: 2% auto;
+  background: url('../assets/images/experience2/passion.jpg') left center;
+  animation: play .8s steps(34);
+}
+.in_love:hover {
+  background: url('../assets/images/experience2/passion_revers.jpg') left center;
   animation: playOut .8s steps(34);
 }
 

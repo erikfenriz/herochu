@@ -1089,7 +1089,7 @@ main.main-page .main-page__content .experience .experience__choice .experience__
 
 #item0 {
   padding-bottom: 36%;
-  height: 250px;
+  height: 200px;
   transition: 1s;
 }
 
@@ -1169,8 +1169,16 @@ main.main-page .main-page__content .experience .experience__choice .experience__
     color: transparent;
   }
 }
+.containerCenter {
+  width: 1870px;
+  margin: 0 auto;
+}
+
 .carousel-frame {
-  width: 104%;
+  padding-top: 50px;
+  margin-left: 1%;
+  margin-bottom: 0.5em;
+  padding-bottom: 1em;
   position: relative;
   overflow-x: scroll;
   white-space: nowrap;

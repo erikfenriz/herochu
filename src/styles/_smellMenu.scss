@@ -308,7 +308,7 @@
 
    #item0{
      padding-bottom: 36%;
-     height: 250px;
+     height: 200px;
      transition: 1s;
    }
    #item1{
@@ -420,12 +420,18 @@ $animation-fill-mode: forwards;
 		// color: set-button-text-color($background-color-dark); 
 	}
 }
-
+.containerCenter{
+  width: 1870px;
+  margin: 0 auto;
+}
 //------------------------------------------------------------------
 .carousel-frame {
-  width: 104%;
-  // margin-bottom: 0.5em;
-  // padding-bottom: 1em;
+  padding-top:50px;
+  margin-left:1%;
+  // margin-right:1%;
+  // width: 100%;
+  margin-bottom: 0.5em;
+  padding-bottom: 1em;
   position: relative;
   overflow-x: scroll;
   white-space: nowrap;

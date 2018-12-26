@@ -917,6 +917,42 @@ main.main-page .main-page__content .experience .experience__choice .experience__
     background-position: 0px;
   }
 }
+.leftTopLine {
+  position: absolute;
+  left: 0;
+  top: 15%;
+}
+
+.leftBottomLine {
+  position: absolute;
+  left: 0;
+  top: 80%;
+}
+
+.centerLineRight {
+  position: absolute;
+  right: 0;
+  top: 50%;
+}
+
+.centerLineLeft {
+  position: absolute;
+  left: 0;
+  top: 50%;
+}
+
+.rightTopLine {
+  position: absolute;
+  right: 0;
+  top: 15%;
+}
+
+.rightBottomLine {
+  position: absolute;
+  right: 0;
+  top: 80%;
+}
+
 .smellMenu-page {
   top: 0;
   left: 0;
@@ -1134,7 +1170,7 @@ main.main-page .main-page__content .experience .experience__choice .experience__
   }
 }
 .carousel-frame {
-  width: 100%;
+  width: 104%;
   position: relative;
   overflow-x: scroll;
   white-space: nowrap;
@@ -1150,7 +1186,7 @@ main.main-page .main-page__content .experience .experience__choice .experience__
 .carousel-frame li.carousel-item {
   cursor: pointer;
   display: inline-block;
-  margin: 0 5px 0 0;
+  margin: 0 0px 0 0;
   padding: 0;
 }
 

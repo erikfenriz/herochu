@@ -94,8 +94,45 @@
   100% { background-position: 0px; }
 }
 
+.leftTopLine{
+  // background-color: green;
+  position: absolute;
+  left:0;
+  top:15%;
+}
+.leftBottomLine{
+  // background-color: lightcoral;
 
+  position: absolute;
+  left:0;
+  top:80%;
+}
+.centerLineRight{
 
+  position: absolute;
+  right:0;
+  top:50%;
+}
+.centerLineLeft{
+
+  position: absolute;
+  left:0;
+  top:50%;
+}
+.rightTopLine{
+  // background-color: yellow;
+
+  position: absolute;
+  right:0;
+  top:15%;
+}
+.rightBottomLine{
+  // background-color: red;
+
+  position: absolute;
+  right:0;
+  top:80%;
+}
 .smellMenu-page {
   top: 0;
   left: 0;
@@ -386,7 +423,7 @@ $animation-fill-mode: forwards;
 
 //------------------------------------------------------------------
 .carousel-frame {
-  width: 100%;
+  width: 104%;
   // margin-bottom: 0.5em;
   // padding-bottom: 1em;
   position: relative;
@@ -402,7 +439,7 @@ $animation-fill-mode: forwards;
 .carousel-frame li.carousel-item {
   cursor: pointer;
   display: inline-block;
-  margin: 0 5px 0 0;
+  margin: 0 0px 0 0;
   padding: 0;
 }
 

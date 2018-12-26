@@ -16,6 +16,8 @@ import sexy_1 from '../../../assets/images/experience2/sexy/sexy_1.gif';
 import sexy_2 from '../../../assets/images/experience2/sexy/sexy_2.gif';
 import zen_1 from '../../../assets/images/experience2/zen/zen_1.gif';
 import zen_2 from '../../../assets/images/experience2/zen/zen_2.gif';
+import arrow from '../../../assets/images/experience2/35.ico';
+import arrow2 from '../../../assets/images/experience2/34.ico';
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import $ from "jquery";
@@ -129,13 +131,13 @@ export default class BottleCarousel extends Component {
         if (scroll > max_scroll) scroll = max_scroll;
         $('.carousel-frame').scrollLeft(scroll);
       }
-      var item0 = '.item0';
-      var item1 = '.item1';
-      var item2 = '.item2';
-      var item3 = '.item3';
-      var item4 = '.item4';
-      var item5 = '.item5';
-      var item6 = '.item6';
+      var item0 = '.natural';
+      var item1 = '.alive';
+      var item2 = '.happy';
+      var item3 = '.in_love';
+      var item4 = '.rebellious';
+      var item5 = '.sexy';
+      var item6 = '.zen';
 
       if ($(item0)[0]) {
         var coordinate0 = $(item0)[0].getBoundingClientRect().x + 100;
@@ -319,7 +321,7 @@ export default class BottleCarousel extends Component {
         for (var i = 0; i < data.length; i++) {
           var item = document.createElement('li');
           item.className = 'carousel-item';
-          item.innerHTML = '<div  style="margin-left:20px;margin-right:20px;" id=' + i + '} key=' + data[i].name + '  ><center><div class='+data[i].name+'></div></center></div>'
+          item.innerHTML = '<div  style="margin-left:20px;margin-right:20px;" id=' + i + '} key=' + data[i].name + '  ><center><div class=' + data[i].name + '></div></center></div>'
 
           container[0].appendChild(item);
         }
@@ -349,20 +351,37 @@ export default class BottleCarousel extends Component {
 
     $(document).ready(this.init);
     return (<div>
-      
-      {/* <svg width="1920" height="100" xmlns="http://www.w3.org/2000/svg">
-        <line x1="0" y1="0" x2="220" y2="100" stroke="gray" strokeWidth="1" />
-        <line x1="1920" y1="0" x2="1700" y2="100" stroke="gray" strokeWidth="1" />
-      </svg>
-      */}
+      <div className="leftTopLine">
+        <svg  height="100" xmlns="http://www.w3.org/2000/svg">
+          <line x1="0" y1="0" x2="100" y2="100" stroke="gray" strokeWidth="1" />
+        </svg>
+      </div>
+      <div className="centerLineRight">
+      <img src={arrow}/>
+      </div>
+      <div className="centerLineLeft">
+      <img src={arrow2}/>
+      </div>
+      <div className="rightTopLine">
+        <svg  height="100" xmlns="http://www.w3.org/2000/svg">
+          <line x1="320" y1="0" x2="0" y2="220" stroke="gray" strokeWidth="1" />
+        </svg>
+      </div>
+
       <div id="infinite-list" ref={this.myRef} className="carousel-frame">
         {items}
       </div>
-{/*       
-       <svg width="1920" height="100" xmlns="http://www.w3.org/2000/svg">
-        <line x1="-250" y1="100" x2="120" y2="0" stroke="gray" strokeWidth="1" />
-        <line x1="1920" y1="0" x2="1700" y2="100" stroke="gray" strokeWidth="1" />
-      </svg> */}
+      
+      <div className="leftBottomLine">
+        <svg  height="100" xmlns="http://www.w3.org/2000/svg">
+          <line x1="-120" y1="150" x2="110" y2="0" stroke="gray" strokeWidth="1" />
+        </svg>
+      </div>
+      <div  className="rightBottomLine">
+        <svg  height="100" xmlns="http://www.w3.org/2000/svg">
+          <line x1="180" y1="0" x2="320" y2="100" stroke="gray" strokeWidth="1" />
+        </svg>
+      </div>
     </div>
     );
   }

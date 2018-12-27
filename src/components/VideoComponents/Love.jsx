@@ -1,6 +1,6 @@
-import React, {Component} from 'react';
-import happyMP4 from '../../assets/videos/experience2/mp4/in_love.mp4';
-import happyWebM from "../../assets/videos/experience2/webm/alive.webm";
+import React, {Component, lazy, Suspense} from 'react';
+import inLoveMP4 from '../../assets/videos/experience2/mp4/in_love.mp4';
+import inLoveWebM from "../../assets/videos/experience2/webm/alive.webm";
 import facebook from "../../assets/images/main/facebook-logo-button.svg";
 import twitter from "../../assets/images/main/twitter-logo-button.svg";
 import google from "../../assets/images/main/google-plus-logo-button.svg";
@@ -8,16 +8,19 @@ import MP3 from "../../assets/audio/in_love.mp3";
 import featherClick from "../../assets/images/experience2/cursor/feather-click.png";
 import featherClicked from "../../assets/images/experience2/cursor/feather-clicked.png";
 import {rotatingCursor} from "./cursor";
-// import {TweenMax} from "gsap/TweenMax";
+import {TweenMax} from "gsap/TweenMax";
 // import $ from 'jquery';
 import pineapple from '../../assets/images/experience2/elements/happy/gr_ananas.png';
 import sun from '../../assets/images/experience2/elements/happy/gr_sun.png';
 import {Link} from "react-router-dom";
+import Loader from "./Components/Loader";
+// import Video from './Components/Video';
+const Video = lazy((props) => import('./Components/Video'));
+
 // import candy1 from '../../assets/images/experience2/elements/happy/gr_candy1.png';
 // import candy2 from '../../assets/images/experience2/elements/happy/gr_candy2.png';
 // import iceCream from '../../assets/images/experience2/elements/happy/gr_icecream.png';
 // import note from '../../assets/images/experience2/elements/happy/gr_musicnote.png';
-
 export default class Happy extends Component {
     setTitle = () => {
         document.title = "Feeling in love today? Let Perfume Talk by MANE";
@@ -45,6 +48,8 @@ export default class Happy extends Component {
         this.video = React.createRef();
         this.audio = React.createRef();
         this.setCoordinates = this.setCoordinates.bind(this);
+        this.fadeOut = this.fadeOut.bind(this);
+        // this.fadeIn = this.fadeIn.bind(this);
     };
 
     setCoordinates = e => {
@@ -90,6 +95,7 @@ export default class Happy extends Component {
     };
 
     playContent = () => {
+        if(this.video.current)
         this.video.current.play();
         this.audio.current.play();
     };
@@ -118,21 +124,36 @@ export default class Happy extends Component {
         this.setState({displayCursor: true});
     };
 
+    fadeOut = () => {
+        TweenMax.to(this.audio.current, 1.5, {volume: 0});
+    };
+
+    fadeIn = () => {
+        TweenMax.to(this.audio.current, 1.5, {volume: 1});
+    };
+
     mute = () => {
         if (this.state.strikeThrough === `menu__bottom--${this.state.mood}`) {
             this.setState({strikeThrough: `menu__bottom--${this.state.mood} strikethrough`});
         } else {
             this.setState({strikeThrough: `menu__bottom--${this.state.mood}`});
         }
-        this.state.strikeThrough === `menu__bottom--${this.state.mood} strikethrough`
-            ? this.audio.current.muted = false :
-            this.audio.current.muted = true;
+        if (this.state.strikeThrough === `menu__bottom--${this.state.mood} strikethrough`) {
+            this.fadeIn();
+        } else {
+            this.fadeOut();
+        }
+        // this.state.strikeThrough === `menu__bottom--${this.state.mood} strikethrough`
+        //     ? this.fadeOut() : this.fadeIn;
+        // ? this.audio.current.muted = false :
+        // this.audio.current.muted = true;
 
         console.log(this.video.current.muted);
     };
 
     mouseFirstClick = (e) => {
         e.stopPropagation();
+
         if (!this.state.isSharing) {
             this.video.current.play();
             this.audio.current.play();
@@ -228,18 +249,18 @@ export default class Happy extends Component {
                       onMouseMove={this.setCoordinates}
                       className={this.state.mainClassToggleCursor}
                 >
-                    <video className="letPerfumeTalk__video"
-                           autoPlay={true}
-                           loop={true}
-                           muted={true}
-                           ref={this.video}
-                    >
-                        <source src={happyMP4} type='video/mp4; codecs="avc1.4D401E, mp4a.40.2"'/>
-                        <source src={happyWebM} type="video/webm"/>
-                    </video>
+                    <Suspense fallback={<Loader/>}>
+                        <Video
+                            videoRef={this.video}
+                            mp4={inLoveMP4}
+                            webm={inLoveWebM}
+                        />
+                    </Suspense>
                     <audio autoPlay
                            loop
-                           ref={this.audio}>
+                           ref={this.audio}
+                           id="audio"
+                    >
                         <source src={MP3} type="audio/mpeg"/>
                     </audio>
                     {this.state.element}
@@ -305,18 +326,11 @@ export default class Happy extends Component {
                         </div>
                     </div>
                 </main>
-                <div onClick={this.mouseFirstClick}
-                     onMouseMove={this.setCoordinates}
-                     className={this.state.loader}>
-                    <div className="loading__text">
-                        <h1>Loading</h1>
-                        <div className="three-bounce">
-                            <div className="one"></div>
-                            <div className="two"></div>
-                            <div className="three"></div>
-                        </div>
-                    </div>
-                </div>
+                <Loader
+                    mouseFirstClick={this.mouseFirstClick}
+                    setCoordinates={this.setCoordinates}
+                    loader={this.state.loader}
+                />
             </React.Fragment>
         )
     }

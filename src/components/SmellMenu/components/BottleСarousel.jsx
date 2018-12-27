@@ -3,6 +3,7 @@ import ReactDOMServer from 'react-dom/server';
 import Slider from "react-slick";
 import { Icon } from "antd";
 import BottleItem from "./BottleItem";
+import Test from "./test";
 // import citrus_1 from '../../../assets/images/experience2/citrus/citrus_1.gif';
 // import citrus_2 from '../../../assets/images/experience2/citrus/citrus_2.gif';
 // import happy_1 from '../../../assets/images/experience2/happy/happy_1.gif';
@@ -22,67 +23,12 @@ import arrow2 from '../../../assets/images/experience2/34.ico';
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import $ from "jquery";
-// const data = [
-//   {
-//     name: "natural",
-//     img: natural_1,
-//     imgGif: natural_2,
-//     color: "#043f1b",
-//     colorNext: "#a2c855",
-//     link: "/LetPerfumeTalk/Natural",
-//   },
-//   {
-//     name: "alive",
-//     img: citrus_1,
-//     imgGif: citrus_2,
-//     color: "#00f5f0",
-//     colorNext: "#00f564",
-//     link: "/LetPerfumeTalk/Alive",
-//   },
-//   {
-//     name: "happy",
-//     img: happy_1,
-//     imgGif: happy_2,
-//     color: "#f55500",
-//     colorNext: "#f5e120",
-//     link: "/LetPerfumeTalk/Happy",
-//   },
-//   {
-//     name: "in_love",
-//     img: passion_1,
-//     imgGif: passion_2,
-//     color: "#dc0714",
-//     colorNext: "#e34b80",
-//     link: "/LetPerfumeTalk/In_love",
-//   },
-//   {
-//     name: "rebellious",
-//     img: rebelious_1,
-//     imgGif: rebelious_2,
-//     color: "#7c045d",
-//     colorNext: "#dc0714",
-//     link: "/LetPerfumeTalk/Rebellious",
-//   },
-//   {
-//     name: "sexy",
-//     img: sexy_1,
-//     imgGif: sexy_2,
-//     color: "#831970",
-//     colorNext: "#d6679b",
-//     link: "/LetPerfumeTalk/Sexy",
-//   },
-//   {
-//     name: "zen",
-//     img: zen_1,
-//     imgGif: zen_2,
-//     color: "#f49e6f",
-//     colorNext: "#dcc8a7",
-//     link: "/LetPerfumeTalk/Zen",
-//   }
-// ]
+
 
 var elements = [];
 var tickLoadMore = 0;
+var pasha = false;
+
 export default class BottleCarousel extends Component {
   constructor(props) {
     super(props);
@@ -92,20 +38,13 @@ export default class BottleCarousel extends Component {
     for(var i=0;i<=100;i++){
       this.props.data.forEach((item, i) =>
       elements.push(<li class="carousel-item">
-        <BottleItem count={i} visibleChangeFalse={this.props.visibleChangeFalse} visibleChange={this.props.visibleChange} visible={this.props.visible} item={item} />
+        <BottleItem  pasha={pasha} count={i} visibleChangeFalse={this.props.visibleChangeFalse} visibleChange={this.props.visibleChange} visible={this.props.visible} item={item} />
       </li>
       )
     )
       }
-  //   this.state = {
-  //     element:  data.map((item, i) =>
-  //     <li class="carousel-item">
-  //       <BottleItem count={i} visibleChangeFalse={this.props.visibleChangeFalse} visibleChange={this.props.visibleChange} visible={this.props.visible} item={item} />
-  //     </li>
-  //   ),
-  // };
- 
   }
+
   onMouseMove(event) {
     const valueMouse = -(-(window.innerWidth * .5) + event.layerX);
     setInterval(valueMouse > 0 ? this.myRef.current.slickNext() : this.myRef.current.slickPrev(), 1)
@@ -127,7 +66,7 @@ export default class BottleCarousel extends Component {
     function updatescroll() {
       var max_scroll = container[0].scrollWidth;
       if (speed !== 0) {
-        scroll += speed / 5;
+        scroll += speed / 3;
         if (scroll < 0) scroll = 0;
         if (scroll > max_scroll) scroll = max_scroll;
         // console.log("----------", scroll);
@@ -356,9 +295,15 @@ export default class BottleCarousel extends Component {
   }
   render() {
 
-
     const { visibleChangeFalse, visibleChange, visible } = this.props;
-   
+    // console.log(visible);
+// if($('.smellMenu__svg')[0]){
+
+//     // eslint-disable-next-line no-unused-expressions
+//     visible ?  $('.smellMenu__svg')[0].id = "smellMenu__svg2" : $('.smellMenu__svg')[0].id = "smellMenu__svg"
+// }
+  
+console.log(pasha);
   
 
     $(document).ready(this.init);
@@ -383,7 +328,22 @@ export default class BottleCarousel extends Component {
       <div id="infinite-list" ref={this.myRef} className="carousel-frame containerCenter">
         {elements}
       </div>
-      
+        <Test colorNext={this.props.colorNext} visible = {visible} name={this.props.name}/>
+      {/* {visible ?
+          <div>
+            <div className='smellMenu__svg' id="pasha">
+              <svg width="400" height="40" xmlns="http://www.w3.org/2000/svg">
+                <line x1="340" y1="20" x2="180" y2="20" stroke="green" strokeWidth="1" />
+                <polygon fill="green" points="250 20, 270 20, 260 30" />
+              </svg>
+            </div>
+            <div style={{ opacity: 1 }} className='smellMenu__text__perfume'>Choose your perfume according to your instant emotion.</div>
+          </div>
+           :
+          <center>
+            <div style={{ color: this.props.colorNext }} className='smellMenu__text__name'>{ this.props.name}</div>
+          </center>
+        }  */}
       <div className="leftBottomLine">
         <svg  height="100" xmlns="http://www.w3.org/2000/svg">
           <line x1="-120" y1="150" x2="110" y2="0" stroke="gray" strokeWidth="1" />

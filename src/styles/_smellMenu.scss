@@ -3,30 +3,32 @@
 .alive {
   width: 225px;
   height: 446px;
-  margin: 2% auto;
-  background: url('../assets/images/experience2/citrus.jpg') left center;
+  background: url('../assets/images/experience2/citrus.jpg') left center no-repeat;
   animation: play .8s steps(34);
+  // transform: scale(0.5);
 }
 .alive:hover {
-  background: url('../assets/images/experience2/citrus_revers.jpg') left center;
+  background: url('../assets/images/experience2/citrus_revers.jpg') left center no-repeat;
   animation: playOut .8s steps(34);
+  // transform: scale(0.5);
 }
-
 .natural {
   width: 225px;
   height: 446px;
   margin: 2% auto;
   background: url('../assets/images/experience2/green.jpg') left center;
   animation: play .8s steps(34);
+
 }
 .natural:hover {
   background: url('../assets/images/experience2/green_revers.jpg') left center;
   animation: playOut .8s steps(34);
+
 }
 
 .happy {
   width: 225px;
-  height: 446px;
+  height: 446px;[0]
   margin: 2% auto;
   background: url('../assets/images/experience2/happy.jpg') left center;
   animation: play .8s steps(34);
@@ -65,11 +67,11 @@
   height: 446px;
   margin: 2% auto;
   background: url('../assets/images/experience2/zen.jpg') left center;
-  animation: play .8s steps(33);
+  animation: play .8s steps(34);
 }
 .zen:hover {
   background: url('../assets/images/experience2/zen_revers.jpg') left center;
-  animation: playOut .8s steps(33);
+  animation: playOut .8s steps(34);
 }
 
 .in_love {
@@ -82,6 +84,7 @@
 .in_love:hover {
   background: url('../assets/images/experience2/passion_revers.jpg') left center;
   animation: playOut .8s steps(34);
+  
 }
 
 @keyframes play {
@@ -105,19 +108,19 @@
 
   position: absolute;
   left:0;
-  top:80%;
+  top:70%;
 }
 .centerLineRight{
 
   position: absolute;
   right:0;
-  top:50%;
+  top:45%;
 }
 .centerLineLeft{
 
   position: absolute;
   left:0;
-  top:50%;
+  top:45%;
 }
 .rightTopLine{
   // background-color: yellow;
@@ -131,7 +134,7 @@
 
   position: absolute;
   right:0;
-  top:80%;
+  top:70%;
 }
 .smellMenu-page {
   top: 0;
@@ -205,6 +208,17 @@
   }
 }
 .smellMenu__svg{
+  opacity: 1;
+  padding-left: 37%;
+  // padding-top: 5%;
+}
+#smellMenu__svg2{
+  opacity: 1;
+  padding-left: 37%;
+  // padding-top: 5%;
+}
+#smellMenu__svg2{
+  opacity: 0;
   padding-left: 37%;
   // padding-top: 5%;
 }
@@ -214,6 +228,7 @@
     family: 'neutra_display_light', sans-serif;
     size: 15pt;
   }
+  // opacity: 0.5;
   padding-left: 42%;
 }
 .smellMenu__text__name{
@@ -237,15 +252,16 @@
   transform: scale(4);
  }
 
-  .play_circle{
-  // transition: 0.3s;
-  // position: absolute;
-  // border-radius: 50%;
-  // width: 30px;
-  // height: 30px;
-  // margin-left: 90px;
-  // margin-top: 280px;
-}
+
+//   .play_circle:hover{
+//   // transition: 0.3s;
+//   // position: absolute;
+//   // border-radius: 50%;
+//   // width: 30px;
+//   // height: 30px;
+//   // margin-left: 90px;
+//   // margin-top: 280px;
+// }
 
 .play_circle_text{
   transition: 5s;
@@ -307,24 +323,20 @@
 
 
    #item0{
-     padding-bottom: 36%;
-     height: 200px;
-     transition: 1s;
+    transform: scale(0.5);
+    //  transition: 1s;
    }
    #item1{
-    padding-bottom: 27%;
-    transition: 1s;
-    height: 300px;
+    transform: scale(0.7);
+    // transition: 1s;
   }
   #item2{
-    padding-bottom: 18%;
-   transition: 1s;
-   height: 350px;
+    transform: scale(0.8);
+    // transition: 1s;
   }
-  #item3{
-    padding-bottom: 7%;
-    transition: 1s;
-    height: 420px;
+  #item3{ 
+    transform: scale(1);
+    // transition: 1s;
   }
 
 

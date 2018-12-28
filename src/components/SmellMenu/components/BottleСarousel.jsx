@@ -35,14 +35,14 @@ export default class BottleCarousel extends Component {
     this.myRef = React.createRef();
     this.onMouseMove = this.onMouseMove.bind(this);
     this.init = this.init.bind(this);
-    for(var i=0;i<=100;i++){
+    for (var i = 0; i <= 100; i++) {
       this.props.data.forEach((item, i) =>
-      elements.push(<li class="carousel-item">
-        <BottleItem  pasha={pasha} count={i} visibleChangeFalse={this.props.visibleChangeFalse} visibleChange={this.props.visibleChange} visible={this.props.visible} item={item} />
-      </li>
+        elements.push(<li className="carousel-item">
+          <BottleItem pasha={pasha} count={i} visibleChangeFalse={this.props.visibleChangeFalse} visibleChange={this.props.visibleChange} visible={this.props.visible} item={item} />
+        </li>
+        )
       )
-    )
-      }
+    }
   }
 
   onMouseMove(event) {
@@ -50,10 +50,11 @@ export default class BottleCarousel extends Component {
     setInterval(valueMouse > 0 ? this.myRef.current.slickNext() : this.myRef.current.slickPrev(), 1)
   }
   init() {
-  
+
     var speed = 0;
     var container = $('.carousel-frame');
     var scroll = 100200;
+    // var scroll = 0;
     var container_w = container.width();
     container.on('mousemove', function (e) {
       var mouse_x = e.pageX - container.offset().left;
@@ -66,7 +67,7 @@ export default class BottleCarousel extends Component {
     function updatescroll() {
       var max_scroll = container[0].scrollWidth;
       if (speed !== 0) {
-        scroll += speed / 3;
+        scroll += speed / 1;
         if (scroll < 0) scroll = 0;
         if (scroll > max_scroll) scroll = max_scroll;
         // console.log("----------", scroll);
@@ -79,182 +80,191 @@ export default class BottleCarousel extends Component {
       var item4 = '.rebellious';
       var item5 = '.sexy';
       var item6 = '.zen';
-
-      if ($(item0)[0]) {
-        var coordinate0 = $(item0)[0].getBoundingClientRect().x + 100;
-        var coordinate1 = $(item1)[0].getBoundingClientRect().x + 100;
-        var coordinate2 = $(item2)[0].getBoundingClientRect().x + 100;
-        var coordinate3 = $(item3)[0].getBoundingClientRect().x + 100;
-        var coordinate4 = $(item4)[0].getBoundingClientRect().x + 100;
-        var coordinate5 = $(item5)[0].getBoundingClientRect().x + 100;
-        var coordinate6 = $(item6)[0].getBoundingClientRect().x + 100;
+      var massCoordinate0 = [];
+      var massCoordinate1 = [];
+      var massCoordinate2 = [];
+      var massCoordinate3 = [];
+      var massCoordinate4 = [];
+      var massCoordinate5 = [];
+      var massCoordinate6 = [];
+      for (var i = 0; i < $(item0).length; i++) {
+        massCoordinate0.push($(item0)[i].getBoundingClientRect().x + 70)
+        massCoordinate1.push($(item1)[i].getBoundingClientRect().x + 70)
+        massCoordinate2.push($(item2)[i].getBoundingClientRect().x + 70)
+        massCoordinate3.push($(item3)[i].getBoundingClientRect().x + 70)
+        massCoordinate4.push($(item4)[i].getBoundingClientRect().x + 70)
+        massCoordinate5.push($(item5)[i].getBoundingClientRect().x + 70)
+        massCoordinate6.push($(item6)[i].getBoundingClientRect().x + 70)
       }
 
-
-
-// console.log($(item1)[0])
-
-      if (coordinate0 < window.innerWidth / 7 && coordinate0 > 0) {
-        // console.log("_______________1");
-        $(item0)[0].id = "item0";
-      }
-      if (coordinate0 > window.innerWidth / 7 && coordinate0 < (window.innerWidth / 7) * 2) {
-        $(item0)[0].id = "item1";
-      }
-      if (coordinate0 > (window.innerWidth / 7) * 2 && coordinate0 < (window.innerWidth / 7) * 3) {
-        $(item0)[0].id = "item2";
-      }
-      if (coordinate0 > (window.innerWidth / 7) * 3 && coordinate0 < (window.innerWidth / 7) * 4) {
-        $(item0)[0].id = "item3";
-      }
-      if (coordinate0 > (window.innerWidth / 7) * 4 && coordinate0 < (window.innerWidth / 7) * 5) {
-        $(item0)[0].id = "item2";
-      }
-      if (coordinate0 > (window.innerWidth / 7) * 5 && coordinate0 < (window.innerWidth / 7) * 6) {
-        $(item0)[0].id = "item1";
-      }
-      if (coordinate0 > (window.innerWidth / 7) * 6 && coordinate0 < window.innerWidth) {
-        $(item0)[0].id = "item0";
-      }
-      //----------------------------------------------------------------------------
-      if (coordinate1 < window.innerWidth / 7 && coordinate1 > 0) {
-        $(item1)[0].id = "item0";
-      }
-      if (coordinate1 > window.innerWidth / 7 && coordinate1 < (window.innerWidth / 7) * 2) {
-        $(item1)[0].id = "item1";
-      }
-      if (coordinate1 > (window.innerWidth / 7) * 2 && coordinate1 < (window.innerWidth / 7) * 3) {
-        $(item1)[0].id = "item2";
-      }
-      if (coordinate1 > (window.innerWidth / 7) * 3 && coordinate1 < (window.innerWidth / 7) * 4) {
-        $(item1)[0].id = "item3";
-      }
-      if (coordinate1 > (window.innerWidth / 7) * 4 && coordinate1 < (window.innerWidth / 7) * 5) {
-        $(item1)[0].id = "item2";
-      }
-      if (coordinate1 > (window.innerWidth / 7) * 5 && coordinate1 < (window.innerWidth / 7) * 6) {
-        $(item1)[0].id = "item1";
-      }
-      if (coordinate1 > (window.innerWidth / 7) * 6 && coordinate1 < window.innerWidth) {
-        $(item1)[0].id = "item0";
-      }
-      //----------------------------------------------------------------------------
-      if (coordinate2 < window.innerWidth / 7 && coordinate2 > 0) {
-        $(item2)[0].id = "item0";
-      }
-      if (coordinate2 > window.innerWidth / 7 && coordinate2 < (window.innerWidth / 7) * 2) {
-        $(item2)[0].id = "item1";
-      }
-      if (coordinate2 > (window.innerWidth / 7) * 2 && coordinate2 < (window.innerWidth / 7) * 3) {
-        $(item2)[0].id = "item2";
-      }
-      if (coordinate2 > (window.innerWidth / 7) * 3 && coordinate2 < (window.innerWidth / 7) * 4) {
-        $(item2)[0].id = "item3";
-      }
-      if (coordinate2 > (window.innerWidth / 7) * 4 && coordinate2 < (window.innerWidth / 7) * 5) {
-        $(item2)[0].id = "item2";
-      }
-      if (coordinate2 > (window.innerWidth / 7) * 5 && coordinate2 < (window.innerWidth / 7) * 6) {
-        $(item2)[0].id = "item1";
-      }
-      if (coordinate2 > (window.innerWidth / 7) * 6 && coordinate2 < window.innerWidth) {
-        $(item2)[0].id = "item0";
-      }
-      //----------------------------------------------------------------------------
-      if (coordinate3 < window.innerWidth / 7 && coordinate3 > 0) {
-        $(item3)[0].id = "item0";
-      }
-      if (coordinate3 > window.innerWidth / 7 && coordinate3 < (window.innerWidth / 7) * 2) {
-        $(item3)[0].id = "item1";
-      }
-      if (coordinate3 > (window.innerWidth / 7) * 2 && coordinate3 < (window.innerWidth / 7) * 3) {
-        $(item3)[0].id = "item2";
-      }
-      if (coordinate3 > (window.innerWidth / 7) * 3 && coordinate3 < (window.innerWidth / 7) * 4) {
-        $(item3)[0].id = "item3";
-      }
-      if (coordinate3 > (window.innerWidth / 7) * 4 && coordinate3 < (window.innerWidth / 7) * 5) {
-        $(item3)[0].id = "item2";
-      }
-      if (coordinate3 > (window.innerWidth / 7) * 5 && coordinate3 < (window.innerWidth / 7) * 6) {
-        $(item3)[0].id = "item1";
-      }
-      if (coordinate3 > (window.innerWidth / 7) * 6 && coordinate3 < window.innerWidth) {
-        $(item3)[0].id = "item0";
-      }
-      //----------------------------------------------------------------------------
-      if (coordinate4 < window.innerWidth / 7 && coordinate4 > 0) {
-        $(item4)[0].id = "item0";
-      }
-      if (coordinate4 > window.innerWidth / 7 && coordinate4 < (window.innerWidth / 7) * 2) {
-        $(item4)[0].id = "item1";
-      }
-      if (coordinate4 > (window.innerWidth / 7) * 2 && coordinate4 < (window.innerWidth / 7) * 3) {
-        $(item4)[0].id = "item2";
-      }
-      if (coordinate4 > (window.innerWidth / 7) * 3 && coordinate4 < (window.innerWidth / 7) * 4) {
-        $(item4)[0].id = "item3";
-      }
-      if (coordinate4 > (window.innerWidth / 7) * 4 && coordinate4 < (window.innerWidth / 7) * 5) {
-        $(item4)[0].id = "item2";
-      }
-      if (coordinate4 > (window.innerWidth / 7) * 5 && coordinate4 < (window.innerWidth / 7) * 6) {
-        $(item4)[0].id = "item1";
-      }
-      if (coordinate4 > (window.innerWidth / 7) * 6 && coordinate4 < window.innerWidth) {
-        $(item4)[0].id = "item0";
-      }
-      //----------------------------------------------------------------------------
-      if (coordinate5 < window.innerWidth / 7 && coordinate5 > 0) {
-        $(item5)[0].id = "item0";
-      }
-      if (coordinate5 > window.innerWidth / 7 && coordinate5 < (window.innerWidth / 7) * 2) {
-        $(item5)[0].id = "item1";
-      }
-      if (coordinate5 > (window.innerWidth / 7) * 2 && coordinate5 < (window.innerWidth / 7) * 3) {
-        $(item5)[0].id = "item2";
-      }
-      if (coordinate5 > (window.innerWidth / 7) * 3 && coordinate5 < (window.innerWidth / 7) * 4) {
-        $(item5)[0].id = "item3";
-      }
-      if (coordinate5 > (window.innerWidth / 7) * 4 && coordinate5 < (window.innerWidth / 7) * 5) {
-        $(item5)[0].id = "item2";
-      }
-      if (coordinate5 > (window.innerWidth / 7) * 5 && coordinate5 < (window.innerWidth / 7) * 6) {
-        $(item5)[0].id = "item1";
-      }
-      if (coordinate5 > (window.innerWidth / 7) * 6 && coordinate5 < window.innerWidth) {
-        $(item5)[0].id = "item0";
-      }
-      //----------------------------------------------------------------------------
-      if (coordinate6 < window.innerWidth / 7 && coordinate6 > 0) {
-        $(item6)[0].id = "item0";
-      }
-      if (coordinate6 > window.innerWidth / 7 && coordinate6 < (window.innerWidth / 7) * 2) {
-        $(item6)[0].id = "item1";
-      }
-      if (coordinate6 > (window.innerWidth / 7) * 2 && coordinate6 < (window.innerWidth / 7) * 3) {
-        $(item6)[0].id = "item2";
-      }
-      if (coordinate6 > (window.innerWidth / 7) * 3 && coordinate6 < (window.innerWidth / 7) * 4) {
-        $(item6)[0].id = "item3";
-      }
-      if (coordinate6 > (window.innerWidth / 7) * 4 && coordinate6 < (window.innerWidth / 7) * 5) {
-        $(item6)[0].id = "item2";
-      }
-      if (coordinate6 > (window.innerWidth / 7) * 5 && coordinate6 < (window.innerWidth / 7) * 6) {
-        $(item6)[0].id = "item1";
-      }
-      if (coordinate6 > (window.innerWidth / 7) * 6 && coordinate6 < window.innerWidth) {
-        $(item6)[0].id = "item0";
-        // }
+      for (var i = 0; i < massCoordinate0.length; i++) {
+        if (massCoordinate0[i] <= window.innerWidth / 7 && massCoordinate0[i] > 0) {
+          $(item0)[i].id = "item0";
+        }
+        if (massCoordinate0[i] > window.innerWidth / 7 && massCoordinate0[i] <= (window.innerWidth / 7) * 2) {
+          $(item0)[i].id = "item1";
+        }
+        if (massCoordinate0[i] > (window.innerWidth / 7) * 2 && massCoordinate0[i] <= (window.innerWidth / 7) * 3) {
+          $(item0)[i].id = "item2";
+        }
+        if (massCoordinate0[i] > (window.innerWidth / 7) * 3 && massCoordinate0[i] <= (window.innerWidth / 7) * 4) {
+          $(item0)[i].id = "item3";
+        }
+        if (massCoordinate0[i] > (window.innerWidth / 7) * 4 && massCoordinate0[i] <= (window.innerWidth / 7) * 5) {
+          $(item0)[i].id = "item2";
+        }
+        if (massCoordinate0[i] > (window.innerWidth / 7) * 5 && massCoordinate0[i] <= (window.innerWidth / 7) * 6) {
+          $(item0)[i].id = "item1";
+        }
+        if (massCoordinate0[i] > (window.innerWidth / 7) * 6 && massCoordinate0[i] <= window.innerWidth) {
+          $(item0)[i].id = "item0";
+        }
       }
 
-
-
-
-
-
+      // ---------------------------------------------------------------------------------------------------------------------------
+      for (var i = 0; i < massCoordinate1.length; i++) {
+        if (massCoordinate1[i] <= window.innerWidth / 7 && massCoordinate1[i] > 0) {
+          $(item1)[i].id = "item0";
+        }
+        if (massCoordinate1[i] > window.innerWidth / 7 && massCoordinate1[i] <= (window.innerWidth / 7) * 2) {
+          $(item1)[i].id = "item1";
+        }
+        if (massCoordinate1[i] > (window.innerWidth / 7) * 2 && massCoordinate1[i] <= (window.innerWidth / 7) * 3) {
+          $(item1)[i].id = "item2";
+        }
+        if (massCoordinate1[i] > (window.innerWidth / 7) * 3 && massCoordinate1[i] <= (window.innerWidth / 7) * 4) {
+          $(item1)[i].id = "item3";
+        }
+        if (massCoordinate1[i] > (window.innerWidth / 7) * 4 && massCoordinate1[i] <= (window.innerWidth / 7) * 5) {
+          $(item1)[i].id = "item2";
+        }
+        if (massCoordinate1[i] > (window.innerWidth / 7) * 5 && massCoordinate1[i] <= (window.innerWidth / 7) * 6) {
+          $(item1)[i].id = "item1";
+        }
+        if (massCoordinate1[i] > (window.innerWidth / 7) * 6 && massCoordinate1[i] <= window.innerWidth) {
+          $(item1)[i].id = "item0";
+        }
+      }
+      // ---------------------------------------------------------------------------------------------------------------------------
+      for (var i = 0; i < massCoordinate2.length; i++) {
+        if (massCoordinate2[i] <= window.innerWidth / 7 && massCoordinate2[i] > 0) {
+          $(item2)[i].id = "item0";
+        }
+        if (massCoordinate2[i] > window.innerWidth / 7 && massCoordinate2[i] <= (window.innerWidth / 7) * 2) {
+          $(item2)[i].id = "item1";
+        }
+        if (massCoordinate2[i] > (window.innerWidth / 7) * 2 && massCoordinate2[i] <= (window.innerWidth / 7) * 3) {
+          $(item2)[i].id = "item2";
+        }
+        if (massCoordinate2[i] > (window.innerWidth / 7) * 3 && massCoordinate2[i] <= (window.innerWidth / 7) * 4) {
+          $(item2)[i].id = "item3";
+        }
+        if (massCoordinate2[i] > (window.innerWidth / 7) * 4 && massCoordinate2[i] <= (window.innerWidth / 7) * 5) {
+          $(item2)[i].id = "item2";
+        }
+        if (massCoordinate2[i] > (window.innerWidth / 7) * 5 && massCoordinate2[i] <= (window.innerWidth / 7) * 6) {
+          $(item2)[i].id = "item1";
+        }
+        if (massCoordinate2[i] > (window.innerWidth / 7) * 6 && massCoordinate2[i] <= window.innerWidth) {
+          $(item2)[i].id = "item0";
+        }
+      }
+      // ---------------------------------------------------------------------------------------------------------------------------
+      for (var i = 0; i < massCoordinate3.length; i++) {
+        if (massCoordinate3[i] <= window.innerWidth / 7 && massCoordinate3[i] > 0) {
+          $(item3)[i].id = "item0";
+        }
+        if (massCoordinate3[i] > window.innerWidth / 7 && massCoordinate3[i] <= (window.innerWidth / 7) * 2) {
+          $(item3)[i].id = "item1";
+        }
+        if (massCoordinate3[i] > (window.innerWidth / 7) * 2 && massCoordinate3[i] <= (window.innerWidth / 7) * 3) {
+          $(item3)[i].id = "item2";
+        }
+        if (massCoordinate3[i] > (window.innerWidth / 7) * 3 && massCoordinate3[i] <= (window.innerWidth / 7) * 4) {
+          $(item3)[i].id = "item3";
+        }
+        if (massCoordinate3[i] > (window.innerWidth / 7) * 4 && massCoordinate3[i] <= (window.innerWidth / 7) * 5) {
+          $(item3)[i].id = "item2";
+        }
+        if (massCoordinate3[i] > (window.innerWidth / 7) * 5 && massCoordinate3[i] <= (window.innerWidth / 7) * 6) {
+          $(item3)[i].id = "item1";
+        }
+        if (massCoordinate3[i] > (window.innerWidth / 7) * 6 && massCoordinate3[i] <= window.innerWidth) {
+          $(item3)[i].id = "item0";
+        }
+      }
+      // ---------------------------------------------------------------------------------------------------------------------------
+      for (var i = 0; i < massCoordinate4.length; i++) {
+        if (massCoordinate4[i] <= window.innerWidth / 7 && massCoordinate4[i] > 0) {
+          $(item4)[i].id = "item0";
+        }
+        if (massCoordinate4[i] > window.innerWidth / 7 && massCoordinate4[i] <= (window.innerWidth / 7) * 2) {
+          $(item4)[i].id = "item1";
+        }
+        if (massCoordinate4[i] > (window.innerWidth / 7) * 2 && massCoordinate4[i] <= (window.innerWidth / 7) * 3) {
+          $(item4)[i].id = "item2";
+        }
+        if (massCoordinate4[i] > (window.innerWidth / 7) * 3 && massCoordinate4[i] <= (window.innerWidth / 7) * 4) {
+          $(item4)[i].id = "item3";
+        }
+        if (massCoordinate4[i] > (window.innerWidth / 7) * 4 && massCoordinate4[i] <= (window.innerWidth / 7) * 5) {
+          $(item4)[i].id = "item2";
+        }
+        if (massCoordinate4[i] > (window.innerWidth / 7) * 5 && massCoordinate4[i] <= (window.innerWidth / 7) * 6) {
+          $(item4)[i].id = "item1";
+        }
+        if (massCoordinate4[i] > (window.innerWidth / 7) * 6 && massCoordinate4[i] <= window.innerWidth) {
+          $(item4)[i].id = "item0";
+        }
+      }
+      // ---------------------------------------------------------------------------------------------------------------------------
+      for (var i = 0; i < massCoordinate5.length; i++) {
+        if (massCoordinate5[i] <= window.innerWidth / 7 && massCoordinate5[i] > 0) {
+          $(item5)[i].id = "item0";
+        }
+        if (massCoordinate5[i] > window.innerWidth / 7 && massCoordinate5[i] <= (window.innerWidth / 7) * 2) {
+          $(item5)[i].id = "item1";
+        }
+        if (massCoordinate5[i] > (window.innerWidth / 7) * 2 && massCoordinate5[i] <= (window.innerWidth / 7) * 3) {
+          $(item5)[i].id = "item2";
+        }
+        if (massCoordinate5[i] > (window.innerWidth / 7) * 3 && massCoordinate5[i] <= (window.innerWidth / 7) * 4) {
+          $(item5)[i].id = "item3";
+        }
+        if (massCoordinate5[i] > (window.innerWidth / 7) * 4 && massCoordinate5[i] <= (window.innerWidth / 7) * 5) {
+          $(item5)[i].id = "item2";
+        }
+        if (massCoordinate5[i] > (window.innerWidth / 7) * 5 && massCoordinate5[i] <= (window.innerWidth / 7) * 6) {
+          $(item5)[i].id = "item1";
+        }
+        if (massCoordinate5[i] > (window.innerWidth / 7) * 6 && massCoordinate5[i] <= window.innerWidth) {
+          $(item5)[i].id = "item0";
+        }
+      }
+      // ---------------------------------------------------------------------------------------------------------------------------
+      for (var i = 0; i < massCoordinate6.length; i++) {
+        if (massCoordinate6[i] <= window.innerWidth / 7 && massCoordinate6[i] > 0) {
+          $(item6)[i].id = "item0";
+        }
+        if (massCoordinate6[i] > window.innerWidth / 7 && massCoordinate6[i] <= (window.innerWidth / 7) * 2) {
+          $(item6)[i].id = "item1";
+        }
+        if (massCoordinate6[i] > (window.innerWidth / 7) * 2 && massCoordinate6[i] <= (window.innerWidth / 7) * 3) {
+          $(item6)[i].id = "item2";
+        }
+        if (massCoordinate6[i] > (window.innerWidth / 7) * 3 && massCoordinate6[i] <= (window.innerWidth / 7) * 4) {
+          $(item6)[i].id = "item3";
+        }
+        if (massCoordinate6[i] > (window.innerWidth / 7) * 4 && massCoordinate6[i] <= (window.innerWidth / 7) * 5) {
+          $(item6)[i].id = "item2";
+        }
+        if (massCoordinate6[i] > (window.innerWidth / 7) * 5 && massCoordinate6[i] <= (window.innerWidth / 7) * 6) {
+          $(item6)[i].id = "item1";
+        }
+        if (massCoordinate6[i] > (window.innerWidth / 7) * 6 && massCoordinate6[i] <= window.innerWidth) {
+          $(item6)[i].id = "item0";
+        }
+      }
 
       window.requestAnimationFrame(updatescroll);
     }
@@ -281,7 +291,7 @@ export default class BottleCarousel extends Component {
     //   }
     //   // $('.carousel-frame').scrollLeft(100200);
     // }
-   
+
     // if (container[0]) {
     //   container[0].addEventListener('scroll', function () {
     //   //  console.log(container[0].scrollLeft,"'scroll'",container[0].clientWidth ,"'scroll'",container[0].scrollWidth);
@@ -297,30 +307,35 @@ export default class BottleCarousel extends Component {
 
     const { visibleChangeFalse, visibleChange, visible } = this.props;
     // console.log(visible);
-// if($('.smellMenu__svg')[0]){
+    // if($('.smellMenu__svg')[0]){
 
-//     // eslint-disable-next-line no-unused-expressions
-//     visible ?  $('.smellMenu__svg')[0].id = "smellMenu__svg2" : $('.smellMenu__svg')[0].id = "smellMenu__svg"
-// }
-  
-console.log(pasha);
-  
+    //     // eslint-disable-next-line no-unused-expressions
+    //     visible ?  $('.smellMenu__svg')[0].id = "smellMenu__svg2" : $('.smellMenu__svg')[0].id = "smellMenu__svg"
+    // }
+
+    // console.log(pasha);
+
 
     $(document).ready(this.init);
     return (<div>
       <div className="leftTopLine">
-        <svg  height="100" xmlns="http://www.w3.org/2000/svg">
+        <svg height="100" xmlns="http://www.w3.org/2000/svg">
           <line x1="0" y1="0" x2="100" y2="100" stroke="gray" strokeWidth="1" />
         </svg>
       </div>
       <div className="centerLineRight">
-      <img alt="left" src={arrow}/>
-      </div>
-      <div  className="centerLineLeft">
-      <img alt="right" src={arrow2}/>
+        <svg xmlns="http://www.w3.org/2000/svg" >
+  
+        <path class="st0" d="M14.6,25L37.7,1.9c0.4-0.4,0.4-1.1,0-1.5c-0.4-0.4-1.1-0.4-1.5,0L12.3,24.2c-0.4,0.4-0.4,1.1,0,1.5l23.9,23.9
+			c0.2,0.2,0.5,0.3,0.8,0.3s0.6-0.1,0.8-0.3c0.4-0.4,0.4-1.1,0-1.5L14.6,25z"/>
+	
+      </svg>
+    </div>
+      <div className="centerLineLeft">
+        <img alt="right" src={arrow2} />
       </div>
       <div className="rightTopLine">
-        <svg  height="100" xmlns="http://www.w3.org/2000/svg">
+        <svg height="100" xmlns="http://www.w3.org/2000/svg">
           <line x1="320" y1="0" x2="0" y2="220" stroke="gray" strokeWidth="1" />
         </svg>
       </div>
@@ -328,7 +343,7 @@ console.log(pasha);
       <div id="infinite-list" ref={this.myRef} className="carousel-frame containerCenter">
         {elements}
       </div>
-        <Test colorNext={this.props.colorNext} visible = {visible} name={this.props.name}/>
+      <Test colorNext={this.props.colorNext} visible={visible} name={this.props.name} />
       {/* {visible ?
           <div>
             <div className='smellMenu__svg' id="pasha">
@@ -344,17 +359,17 @@ console.log(pasha);
             <div style={{ color: this.props.colorNext }} className='smellMenu__text__name'>{ this.props.name}</div>
           </center>
         }  */}
-      <div className="leftBottomLine">
-        <svg  height="100" xmlns="http://www.w3.org/2000/svg">
-          <line x1="-120" y1="150" x2="110" y2="0" stroke="gray" strokeWidth="1" />
-        </svg>
-      </div>
-      <div  className="rightBottomLine">
-        <svg  height="100" xmlns="http://www.w3.org/2000/svg">
+    <div className="leftBottomLine">
+      <svg height="100" xmlns="http://www.w3.org/2000/svg">
+        <line x1="-120" y1="150" x2="110" y2="0" stroke="gray" strokeWidth="1" />
+      </svg>
+    </div>
+      <div className="rightBottomLine">
+        <svg height="100" xmlns="http://www.w3.org/2000/svg">
           <line x1="180" y1="0" x2="320" y2="100" stroke="gray" strokeWidth="1" />
         </svg>
       </div>
-    </div>
+    </div >
     );
   }
 }

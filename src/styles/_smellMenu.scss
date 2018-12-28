@@ -28,7 +28,7 @@
 
 .happy {
   width: 225px;
-  height: 446px;[0]
+  height: 446px;
   margin: 2% auto;
   background: url('../assets/images/experience2/happy.jpg') left center;
   animation: play .8s steps(34);
@@ -324,19 +324,19 @@
 
    #item0{
     transform: scale(0.5);
-    //  transition: 1s;
+     transition: 0.5s;
    }
    #item1{
     transform: scale(0.7);
-    // transition: 1s;
+    transition:0.5s;
   }
   #item2{
     transform: scale(0.8);
-    // transition: 1s;
+    transition: 0.5s;
   }
   #item3{ 
     transform: scale(1);
-    // transition: 1s;
+    transition: 0.5s;
   }
 
 

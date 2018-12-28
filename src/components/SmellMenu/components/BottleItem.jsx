@@ -21,8 +21,8 @@ const BottleItem = props => {
       >
 
         <center>
-          <div class="pashaguzu">
-            <div class={name}>
+          <div className="pashaguzu">
+            <div className={name}>
               <a href={link}>
                 <div style={{ opacity: visible, background: gradient, transition: "0.0s", position: "absolute", borderRadius: "50%", width: "30px", height: "30px", marginLeft: "90px", marginTop: "260px" }} className="play_circle">
                   <p className="play_circle_text">play</p>

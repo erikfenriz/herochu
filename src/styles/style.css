@@ -1097,18 +1097,22 @@ main.main-page .main-page__content .experience .experience__choice .experience__
 
 #item0 {
   transform: scale(0.5);
+  transition: 0.5s;
 }
 
 #item1 {
   transform: scale(0.7);
+  transition: 0.5s;
 }
 
 #item2 {
   transform: scale(0.8);
+  transition: 0.5s;
 }
 
 #item3 {
   transform: scale(1);
+  transition: 0.5s;
 }
 
 .smellMenu__text__perfume {

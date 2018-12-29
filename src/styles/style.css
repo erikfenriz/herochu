@@ -952,6 +952,14 @@ main.main-page .main-page__content .experience .experience__choice .experience__
   top: 70%;
 }
 
+a {
+  text-decoration: none;
+}
+
+a:visited {
+  color: black;
+}
+
 .smellMenu-page {
   top: 0;
   left: 0;

@@ -3,8 +3,6 @@ import { compose, withState, withHandlers } from 'recompose';
 import { Link } from 'react-router-dom'
 import ShareLink from 'react-facebook-share-link'
 import ShareLinkTwitter from 'react-twitter-share-link'
-import { Row,Col } from 'antd';
-import splitting from 'splitting';
 import BottleCarousel from './components/BottleСarousel'
 import youtube from '../../assets/images/main/MANE_youtube.svg'
 import twitter from '../../assets/images/main/MANE_twitter.svg'
@@ -25,9 +23,8 @@ import sexy_1 from '../../assets/images/experience2/sexy/sexy_1.gif';
 import sexy_2 from '../../assets/images/experience2/sexy/sexy_2.gif';
 import zen_1 from '../../assets/images/experience2/zen/zen_1.gif';
 import zen_2 from '../../assets/images/experience2/zen/zen_2.gif';
-import BottleItem from "./components/BottleItem";
-
 import '../../styles/style.css';
+
 const data = [
   {
     name: "natural",
@@ -88,34 +85,26 @@ const data = [
 ]
 
 const SmellMenu = props => {
+
   const { visible, visibleChange, visibleChangeFalse, colorNext, name } = props;
 
   return (
     <div className="smellMenu-page" >
-    <div className="smellMenu__header">
-    <ShareLink link='https://experiences.mane.com/LetPerfumeTalk/'>
-   {link => (
-      <a href={link} target='_blank'><img  className="twitterShare"  alt="youtube" src={facebookShare}  /></a>
-   )}
-   </ShareLink>
-   <ShareLinkTwitter link='https://experiences.mane.com/LetPerfumeTalk/'>
-   {link => (
-      <a href={link} target='_blank'><img  alt="youtube" src={twitterShare}  /></a>
-   )}
-   </ShareLinkTwitter>
-          
-
-    </div>
+      <div className="smellMenu__header">
+        <ShareLink link='https://experiences.mane.com/LetPerfumeTalk/'>
+          {link => (
+            <a href={link} target='_blank'><img className="twitterShare" alt="youtube" src={facebookShare} /></a>
+          )}
+        </ShareLink>
+        <ShareLinkTwitter link='https://experiences.mane.com/LetPerfumeTalk/'>
+          {link => (
+            <a href={link} target='_blank'><img alt="youtube" src={twitterShare} /></a>
+          )}
+        </ShareLinkTwitter>
+      </div>
       <h1 className='smellMenu__title'>What's your mood today?</h1>
-      {/* <div className='smellMenu__svg'> */}
-
-      {/* </div> */}
-
       <div className='smellMenu__carousel'>
         <BottleCarousel colorNext={colorNext} name={name} data={data} visible={visible} visibleChange={visibleChange} visibleChangeFalse={visibleChangeFalse} />
-     
-      
-
       </div>
       <div className='smellMenu__footer'>
         <div className='smellMenu__footer__left'>
@@ -123,13 +112,12 @@ const SmellMenu = props => {
           <label className='smellMenu__footer__mane'>by MANE</label>
         </div>
         <div className='smellMenu__footer__right'>
-          <label className='smellMenu__footer__right_item text_footer'><Link  to={"/LetPerfumeTalk/legal"}>Legal </Link></label>
+          <label className='smellMenu__footer__right_item text_footer'><Link to={"/LetPerfumeTalk/legal"}>Legal </Link></label>
           <label className='smellMenu__footer__right_item text_footer'>Credits</label>
           <label className='smellMenu__footer__right_item text_footer'>MANE © 2019</label>
-   
-          <label className='smellMenu__footer__right_item '><img alt="youtube" src={youtube}  /></label>
+          <label className='smellMenu__footer__right_item text_footer22'><img alt="youtube" src={youtube} /></label>
           <label className='smellMenu__footer__right_item '><img alt="facebook" src={facebook} /></label>
-          <label className='smellMenu__footer__right_item '><img alt="twitter" src={twitter}  /></label>
+          <label className='smellMenu__footer__right_item '><img alt="twitter" src={twitter} /></label>
         </div>
       </div>
     </div>

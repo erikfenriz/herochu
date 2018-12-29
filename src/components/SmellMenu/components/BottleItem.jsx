@@ -24,7 +24,7 @@ const BottleItem = props => {
           <div className="pashaguzu">
             <div className={name}>
               <a href={link}>
-                <div style={{ opacity: visible, background: gradient, transition: "0.0s", position: "absolute", borderRadius: "50%", width: "30px", height: "30px", marginLeft: "90px", marginTop: "260px" }} className="play_circle">
+                <div style={{ opacity: visible, background: gradient, transition: "0.3s", position: "absolute", borderRadius: "50%", width: "30px", height: "30px", marginLeft: "90px", marginTop: "260px" }} className="play_circle">
                   <p className="play_circle_text">play</p>
                 </div>
               </a>
@@ -56,11 +56,11 @@ const enhance = compose(
   withHandlers({
     visibleChangeButton: props => () => {
       props.changeVisible(1);
-      // props.visibleChangeFalse(props.item);
+       //props.visibleChangeFalse(props.item);
     },
     visibleChangeButtonFalse: props => () => {
       props.changeVisible(0);
-      // props.visibleChange();
+       //props.visibleChange();
     }
   })
 );

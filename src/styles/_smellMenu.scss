@@ -1,5 +1,7 @@
 @import "fonts";
 
+
+
 .alive {
   width: 225px;
   height: 446px;
@@ -98,44 +100,41 @@
 }
 
 .leftTopLine{
-  // background-color: green;
   position: absolute;
   left:0;
   top:15%;
 }
 .leftBottomLine{
-  // background-color: lightcoral;
-
   position: absolute;
   left:0;
   top:70%;
 }
 .centerLineRight{
-
   position: absolute;
   right:0;
   top:45%;
 }
 .centerLineLeft{
-
   position: absolute;
   left:0;
   top:45%;
 }
 .rightTopLine{
-  // background-color: yellow;
-
   position: absolute;
   right:0;
   top:15%;
 }
 .rightBottomLine{
-  // background-color: red;
-
   position: absolute;
   right:0;
   top:70%;
 }
+a { 
+  text-decoration: none;
+ } 
+ a:visited {
+  color: black;
+ }
 .smellMenu-page {
   top: 0;
   left: 0;
@@ -168,12 +167,9 @@
   .smellMenu__footer__text{
     text-transform: uppercase;
     font: {
-      // weight: 300;
       family: 'neutra_display_light', sans-serif;
       size: 30pt;
     }
-    // width: 8%;
-    //  padding: 2%;
   }
   .smellMenu__footer__mane{
     font: {
@@ -182,7 +178,6 @@
       size: 12pt;
     }
     color:green;
-    // padding-left: 3%;
   }
   .smellMenu__footer__left{
     position: fixed;
@@ -198,29 +193,23 @@
   }
   .smellMenu__footer__right_item{
     font: {
-      // weight: 900;
       family: 'neutra_text_demi', sans-serif;
       size: 8pt;
     }
     padding-right: 4%;
-    // padding: 2%;
-
   }
 }
 .smellMenu__svg{
   opacity: 1;
   padding-left: 37%;
-  // padding-top: 5%;
 }
 #smellMenu__svg2{
   opacity: 1;
   padding-left: 37%;
-  // padding-top: 5%;
 }
 #smellMenu__svg2{
   opacity: 0;
   padding-left: 37%;
-  // padding-top: 5%;
 }
 .smellMenu__text__perfume{
   font: {
@@ -228,14 +217,12 @@
     family: 'neutra_display_light', sans-serif;
     size: 15pt;
   }
-  // opacity: 0.5;
   padding-left: 42%;
 }
 .smellMenu__text__name{
 
   text-transform: uppercase;
   font: {
-    // weight: normal;
     family: 'neutra_display_light', sans-serif;
     size: 70pt;
   }
@@ -251,18 +238,6 @@
   -o-transform: scale(4); 
   transform: scale(4);
  }
-
-
-//   .play_circle:hover{
-//   // transition: 0.3s;
-//   // position: absolute;
-//   // border-radius: 50%;
-//   // width: 30px;
-//   // height: 30px;
-//   // margin-left: 90px;
-//   // margin-top: 280px;
-// }
-
 .play_circle_text{
   transition: 5s;
   text-transform: uppercase;

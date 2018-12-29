@@ -8,7 +8,7 @@
     "jquery": "^3.3.1",
     "normalize.css": "^8.0.1",
     "react": "^16.6.3",
-    "react-dom": "^16.6.3",
+    "react-dom": "^16.7.0",
     "react-facebook-share-link": "^1.0.4",
     "react-lottie": "^1.2.3",
     "react-owl-carousel": "^2.3.1",
@@ -17,6 +17,7 @@
     "react-slick": "^0.23.2",
     "react-twitter-share-link": "^1.2.0",
     "recompose": "^0.30.0",
+    "sass": "^1.15.2",
     "slick-carousel": "^1.8.1",
     "splitting": "^1.0.6"
   },

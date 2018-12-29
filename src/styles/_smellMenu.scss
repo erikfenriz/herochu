@@ -1,4 +1,140 @@
 @import "fonts";
+
+
+
+.alive {
+  width: 225px;
+  height: 446px;
+  background: url('../assets/images/experience2/citrus.jpg') left center no-repeat;
+  animation: play .8s steps(34);
+  // transform: scale(0.5);
+}
+.alive:hover {
+  background: url('../assets/images/experience2/citrus_revers.jpg') left center no-repeat;
+  animation: playOut .8s steps(34);
+  // transform: scale(0.5);
+}
+.natural {
+  width: 225px;
+  height: 446px;
+  margin: 2% auto;
+  background: url('../assets/images/experience2/green.jpg') left center;
+  animation: play .8s steps(34);
+
+}
+.natural:hover {
+  background: url('../assets/images/experience2/green_revers.jpg') left center;
+  animation: playOut .8s steps(34);
+
+}
+
+.happy {
+  width: 225px;
+  height: 446px;
+  margin: 2% auto;
+  background: url('../assets/images/experience2/happy.jpg') left center;
+  animation: play .8s steps(34);
+}
+.happy:hover {
+  background: url('../assets/images/experience2/happy_revers.jpg') left center;
+  animation: playOut .8s steps(34);
+}
+
+.rebellious {
+  width: 225px;
+  height: 446px;
+  margin: 2% auto;
+  background: url('../assets/images/experience2/rebelious.jpg') left center;
+  animation: play .8s steps(34);
+}
+.rebellious:hover {
+  background: url('../assets/images/experience2/rebelious_revers.jpg') left center;
+  animation: playOut .8s steps(34);
+}
+
+.sexy {
+  width: 225px;
+  height: 446px;
+  margin: 2% auto;
+  background: url('../assets/images/experience2/sexy.jpg') left center;
+  animation: play .8s steps(34);
+}
+.sexy:hover {
+  background: url('../assets/images/experience2/sexy_revers.jpg') left center;
+  animation: playOut .8s steps(34);
+}
+
+.zen {
+  width: 225px;
+  height: 446px;
+  margin: 2% auto;
+  background: url('../assets/images/experience2/zen.jpg') left center;
+  animation: play .8s steps(34);
+}
+.zen:hover {
+  background: url('../assets/images/experience2/zen_revers.jpg') left center;
+  animation: playOut .8s steps(34);
+}
+
+.in_love {
+  width: 225px;
+  height: 446px;
+  margin: 2% auto;
+  background: url('../assets/images/experience2/passion.jpg') left center;
+  animation: play .8s steps(34);
+}
+.in_love:hover {
+  background: url('../assets/images/experience2/passion_revers.jpg') left center;
+  animation: playOut .8s steps(34);
+  
+}
+
+@keyframes play {
+  from   {background-position: -7650px; }
+  to {  background-position: 0px;}
+}
+
+@keyframes playOut {
+  0%   { background-position: -7650px; }
+  100% { background-position: 0px; }
+}
+
+.leftTopLine{
+  position: absolute;
+  left:0;
+  top:15%;
+}
+.leftBottomLine{
+  position: absolute;
+  left:0;
+  top:70%;
+}
+.centerLineRight{
+  position: absolute;
+  right:0;
+  top:45%;
+}
+.centerLineLeft{
+  position: absolute;
+  left:0;
+  top:45%;
+}
+.rightTopLine{
+  position: absolute;
+  right:0;
+  top:15%;
+}
+.rightBottomLine{
+  position: absolute;
+  right:0;
+  top:70%;
+}
+a { 
+  text-decoration: none;
+ } 
+ a:visited {
+  color: black;
+ }
 .smellMenu-page {
   top: 0;
   left: 0;
@@ -31,12 +167,9 @@
   .smellMenu__footer__text{
     text-transform: uppercase;
     font: {
-      // weight: 300;
       family: 'neutra_display_light', sans-serif;
       size: 30pt;
     }
-    // width: 8%;
-    //  padding: 2%;
   }
   .smellMenu__footer__mane{
     font: {
@@ -45,7 +178,6 @@
       size: 12pt;
     }
     color:green;
-    // padding-left: 3%;
   }
   .smellMenu__footer__left{
     position: fixed;
@@ -61,18 +193,23 @@
   }
   .smellMenu__footer__right_item{
     font: {
-      // weight: 900;
       family: 'neutra_text_demi', sans-serif;
       size: 8pt;
     }
     padding-right: 4%;
-    // padding: 2%;
-
   }
 }
 .smellMenu__svg{
+  opacity: 1;
   padding-left: 37%;
-  // padding-top: 5%;
+}
+#smellMenu__svg2{
+  opacity: 1;
+  padding-left: 37%;
+}
+#smellMenu__svg2{
+  opacity: 0;
+  padding-left: 37%;
 }
 .smellMenu__text__perfume{
   font: {
@@ -86,7 +223,6 @@
 
   text-transform: uppercase;
   font: {
-    // weight: normal;
     family: 'neutra_display_light', sans-serif;
     size: 70pt;
   }
@@ -102,17 +238,6 @@
   -o-transform: scale(4); 
   transform: scale(4);
  }
-
-  .play_circle{
-  // transition: 0.3s;
-  // position: absolute;
-  // border-radius: 50%;
-  // width: 30px;
-  // height: 30px;
-  // margin-left: 90px;
-  // margin-top: 280px;
-}
-
 .play_circle_text{
   transition: 5s;
   text-transform: uppercase;
@@ -173,24 +298,20 @@
 
 
    #item0{
-     padding-bottom: 36%;
-     height: 250px;
-     transition: 1s;
+    transform: scale(0.5);
+     transition: 0.5s;
    }
    #item1{
-    padding-bottom: 27%;
-    transition: 1s;
-    height: 300px;
+    transform: scale(0.7);
+    transition:0.5s;
   }
   #item2{
-    padding-bottom: 18%;
-   transition: 1s;
-   height: 350px;
+    transform: scale(0.8);
+    transition: 0.5s;
   }
-  #item3{
-    padding-bottom: 7%;
-    transition: 1s;
-    height: 420px;
+  #item3{ 
+    transform: scale(1);
+    transition: 0.5s;
   }
 
 
@@ -286,12 +407,18 @@ $animation-fill-mode: forwards;
 		// color: set-button-text-color($background-color-dark); 
 	}
 }
-
+.containerCenter{
+  width: 1870px;
+  margin: 0 auto;
+}
 //------------------------------------------------------------------
 .carousel-frame {
-  width: 100%;
-  // margin-bottom: 0.5em;
-  // padding-bottom: 1em;
+  padding-top:50px;
+  margin-left:1%;
+  // margin-right:1%;
+  // width: 100%;
+  margin-bottom: 0.5em;
+  padding-bottom: 1em;
   position: relative;
   overflow-x: scroll;
   white-space: nowrap;
@@ -305,7 +432,7 @@ $animation-fill-mode: forwards;
 .carousel-frame li.carousel-item {
   cursor: pointer;
   display: inline-block;
-  margin: 0 5px 0 0;
+  margin: 0 0px 0 0;
   padding: 0;
 }
 
@@ -384,4 +511,4 @@ $animation-fill-mode: forwards;
 	// 	text-align:center;
 	// 	padding-top:50px;
 		
-	// }
+  // }

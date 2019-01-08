@@ -264,11 +264,11 @@ export default class Happy extends Component {
                             webm={WebM}
                         />
                     </Suspense>
-                    <Loader
-                        mouseFirstClick={this.mouseFirstClick}
-                        setCoordinates={this.setCoordinates}
-                        loader={this.state.loader}
-                    />
+                    {/*<Loader*/}
+                        {/*mouseFirstClick={this.mouseFirstClick}*/}
+                        {/*setCoordinates={this.setCoordinates}*/}
+                        {/*loader={this.state.loader}*/}
+                    {/*/>*/}
                     <audio
                         autoPlay
                         loop

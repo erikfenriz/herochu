@@ -1,5 +1,6 @@
 @import "fonts";
 @import "videoGradient";
+@import "loader";
 @import "videoBottomButtons";
 
 @keyframes anima {
@@ -106,6 +107,8 @@
   &.cursor {
     cursor: auto;
   }
+
+  @include loader;
 
   & > * {
     -webkit-user-select: none;

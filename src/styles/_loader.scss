@@ -9,72 +9,73 @@
   }
 }
 
-.loading {
-  cursor: none;
-  width: 100%;
-  transition: opacity 1000ms;
-  height: 100vh;
-  background: black;
-  position: absolute;
-  display: inline-flex;
-  justify-content: center;
-  align-items: center;
-  -webkit-user-select: none;
-  -moz-user-select: none;
-  -o-user-select: none;
-  user-select: none;
-  -webkit-user-drag: none;
+@mixin loader {
+  .loading {
+    cursor: none;
+    width: 100%;
+    transition: opacity 1000ms;
+    height: 100vh;
+    background: black;
+    position: absolute;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -o-user-select: none;
+    user-select: none;
+    -webkit-user-drag: none;
 
-  &__text {
-    display: flex;
-    flex-direction: row;
-    align-items: flex-end;
-
-    h1 {
-      margin: 0;
-      line-height: 1;
-      -webkit-touch-callout: none; /* iOS Safari */
-      -webkit-user-select: none; /* Safari */
-      -khtml-user-select: none; /* Konqueror HTML */
-      -moz-user-select: none; /* Firefox */
-      -ms-user-select: none; /* Internet Explorer/Edge */
-      user-select: none;
-      color: white;
-      text-transform: uppercase;
-      font: {
-        family: "neutra_text_light", sans-serif;
-        weight: 500;
-        size: 2.7em;
-      }
-    }
-
-    .three-bounce {
-      margin-left: 5px;
+    &__text {
       display: flex;
-      div {
-        background: #ffffff;
-        display: inline-block;
-        height: 18px;
-        width: 18px;
-        border-radius: 100%;
-        animation: bouncedelay 1.4s infinite ease-in-out;
-        animation-fill-mode: both;
-        transform: translateZ(0);
+      flex-direction: row;
+      align-items: flex-end;
 
-        &.one {
-          animation-delay: -0.32s;
+      h1 {
+        margin: 0;
+        line-height: 1;
+        -webkit-touch-callout: none; /* iOS Safari */
+        -webkit-user-select: none; /* Safari */
+        -khtml-user-select: none; /* Konqueror HTML */
+        -moz-user-select: none; /* Firefox */
+        -ms-user-select: none; /* Internet Explorer/Edge */
+        user-select: none;
+        color: white;
+        text-transform: uppercase;
+        font: {
+          family: "neutra_text_light", sans-serif;
+          weight: 500;
+          size: 2.7em;
         }
+      }
 
-        &.two {
-          animation-delay: -0.16s;
+      .three-bounce {
+        margin-left: 5px;
+        display: flex;
+
+        div {
+          background: #ffffff;
+          display: inline-block;
+          height: 18px;
+          width: 18px;
+          border-radius: 100%;
+          animation: bouncedelay 1.4s infinite ease-in-out;
+          animation-fill-mode: both;
+          transform: translateZ(0);
+
+          &.one {
+            animation-delay: -0.32s;
+          }
+
+          &.two {
+            animation-delay: -0.16s;
+          }
         }
       }
     }
-  }
-  &.loaded {
-    opacity: 0;
-    //cursor: auto;
+
+    &.loaded {
+      opacity: 0;
+    }
   }
 }
-
-

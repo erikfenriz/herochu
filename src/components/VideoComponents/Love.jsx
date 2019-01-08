@@ -15,7 +15,8 @@ import sun from '../../assets/images/experience2/elements/happy/gr_sun.png';
 import {Link} from "react-router-dom";
 import Loader from "./Components/Loader";
 // import Video from './Components/Video';
-const Video = lazy((props) => import('./Components/Video'));
+const Video = lazy(() => import('./Components/Video'));
+// import Video from './Components/Video';
 
 // import candy1 from '../../assets/images/experience2/elements/happy/gr_candy1.png';
 // import candy2 from '../../assets/images/experience2/elements/happy/gr_candy2.png';
@@ -95,8 +96,8 @@ export default class Happy extends Component {
     };
 
     playContent = () => {
-        if(this.video.current)
-        this.video.current.play();
+        if (this.video.current)
+            this.video.current.play();
         this.audio.current.play();
     };
 
@@ -143,12 +144,6 @@ export default class Happy extends Component {
         } else {
             this.fadeOut();
         }
-        // this.state.strikeThrough === `menu__bottom--${this.state.mood} strikethrough`
-        //     ? this.fadeOut() : this.fadeIn;
-        // ? this.audio.current.muted = false :
-        // this.audio.current.muted = true;
-
-        console.log(this.video.current.muted);
     };
 
     mouseFirstClick = (e) => {
@@ -230,6 +225,17 @@ export default class Happy extends Component {
         }
     };
 
+    checkForVideo = () => {
+        let b = setInterval(() => {
+            if (this.video.current) {
+                if (this.video.current.readyState === 4) {
+                    this.loaded();
+                    clearInterval(b);
+                }
+            }
+        }, 500);
+    };
+
     componentDidMount() {
         this.setTitle();
         document.addEventListener('contextmenu', event => event.preventDefault());
@@ -237,29 +243,45 @@ export default class Happy extends Component {
         this.playContent();
         this.setCoordinates.bind(this);
         document.addEventListener('click', this.setCoordinates);
-        // document.addEventListener('mousemove', this.setCoordinates);
-        setTimeout(this.loaded, 1000);
+        // this.loaded();
+        // setTimeout(this.loaded, 1000);
         // document.addEventListener('DOMContentLoaded', this.loaded);
+        this.checkForVideo();
     };
 
     render() {
         return (
             <React.Fragment>
-                <main onClick={this.mouseFirstClick}
-                      onMouseMove={this.setCoordinates}
-                      className={this.state.mainClassToggleCursor}
+                <main
+                    onClick={this.mouseFirstClick}
+                    onMouseMove={this.setCoordinates}
+                    className={this.state.mainClassToggleCursor}
                 >
-                    <Suspense fallback={<Loader/>}>
+                    <Suspense
+                        fallback={
+                            <Loader
+                                mouseFirstClick={this.mouseFirstClick}
+                                setCoordinates={this.setCoordinates}
+                                loader={this.state.loader}
+                            />
+                        }>
                         <Video
                             videoRef={this.video}
                             mp4={inLoveMP4}
                             webm={inLoveWebM}
+
                         />
                     </Suspense>
-                    <audio autoPlay
-                           loop
-                           ref={this.audio}
-                           id="audio"
+                    <Loader
+                        mouseFirstClick={this.mouseFirstClick}
+                        setCoordinates={this.setCoordinates}
+                        loader={this.state.loader}
+                    />
+                    <audio
+                        autoPlay
+                        loop
+                        ref={this.audio}
+                        id="audio"
                     >
                         <source src={MP3} type="audio/mpeg"/>
                     </audio>
@@ -326,11 +348,11 @@ export default class Happy extends Component {
                         </div>
                     </div>
                 </main>
-                <Loader
-                    mouseFirstClick={this.mouseFirstClick}
-                    setCoordinates={this.setCoordinates}
-                    loader={this.state.loader}
-                />
+                {/*<Loader*/}
+                {/*mouseFirstClick={this.mouseFirstClick}*/}
+                {/*setCoordinates={this.setCoordinates}*/}
+                {/*loader={this.state.loader}*/}
+                {/*/>*/}
             </React.Fragment>
         )
     }

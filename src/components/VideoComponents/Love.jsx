@@ -1,6 +1,6 @@
 import React, {Component, lazy, Suspense} from 'react';
-import inLoveMP4 from '../../assets/videos/experience2/mp4/in_love.mp4';
-import inLoveWebM from "../../assets/videos/experience2/webm/alive.webm";
+import MP4 from '../../assets/videos/experience2/mp4/in_love.mp4';
+import WebM from "../../assets/videos/experience2/webm/in_love.webm";
 import facebook from "../../assets/images/main/facebook-logo-button.svg";
 import twitter from "../../assets/images/main/twitter-logo-button.svg";
 import google from "../../assets/images/main/google-plus-logo-button.svg";
@@ -14,14 +14,13 @@ import pineapple from '../../assets/images/experience2/elements/happy/gr_ananas.
 import sun from '../../assets/images/experience2/elements/happy/gr_sun.png';
 import {Link} from "react-router-dom";
 import Loader from "./Components/Loader";
-// import Video from './Components/Video';
 const Video = lazy(() => import('./Components/Video'));
 // import Video from './Components/Video';
-
 // import candy1 from '../../assets/images/experience2/elements/happy/gr_candy1.png';
 // import candy2 from '../../assets/images/experience2/elements/happy/gr_candy2.png';
 // import iceCream from '../../assets/images/experience2/elements/happy/gr_icecream.png';
 // import note from '../../assets/images/experience2/elements/happy/gr_musicnote.png';
+
 export default class Happy extends Component {
     setTitle = () => {
         document.title = "Feeling in love today? Let Perfume Talk by MANE";
@@ -49,8 +48,6 @@ export default class Happy extends Component {
         this.video = React.createRef();
         this.audio = React.createRef();
         this.setCoordinates = this.setCoordinates.bind(this);
-        this.fadeOut = this.fadeOut.bind(this);
-        // this.fadeIn = this.fadeIn.bind(this);
     };
 
     setCoordinates = e => {
@@ -243,9 +240,6 @@ export default class Happy extends Component {
         this.playContent();
         this.setCoordinates.bind(this);
         document.addEventListener('click', this.setCoordinates);
-        // this.loaded();
-        // setTimeout(this.loaded, 1000);
-        // document.addEventListener('DOMContentLoaded', this.loaded);
         this.checkForVideo();
     };
 
@@ -267,9 +261,8 @@ export default class Happy extends Component {
                         }>
                         <Video
                             videoRef={this.video}
-                            mp4={inLoveMP4}
-                            webm={inLoveWebM}
-
+                            mp4={MP4}
+                            webm={WebM}
                         />
                     </Suspense>
                     <Loader
@@ -281,7 +274,6 @@ export default class Happy extends Component {
                         autoPlay
                         loop
                         ref={this.audio}
-                        id="audio"
                     >
                         <source src={MP3} type="audio/mpeg"/>
                     </audio>

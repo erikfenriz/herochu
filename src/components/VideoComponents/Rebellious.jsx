@@ -339,11 +339,6 @@ export default class Happy extends Component {
                         </div>
                     </div>
                 </main>
-                {/*<Loader*/}
-                {/*mouseFirstClick={this.mouseFirstClick}*/}
-                {/*setCoordinates={this.setCoordinates}*/}
-                {/*loader={this.state.loader}*/}
-                {/*/>*/}
             </React.Fragment>
         )
     }

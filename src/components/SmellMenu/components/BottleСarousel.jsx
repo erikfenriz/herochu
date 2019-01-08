@@ -7,23 +7,32 @@ import $ from "jquery";
 
 
 var elements = [];
+var pasha = [];
 
 export default class BottleCarousel extends Component {
   constructor(props) {  
     super(props);
     this.myRef = React.createRef();
     this.onMouseMove = this.onMouseMove.bind(this);
+    this.state = {name: "happy",colorNext:"#f5e120"};
     this.init = this.init.bind(this);
     for (var i = 0; i <= 100; i++) {
       this.props.data.forEach((item, i) =>
         elements.push(<li className="carousel-item">
-          <BottleItem count={i} visibleChangeFalse={this.props.visibleChangeFalse} visibleChange={this.props.visibleChange} visible={this.props.visible} item={item} />
+          <BottleItem count={i} visibleChangeFalse={this.props.visibleChangeFalse} changeState={this.changeState} visible={this.props.visible} item={item} />
         </li>
         )
       )
     }
   }
 
+
+  changeState =(value)=> {
+    pasha.push({name:value.name})
+    console.log(pasha.pop().name)
+
+    // this.setState({name: value.name})
+  }
   onMouseMove(event) {
     const valueMouse = -(-(window.innerWidth * .5) + event.layerX);
     setInterval(valueMouse > 0 ? this.myRef.current.slickNext() : this.myRef.current.slickPrev(), 1)
@@ -41,6 +50,18 @@ export default class BottleCarousel extends Component {
     }).on('mouseleave', function () {
       speed = 0;
     });
+
+    $(function(){
+      $('.bottle_item').on('mousemove', function(){ 
+        $('.smellMenu__all')[0].style.opacity = 0;
+        $('.smellMenu__text__name')[0].style.opacity = 1;
+      });
+      $('.bottle_item').on('mouseleave', function(){
+         $('.smellMenu__all')[0].style.opacity = 1;
+         $('.smellMenu__text__name')[0].style.opacity = 0;
+      });
+    });
+
 
     function updatescroll() {
       var max_scroll = container[0].scrollWidth;
@@ -249,7 +270,7 @@ export default class BottleCarousel extends Component {
     
   }
   render() {
-
+  
     const {  visible } = this.props;
   
     $(document).ready(this.init);
@@ -283,7 +304,7 @@ export default class BottleCarousel extends Component {
       <div id="infinite-list" ref={this.myRef} className="carousel-frame containerCenter">
         {elements}
       </div>
-      <Test colorNext={this.props.colorNext} visible={visible} name={this.props.name} />
+      <Test colorNext={this.state.colorNext} name={this.state.name} />
     
     <div className="leftBottomLine">
       <svg height="100" xmlns="http://www.w3.org/2000/svg">

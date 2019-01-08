@@ -220,7 +220,6 @@ a {
   padding-left: 42%;
 }
 .smellMenu__text__name{
-
   text-transform: uppercase;
   font: {
     family: 'neutra_display_light', sans-serif;
@@ -238,6 +237,7 @@ a {
   -o-transform: scale(4); 
   transform: scale(4);
  }
+
 .play_circle_text{
   transition: 5s;
   text-transform: uppercase;
@@ -359,7 +359,7 @@ $animation-fill-mode: forwards;
 }
 .smellMenu__text__name, .smellMenu__svg {
 	display: inline-block;
-	padding-top: 5%;
+	padding-top: 0%;
 	position: relative;
 	animation: accent-color-slide-reveal $animation-dur $animation-timing-func $animation-fill-mode;
   

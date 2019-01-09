@@ -1,4 +1,4 @@
-import React, {Component, lazy, Suspense} from 'react';
+import React, {Component} from 'react';
 import MP4 from '../../assets/videos/experience2/mp4/alive.mp4';
 import WebM from "../../assets/videos/experience2/webm/alive.webm";
 import featherClick from "../../assets/images/experience2/cursor/feather-click.png";
@@ -44,13 +44,12 @@ export default class Happy extends Component {
             mainClassToggleCursor: "letPerfumeTalk"
         };
         this.video = React.createRef();
-        // this.audio = React.createRef();
         this.setCoordinates = this.setCoordinates.bind(this);
     };
 
     setCoordinates = e => {
         this.setState({x: e.pageX, y: e.pageY});
-        if (this.video.current)
+        if (this.video.current && this.state.loader === "loading loaded")
             if ((e.buttons === 1 || e.which === 1) &&
                 this.state.displayCursor === true &&
                 this.state.isSharing === false) {
@@ -88,11 +87,6 @@ export default class Happy extends Component {
                     }));
                 }
             }
-    };
-
-    playContent = () => {
-        if (this.video.current)
-            this.video.current.play();
     };
 
     hide = () => {
@@ -143,7 +137,7 @@ export default class Happy extends Component {
     mouseFirstClick = (e) => {
         e.stopPropagation();
 
-        if (!this.state.isSharing) {
+        if (!this.state.isSharing && this.state.loader === "loading loaded") {
             this.video.current.play();
         }
         this.setState({
@@ -223,7 +217,6 @@ export default class Happy extends Component {
         this.setTitle();
         document.addEventListener('contextmenu', event => event.preventDefault());
         rotatingCursor.initialize();
-        this.playContent();
         this.setCoordinates.bind(this);
         document.addEventListener('click', this.setCoordinates);
         this.checkForVideo();
@@ -237,20 +230,11 @@ export default class Happy extends Component {
                     onMouseMove={this.setCoordinates}
                     className={this.state.mainClassToggleCursor}
                 >
-                    {/*<Suspense*/}
-                    {/*fallback={*/}
-                    {/*<Loader*/}
-                    {/*mouseFirstClick={this.mouseFirstClick}*/}
-                    {/*setCoordinates={this.setCoordinates}*/}
-                    {/*loader={this.state.loader}*/}
-                    {/*/>*/}
-                    {/*}>*/}
                     <Video
                         videoRef={this.video}
                         mp4={MP4}
                         webm={WebM}
                     />
-                    {/*</Suspense>*/}
                     <Loader
                         mouseFirstClick={this.mouseFirstClick}
                         setCoordinates={this.setCoordinates}

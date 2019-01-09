@@ -1,4 +1,4 @@
-import React, {Component, lazy, Suspense} from 'react';
+import React, {Component} from 'react';
 import MP4 from '../../assets/videos/experience2/mp4/in_love.mp4';
 import WebM from "../../assets/videos/experience2/webm/in_love.webm";
 import facebook from "../../assets/images/main/facebook-logo-button.svg";
@@ -49,7 +49,7 @@ export default class Happy extends Component {
 
     setCoordinates = e => {
         this.setState({x: e.pageX, y: e.pageY});
-        if (this.video.current)
+        if (this.video.current && this.state.loader === "loading loaded")
             if ((e.buttons === 1 || e.which === 1) &&
                 this.state.displayCursor === true &&
                 this.state.isSharing === false) {
@@ -88,11 +88,6 @@ export default class Happy extends Component {
                 }
             }
     };
-
-    // playContent = () => {
-    //     if (this.video.current)
-    //         this.video.current.play();
-    // };
 
     hide = () => {
         const cursor = document.getElementById('cursor');
@@ -222,9 +217,6 @@ export default class Happy extends Component {
         this.setTitle();
         document.addEventListener('contextmenu', event => event.preventDefault());
         rotatingCursor.initialize();
-        // this.playContent();
-        // this.playContent();
-        // this.playContent();
         this.setCoordinates.bind(this);
         document.addEventListener('click', this.setCoordinates);
         this.checkForVideo();

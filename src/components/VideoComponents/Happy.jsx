@@ -43,7 +43,6 @@ export default class Happy extends Component {
             mainClassToggleCursor: "letPerfumeTalk"
         };
         this.video = React.createRef();
-        this.audio = React.createRef();
         this.setCoordinates = this.setCoordinates.bind(this);
     };
 

@@ -1,7 +1,6 @@
-import React, {Component, lazy, Suspense} from 'react';
+import React, {Component} from 'react';
 import MP4 from '../../assets/videos/experience2/mp4/happy.mp4';
 import WebM from "../../assets/videos/experience2/webm/happy.webm";
-import MP3 from "../../assets/audio/happy.mp3";
 import featherClick from "../../assets/images/experience2/cursor/feather-click.png";
 import featherClicked from "../../assets/images/experience2/cursor/feather-clicked.png";
 import {rotatingCursor} from "./cursor";
@@ -10,11 +9,11 @@ import pineapple from '../../assets/images/experience2/elements/happy/gr_ananas.
 import sun from '../../assets/images/experience2/elements/happy/gr_sun.png';
 import {Link} from "react-router-dom";
 import {TweenMax} from "gsap/TweenMax";
-import Loader from "./Components/Loader";
 import facebook from "../../assets/images/main/facebook-logo-button.svg";
 import twitter from "../../assets/images/main/twitter-logo-button.svg";
 import google from "../../assets/images/main/google-plus-logo-button.svg";
-const Video = lazy(() => import('./Components/Video'));
+import Loader from "./Components/Loader";
+import Video from './Components/Video';
 // import candy1 from '../../assets/images/experience2/elements/happy/gr_candy1.png';
 // import candy2 from '../../assets/images/experience2/elements/happy/gr_candy2.png';
 // import iceCream from '../../assets/images/experience2/elements/happy/gr_icecream.png';
@@ -31,7 +30,6 @@ export default class Happy extends Component {
             mood: "happy",
             mute: false,
             play: true,
-            audioPlayBack: false,
             strikeThrough: "menu__bottom--happy",
             displayCursor: true,
             isSharing: false,
@@ -45,13 +43,12 @@ export default class Happy extends Component {
             mainClassToggleCursor: "letPerfumeTalk"
         };
         this.video = React.createRef();
-        this.audio = React.createRef();
         this.setCoordinates = this.setCoordinates.bind(this);
     };
 
     setCoordinates = e => {
         this.setState({x: e.pageX, y: e.pageY});
-        if (this.video.current)
+        if (this.video.current && this.state.loader === "loading loaded")
             if ((e.buttons === 1 || e.which === 1) &&
                 this.state.displayCursor === true &&
                 this.state.isSharing === false) {
@@ -91,12 +88,6 @@ export default class Happy extends Component {
             }
     };
 
-    playContent = () => {
-        if (this.video.current)
-            this.video.current.play();
-        this.audio.current.play();
-    };
-
     hide = () => {
         const cursor = document.getElementById('cursor');
         cursor.style.display = 'none';
@@ -122,11 +113,11 @@ export default class Happy extends Component {
     };
 
     fadeOut = () => {
-        TweenMax.to(this.audio.current, 1.5, {volume: 0});
+        TweenMax.to(this.video.current, 1.5, {volume: 0});
     };
 
     fadeIn = () => {
-        TweenMax.to(this.audio.current, 1.5, {volume: 1});
+        TweenMax.to(this.video.current, 1.5, {volume: 1});
     };
 
     mute = () => {
@@ -145,13 +136,8 @@ export default class Happy extends Component {
     mouseFirstClick = (e) => {
         e.stopPropagation();
 
-        if (!this.state.isSharing) {
+        if (!this.state.isSharing && this.state.loader === "loading loaded") {
             this.video.current.play();
-            this.audio.current.play();
-            if (!this.state.audioPlayBack) {
-                this.audio.current.currentTime = this.video.current.currentTime;
-                this.setState({audioPlayBack: true});
-            }
         }
         this.setState({
             cursor: "cursor__click--clicked"
@@ -182,7 +168,6 @@ export default class Happy extends Component {
             this.hideCursorClicked();
             this.shareSwitcher();
             this.video.current.pause();
-            this.audio.current.pause();
             if (this.state.shareClose === "letPerfumeTalk__share--close" &&
                 this.state.shareMedia === `letPerfumeTalk__share--media menu__circle--${this.state.mood}`) {
                 this.setState({
@@ -213,11 +198,6 @@ export default class Happy extends Component {
             }
             setTimeout(this.shareSwitcher, 100);
             this.video.current.play();
-            this.audio.current.play();
-            if (!this.state.audioPlayBack) {
-                this.audio.current.currentTime = this.video.current.currentTime;
-                this.setState({audioPlayBack: true});
-            }
         }
     };
 
@@ -236,7 +216,6 @@ export default class Happy extends Component {
         this.setTitle();
         document.addEventListener('contextmenu', event => event.preventDefault());
         rotatingCursor.initialize();
-        this.playContent();
         this.setCoordinates.bind(this);
         document.addEventListener('click', this.setCoordinates);
         this.checkForVideo();
@@ -250,32 +229,16 @@ export default class Happy extends Component {
                     onMouseMove={this.setCoordinates}
                     className={this.state.mainClassToggleCursor}
                 >
-                    <Suspense
-                        fallback={
-                            <Loader
-                                mouseFirstClick={this.mouseFirstClick}
-                                setCoordinates={this.setCoordinates}
-                                loader={this.state.loader}
-                            />
-                        }>
-                        <Video
-                            videoRef={this.video}
-                            mp4={MP4}
-                            webm={WebM}
-                        />
-                    </Suspense>
+                    <Video
+                        videoRef={this.video}
+                        mp4={MP4}
+                        webm={WebM}
+                    />
                     <Loader
                         mouseFirstClick={this.mouseFirstClick}
                         setCoordinates={this.setCoordinates}
                         loader={this.state.loader}
                     />
-                    <audio
-                        autoPlay
-                        loop
-                        ref={this.audio}
-                    >
-                        <source src={MP3} type="audio/mpeg"/>
-                    </audio>
                     {this.state.element}
                     <div ref="cursor" id="cursor">
                         <img className={this.state.cursor} alt="feather" src={featherClick}/>
@@ -339,11 +302,6 @@ export default class Happy extends Component {
                         </div>
                     </div>
                 </main>
-                {/*<Loader*/}
-                {/*mouseFirstClick={this.mouseFirstClick}*/}
-                {/*setCoordinates={this.setCoordinates}*/}
-                {/*loader={this.state.loader}*/}
-                {/*/>*/}
             </React.Fragment>
         )
     }

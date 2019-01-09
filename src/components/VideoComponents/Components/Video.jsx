@@ -15,7 +15,7 @@ export default class Video extends React.Component {
             <video className="letPerfumeTalk__video"
                    autoPlay={true}
                    loop={true}
-                   muted={true}
+                   muted={false}
                    ref={this.props.videoRef}
             >
                 <source src={this.props.mp4} type='video/mp4; codecs="avc1.4D401E, mp4a.40.2"'/>

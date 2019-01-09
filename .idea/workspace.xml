@@ -9,6 +9,7 @@
     <list default="true" id="7112ea31-feaf-42e2-b240-bc0901b148be" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/videos/experience2/lptalk_intro.mp4" beforeDir="false" afterPath="$PROJECT_DIR$/src/assets/videos/experience2/lptalk_intro.mp4" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/assets/videos/experience2/mp4/alive.mp4" beforeDir="false" afterPath="$PROJECT_DIR$/src/assets/videos/experience2/mp4/alive.mp4" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/assets/videos/experience2/mp4/happy.mp4" beforeDir="false" afterPath="$PROJECT_DIR$/src/assets/videos/experience2/mp4/happy.mp4" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/assets/videos/experience2/mp4/in_love.mp4" beforeDir="false" afterPath="$PROJECT_DIR$/src/assets/videos/experience2/mp4/in_love.mp4" afterDir="false" />
@@ -71,24 +72,20 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/styles/_loader.scss">
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/public/index.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-704">
-              <caret line="2" column="24" selection-start-line="2" selection-start-column="24" selection-end-line="2" selection-end-column="24" />
+            <state relative-caret-position="276">
+              <caret line="30" column="3" selection-start-line="30" selection-start-column="3" selection-end-line="30" selection-end-column="3" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/components/VideoComponents/Natural.jsx">
+        <entry file="file://$PROJECT_DIR$/src/styles/_loader.scss">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="207">
-              <caret line="80" column="58" selection-start-line="80" selection-start-column="58" selection-end-line="80" selection-end-column="58" />
-              <folding>
-                <element signature="e#0#55#0" expanded="true" />
-                <element signature="e#485#570#0" expanded="true" />
-              </folding>
+            <state relative-caret-position="-704">
+              <caret line="2" column="24" selection-start-line="2" selection-start-column="24" selection-end-line="2" selection-end-column="24" />
             </state>
           </provider>
         </entry>
@@ -118,11 +115,11 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/components/VideoComponents/Sexy.jsx">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="437">
-              <caret line="182" column="13" lean-forward="true" selection-start-line="182" selection-start-column="13" selection-end-line="182" selection-end-column="13" />
+            <state relative-caret-position="299">
+              <caret line="182" column="13" selection-start-line="182" selection-start-column="13" selection-end-line="182" selection-end-column="13" />
               <folding>
                 <element signature="e#0#55#0" expanded="true" />
                 <element signature="e#476#561#0" expanded="true" />
@@ -273,37 +270,12 @@
             <path>
               <item name="dedoface" type="b2602c69:ProjectViewProjectNode" />
               <item name="dedoface" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="public" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="dedoface" type="b2602c69:ProjectViewProjectNode" />
               <item name="dedoface" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="assets" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="dedoface" type="b2602c69:ProjectViewProjectNode" />
-              <item name="dedoface" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="assets" type="462c0819:PsiDirectoryNode" />
-              <item name="videos" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="dedoface" type="b2602c69:ProjectViewProjectNode" />
-              <item name="dedoface" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="assets" type="462c0819:PsiDirectoryNode" />
-              <item name="videos" type="462c0819:PsiDirectoryNode" />
-              <item name="experience2" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="dedoface" type="b2602c69:ProjectViewProjectNode" />
-              <item name="dedoface" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="assets" type="462c0819:PsiDirectoryNode" />
-              <item name="videos" type="462c0819:PsiDirectoryNode" />
-              <item name="experience2" type="462c0819:PsiDirectoryNode" />
-              <item name="mp4" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -415,12 +387,12 @@
       <workItem from="1545980062311" duration="16965000" />
       <workItem from="1546928551659" duration="13737000" />
       <workItem from="1546951802769" duration="6080000" />
-      <workItem from="1547013310529" duration="14967000" />
+      <workItem from="1547013310529" duration="15475000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="516333000" />
+    <option name="totallyTimeSpent" value="516841000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="67" y="25" width="1853" height="1055" extended-state="6" />
@@ -512,13 +484,6 @@
     </option>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$APPLICATION_HOME_DIR$/plugins/JavaScriptLanguage/jsLanguageServicesImpl/external/react.d.ts">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="279">
-          <caret line="298" column="8" selection-start-line="298" selection-start-column="8" selection-end-line="298" selection-end-column="8" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/components/VideoComponents/Elements.jsx" />
     <entry file="file://$PROJECT_DIR$/src/styles/fonts/NeutraText/neutratext-bolditalic-webfont.svg">
       <provider selected="true" editor-type-id="images" />
@@ -830,13 +795,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/styles/_videos.scss">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-451">
-          <caret line="372" column="46" selection-start-line="372" selection-start-column="46" selection-end-line="372" selection-end-column="46" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/.gitignore">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="538">
@@ -846,12 +804,26 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/components/VideoComponents/Sexy.jsx">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="437">
-          <caret line="182" column="13" lean-forward="true" selection-start-line="182" selection-start-column="13" selection-end-line="182" selection-end-column="13" />
+        <state relative-caret-position="299">
+          <caret line="182" column="13" selection-start-line="182" selection-start-column="13" selection-end-line="182" selection-end-column="13" />
           <folding>
             <element signature="e#0#55#0" expanded="true" />
             <element signature="e#476#561#0" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/styles/_videos.scss">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-451">
+          <caret line="372" column="46" selection-start-line="372" selection-start-column="46" selection-end-line="372" selection-end-column="46" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="276">
+          <caret line="30" column="3" selection-start-line="30" selection-start-column="3" selection-end-line="30" selection-end-column="3" />
         </state>
       </provider>
     </entry>

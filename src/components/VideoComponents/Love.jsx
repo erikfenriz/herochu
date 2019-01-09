@@ -223,6 +223,8 @@ export default class Happy extends Component {
         document.addEventListener('contextmenu', event => event.preventDefault());
         rotatingCursor.initialize();
         // this.playContent();
+        // this.playContent();
+        // this.playContent();
         this.setCoordinates.bind(this);
         document.addEventListener('click', this.setCoordinates);
         this.checkForVideo();

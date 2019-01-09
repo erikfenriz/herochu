@@ -7,160 +7,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="7112ea31-feaf-42e2-b240-bc0901b148be" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/asset-manifest.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/favicon.ico" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/index.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/manifest.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/precache-manifest.26c512a38917f288824c1f923525dd1f.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/service-worker.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/static/css/2.d7ff2a33.chunk.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/static/css/2.d7ff2a33.chunk.css.map" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/static/css/main.f2ae5311.chunk.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/static/css/main.f2ae5311.chunk.css.map" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/static/js/0.bc5c9752.chunk.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/static/js/0.bc5c9752.chunk.js.map" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/static/js/2.74d5814d.chunk.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/static/js/2.74d5814d.chunk.js.map" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/static/js/main.be54b7ed.chunk.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/static/js/main.be54b7ed.chunk.js.map" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/static/js/runtime~main.741c58a7.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/static/js/runtime~main.741c58a7.js.map" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/static/media/MANE_facebook.51f42ec5.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/static/media/MANE_twitter.9a35c67b.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/static/media/MANE_youtube.198b0452.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/static/media/alive.3ba43628.webm" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/static/media/alive.d2500993.mp4" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/static/media/citrus.87c3ba63.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/static/media/citrus_1.d88f1fca.gif" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/static/media/citrus_2.2e0500a0.gif" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/static/media/citrus_revers.b08fbc64.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/static/media/exp1title.c7224160.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/static/media/exp2title.1cbe46c0.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/static/media/facebook-logo-button.efd172f3.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/static/media/feather-click.1d929550.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/static/media/google-plus-logo-button.0cf19ea0.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/static/media/green.0c874332.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/static/media/green_revers.ca9df462.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/static/media/happy.13afe1a0.mp3" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/static/media/happy.23164f89.mp4" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/static/media/happy.2c3c81f3.webm" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/static/media/happy.967d9a97.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/static/media/happy_1.bffced15.gif" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/static/media/happy_2.fbd3a0af.gif" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/static/media/happy_revers.06682716.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/static/media/img_0.f78ff479.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/static/media/in_love.8ef628fa.mp4" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/static/media/in_love.92fcc345.webm" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/static/media/in_love.b439cd8e.mp3" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/static/media/lptalk_intro.df644c24.mp4" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/static/media/natural.079dc940.mp3" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/static/media/natural.0c8ddf3b.webm" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/static/media/natural.fd9aee4e.mp4" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/static/media/natural_1.153398f0.gif" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/static/media/natural_2.376e3022.gif" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/static/media/neutradisplay-bold-webfont.3ac94647.eot" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/static/media/neutradisplay-bold-webfont.8bca3584.woff" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/static/media/neutradisplay-bold-webfont.b221788f.ttf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/static/media/neutradisplay-bold-webfont.bf56cba2.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/static/media/neutradisplay-light-webfont.2e7ab430.ttf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/static/media/neutradisplay-light-webfont.7acf66c1.eot" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/static/media/neutradisplay-light-webfont.85d9ef4f.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/static/media/neutradisplay-light-webfont.adc7d8ee.woff" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/static/media/neutradisplay-medium-webfont.12efeb05.woff" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/static/media/neutradisplay-medium-webfont.6c153e0b.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/static/media/neutradisplay-medium-webfont.824a8874.eot" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/static/media/neutradisplay-medium-webfont.8cee1885.ttf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/static/media/neutradisplay-thin-webfont.1b456318.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/static/media/neutradisplay-thin-webfont.4a5db231.ttf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/static/media/neutradisplay-thin-webfont.dc53b8e8.eot" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/static/media/neutradisplay-thin-webfont.eb822c36.woff" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/static/media/neutratext-bold-webfont.011249da.ttf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/static/media/neutratext-bold-webfont.037d2e47.eot" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/static/media/neutratext-bold-webfont.123ac494.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/static/media/neutratext-bold-webfont.da696924.woff" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/static/media/neutratext-bolditalic-webfont.28949035.eot" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/static/media/neutratext-bolditalic-webfont.67d5dc0c.ttf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/static/media/neutratext-bolditalic-webfont.6dabf942.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/static/media/neutratext-bolditalic-webfont.adec9a6a.woff" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/static/media/neutratext-book-webfont.20e832a6.ttf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/static/media/neutratext-book-webfont.36fbc2f7.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/static/media/neutratext-book-webfont.586f158c.woff" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/static/media/neutratext-book-webfont.e4bb989e.eot" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/static/media/neutratext-bookitalic-webfont.5c7663ca.eot" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/static/media/neutratext-bookitalic-webfont.67349e27.ttf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/static/media/neutratext-bookitalic-webfont.8f678050.woff" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/static/media/neutratext-bookitalic-webfont.e2d3ee36.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/static/media/neutratext-demi-webfont.03a8c2e2.eot" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/static/media/neutratext-demi-webfont.4463f520.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/static/media/neutratext-demi-webfont.6d7006f4.woff" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/static/media/neutratext-demi-webfont.c2a94075.ttf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/static/media/neutratext-demiitalic-webfont.22d1cd2a.woff" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/static/media/neutratext-demiitalic-webfont.4167fb48.eot" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/static/media/neutratext-demiitalic-webfont.c73fcb75.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/static/media/neutratext-demiitalic-webfont.d8a66381.ttf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/static/media/neutratext-light-webfont.72862459.woff" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/static/media/neutratext-light-webfont.8b57c057.ttf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/static/media/neutratext-light-webfont.ea0a8aa1.eot" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/static/media/neutratext-light-webfont.eebf944e.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/static/media/neutratext-lightitalic-webfont.0fc036b5.eot" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/static/media/neutratext-lightitalic-webfont.5b84df1c.ttf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/static/media/neutratext-lightitalic-webfont.705a83f5.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/static/media/neutratext-lightitalic-webfont.f066e2b6.woff" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/static/media/passion.a5537605.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/static/media/passion_1.4f4e98a6.gif" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/static/media/passion_2.02e0a5da.gif" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/static/media/passion_revers.6eb3510c.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/static/media/rebelious.105c9abc.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/static/media/rebelious.bcd167ba.webm" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/static/media/rebelious_1.83f0f954.gif" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/static/media/rebelious_2.1e2cf2b5.gif" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/static/media/rebelious_revers.e060a31e.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/static/media/rebellious.07d12b40.mp4" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/static/media/rebellious.2ca6d38f.mp3" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/static/media/rhombus.117fb15d.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/static/media/sexy.3ad5ee5c.mp3" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/static/media/sexy.d1052a9c.mp4" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/static/media/sexy.f0d7f6e3.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/static/media/sexy.fc1a7c2f.webm" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/static/media/sexy_1.39bd2b1b.gif" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/static/media/sexy_2.2d1abd64.gif" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/static/media/sexy_revers.dc6c99d1.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/static/media/slick.b7c9e1e4.woff" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/static/media/slick.ced611da.eot" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/static/media/slick.d41f55a7.ttf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/static/media/slick.f97e3bbf.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/static/media/twitter-logo-button.a786ce38.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/static/media/zen.0367b316.mp4" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/static/media/zen.3b08d1d5.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/static/media/zen.99f274dc.webm" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/static/media/zen.a3a7100f.mp3" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/static/media/zen_1.bd4f4f6a.gif" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/static/media/zen_2.1e1f2d79.gif" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/static/media/zen_revers.1e452767.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/VideoComponents/Alive.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/VideoComponents/Alive.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/VideoComponents/Components/Video.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/VideoComponents/Components/Video.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/VideoComponents/Happy.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/VideoComponents/Happy.jsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/VideoComponents/Love.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/VideoComponents/Love.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/VideoComponents/Natural.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/VideoComponents/Natural.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/VideoComponents/Rebellious.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/VideoComponents/Rebellious.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/VideoComponents/Sexy.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/VideoComponents/Sexy.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/VideoComponents/Zen.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/VideoComponents/Zen.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/styles/.sass-cache/7fa5bcf53dedf1114eb2f0bb1f18542dbe16ef80/_fonts.scssc" beforeDir="false" afterPath="$PROJECT_DIR$/src/styles/.sass-cache/7fa5bcf53dedf1114eb2f0bb1f18542dbe16ef80/_fonts.scssc" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/styles/_fonts.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/styles/_fonts.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/styles/fonts/test/NeutraText-Light.eot" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/styles/fonts/test/NeutraText-Light.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/styles/fonts/test/NeutraText-Light.ttf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/styles/fonts/test/NeutraText-Light.woff" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/styles/fonts/test/NeutraText-Light_1.eot" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/styles/fonts/test/NeutraText-Light_1.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/styles/fonts/test/NeutraText-Light_1.ttf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/styles/fonts/test/NeutraText-Light_1.woff" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/styles/fonts/test/neutra_textlight.eot" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/styles/fonts/test/neutra_textlight.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/styles/fonts/test/neutra_textlight.ttf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/styles/fonts/test/neutra_textlight.woff" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/styles/fonts/test/stylesheet.css" beforeDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -179,11 +26,32 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/components/VideoComponents/Love.jsx">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="905">
-              <caret line="205" column="35" selection-start-line="205" selection-start-column="17" selection-end-line="205" selection-end-column="35" />
+            <state relative-caret-position="353">
+              <caret line="226" column="30" selection-start-line="226" selection-start-column="30" selection-end-line="226" selection-end-column="30" />
               <folding>
                 <element signature="e#0#55#0" expanded="true" />
                 <element signature="e#696#781#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/.gitignore">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="345">
+              <caret line="15" column="10" selection-start-line="15" selection-start-column="10" selection-end-line="15" selection-end-column="10" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/components/Router.jsx">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="391">
+              <caret line="17" column="19" lean-forward="true" selection-start-line="17" selection-start-column="19" selection-end-line="17" selection-end-column="19" />
+              <folding>
+                <element signature="e#0#26#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -456,17 +324,18 @@
       <workItem from="1545980062311" duration="16965000" />
       <workItem from="1546928551659" duration="13737000" />
       <workItem from="1546951802769" duration="6080000" />
-      <workItem from="1547013310529" duration="4022000" />
+      <workItem from="1547013310529" duration="4330000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="505388000" />
+    <option name="totallyTimeSpent" value="505696000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="67" y="25" width="1853" height="1055" extended-state="6" />
+    <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.49915683" visible="true" weight="0.20983607" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.49915683" visible="true" weight="0.20983607" />
       <window_info id="Structure" order="1" sideWeight="0.50084317" side_tool="true" weight="0.20983607" />
       <window_info id="npm" order="2" side_tool="true" />
       <window_info id="Favorites" order="3" sideWeight="0.50084317" side_tool="true" weight="0.20983607" />
@@ -481,7 +350,7 @@
       <window_info anchor="bottom" id="Docker" order="8" show_stripe_button="false" />
       <window_info anchor="bottom" id="Version Control" order="9" weight="0.3299435" />
       <window_info anchor="bottom" id="Event Log" order="10" sideWeight="0.50163937" side_tool="true" weight="0.32919955" />
-      <window_info active="true" anchor="bottom" id="Terminal" order="11" sideWeight="0.49836066" visible="true" weight="0.1841808" />
+      <window_info anchor="bottom" id="Terminal" order="11" sideWeight="0.49836066" visible="true" weight="0.1841808" />
       <window_info anchor="bottom" id="TypeScript" order="12" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
@@ -651,16 +520,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/components/Router.jsx">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="368">
-          <caret line="30" column="17" selection-start-line="30" selection-start-column="17" selection-end-line="30" selection-end-column="17" />
-          <folding>
-            <element signature="e#0#26#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/components/LetPerfumeTalk.jsx">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="253">
@@ -791,13 +650,6 @@
     <entry file="file://$PROJECT_DIR$/.htaccess">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/.gitignore">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="345">
-          <caret line="15" column="10" selection-start-line="15" selection-start-column="10" selection-end-line="15" selection-end-column="10" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/components/VideoComponents/Components/Video.jsx">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="391">
@@ -885,10 +737,27 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/.gitignore">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="345">
+          <caret line="15" column="10" selection-start-line="15" selection-start-column="10" selection-end-line="15" selection-end-column="10" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/components/Router.jsx">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="391">
+          <caret line="17" column="19" lean-forward="true" selection-start-line="17" selection-start-column="19" selection-end-line="17" selection-end-column="19" />
+          <folding>
+            <element signature="e#0#26#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/components/VideoComponents/Love.jsx">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="905">
-          <caret line="205" column="35" selection-start-line="205" selection-start-column="17" selection-end-line="205" selection-end-column="35" />
+        <state relative-caret-position="353">
+          <caret line="226" column="30" selection-start-line="226" selection-start-column="30" selection-end-line="226" selection-end-column="30" />
           <folding>
             <element signature="e#0#55#0" expanded="true" />
             <element signature="e#696#781#0" expanded="true" />

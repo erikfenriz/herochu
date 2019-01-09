@@ -934,8 +934,13 @@ a:visited {
   49% {
     color: transparent; } }
 .containerCenter {
+<<<<<<< HEAD
   width: 1870px;
   margin: 0 auto; }
+=======
+  margin: 0 auto;
+}
+>>>>>>> smell_menu
 
 .carousel-frame {
   padding-top: 50px;

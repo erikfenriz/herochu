@@ -31,7 +31,6 @@ export default class Happy extends Component {
             mood: "rebellious",
             mute: false,
             play: true,
-            audioPlayBack: false,
             strikeThrough: "menu__bottom--rebellious",
             displayCursor: true,
             isSharing: false,

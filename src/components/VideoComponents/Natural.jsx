@@ -33,7 +33,6 @@ export default class Happy extends Component {
             mood: "natural",
             mute: false,
             play: true,
-            audioPlayBack: false,
             strikeThrough: "menu__bottom--natural",
             displayCursor: true,
             isSharing: false,

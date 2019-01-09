@@ -31,7 +31,6 @@ export default class Happy extends Component {
             mood: "zen",
             mute: false,
             play: true,
-            audioPlayBack: false,
             strikeThrough: "menu__bottom--zen",
             displayCursor: true,
             isSharing: false,

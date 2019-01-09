@@ -4,7 +4,6 @@ import WebM from "../../assets/videos/experience2/webm/alive.webm";
 import featherClick from "../../assets/images/experience2/cursor/feather-click.png";
 import featherClicked from "../../assets/images/experience2/cursor/feather-clicked.png";
 import {rotatingCursor} from "./cursor";
-import MP3 from "../../assets/audio/happy.mp3";
 import {TweenMax} from "gsap/TweenMax";
 // import $ from 'jquery';
 import pineapple from '../../assets/images/experience2/elements/happy/gr_ananas.png';
@@ -14,7 +13,8 @@ import facebook from "../../assets/images/main/facebook-logo-button.svg";
 import twitter from "../../assets/images/main/twitter-logo-button.svg";
 import google from "../../assets/images/main/google-plus-logo-button.svg";
 import Loader from "./Components/Loader";
-const Video = lazy(() => import('./Components/Video'));
+import Video from './Components/Video';
+// const Video = lazy(() => import('./Components/Video'));
 // import candy1 from '../../assets/images/experience2/elements/happy/gr_candy1.png';
 // import candy2 from '../../assets/images/experience2/elements/happy/gr_candy2.png';
 // import iceCream from '../../assets/images/experience2/elements/happy/gr_icecream.png';
@@ -93,7 +93,6 @@ export default class Happy extends Component {
     playContent = () => {
         if (this.video.current)
             this.video.current.play();
-        this.audio.current.play();
     };
 
     hide = () => {
@@ -121,11 +120,11 @@ export default class Happy extends Component {
     };
 
     fadeOut = () => {
-        TweenMax.to(this.audio.current, 1.5, {volume: 0});
+        TweenMax.to(this.video.current, 1.5, {volume: 0});
     };
 
     fadeIn = () => {
-        TweenMax.to(this.audio.current, 1.5, {volume: 1});
+        TweenMax.to(this.video.current, 1.5, {volume: 1});
     };
 
     mute = () => {
@@ -146,11 +145,6 @@ export default class Happy extends Component {
 
         if (!this.state.isSharing) {
             this.video.current.play();
-            this.audio.current.play();
-            if (!this.state.audioPlayBack) {
-                this.audio.current.currentTime = this.video.current.currentTime;
-                this.setState({audioPlayBack: true});
-            }
         }
         this.setState({
             cursor: "cursor__click--clicked"
@@ -181,7 +175,6 @@ export default class Happy extends Component {
             this.hideCursorClicked();
             this.shareSwitcher();
             this.video.current.pause();
-            this.audio.current.pause();
             if (this.state.shareClose === "letPerfumeTalk__share--close" &&
                 this.state.shareMedia === `letPerfumeTalk__share--media menu__circle--${this.state.mood}`) {
                 this.setState({
@@ -212,11 +205,6 @@ export default class Happy extends Component {
             }
             setTimeout(this.shareSwitcher, 100);
             this.video.current.play();
-            this.audio.current.play();
-            if (!this.state.audioPlayBack) {
-                this.audio.current.currentTime = this.video.current.currentTime;
-                this.setState({audioPlayBack: true});
-            }
         }
     };
 
@@ -249,32 +237,25 @@ export default class Happy extends Component {
                     onMouseMove={this.setCoordinates}
                     className={this.state.mainClassToggleCursor}
                 >
-                    <Suspense
-                        fallback={
-                            <Loader
-                                mouseFirstClick={this.mouseFirstClick}
-                                setCoordinates={this.setCoordinates}
-                                loader={this.state.loader}
-                            />
-                        }>
-                        <Video
-                            videoRef={this.video}
-                            mp4={MP4}
-                            webm={WebM}
-                        />
-                    </Suspense>
+                    {/*<Suspense*/}
+                    {/*fallback={*/}
                     {/*<Loader*/}
-                        {/*mouseFirstClick={this.mouseFirstClick}*/}
-                        {/*setCoordinates={this.setCoordinates}*/}
-                        {/*loader={this.state.loader}*/}
+                    {/*mouseFirstClick={this.mouseFirstClick}*/}
+                    {/*setCoordinates={this.setCoordinates}*/}
+                    {/*loader={this.state.loader}*/}
                     {/*/>*/}
-                    <audio
-                        autoPlay
-                        loop
-                        ref={this.audio}
-                    >
-                        <source src={MP3} type="audio/mpeg"/>
-                    </audio>
+                    {/*}>*/}
+                    <Video
+                        videoRef={this.video}
+                        mp4={MP4}
+                        webm={WebM}
+                    />
+                    {/*</Suspense>*/}
+                    <Loader
+                        mouseFirstClick={this.mouseFirstClick}
+                        setCoordinates={this.setCoordinates}
+                        loader={this.state.loader}
+                    />
                     {this.state.element}
                     <div ref="cursor" id="cursor">
                         <img className={this.state.cursor} alt="feather" src={featherClick}/>

@@ -47,7 +47,7 @@ export default class Happy extends Component {
 
     setCoordinates = e => {
         this.setState({x: e.pageX, y: e.pageY});
-        if (this.video.current && this.state.loader === "loading loaded")
+        if (this.video.current && this.state.loader === "loading loaded") {
             if ((e.buttons === 1 || e.which === 1) &&
                 this.state.displayCursor === true &&
                 this.state.isSharing === false) {
@@ -85,6 +85,7 @@ export default class Happy extends Component {
                     }));
                 }
             }
+        }
     };
 
     hide = () => {

@@ -93,12 +93,12 @@ const SmellMenu = props => {
       <div className="smellMenu__header">
         <ShareLink link='https://experiences.mane.com/LetPerfumeTalk/'>
           {link => (
-            <a href={link} target='_blank'><img className="twitterShare" alt="youtube" src={facebookShare} /></a>
+            <a href={link} rel="noopener noreferrer" target='_blank'><img className="twitterShare" alt="youtube" src={facebookShare} /></a>
           )}
         </ShareLink>
         <ShareLinkTwitter link='https://experiences.mane.com/LetPerfumeTalk/'>
           {link => (
-            <a href={link} target='_blank'><img alt="youtube" src={twitterShare} /></a>
+            <a href={link} rel="noopener noreferrer" target='_blank'><img alt="youtube" src={twitterShare} /></a>
           )}
         </ShareLinkTwitter>
       </div>

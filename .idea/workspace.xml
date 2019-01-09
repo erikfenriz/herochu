@@ -9,6 +9,13 @@
     <list default="true" id="7112ea31-feaf-42e2-b240-bc0901b148be" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/videos/experience2/mp4/alive.mp4" beforeDir="false" afterPath="$PROJECT_DIR$/src/assets/videos/experience2/mp4/alive.mp4" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/videos/experience2/mp4/happy.mp4" beforeDir="false" afterPath="$PROJECT_DIR$/src/assets/videos/experience2/mp4/happy.mp4" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/videos/experience2/mp4/in_love.mp4" beforeDir="false" afterPath="$PROJECT_DIR$/src/assets/videos/experience2/mp4/in_love.mp4" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/videos/experience2/mp4/natural.mp4" beforeDir="false" afterPath="$PROJECT_DIR$/src/assets/videos/experience2/mp4/natural.mp4" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/videos/experience2/mp4/rebellious.mp4" beforeDir="false" afterPath="$PROJECT_DIR$/src/assets/videos/experience2/mp4/rebellious.mp4" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/videos/experience2/mp4/sexy.mp4" beforeDir="false" afterPath="$PROJECT_DIR$/src/assets/videos/experience2/mp4/sexy.mp4" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/videos/experience2/mp4/zen.mp4" beforeDir="false" afterPath="$PROJECT_DIR$/src/assets/videos/experience2/mp4/zen.mp4" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -46,11 +53,11 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/.gitignore">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="400">
-              <caret line="30" lean-forward="true" selection-start-line="30" selection-end-line="30" />
+            <state relative-caret-position="538">
+              <caret line="36" selection-start-line="36" selection-end-line="36" />
             </state>
           </provider>
         </entry>
@@ -111,11 +118,11 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/components/VideoComponents/Sexy.jsx">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="322">
-              <caret line="87" column="9" selection-start-line="87" selection-start-column="9" selection-end-line="87" selection-end-column="9" />
+            <state relative-caret-position="437">
+              <caret line="182" column="13" lean-forward="true" selection-start-line="182" selection-start-column="13" selection-end-line="182" selection-end-column="13" />
               <folding>
                 <element signature="e#0#55#0" expanded="true" />
                 <element signature="e#476#561#0" expanded="true" />
@@ -408,15 +415,16 @@
       <workItem from="1545980062311" duration="16965000" />
       <workItem from="1546928551659" duration="13737000" />
       <workItem from="1546951802769" duration="6080000" />
-      <workItem from="1547013310529" duration="13313000" />
+      <workItem from="1547013310529" duration="14967000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="514679000" />
+    <option name="totallyTimeSpent" value="516333000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="67" y="25" width="1853" height="1055" extended-state="6" />
+    <editor active="true" />
     <layout>
       <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.49915683" visible="true" weight="0.20983607" />
       <window_info id="Structure" order="1" sideWeight="0.50084317" side_tool="true" weight="0.20983607" />
@@ -786,17 +794,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/components/VideoComponents/Sexy.jsx">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="322">
-          <caret line="87" column="9" selection-start-line="87" selection-start-column="9" selection-end-line="87" selection-end-column="9" />
-          <folding>
-            <element signature="e#0#55#0" expanded="true" />
-            <element signature="e#476#561#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/components/VideoComponents/Zen.jsx">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="299">
@@ -842,8 +839,19 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/.gitignore">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="400">
-          <caret line="30" lean-forward="true" selection-start-line="30" selection-end-line="30" />
+        <state relative-caret-position="538">
+          <caret line="36" selection-start-line="36" selection-end-line="36" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/components/VideoComponents/Sexy.jsx">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="437">
+          <caret line="182" column="13" lean-forward="true" selection-start-line="182" selection-start-column="13" selection-end-line="182" selection-end-column="13" />
+          <folding>
+            <element signature="e#0#55#0" expanded="true" />
+            <element signature="e#476#561#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>

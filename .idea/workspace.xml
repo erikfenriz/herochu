@@ -323,19 +323,19 @@
     <property name="ts.external.directory.path" value="$APPLICATION_HOME_DIR$/plugins/JavaScriptLanguage/jsLanguageServicesImpl/external" />
   </component>
   <component name="RecentsManager">
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$/src/styles/fonts/test" />
-      <recent name="$PROJECT_DIR$/src/styles/legal" />
-      <recent name="$PROJECT_DIR$/src/assets/animation/perfumeIntro/images" />
-      <recent name="$PROJECT_DIR$/src/assets/videos/experience2" />
-      <recent name="$PROJECT_DIR$/src/styles/fonts" />
-    </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/src/components/VideoComponents/Components" />
       <recent name="$PROJECT_DIR$/src/styles" />
       <recent name="$PROJECT_DIR$/src/assets/images/experience2/cursor" />
       <recent name="$PROJECT_DIR$/src/assets/videos/experience2/mp4" />
       <recent name="$PROJECT_DIR$/src/assets/animation/perfumeIntro" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/src/assets/videos/experience2/mp4" />
+      <recent name="$PROJECT_DIR$/src/styles/fonts/test" />
+      <recent name="$PROJECT_DIR$/src/styles/legal" />
+      <recent name="$PROJECT_DIR$/src/assets/animation/perfumeIntro/images" />
+      <recent name="$PROJECT_DIR$/src/assets/videos/experience2" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -409,17 +409,17 @@
       <workItem from="1545980062311" duration="16965000" />
       <workItem from="1546928551659" duration="13737000" />
       <workItem from="1546951802769" duration="6080000" />
-      <workItem from="1547013310529" duration="11040000" />
+      <workItem from="1547013310529" duration="11317000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="512406000" />
+    <option name="totallyTimeSpent" value="512683000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="67" y="25" width="1853" height="1055" extended-state="6" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.49915683" visible="true" weight="0.20983607" />
+      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.49915683" visible="true" weight="0.20983607" />
       <window_info id="Structure" order="1" sideWeight="0.50084317" side_tool="true" weight="0.20983607" />
       <window_info id="npm" order="2" side_tool="true" />
       <window_info id="Favorites" order="3" sideWeight="0.50084317" side_tool="true" weight="0.20983607" />
@@ -434,7 +434,7 @@
       <window_info anchor="bottom" id="Docker" order="8" show_stripe_button="false" />
       <window_info anchor="bottom" id="Version Control" order="9" weight="0.3299435" />
       <window_info anchor="bottom" id="Event Log" order="10" sideWeight="0.50163937" side_tool="true" weight="0.32919955" />
-      <window_info anchor="bottom" id="Terminal" order="11" sideWeight="0.49836066" visible="true" weight="0.1841808" />
+      <window_info active="true" anchor="bottom" id="Terminal" order="11" sideWeight="0.49836066" visible="true" weight="0.1841808" />
       <window_info anchor="bottom" id="TypeScript" order="12" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
